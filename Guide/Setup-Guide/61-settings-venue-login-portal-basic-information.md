@@ -19,4 +19,4 @@ The information provided during the profile creation process will be automatical
 
 ![](../../_images/61-settings-venue-login-portal-basic-information-416.png)
 
-[For more information, check out our demo video.](https://intercom.help/fanswifi/en/articles/9177810-step-10-portal-settings-terms-of-use-advanced-limits-controllers)
+[Check out the demo video](../Demo-Videos/step-10-portal-settings-terms-of-use-advanced-limits-controllers.md)

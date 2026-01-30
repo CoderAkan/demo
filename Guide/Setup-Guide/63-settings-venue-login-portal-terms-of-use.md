@@ -13,4 +13,4 @@ By modifying the template, ensures that the Terms and Conditions accurately refl
 
 Customizing the Terms and Conditions to suit the unique needs of the company serves to safeguard business interests and ensures that users are fully informed and consenting to the terms of using your network or services through the Captive Portal.
 
-[For more information, check out our demo video.](https://intercom.help/fanswifi/en/articles/9177810-step-10-portal-settings-terms-of-use-advanced-limits-controllers)
+[Check out the demo video](../Demo-Videos/step-10-portal-settings-terms-of-use-advanced-limits-controllers.md)

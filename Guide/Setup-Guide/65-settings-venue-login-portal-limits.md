@@ -25,4 +25,4 @@ Through Session Duration Limits and Daily Login Qouta, the differentiation betwe
 
 *Remarks: Inputting 0 means no limit*
 
-[For more information, check out our demo video.](https://intercom.help/fanswifi/en/articles/9177810-step-10-portal-settings-terms-of-use-advanced-limits-controllers)
+[Check out the demo video](../Demo-Videos/step-10-portal-settings-terms-of-use-advanced-limits-controllers.md)

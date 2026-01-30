@@ -19,4 +19,4 @@ Companies can add their Access Point details to the FansWifi page. Add AP to the
 
 ![](../../_images/68-settings-hotspots-479.png)
 
-[For more information, check out our demo video.](https://intercom.help/fanswifi/en/articles/9609454-step-18-portal-settings-hotspots)
+[Check out the demo video](../Demo-Videos/step-18-portal-settings-hotspots.md)

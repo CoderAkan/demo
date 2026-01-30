@@ -11,4 +11,4 @@ Please keep note of the following:
 
 *Remark: If you are a large enterprise with pre-existing installed APs, our team is available to provide assistance in organizing gateways for your network infrastructure.*
 
-[For more information, check out our demo video.](https://intercom.help/fanswifi/en/articles/9177810-step-10-portal-settings-terms-of-use-advanced-limits-controllers)
+[Check out the demo video](../Demo-Videos/step-10-portal-settings-terms-of-use-advanced-limits-controllers.md)
