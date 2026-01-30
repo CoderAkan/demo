@@ -12,7 +12,7 @@
 <!-- Learn about FansWiFi's commitment to robust security in WiFi solutions. -->
 {% endcontent-ref %}
 
-{% content-ref url="Security/README.md" %}
+{% content-ref url="Blog-Post/README.md" %}
 [Blog Post](Blog-Post/README.md) 
 <!-- Stay updated with the latest trends and insights in WiFi marketing. -->
 {% endcontent-ref %}
