@@ -4,8 +4,8 @@
 
 ### LINE Login Channel Registration Guide
 
-{% content-ref url="LINE/LINE-Login-Channel-Registration-Guide/setting-on-line-login-channel.md" %}
-[Setting on LINE Login Channel](LINE/LINE-Login-Channel-Registration-Guide/setting-on-line-login-channel.md)
+{% content-ref url="LINE/setting-on-line-login-channel.md" %}
+[Setting on LINE Login Channel](LINE/setting-on-line-login-channel.md)
 {% endcontent-ref %}
 
 ## Meta
