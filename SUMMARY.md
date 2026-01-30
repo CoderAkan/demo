@@ -154,7 +154,7 @@
 * [Social Media Setup Guide](Social-Media-Setup-Guide/README.md)
   * [LINE](Social-Media-Setup-Guide/LINE/README.md)
     * [LINE Login Channel Registration Guide](Social-Media-Setup-Guide/LINE/Line/README.md)
-    * [Setting on LINE Login Channel](Social-Media-Setup-Guide/LINE/Line/setting-on-the-login-channel.md)
+    * [Setting on LINE Login Channel](Social-Media-Setup-Guide/LINE/Line/setting-on-line-login-channel.md)
   * [Meta](Social-Media-Setup-Guide/Meta/README.md)
     * [FansX & FansWiFi 用戶入門準備清單](Social-Media-Setup-Guide/Meta/FansX-&-FansWiFi-用戶入門準備清單/README.md)
       * [第一步：帳戶註冊與確認](Social-Media-Setup-Guide/Meta/FansX-&-FansWiFi-用戶入門準備清單/untitled.md)
