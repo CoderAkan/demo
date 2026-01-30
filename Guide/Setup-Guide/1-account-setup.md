@@ -53,4 +53,6 @@ Enter the requested information accurately to ensure the correct setup of the ve
 
 ![](../../_images/1-account-setup-374.png)
 
-[Check out the demo video](https://intercom.help/fanswifi/en/articles/9177780-step-1-account-setup)
+{% content-ref url="../Demo-Videos/step-1-account-setup.md" %}
+[Check out the demo video](../Demo-Videos/step-1-account-setup.md)
+{% endcontent-ref %}
