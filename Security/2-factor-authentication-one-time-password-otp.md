@@ -7,7 +7,7 @@ At our platform, we prioritize the security and privacy of our users. To ensure 
 
 ## What is OTP?
 
-**One-Time Password (OTP)**is a security feature that adds an extra layer of protection to your account. It generates a unique password that is valid for a single login session or transaction, making it highly secure against unauthorized access.
+**One-Time Password (OTP)** is a security feature that adds an extra layer of protection to your account. It generates a unique password that is valid for a single login session or transaction, making it highly secure against unauthorized access.
 
 ## Using OTP
 
@@ -25,7 +25,7 @@ By implementing OTP and requiring two-factor authentication for all users, we pr
 - Privacy Protection: OTP ensures that only authorized personnel can log in to the platform, safeguarding your personal and sensitive information.
 - Reduced Risk of Account Compromise: Even if your password is compromised, an attacker would still need the OTP to gain access, significantly reducing the risk of unauthorized access.
 
-❗Remember to**keep your OTP confidential**and**avoid sharing it with anyone**. If you suspect any suspicious activity or encounter issues with OTP, please contact our support team immediately.
+❗Remember to **keep your OTP confidential** and **avoid sharing it with anyone**. If you suspect any suspicious activity or encounter issues with OTP, please contact our support team immediately.
 
 By following these guidelines and enabling OTP for your account, you can enjoy a higher level of security and peace of mind while using our platform.
 
