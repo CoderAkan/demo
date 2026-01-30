@@ -3,7 +3,8 @@
 ## Sections
 
 {% content-ref url="Guide/README.md" %}
-[Guide](Guide/README.md) <!-- Ultimate Guide for FansWiFi -->
+[Guide](Guide/README.md) 
+<!-- Ultimate Guide for FansWiFi -->
 {% endcontent-ref %}
 
 {% content-ref url="Security/README.md" %}

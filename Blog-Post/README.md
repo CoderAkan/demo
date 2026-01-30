@@ -1,5 +1,9 @@
 # Blog Post
 
+---
+description: Stay updated with the latest trends and insights in WiFi marketing.
+---
+
 | Articles |
 | :--- |
 | <a href="exciting-times-at-digitech-asean-thailand-event-2023.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 8px 0;">Exciting times at DigiTech ASEAN Thailand event 2023!🎉</a> |
