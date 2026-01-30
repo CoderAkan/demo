@@ -1,5 +1,4 @@
 # Table of contents
-
 * [Introduction](README.md)
 * [Blog Post](Blog-Post/README.md)
   * [Exciting times at DigiTech ASEAN Thailand event 2023!🎉](Blog-Post/exciting-times-at-digitech-asean-thailand-event-2023.md)
