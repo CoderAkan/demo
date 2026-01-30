@@ -1,6 +1,5 @@
 # FansX：WhatsApp 帳號連接與設定指南
 
-| Articles |
-| :--- |
-| <a href="meta-business-suite-meta.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 8px 0;">如果您尚未建立 Meta Business Suite Meta 企業管理平台</a> |
-
+{% content-ref url="Meta/FansX：WhatsApp-帳號連接與設定指南/meta-business-suite-meta.md" %}
+[如果您尚未建立 Meta Business Suite Meta 企業管理平台](Meta/FansX：WhatsApp-帳號連接與設定指南/meta-business-suite-meta.md)
+{% endcontent-ref %}
