@@ -27,36 +27,6 @@
 
 ## Guide
 
-### Demo Videos
-
-| Articles |
-| :--- |
-| <a href="Guide/Demo-Videos/foundation-videos-for-setting-up-the-admin-portal-with-ease.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Foundation Videos for Setting up the Admin Portal with Ease</a> |
-| <a href="Guide/Demo-Videos/step-10-portal-settings-terms-of-use-advanced-limits-controllers.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 10: Portal Settings - Terms of use, Advanced, Limits + Controllers</a> |
-| <a href="Guide/Demo-Videos/step-11-portal-settings-login-method-facebook.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 11: Portal Settings - Login Method [Facebook]</a> |
-| <a href="Guide/Demo-Videos/step-12-portal-settings-login-method-instagram.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 12: Portal Settings - Login Method [Instagram]</a> |
-| <a href="Guide/Demo-Videos/step-13-portal-settings-login-method-line.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 13: Portal Settings - Login Method [LINE]</a> |
-| <a href="Guide/Demo-Videos/step-14-portal-settings-login-method-registration-form.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 14: Portal Settings - Login Method [Registration Form]</a> |
-| <a href="Guide/Demo-Videos/step-15-portal-settings-login-method-video.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 15: Portal Settings - Login Method [Video]</a> |
-| <a href="Guide/Demo-Videos/step-16-portal-settings-login-method-password.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 16: Portal Settings - Login Method [Password]</a> |
-| <a href="Guide/Demo-Videos/step-17-portal-settings-login-method-one-click-login.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 17: Portal Settings - Login Method [One Click Login]</a> |
-| <a href="Guide/Demo-Videos/step-18-portal-settings-hotspots.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 18: Portal Settings - Hotspots</a> |
-| <a href="Guide/Demo-Videos/step-19-survey.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 19: Survey</a> |
-| <a href="Guide/Demo-Videos/step-1-account-setup.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 1: Account Setup</a> |
-| <a href="Guide/Demo-Videos/step-1a-create-multiple-venue.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 1A: Create multiple venue</a> |
-| <a href="Guide/Demo-Videos/step-20-captive-portal-preview.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 20: Captive Portal Preview</a> |
-| <a href="Guide/Demo-Videos/step-2-permissions-access-new-users-account.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 2: Permissions, Access & New Users Account</a> |
-| <a href="Guide/Demo-Videos/step-3-dashboard-csv-export.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 3: Dashboard + CSV Export</a> |
-| <a href="Guide/Demo-Videos/step-3a-access-log.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 3A: Access Log</a> |
-| <a href="Guide/Demo-Videos/step-3b-access-log-different-login-methods.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 3B: Access Log- different login methods</a> |
-| <a href="Guide/Demo-Videos/step-4-campaign-ads.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 4: Campaign Ads</a> |
-| <a href="Guide/Demo-Videos/step-5-campaign-preview-edit-details.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 5: Campaign Preview & Edit + Details</a> |
-| <a href="Guide/Demo-Videos/step-6-reports.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 6: Reports</a> |
-| <a href="Guide/Demo-Videos/step-7-audience-templates.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 7: Audience templates</a> |
-| <a href="Guide/Demo-Videos/step-8-portal-settings-basic-information.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 8: Portal Settings - Basic Information</a> |
-| <a href="Guide/Demo-Videos/step-9-portal-settings-look-feel.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 9: Portal Settings - Look & Feel</a> |
-| <a href="Guide/Demo-Videos/ui-upgrade-transitioning-from-old-to-new-design.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">UI Upgrade: Transitioning from Old to New Design</a> |
-
 ### Setup Guide
 
 | Articles |
@@ -89,6 +59,36 @@
 | <a href="Guide/Setup-Guide/68-settings-hotspots.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">6.8 Settings - Hotspots</a> |
 | <a href="Guide/Setup-Guide/69-settings-qr-codes.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">6.9 Settings - QR codes</a> |
 | <a href="Guide/Setup-Guide/ui-upgrade-transitioning-from-old-to-new-design.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">UI Upgrade: Transitioning from Old to New Design</a> |
+
+## Demo Videos
+
+| Articles |
+| :--- |
+| <a href="Demo-Videos/step-1-account-setup.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 1: Account Setup</a> |
+| <a href="Demo-Videos/step-1a-create-multiple-venue.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 1A: Create multiple venue</a> |
+| <a href="Demo-Videos/step-2-permissions-access-new-users-account.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 2: Permissions, Access & New Users Account</a> |
+| <a href="Demo-Videos/step-3-dashboard-csv-export.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 3: Dashboard + CSV Export</a> |
+| <a href="Demo-Videos/step-3a-access-log.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 3A: Access Log</a> |
+| <a href="Demo-Videos/step-3b-access-log-different-login-methods.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 3B: Access Log- different login methods</a> |
+| <a href="Demo-Videos/step-4-campaign-ads.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 4: Campaign Ads</a> |
+| <a href="Demo-Videos/step-5-campaign-preview-edit-details.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 5: Campaign Preview & Edit + Details</a> |
+| <a href="Demo-Videos/step-6-reports.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 6: Reports</a> |
+| <a href="Demo-Videos/step-7-audience-templates.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 7: Audience templates</a> |
+| <a href="Demo-Videos/step-8-portal-settings-basic-information.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 8: Portal Settings - Basic Information</a> |
+| <a href="Demo-Videos/step-9-portal-settings-look-feel.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 9: Portal Settings - Look & Feel</a> |
+| <a href="Demo-Videos/step-10-portal-settings-terms-of-use-advanced-limits-controllers.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 10: Portal Settings - Terms of use, Advanced, Limits + Controllers</a> |
+| <a href="Demo-Videos/step-11-portal-settings-login-method-facebook.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 11: Portal Settings - Login Method [Facebook]</a> |
+| <a href="Demo-Videos/step-12-portal-settings-login-method-instagram.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 12: Portal Settings - Login Method [Instagram]</a> |
+| <a href="Demo-Videos/step-13-portal-settings-login-method-line.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 13: Portal Settings - Login Method [LINE]</a> |
+| <a href="Demo-Videos/step-14-portal-settings-login-method-registration-form.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 14: Portal Settings - Login Method [Registration Form]</a> |
+| <a href="Demo-Videos/step-15-portal-settings-login-method-video.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 15: Portal Settings - Login Method [Video]</a> |
+| <a href="Demo-Videos/step-16-portal-settings-login-method-password.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 16: Portal Settings - Login Method [Password]</a> |
+| <a href="Demo-Videos/step-17-portal-settings-login-method-one-click-login.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 17: Portal Settings - Login Method [One Click Login]</a> |
+| <a href="Demo-Videos/step-18-portal-settings-hotspots.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 18: Portal Settings - Hotspots</a> |
+| <a href="Demo-Videos/step-19-survey.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 19: Survey</a> |
+| <a href="Demo-Videos/step-20-captive-portal-preview.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Step 20: Captive Portal Preview</a> |
+| <a href="Demo-Videos/ui-upgrade-transitioning-from-old-to-new-design.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">UI Upgrade: Transitioning from Old to New Design</a> |
+| <a href="Demo-Videos/foundation-videos-for-setting-up-the-admin-portal-with-ease.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Foundation Videos for Setting up the Admin Portal with Ease</a> |
 
 ## Hotspot Setup Guide
 
