@@ -37,4 +37,5 @@ In addition to verifying their account, the email will also include a request fo
 
 ![](../../_images/22-general-additional-administrators-381.png)
 
-[Check out our demo videos](https://intercom.help/fanswifi/en/articles/9177793-step-2-permissions-access-new-users-account)
+[Check out the demo video](../Demo-Videos/step-2-permissions-access-new-users-account.md)
+
