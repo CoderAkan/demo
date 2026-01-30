@@ -34,4 +34,4 @@ The platform identifies the types of devices visitors use to connect to the WiFi
 
 By leveraging these aspects, businesses can gain valuable insights into customer behavior, preferences, and demographics. This data can be used to refine marketing strategies, enhance customer engagement, and drive brand promotion effectively.
 
-[Check out our demo video:](../Demo-Videos/step-21-general-technical-capabilities.md)
+[Check out our demo video](../Demo-Videos/step-21-general-technical-capabilities.md):
