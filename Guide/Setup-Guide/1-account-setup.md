@@ -53,6 +53,4 @@ Enter the requested information accurately to ensure the correct setup of the ve
 
 ![](../../_images/1-account-setup-374.png)
 
-{% content-ref url="../Demo-Videos/step-1-account-setup.md" %}
 [Check out the demo video](../Demo-Videos/step-1-account-setup.md)
-{% endcontent-ref %}
