@@ -11,7 +11,7 @@ Explore our innovative contributions to the Smart Tourism sector and our dedicat
 FansWiFi has been awarded the "Bronze Award" at the Hong Kong ICT Awards 2023 in the category of Smart Mobility (Smart Tourism).  
 ```
 
-The Hong Kong ICT Awardsaims at recognizing and promoting outstanding information and communications technology (ICT) inventions and applications, thereby encouraging innovation and excellence among Hong Kong’s ICT talent and enterprises in their constant pursuit of creative and better solutions to meet business and social needs.
+The Hong Kong ICT Awards aims at recognizing and promoting outstanding information and communications technology (ICT) inventions and applications, thereby encouraging innovation and excellence among Hong Kong’s ICT talent and enterprises in their constant pursuit of creative and better solutions to meet business and social needs.
 
 The judging panel commented, "The platform offers a good proposition for both consumers and businesses, serving as a tech-based tourist guide. It is easily accessible in overseas markets and can assist SMEs in branding and marketing. The lower entrance fee is beneficial for SMEs. Additionally, WIFI usage can be extensively utilized."
 
