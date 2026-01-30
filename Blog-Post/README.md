@@ -1,8 +1,8 @@
-# Blog Post
-
 ---
 description: Stay updated with the latest trends and insights in WiFi marketing.
 ---
+
+# Blog Post
 
 | Articles |
 | :--- |
