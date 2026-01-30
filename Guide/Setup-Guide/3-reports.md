@@ -23,4 +23,4 @@ The platform offers a CSV feature that conveniently allows the exporting of the 
 
 ![](../../_images/3-reports-466.png)
 
-[Check out our demo](https://intercom.help/fanswifi/en/articles/9593486-step-6-reports)
+[Check out the demo video](../Demo-Videos/step-6-reports.md)
