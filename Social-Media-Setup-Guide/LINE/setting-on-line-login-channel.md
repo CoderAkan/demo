@@ -1,7 +1,7 @@
 # Setting on LINE Login Channel
 
 ## Step 1: Login to LINE Developers Console
-
+ 
 1. Access the **Line Developers Console** by opening a Web Browser [https://developers.line.biz](https://developers.line.biz)
 2. Click **Login in to Console** on the top right conner
 3. Select **Business account**
