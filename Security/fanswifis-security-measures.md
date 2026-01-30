@@ -35,5 +35,5 @@ We take comprehensive measures to protect your data both at rest and in transit:
 
 By implementing these security measures, we strive to provide a secure environment for our users and their data. If you have any further questions or concerns regarding our security practices, please don't hesitate to reach out to our support team.
 
-❗While we have taken extensive measures to protect your data,**it is also important for you to follow security best practices on your end, such as using strong passwords and keeping your login credentials confidential**. Together, we can create a secure online environment for everyone using FansWiFi.
+❗While we have taken extensive measures to protect your data, **it is also important for you to follow security best practices on your end, such as using strong passwords and keeping your login credentials confidential**. Together, we can create a secure online environment for everyone using FansWiFi.
 [Contact us](Mailto:info@fanswifi.com)

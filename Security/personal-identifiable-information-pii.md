@@ -13,7 +13,7 @@ Personal Identifiable Information refers to any data or details that can be used
 
 ![](../_images/personal-identifiable-information-pii-356.png)
 
-To protect user identities, we utilize a feature called**"hidden user info" by default.** This means that sensitive PII is concealed from unauthorized access. We employ this measure to minimize the risk of identity theft, fraud, and other malicious activities.
+To protect user identities, we utilize a feature called **"hidden user info" by default.** This means that sensitive PII is concealed from unauthorized access. We employ this measure to minimize the risk of identity theft, fraud, and other malicious activities.
 
 ## Unlocking hidden PII
 
