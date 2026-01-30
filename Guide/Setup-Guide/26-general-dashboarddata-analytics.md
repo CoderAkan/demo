@@ -49,6 +49,6 @@ Within the Campaign Details section, the admin has the ability to monitor and tr
 
 By efficiently managing and monitoring these campaign details, the admin can ensure that marketing efforts are precisely targeted, impactful, and in alignment with overarching goals.
 
-[Check out our demo video](https://intercom.help/fanswifi/en/articles/9177805-step-3-dashboard-csv-export)
+[Check out the demo video](../Demo-Videos/step-3-dashboard-csv-export.md)
 
 **For further information on Ads Campaign Creation, kindly visithere.**

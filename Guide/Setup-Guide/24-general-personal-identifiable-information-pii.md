@@ -26,4 +26,4 @@ The unlocking process extends to include more than just the unlocking of PII dat
 
 ![](../../_images/24-general-personal-identifiable-information-pii-388.png)
 
-[Check out our demo videos](https://intercom.help/fanswifi/en/articles/9177793-step-2-permissions-access-new-users-account)
+[Check out the demo video](../Demo-Videos/step-2-permissions-access-new-users-account.md)

@@ -17,4 +17,4 @@ To create additional organizations, please select ‘Organisation’ and click o
 
 ![](../../_images/23-general-additional-organizations-385.png)
 
-[Check out our demo videos](https://intercom.help/fanswifi/en/articles/9177793-step-2-permissions-access-new-users-account)
+[Check out the demo video](../Demo-Videos/step-2-permissions-access-new-users-account.md)

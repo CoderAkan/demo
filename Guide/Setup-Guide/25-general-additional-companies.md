@@ -15,4 +15,4 @@ To create additional companies, please select ‘Companies’ and click on ‘Cr
 
 ![](../../_images/25-general-additional-companies-476.png)
 
-[Check out our demo videos](https://intercom.help/fanswifi/en/articles/9177793-step-2-permissions-access-new-users-account)
+[Check out the demo video](../Demo-Videos/step-2-permissions-access-new-users-account.md)
