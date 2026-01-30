@@ -44,4 +44,5 @@ The description toolbar offers a range of formatting options that enhance the ap
 
 2.7) Emojis
 
-[Check out our demo video](https://intercom.help/fanswifi/en/articles/9177794-step-4-campaign-ads)
+[Check out the demo video](../Demo-Videos/step-4-campaign-ads.md)
+
