@@ -5,17 +5,17 @@ Elevate your business with FansWiFi's cutting-edge social WiFi technology.
 
 ## Q: What is the SMEs plan and how much does it cost?
 
-**A:** This plan is tailored specifically for small and medium-sized enterprises (SMEs). Please refer to[this page](https://www.fanswifi.com/product)for the specific pricings. This is a compelling option for businesses that want to explore social WiFi marketing and leverage the benefits it can provide.
+**A:** This plan is tailored specifically for small and medium-sized enterprises (SMEs). Please refer to [this page](https://www.fanswifi.com/product) for the specific pricings. This is a compelling option for businesses that want to explore social WiFi marketing and leverage the benefits it can provide.
 
 ## 
 
 ## Q: What is the Pro plan and how much does it cost?
 
-**A:** This plan is tailored for businesses seeking to extensively leverage social WiFi marketing. It provides a solution to help organizations engage customers, drive marketing results, and maximize the value of their WiFi network. Please refer to[this page](https://www.fanswifi.com/product)for the specific pricings.
+**A:** This plan is tailored for businesses seeking to extensively leverage social WiFi marketing. It provides a solution to help organizations engage customers, drive marketing results, and maximize the value of their WiFi network. Please refer to [this page](https://www.fanswifi.com/product) for the specific pricings.
 
 ## Q: What are the pricing options for the yearly and quarterly plans?
 
-**A:** The pricing options for the yearly and quarterly plans depend on the type of plan selected. Please refer to[this page](https://www.fanswifi.com/product)for the specific pricings.
+**A:** The pricing options for the yearly and quarterly plans depend on the type of plan selected. Please refer to [this page](https://www.fanswifi.com/product) for the specific pricings.
 
 ## Q: What is the difference between the SMEs and Pro plan?
 
@@ -27,15 +27,15 @@ Elevate your business with FansWiFi's cutting-edge social WiFi technology.
 
 ## Q: What is the pricing for the WeChat sign-up functionality?
 
-**A:** Please refer to[this page](https://www.fanswifi.com/product)for the specific pricings. You can choose whether to add this functionality into your plan.
+**A:** Please refer to [this page](https://www.fanswifi.com/product) for the specific pricings. You can choose whether to add this functionality into your plan.
 
 ## Q: What is the pricing for the Whatsapp sign-up functionality included in my plan?
 
-**A:** Please refer to[this page](https://www.fanswifi.com/product)for the specific pricings. You can choose whether to add this functionality into your plan.
+**A:** Please refer to [this page](https://www.fanswifi.com/product) for the specific pricings. You can choose whether to add this functionality into your plan.
 
 ## Q: Is an additional fee incurred if I use more than one AP hardware device?
 
-**A:** Yes, there is an additional fee for each WiFi access point beyond the first one, with pricing dependent on the selected plan. Please refer to[this page](https://www.fanswifi.com/product)for the specific pricings.
+**A:** Yes, there is an additional fee for each WiFi access point beyond the first one, with pricing dependent on the selected plan. Please refer to [this page](https://www.fanswifi.com/product) for the specific pricings.
 
 ## Q: Is there a free trial available?
 
@@ -55,7 +55,7 @@ Elevate your business with FansWiFi's cutting-edge social WiFi technology.
 
 ## Q: What is the pricing of the FansWiFi pre-configured AP hardware?
 
-**A:** We offer two Aruba Instant On wireless access point (AP) models to cater to the needs of different businesses: the AP11 and AP22. Please refer to[this page](https://www.fanswifi.com/product)for the specific pricings. The models differ in their technical specifications, allowing you to select the one that best fits your business requirements.
+**A:** We offer two Aruba Instant On wireless access point (AP) models to cater to the needs of different businesses: the AP11 and AP22. Please refer to [this page](https://www.fanswifi.com/product) for the specific pricings. The models differ in their technical specifications, allowing you to select the one that best fits your business requirements.
 
 ## Q: What do I need in order to integrate the Wi-Fi marketing platform with my Wi-Fi network?
 
@@ -67,7 +67,7 @@ Elevate your business with FansWiFi's cutting-edge social WiFi technology.
 
 ## Q: Is there a demo showing how the platform works?
 
-**A:** Yes, you can access our demo platform[on this page](https://connect-p.fanswifi.com/). The demo showcases how you can leverage FansWiFi to create customized social WiFi marketing solutions.
+**A:** Yes, you can access our demo platform [on this page](https://connect-p.fanswifi.com/). The demo showcases how you can leverage FansWiFi to create customized social WiFi marketing solutions.
 
 ## Q: How do I set and change the length of time that visitors have access to the WiFi?
 
@@ -77,4 +77,4 @@ Elevate your business with FansWiFi's cutting-edge social WiFi technology.
 
 **A:** Our platform is mobile-responsive, automatically adjusting the interface dimensions based on the user's device.
 
-Discover more:[https://www.fanswifi.com/product](https://www.fanswifi.com/product)
+Discover more: [https://www.fanswifi.com/product](https://www.fanswifi.com/product)

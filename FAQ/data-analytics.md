@@ -47,4 +47,4 @@ Drive targeted marketing campaigns and deliver personalized offers based on beha
 
 **A:** You can export your customer data in the form of an Excel spreadsheet or CSV file through our data analytics dashboard.
 
-Discover more:[https://www.fanswifi.com/solutions/data-analytics](https://www.fanswifi.com/solutions/data-analytics)
+Discover more: [https://www.fanswifi.com/solutions/data-analytics](https://www.fanswifi.com/solutions/data-analytics)

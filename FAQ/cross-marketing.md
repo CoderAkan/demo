@@ -15,4 +15,4 @@ FansWiFi helps businesses to amplify through Cross-Marketing Collaborations. Fos
 - Retargeting customers who have previously engaged with the business through email, social media, or other channels
 - Advertising related businesses or other businesses on your campaign sites to help promote their offerings as well.
 
-Discover more:[https://www.fanswifi.com/solutions/cross-marketing](https://www.fanswifi.com/solutions/cross-marketing)
+Discover more: [https://www.fanswifi.com/solutions/cross-marketing](https://www.fanswifi.com/solutions/cross-marketing)

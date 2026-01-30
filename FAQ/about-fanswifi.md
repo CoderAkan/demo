@@ -53,7 +53,7 @@ We provide technology that fill the gap between businesses and customers; enabli
 
 ## Q: How easy is it to set up the platform?
 
-**A:** The platform is designed to be user-friendly and easy to set up with step-by-step instructions and support resources.[(Support Centre)](http://support.fanswifi.com/quick-start-guide)
+**A:** The platform is designed to be user-friendly and easy to set up with step-by-step instructions and support resources. [(Support Centre)](http://support.fanswifi.com/quick-start-guide)
 
 ## Q: Can the platform capture customer feedback?
 
@@ -86,23 +86,20 @@ A: Yes, as long as the WiFi AP support WiFI 6 or WiFi 7, FansWiFi Captive Portal
 ## Q: How can we add the FansWiFi to the client’s existing Wi-Fi? What requirements does it have?
 
 A:  Method 1: Directly setup on supported WiFi APs and Controller according to our setup guide (No Extra Hardware Needed)
-
 [https://support.fanswifi.com/hotspot-setup-guide](https://support.fanswifi.com/hotspot-setup-guide)
-
 Method 2: Setup a WiFi Gateway with FansWiFi support (Extra Hardware is needed)
 
 ## Q: Are there any specific hardware requirements?
 
 A: Currently, we support the Hardware and Product family of support brands listed in this setup guide. For other hardware not included in this list, please contact us.
-
 [https://support.fanswifi.com/hotspot-setup-guide](https://support.fanswifi.com/hotspot-setup-guide)
 
 ## Q:  Are all features included? If not, what would be additional?
 
-A: Please see attached[pricing & plan](https://www.fanswifi.com/product[#pricing](https://www.facebook.com/hashtag/pricing)-plans)
+A: Please see attached [pricing & plan](https://www.fanswifi.com/product[#pricing](https://www.facebook.com/hashtag/pricing)-plans)
 
 ## Q: How could they gather all data and keep it in their own data center?
 
 A: Use our API integration to extract the data to their Database or CRM in their own data center
 
-Discover more:[https://www.fanswifi.com/about](https://www.fanswifi.com/about)
+Discover more: [https://www.fanswifi.com/about](https://www.fanswifi.com/about)

@@ -64,6 +64,6 @@ A: Businesses can distribute e-stamps and rewards to loyal customers as part of 
 
 A: Businesses setting up multiple WiFi APs at the same location can add multiple locations to the pricing package, with each add-on price reduced by two-thirds of the first location price.
 
-Discover more:[https://www.fanswifi.com/product[#pricing](https://www.facebook.com/hashtag/pricing)-plans](https://www.fanswifi.com/product[#pricing](https://www.facebook.com/hashtag/pricing)-plans)
+Discover more: [https://www.fanswifi.com/en-us/product#pricing-plans](https://www.fanswifi.com/en-us/product#pricing-plans)
 
 ​

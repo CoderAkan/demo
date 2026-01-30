@@ -71,4 +71,4 @@ Captive Portals engage users before WiFi access, offering valuable interaction o
 
 **A:** Our system offers automatic translation, but for marketing content, clients must provide localized versions. Users can select their preferred language using the system's built-in language switch function.
 
-Discover more:[https://www.fanswifi.com/solutions/captive-portals](https://www.fanswifi.com/solutions/captive-portals)
+Discover more: [https://www.fanswifi.com/solutions/captive-portals](https://www.fanswifi.com/solutions/captive-portals)
