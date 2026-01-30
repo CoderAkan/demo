@@ -1,29 +1,101 @@
 # Demo Videos
 
-| Articles |
-| :--- |
-| <a href="step-1-account-setup.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 8px 0;">Step 1: Account Setup</a> |
-| <a href="step-1a-create-multiple-venue.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 8px 0;">Step 1A: Create multiple venue</a> |
-| <a href="step-2-permissions-access-new-users-account.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 8px 0;">Step 2: Permissions, Access & New Users Account</a> |
-| <a href="step-3-dashboard-csv-export.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 8px 0;">Step 3: Dashboard + CSV Export</a> |
-| <a href="step-3a-access-log.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 8px 0;">Step 3A: Access Log</a> |
-| <a href="step-3b-access-log-different-login-methods.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 8px 0;">Step 3B: Access Log- different login methods</a> |
-| <a href="step-4-campaign-ads.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 8px 0;">Step 4: Campaign Ads</a> |
-| <a href="step-5-campaign-preview-edit-details.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 8px 0;">Step 5: Campaign Preview & Edit + Details</a> |
-| <a href="step-6-reports.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 8px 0;">Step 6: Reports</a> |
-| <a href="step-7-audience-templates.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 8px 0;">Step 7: Audience templates</a> |
-| <a href="step-8-portal-settings-basic-information.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 8px 0;">Step 8: Portal Settings - Basic Information</a> |
-| <a href="step-9-portal-settings-look-feel.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 8px 0;">Step 9: Portal Settings - Look & Feel</a> |
-| <a href="step-10-portal-settings-terms-of-use-advanced-limits-controllers.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 8px 0;">Step 10: Portal Settings - Terms of use, Advanced, Limits + Controllers</a> |
-| <a href="step-11-portal-settings-login-method-facebook.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 8px 0;">Step 11: Portal Settings - Login Method [Facebook]</a> |
-| <a href="step-12-portal-settings-login-method-instagram.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 8px 0;">Step 12: Portal Settings - Login Method [Instagram]</a> |
-| <a href="step-13-portal-settings-login-method-line.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 8px 0;">Step 13: Portal Settings - Login Method [LINE]</a> |
-| <a href="step-14-portal-settings-login-method-registration-form.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 8px 0;">Step 14: Portal Settings - Login Method [Registration Form]</a> |
-| <a href="step-15-portal-settings-login-method-video.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 8px 0;">Step 15: Portal Settings - Login Method [Video]</a> |
-| <a href="step-16-portal-settings-login-method-password.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 8px 0;">Step 16: Portal Settings - Login Method [Password]</a> |
-| <a href="step-17-portal-settings-login-method-one-click-login.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 8px 0;">Step 17: Portal Settings - Login Method [One Click Login]</a> |
-| <a href="step-18-portal-settings-hotspots.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 8px 0;">Step 18: Portal Settings - Hotspots</a> |
-| <a href="step-19-survey.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 8px 0;">Step 19: Survey</a> |
-| <a href="step-20-captive-portal-preview.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 8px 0;">Step 20: Captive Portal Preview</a> |
-| <a href="ui-upgrade-transitioning-from-old-to-new-design.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 8px 0;">UI Upgrade: Transitioning from Old to New Design</a> |
-| <a href="foundation-videos-for-setting-up-the-admin-portal-with-ease.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 8px 0;">Foundation Videos for Setting up the Admin Portal with Ease</a> |
+{% content-ref url="Demo-Videos/step-1-account-setup.md" %}
+[Step 1: Account Setup](Demo-Videos/step-1-account-setup.md)
+{% endcontent-ref %}
+
+{% content-ref url="Demo-Videos/step-1a-create-multiple-venue.md" %}
+[Step 1A: Create multiple venue](Demo-Videos/step-1a-create-multiple-venue.md)
+{% endcontent-ref %}
+
+{% content-ref url="Demo-Videos/step-2-permissions-access-new-users-account.md" %}
+[Step 2: Permissions, Access & New Users Account](Demo-Videos/step-2-permissions-access-new-users-account.md)
+{% endcontent-ref %}
+
+{% content-ref url="Demo-Videos/step-3-dashboard-csv-export.md" %}
+[Step 3: Dashboard + CSV Export](Demo-Videos/step-3-dashboard-csv-export.md)
+{% endcontent-ref %}
+
+{% content-ref url="Demo-Videos/step-3a-access-log.md" %}
+[Step 3A: Access Log](Demo-Videos/step-3a-access-log.md)
+{% endcontent-ref %}
+
+{% content-ref url="Demo-Videos/step-3b-access-log-different-login-methods.md" %}
+[Step 3B: Access Log- different login methods](Demo-Videos/step-3b-access-log-different-login-methods.md)
+{% endcontent-ref %}
+
+{% content-ref url="Demo-Videos/step-4-campaign-ads.md" %}
+[Step 4: Campaign Ads](Demo-Videos/step-4-campaign-ads.md)
+{% endcontent-ref %}
+
+{% content-ref url="Demo-Videos/step-5-campaign-preview-edit-details.md" %}
+[Step 5: Campaign Preview & Edit + Details](Demo-Videos/step-5-campaign-preview-edit-details.md)
+{% endcontent-ref %}
+
+{% content-ref url="Demo-Videos/step-6-reports.md" %}
+[Step 6: Reports](Demo-Videos/step-6-reports.md)
+{% endcontent-ref %}
+
+{% content-ref url="Demo-Videos/step-7-audience-templates.md" %}
+[Step 7: Audience templates](Demo-Videos/step-7-audience-templates.md)
+{% endcontent-ref %}
+
+{% content-ref url="Demo-Videos/step-8-portal-settings-basic-information.md" %}
+[Step 8: Portal Settings - Basic Information](Demo-Videos/step-8-portal-settings-basic-information.md)
+{% endcontent-ref %}
+
+{% content-ref url="Demo-Videos/step-9-portal-settings-look-feel.md" %}
+[Step 9: Portal Settings - Look & Feel](Demo-Videos/step-9-portal-settings-look-feel.md)
+{% endcontent-ref %}
+
+{% content-ref url="Demo-Videos/step-10-portal-settings-terms-of-use-advanced-limits-controllers.md" %}
+[Step 10: Portal Settings - Terms of use, Advanced, Limits + Controllers](Demo-Videos/step-10-portal-settings-terms-of-use-advanced-limits-controllers.md)
+{% endcontent-ref %}
+
+{% content-ref url="Demo-Videos/step-11-portal-settings-login-method-facebook.md" %}
+[Step 11: Portal Settings - Login Method [Facebook]](Demo-Videos/step-11-portal-settings-login-method-facebook.md)
+{% endcontent-ref %}
+
+{% content-ref url="Demo-Videos/step-12-portal-settings-login-method-instagram.md" %}
+[Step 12: Portal Settings - Login Method [Instagram]](Demo-Videos/step-12-portal-settings-login-method-instagram.md)
+{% endcontent-ref %}
+
+{% content-ref url="Demo-Videos/step-13-portal-settings-login-method-line.md" %}
+[Step 13: Portal Settings - Login Method [LINE]](Demo-Videos/step-13-portal-settings-login-method-line.md)
+{% endcontent-ref %}
+
+{% content-ref url="Demo-Videos/step-14-portal-settings-login-method-registration-form.md" %}
+[Step 14: Portal Settings - Login Method [Registration Form]](Demo-Videos/step-14-portal-settings-login-method-registration-form.md)
+{% endcontent-ref %}
+
+{% content-ref url="Demo-Videos/step-15-portal-settings-login-method-video.md" %}
+[Step 15: Portal Settings - Login Method [Video]](Demo-Videos/step-15-portal-settings-login-method-video.md)
+{% endcontent-ref %}
+
+{% content-ref url="Demo-Videos/step-16-portal-settings-login-method-password.md" %}
+[Step 16: Portal Settings - Login Method [Password]](Demo-Videos/step-16-portal-settings-login-method-password.md)
+{% endcontent-ref %}
+
+{% content-ref url="Demo-Videos/step-17-portal-settings-login-method-one-click-login.md" %}
+[Step 17: Portal Settings - Login Method [One Click Login]](Demo-Videos/step-17-portal-settings-login-method-one-click-login.md)
+{% endcontent-ref %}
+
+{% content-ref url="Demo-Videos/step-18-portal-settings-hotspots.md" %}
+[Step 18: Portal Settings - Hotspots](Demo-Videos/step-18-portal-settings-hotspots.md)
+{% endcontent-ref %}
+
+{% content-ref url="Demo-Videos/step-19-survey.md" %}
+[Step 19: Survey](Demo-Videos/step-19-survey.md)
+{% endcontent-ref %}
+
+{% content-ref url="Demo-Videos/step-20-captive-portal-preview.md" %}
+[Step 20: Captive Portal Preview](Demo-Videos/step-20-captive-portal-preview.md)
+{% endcontent-ref %}
+
+{% content-ref url="Demo-Videos/ui-upgrade-transitioning-from-old-to-new-design.md" %}
+[UI Upgrade: Transitioning from Old to New Design](Demo-Videos/ui-upgrade-transitioning-from-old-to-new-design.md)
+{% endcontent-ref %}
+
+{% content-ref url="Demo-Videos/foundation-videos-for-setting-up-the-admin-portal-with-ease.md" %}
+[Foundation Videos for Setting up the Admin Portal with Ease](Demo-Videos/foundation-videos-for-setting-up-the-admin-portal-with-ease.md)
+{% endcontent-ref %}
