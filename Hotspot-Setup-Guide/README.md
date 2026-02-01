@@ -4,8 +4,8 @@
 
 ### Aruba Networking Central Setup Guide
 
-{% content-ref url="Aruba-(HPE)/Aruba-Networking-Central-Setup-Guide/information-required-for-fanswifi-manager.md" %}
-[Information required for FansWiFi Manager](Aruba-(HPE)/Aruba-Networking-Central-Setup-Guide/information-required-for-fanswifi-manager.md)
+{% content-ref url="Aruba-(HPE)/Aruba-Networking-Central-Setup-Guide/aruba_networking_central_setup_page.md" %}
+[Aruba Networking Central Setup Guide](Aruba-(HPE)/Aruba-Networking-Central-Setup-Guide/aruba_networking_central_setup_page.md)
 {% endcontent-ref %}
 
 ### Aruba (HPE) Instant-On AP Setup Guide
