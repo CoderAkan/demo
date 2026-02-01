@@ -15,9 +15,9 @@ description: Configure Aruba Instant-On (AP11) with FansWiFi captive portal and 
 
 ## Official documentation
 
-- Portal setup: https://www.arubainstanton.com/techdocs/en/content/intro/desktop/set-portal-des.htm
-- Setup guide: https://www.arubainstanton.com/techdocs/en/content/get-started/prov-oc.htm
-- Deployment guide (PDF): https://www.arubainstanton.com/files/Aruba_Instant_On_Deployment_Guide.pdf
+- Portal setup: [Set up external portal](https://www.arubainstanton.com/techdocs/en/content/intro/desktop/set-portal-des.htm)
+- Setup guide: [Provisioning / onboarding](https://www.arubainstanton.com/techdocs/en/content/get-started/prov-oc.htm)
+- Deployment guide (PDF): [Aruba Instant On Deployment Guide](https://www.arubainstanton.com/files/Aruba_Instant_On_Deployment_Guide.pdf)
 
 ---
 
@@ -121,6 +121,8 @@ Add these domains:
 - `statusa.digitalcertvalidation.com`
 - `ocsp.digicert.com`
 
+> These DigiCert/OCSP domains are needed so devices can validate TLS certificates during login/redirect.
+
 ### Social login domains
 
 1. If your desired social media login is already available in Aruba’s list, select it.
@@ -190,7 +192,6 @@ This helps prevent guests from accessing devices on your internal network (route
    - **Hotspot Name:** Friendly name for the AP
    - **AP Type:** Aruba
    - **MAC Address:** AP MAC address *(not controller)*
-
 4. Click **Save**
 
 ![](../../../_images/information-required-for-fanswifi-manager-16.png)

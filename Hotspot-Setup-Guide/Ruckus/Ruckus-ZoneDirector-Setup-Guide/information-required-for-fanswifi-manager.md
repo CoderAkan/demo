@@ -1,313 +1,224 @@
-# Information required for FansWiFi Manager
+# Ruckus ZoneDirector Setup Guide
 
+This guide provides instructions for configuring Ruckus ZoneDirector to work with the FansWiFi Manager platform.
 
-# Information required for FansWiFi Manager
+## Information Required for FansWiFi Manager
 
-- Mac Addresses of the APs
+- **MAC Addresses** of the APs
 
 ## Tested Firmware Version
+- **Supported Version:** 9.8
+- **NOT Supported:** 9.7 or below
 
-- Version: **9.8**
-- NOT Supported Version: **9.7 or below**
-- **Warning: Firmware 9.7 or below is confirmed NOT working with Social Login. Please do not use firmware 9.7 or below.**
+> [!WARNING]
+> Firmware 9.7 or below is confirmed NOT to work with Social Login. Please ensure your firmware is 9.8 or higher.
 
 ## FansWiFi Server / Controller Communication
 
-The table below listed the ports that must be opened on the network firewall to ensure that the hotspot system, FansWiFi servers (including RADIUS server) can communicate with each other successfully.
+The table below lists the ports that must be opened on your network firewall to ensure successful communication between the hotspot system and FansWiFi servers.
 
-**Port Number**
+| Port Number | Protocol | Source | Destination | Direction | Purpose | Required By |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 1812 / 1813 | UDP & TCP | Controller | FansWiFi RADIUS (103.6.85.240) | Outbound | AAA Auth & Accounting | All |
+| 1700 / 3799 | UDP & TCP | FansWiFi RADIUS (103.6.85.240) | Controller | Inbound | RADIUS CoA Disconnect Messages | WeChat, Video, Advanced FB |
 
-**Protocol**
+> [!NOTE]
+> Port forwarding may be required on your firewall/router depending on your network setup to allow inbound CoA traffic.
 
-**Source**
+### RADIUS CoA Disconnect Message Flow (Optional)
 
-**Destination**
+![RADIUS CoA DM Flow](../../../_images/information-required-for-fanswifi-manager-120.png)
 
-**Traffic Direction**
+**Security Notes:**
+- Radius CoA Disconnect-Message requires the `Acct-Session-Id` of the connection session.
+- `Acct-Session-Id` is reported by the WiFi Controller via RADIUS Accounting Messages and is unique for each session.
+- FansWiFi RADIUS can only disconnect clients on SSIDs where it is configured as the Accounting Server.
 
-**Purpose**
-
-**Required by Login Method**
-
-1812 / 1813
-
-UDP & TCP
-
-Controller
-
-FansWiFi RADIUS Server (103.6.85.240)
-
-outbound
-
-AAA Authentication and Accounting
-
-All
-
-1700 / 3799
-
-UDP & TCP
-
-FansWiFi Radius Server IP
-
-(103.6.85.240)
-
-Controller
-
-inbound
-
-(port forwarding may needed by your firewall / router. Depends on your network setup.)
-
-* RADIUS CoA Disconnect-Messages
-
-(Required to use FansWiFi Radius Server as Radius Accounting Server of the SSID)
-
-WeChat Login / Video Login / Advanced Facebook Login...etc.
-
-## * Flow Diagram for Radius CoA DM (Disconnect Message) (Optional, for login method that require Temporary Internet Access only)
-
-![](../../../_images/information-required-for-fanswifi-manager-120.png)
-
-Security
-
-- Radius CoA Disconnect-Message requires Acct-Session-Id of the connection session
-
-- Acct-Session-Id is reported from WiFi Controller via Radius Accounting Messages for each session, it is unique for each WiFi user session
-
-- FansWiFi Radius do not possible to disconnect WiFi client on other SSID that do not configure FansWiFi Radius as Accounting Server
-
-Example Disconnect-Message Packet Format:
-
-```
+**Example Disconnect-Message Packet:**
+```text
 Acct-Session-Id = "D91FE8E51802097" User-Name = "somebody" NAS-IP-Address = 10.0.0.1
 ```
 
-Reference:
+## Topology
 
-- freeradius - Disconnect Message:[https://wiki.freeradius.org/protocol/Disconnect-Messages](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
+![Network Topology](../../../_images/information-required-for-fanswifi-manager-121.png)
 
-- RFC:[https://wiki.freeradius.org/protocol/Disconnect-Messages](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
+### Authentication Process Flow
 
-# Topology
+![Authentication Process Flow](../../../_images/information-required-for-fanswifi-manager-122.png)
 
-![](../../../_images/information-required-for-fanswifi-manager-121.png)
+## Step 1: Access ZoneDirector
 
-Example Flow Diagram for whole Authentication Process
+1. Access the ZoneDirector management interface via a Web Browser.
+2. Click **Configure** to enter the configuration page.
 
-![](../../../_images/information-required-for-fanswifi-manager-122.png)
+![ZoneDirector configuration page](../../../_images/information-required-for-fanswifi-manager-123.png)
 
-# Setting on Ruckus ZoneDirector
+## Step 2: Configure RADIUS Server
 
-## Step 1: Configure the ZoneDirector
+1. Select **AAA Servers** from the left menu.
+2. Click **Create New** and configure the following:
+   - **Name:** FansWiFi Radius
+   - **Type:** RADIUS
+   - **Backup RADIUS:** Off
+   - **IP Address:** 103.6.85.240
+   - **Port:** 1812
+   - **Shared Secret:** social123
+3. Click **OK** to save.
 
-- a. Access the ZoneDirector by opening a Web Browser
-- b. Click “Configure” to enter the configuration Page
+![RADIUS server configuration](../../../_images/information-required-for-fanswifi-manager-124.png)
 
-![](../../../_images/information-required-for-fanswifi-manager-123.png)
+## Step 3: Configure RADIUS Accounting Server
 
-## Step 2: Configuration: Authentication Servers
+1. Select **AAA Servers** from the left menu.
+2. Click **Create New** and configure:
+   - **Name:** FansWiFi Acct Radius
+   - **Type:** RADIUS Accounting
+   - **Backup RADIUS:** Off
+   - **IP Address:** 103.6.85.240
+   - **Port:** 1813
+   - **Shared Secret:** social123
+3. Click **OK** to save.
 
-**Radius Server**
+![RADIUS accounting server configuration](../../../_images/information-required-for-fanswifi-manager-125.png)
 
-- a. Select “AAA Servers” from the left menu
-- b. Click “Create New” again with below settings
+## Step 4: Configure Hotspot Services
 
-- **Name:** FansWiFi Radius
-- **Type:** RADIUS
-- **Backup Radius:** Off
-- **IP Address:** 103.6.85.240
-- **Port:** 1812
-- **Shared Secret:** social123
-- **Confirm Secret:** social123
-- c. Click “OK” to Save the configuration
+1. Select **Hotspot Services** from the left menu.
 
-![](../../../_images/information-required-for-fanswifi-manager-124.png)
+![Hotspot services menu](../../../_images/information-required-for-fanswifi-manager-126.png)
 
-**Step 3: Configuration: Accounting Servers**
+2. Click **Create New** and configure:
+   - **Name:** FansWiFi
+   - **Login Page:** `https://connect-p.fanswifi.com/auth`
+   - **Start Page:** `https://connect-p.fanswifi.com/auth`
+   - **Authentication Server:** FansWiFi Radius
+   - **Accounting Server:** FansWiFi Acct Radius
+   - **Encryption Method:** None
+   - **Inactive Timeout:** 60 minutes
 
-**Radius Accounting Server**
+### Walled Garden List
 
-- a. Select “AAA Servers” again from the left menu
-- b. Click “Create New” again with below settings
+> [!IMPORTANT]
+> The following domains must be added to the walled garden.
 
-- **Name:** FansWiFi Acct Radius
-- **Type:** RADIUS Accounting
-- **Backup Radius:** Off
-- **IP Address:** 103.6.85.240
-- **Port:** 1813
-- **Shared Secret:** social123
-- **Confirm Secret:** social123
-- c. Click “OK” to Save the configuration
+#### Required
+- `* .fanswifi.com`
 
-![](../../../_images/information-required-for-fanswifi-manager-125.png)
+#### Optional (By Login Method)
 
-## Step 4: Configuration: Hotspot Services
+**Facebook Login:**
+- `* .facebook.com`
+- `* .facebook.net`
+- `* .fbcdn.net`
+- `* .fbcdn.com`
+- `* .akamaihd.net`
+- `* .fbsbx.com`
 
-a. Select “Hotspot Services” from the left menu
+**Weibo Login:**
+- `* .weibo.com`
+- `* .weibo.cn`
+- `* .sinaapp.com`
+- `* .sina.com.cn`
+- `* .sinajs.cn`
 
-![](../../../_images/information-required-for-fanswifi-manager-126.png)
+**Instagram Login:**
+- `* .instagram.com`
+- `* .akamaihd.net`
+- `* .cdninstagram.com`
 
-b. Click “Create New” with below settings
+**Twitter Login:**
+- `* .twitter.com`
+- `* .twimg.com`
 
-- **Name:** FansWiFi
-- **Login Page:** [https://connect-p.fanswifi.com/auth](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-unleashed-setup-guide#)
-- **Start Page (redirect to the following URL):** [https://connect-p.fanswifi.com/auth](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-unleashed-setup-guide#)
-- **User Session:** (set it if your FansWiFi Admin Panel has session timeout & daily quota enabled)
+**Video Login:**
+- `* .akamaized.net`
+- `* .akamaihd.net`
+- `ssl.google-analytics.com`
+- `* .scorecardresearch.com`
+- `* .vimeocdn.com`
+- `* .vimeo.com`
 
-- **Example:** Session Timeout / Daily Quota: 60 minute
-- **Setting:**
+3. Click **OK** to save.
 
-- **Session Timeout:** 60 Minutes
-- **Grace Period:** 60 Minutes
+![Hotspot service configuration details](../../../_images/information-required-for-fanswifi-manager-127.png)
 
-- **Authentication Server:** FansWiFi Radius
-- **Accounting Server:** FansWiFi Acct Radius
-- **Encryption Method:** None
-- **Advanced Option**
+## Step 5: Create WLAN and SSID
 
-- **Inactive Timeout:** 60 minutes
-​
-- **Walled Garden List (required)**
+1. Select **WLANs** from the left menu.
+2. Click **Create New** and configure:
+   - **Name:** FansWiFi
+   - **ESSID:** FansWiFi
+   - **WLAN Usage Type:** Hotspot Service (WISPr)
+   - **Authentication Method:** Open
+   - **Encryption Method:** Open
+   - **Hotspot Service:** FansWiFi
+   - **Inactivity Timeout:** 60 minutes
+3. Click **OK** to save.
 
-1. *.[fanswifi.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
-- **Walled Garden List (Optional, you may skip this if there is no Facebook Login Enabled)**
+![WLAN creation details](../../../_images/information-required-for-fanswifi-manager-128.png)
 
-1. *.[facebook.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
-2. *.[facebook.net](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
-3. *.[fbcdn.net](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
-4. *.[fbcdn.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
-5. *.[akamaihd.net](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
-6. *.fbsbx.com
-- **Walled Garden List (Optional, you may skip this if there is no Weibo Login Enabled)**
+## Step 6: Configure ZoneDirector in FansWiFi Admin Panel
 
-1. *.[weibo.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
-2. *.[weibo.cn](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
-3. *.[sinaapp.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
-4. *.[sina.com.cn](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
-5. *.[sinajs.cn](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
-- **Walled Garden List (Optional, you may skip this if there is no Instagram Login Enabled)**
+> [!NOTE]
+> Please provide the following information to your FansWiFi account manager. This is required for advanced login methods (e.g., WeChat, WhatsApp).
 
-1. *.[instagram.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
-2. *.[akamaihd.net](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
-3. *.[cdninstagram.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
-- **Twitter Login (Optional, you may skip this if there is no Twitter Login Enabled)**
+### FansWiFi Admin Panel (Setting > Venue Setting)
 
-1. *.[twitter.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
-2. *.[twimg.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
-- **Video Login (Optional, you may skip this if there is no Video Login Enabled)**
+![FansWiFi Admin Panel venue settings](../../../_images/information-required-for-fanswifi-manager-129.png)
 
-1. *.[akamaized.net](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
-2. *.[akamaihd.net](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
-3. [ssl.google-analytics.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
-4. *.[scorecardresearch.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
-5. *.[vimeocdn.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
-6. *.[vimeo.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
+1. Provide the following to FansWiFi:
+   - **Public IP Address** or **Domain Name** of the ZoneDirector.
+   - **RADIUS CoA Port:** 3799
 
-​c. Click “OK” to Save the configuration
+![RADIUS CoA settings view](../../../_images/information-required-for-fanswifi-manager-130.png)
 
-![](../../../_images/information-required-for-fanswifi-manager-127.png)
+### ZoneDirector behind Router/Firewall
 
-## Step 5: Create WLAN and SSID for customer access
+If the ZoneDirector is behind a router/firewall, configure port forwarding to make it accessible.
 
-- Select “WLANs” from the left menu
-- Click “Create New” with below settings
+![Port forwarding diagram](../../../_images/information-required-for-fanswifi-manager-131.png)
 
-- **Name:** FansWiFi
-- **ESSID:** FansWiFi
-- **WLAN Usage Type:** Hotspot Service (WISPr)
-- **Authentication Method:** Open
-- **Encryption Method:** Open
-- **Hotspot Service:** FansWiFi
-- **Inactivity Timeout:** 60 minutes
+**Example Configuration:**
+Assume the Router's Public IP is `1.1.1.1`.
 
-![](../../../_images/information-required-for-fanswifi-manager-128.png)
+1. **Port Forwarding:** Forward a chosen port (e.g., `50000`) to the ZoneDirector CoA Port (default `3799`).
+   - **Inbound Port:** 50000
+   - **Destination IP:** 192.168.1.100 (ZoneDirector IP)
+   - **Destination Port:** 3799
 
-## Step 6: [Optional] Configure ZoneDirector IP Address to FansWiFi Admin Panel (Advanced Login Method Only)
+2. **Information to provide FansWiFi:**
+   - **Public IP:** 1.1.1.1 or Domain Name.
+   - **RADIUS CoA Port:** 50000.
 
-**** Please send this information to your FansWiFi account manager*
+### Admin Panel Final Settings
 
-**(required for Advanced Login Method (e.g. WeChat or WhatsApp Login) ONLY, you may skip this step if there is no Advanced Login Method Enabled)**
-
-**FansWiFi Admin Panel (Setting > Venue Setting)**
-
-![](../../../_images/information-required-for-fanswifi-manager-129.png)
-
-1. Send below information to FansWiFi
-
-- Public IP Addresses / Domain Name of ZoneDirector
-- Radius CoA Port: 3799
-
-![](../../../_images/information-required-for-fanswifi-manager-130.png)
-
-Exceptional Case: ZoneDirector behinds Router / Firewall
-
-If the ZoneDirector is behind Router / Firewall, it is not directly accessible via FansWiFi Radius Server via Internet. In this case, you need to configure port forwarding on your Router / Firewall to forward the port to the ZoneDirector.
-
-![](../../../_images/information-required-for-fanswifi-manager-131.png)
-
-Please see below example:
-
-Assume the Public IP of the Router is 1.1.1.1 in this example
-
-1. Configure Port Forwarding to forward Router’s 50000 Port to ZoneDirector’s CoA Port (Default: 3799)
-
-- - Inbound port: 50000 (You can replace any port you want in your setup)
-- Destination IP: 192.168.1.100 (ZoneDirector’s IP in your network)
-- Destination Port: 3799
-
-2. Send below information to FansWiFi
-
-- - Public IP Addresses of Router: 1.1.1.1 or Domain Name (URL)
-- Radius CoA Port: 50000 (You can replace any port you want in your setup)
-
-Setting in FansWiFi Admin Panel
-
-![](../../../_images/information-required-for-fanswifi-manager-132.png)
+![FansWiFi Admin Panel final settings](../../../_images/information-required-for-fanswifi-manager-132.png)
 
 ## Step 7: Add AP to FansWiFi Admin Panel
 
-- Login to FansWiFi Admin Panel
-- Click **Settings -> Hotspots -> Add Hotspot**
+1. Log in to the FansWiFi Admin Panel.
+2. Navigate to **Settings** > **Hotspots** > **Add Hotspot**.
+3. Configure:
+   - **Venue:** Select your AP location.
+   - **Hotspot Name:** Give the AP an identifiable name.
+   - **AP Type:** Select **Ruckus ZoneDirector**.
+   - **MAC Address:** Enter the unique MAC address of the AP.
+4. Click **Save**.
 
-1. **Venue:** Select the venue of where your Access Point locates
-2. **Hotspot Name:** Name each Access Point to make it identifiable
-3. **AP Type:** Select “Ruckus ZoneDirector”
-4. **Mac Address:** Input unique MAC Address of each Access Point in your venue (Not controller)
-2. Click Save
-
-![](../../../_images/information-required-for-fanswifi-manager-133.png)
+![Hotspot creation in FansWiFi](../../../_images/information-required-for-fanswifi-manager-133.png)
 
 ​
 
-# FAQ
+## FAQ
 
-## 1. How to deauthorize wifi user to bring user back to the login page after login?
+### 1. How do I deauthorize a user to reset the login page?
 
-- During testing, you may want to try different login methods.
-- But after user authorized in any login method, captive portal will not be shown again before the expiry of session time.
-- If you may want to bring the user back to the captive portal page for testing different login methods, you will need to unauthorize the WiFi user.
+During testing, you may need to clear an authorized session to test different login methods.
 
-WiFi User Logout trigger by:
+**Option A: Controller Interface**
+1. Click the **Monitor** tab.
+2. Select **Wireless Clients** on the left menu.
+3. Under **Active Clients**, select the device and click the **red cross** on the corresponding row.
 
-WiFi User's Device
-
-(usually, access a logout url on browser)
-
-Controller Web Admin Interface
-
-Not Available
-
-Last Testing: 11-9-2017
-
-Available
-
-Last Testing: 11-9-2017
-
-**WiFi User Logout trigger by:**
-
-**Controller**
-
-- Click on **Monitor** tab
-- Click "**Wireless Clients**" on the left menu
-- Under **Active Clients**, select the device you want to logout, click the **red cross** on the same row
-
-![](../../../_images/information-required-for-fanswifi-manager-134.png)
+![Manual deauthorization in ZoneDirector](../../../_images/information-required-for-fanswifi-manager-134.png)

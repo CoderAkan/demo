@@ -1,295 +1,197 @@
-# Information required for FansWiFi Manager
+# Ruckus SmartZone / SCG (v3.5) Setup Guide
 
+This guide provides instructions for configuring Ruckus SmartZone / SCG (Version 3.5) to work with the FansWiFi Manager platform.
 
-# Information required for FansWiFi Manager
+## Information Required for FansWiFi Manager
 
-- Mac Addresses of the APs
+- **MAC Addresses** of the APs
 
 ### FansWiFi Server / Controller Communication
 
-The table below listed the ports that must be opened on the network firewall to ensure that the hotspot system, FansWiFi servers (including RADIUS server) can communicate with each other successfully.
+The table below lists the ports that must be opened on your network firewall to ensure successful communication between the hotspot system and FansWiFi servers.
 
-**Port Number**
+| Port Number | Protocol | Source | Destination | Direction | Purpose | Required By |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 1812 / 1813 | UDP & TCP | Controller | FansWiFi RADIUS (103.6.85.240) | Outbound | AAA Auth & Accounting | All |
+| 1700 / 3799 | UDP & TCP | FansWiFi RADIUS (103.6.85.240) | Controller | Inbound | RADIUS CoA Messages | WeChat, Video, Advanced FB |
+| 8443 / 9443 | TCP | FansWiFi | Controller NBI | Inbound | Northbound API Access | All |
 
-**Protocol**
+> [!NOTE]
+> Port forwarding may be required on your firewall/router for inbound traffic to the Controller or NBI.
 
-**Source**
+## Network Topology
 
-**Destination**
+![Network Topology](../../../_images/information-required-for-fanswifi-manager-151.png)
 
-**Traffic Direction**
+## Step 1: Access SmartZone
 
-**Purpose**
+1. Access the SmartZone management interface via a Web Browser.
+2. Navigate to **Configure** > **Services & Profiles** > **Authentication**.
 
-**Required by Login Method**
+![SmartZone authentication settings](../../../_images/information-required-for-fanswifi-manager-152.png)
 
-1812 / 1813
+## Step 2: Configure RADIUS Authentication Server
 
-UDP & TCP
+![Full authentication server view](../../../_images/information-required-for-fanswifi-manager-153.png)
 
-Controller
+1. Under the **Proxy (SZ Authenticator)** tab, click **Create New**.
+   - **Name:** FansWiFi Radius
+   - **Service Protocol:** RADIUS
+   - **IP Address:** 103.6.85.240
+   - **Port:** 1812
+   - **Shared Secret:** social123
+2. Click **OK** to save.
 
-FansWiFi RADIUS Server (103.6.85.240)
+![RADIUS authentication configuration](../../../_images/information-required-for-fanswifi-manager-154.png)
 
-outbound
+## Step 3: Configure RADIUS Accounting Server
 
-AAA Authentication and Accounting
+![Full accounting server view](../../../_images/information-required-for-fanswifi-manager-155.png)
 
-All
+1. Click **Accounting** in the left menu.
+2. Under the **Proxy** tab, click **Create New**.
+   - **Name:** FansWiFi Acct
+   - **Service Protocol:** RADIUS Accounting
+   - **IP Address:** 103.6.85.240
+   - **Port:** 1813
+   - **Shared Secret:** social123
+3. Click **OK** to save.
 
-1700 / 3799
+![RADIUS accounting configuration](../../../_images/information-required-for-fanswifi-manager-156.png)
 
-UDP & TCP
+## Step 4: Configure AP Zone and Hotspot Service
 
-FansWiFi Radius Server IP
+1. Select **Access Points** from the left menu.
 
-(103.6.85.240)
+![Access points list](../../../_images/information-required-for-fanswifi-manager-157.png)
 
-Controller
+2. Click the **+** icon to create an AP Zone:
+   - **Zone Name:** FansWiFi
+   - **AP Admin Logon ID:** admin
+   - **AP Admin Password:** (Your AP Admin Password)
+3. Click **OK** to save.
 
-inbound
+### 4.1. Configure Hotspot (WISPr)
 
-(port forwarding may needed by your firewall / router. Depends on your network setup.)
+![Hotspot services menu](../../../_images/information-required-for-fanswifi-manager-158.png)
 
-RADIUS CoA Messages
+1. Go to **Hotspots & Portals** under **Services & Profiles**.
+2. Select the **Hotspot (WISPr)** tab.
+3. Select your created AP Zone and click **+ Create**.
+4. Configure the following:
+   - **Portal Name:** FansWiFi Portal
+   - **Smart Client Support:** None
+   - **Logon URL:** External
+   - **Logon URL:** `https://connect-p.fanswifi.com/auth`
+   - **Redirected MAC Format:** AA-BB-CC-DD-EE-FF
+   - **Start Page:** `https://connect-p.fanswifi.com/auth/?res=success`
+   - **Session Timeout:** 1440
+   - **Grace Period:** 60
 
-WeChat Login / Video Login / Advanced Facebook Login...etc.
+### Walled Garden Settings
 
-8443 / 9443
+> [!IMPORTANT]
+> Add the following domains to the walled garden. You can download a pre-configured .csv list [here](https://cdn.fanswifi.com/assets/ruckus/fanswifi_ruckus_smartzone_walled_garden.zip).
 
-(Depends on Setting)
+#### Required
+- `* .fanswifi.com`
+- `* .cloudfront.net`
 
-TCP
+#### Optional (By Login Method)
 
-FansWiFi
+**Facebook Login:**
+- `* .facebook.com`
+- `* .facebook.net`
+- `* .fbcdn.net`
+- `* .fbcdn.com`
+- `* .akamaihd.net`
+- `* .fbsbx.com`
 
-Northbound Interface of Ruckus SmartZone Controller
-
-inbound
-
-(port forwarding may needed by your firewall / router. Depends on your network setup.)
-
-Ruckus Northbound API Access for WiFi Client Online / Offline Control
-
-All
-
-# Network Topology
-
-![](../../../_images/information-required-for-fanswifi-manager-151.png)
-
-# Setting on Ruckus SmartZone / SCG
-
-## Step 1:  Configure the SmartZone
-
-1. Access the SmartZone by opening a Web Browser
-2. Click **Configure -> Service & Profiles -> Authentication** to enter the Authentication configuration Page
-
-![](../../../_images/information-required-for-fanswifi-manager-152.png)
-
-## Step 2:  Configuration: Authentication Servers
-
-![](../../../_images/information-required-for-fanswifi-manager-153.png)
-
-**Radius Authentication Server**
-
-1. Click “Create New” under "Proxy (SZ Authenticator)" tab
-
-1. **Name:** FansWiFi Radius
-2. **Primary Server**
-
-1. **Service Protocol:** RADIUS
-2. **IP Address:** 103.6.85.240
-3. **Port:** 1812
-4. **Shared Secret:** social123
-5. **Confirm Secret:** social123
-2. Click “**OK**” to Save the configuration
-
-![](../../../_images/information-required-for-fanswifi-manager-154.png)
-
-## Step 3: Configuration: Accounting Servers
-
-![](../../../_images/information-required-for-fanswifi-manager-155.png)
-
-**Radius Accounting Server**
-
-1. Click "Accounting" on the left menu
-2. Click “Create New” under the "Proxy" tab
-
-1. **Name:** FansWiFi Acct
-2. **Service Protocol:** RADIUS Accounting
-3. **Primary Server**
-
-1. **IP Address:** 103.6.85.240
-2. **Port:** 1813
-3. **Shared Secret:** social123
-4. **Confirm Secret:** social123
-3. Click “**OK**” to Save the configuration
-
-![](../../../_images/information-required-for-fanswifi-manager-156.png)
-
-## Step 4: Configuration: Create AP Zone
-
-- a. Select **Access Points** from the left menu
-
-![](../../../_images/information-required-for-fanswifi-manager-157.png)
-
-- b. Click “+” icon to create AP zone with below settings
-
-- i. **Zone Name:** FansWiFi
-- ii. **AP Admin Logon (Logon ID):** admin
-- iii. **AP Admin Logon (Password):** [AP Admin Password]
-- c. Click “**OK**” to Save the configuration
-
-### 4.1. Configuration: Hotspot
-
-![](../../../_images/information-required-for-fanswifi-manager-158.png)
-
-- a. Click "Hotspots & Portals" under "Services & Profiles"
-- b. Click "Hotspot (WISPr)" tab
-- c. Select AP Zone you created from the AP Zone List
-- d. Click “+ Create” with below settings
-
-- i. **Portal Name:** FansWiFi Portal
-- ii. **Smart Client Support:** None
-- iii. **Logon URL:** External
-- iv. **Logon URL (Redirect URL):** [https://connect-p.fanswifi.com/auth](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- v. **Redirected MAC Format:** AA-BB-CC-DD-EE-FF
-- vi. **Start Page (redirect to the following URL):** [https://connect-p.fanswifi.com/auth/?res=success](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- vii. **Session Timeout:** 1440
-- viii. **Grace Period:** 60
-
-- ix. **Walled Garden List**
-
-1. You may download the walled garden list .csv files on[https://cdn.fanswifi.com/assets/ruckus/fanswifi_ruckus_smartzone_walled_garden.zip](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-
-2. Import the walled garden list corresponding to your enabled login methods
-​
-3. Input the local Google URL of your Country / Region
-
-- Example:
-
-- EU:[www.google.eu](http://www.google.eu)
-- UK:[www.google.co.uk](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- Hong Kong:[www.google.com.hk](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- Japan:[www.google.co.jp](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- Taiwan:[www.google.com.tw](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- Thailand:[www.google.co.th](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- Malaysia:[www.google.com.my](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- Myanmar:[www.google.com.mm](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-
-- **Required:**
-
-- *.[fanswifi.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- [*.cloudfront.net](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- **Optional:**
-
-- **Facebook Login:**
-
-- *.[facebook.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- *.[facebook.net](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- *.[fbcdn.net](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- *.[fbcdn.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- *.[akamaihd.net](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- *.fbsbx.com
-- **Weibo Login:**
-
-- *.[weibo.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- *.[weibo.cn](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- [*.sinaapp.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- [*.sina.com.cn](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- [*.sinajs.cn](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- **Instagram Login:**
-
-- *.[instagram.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- *.[akamaihd.net](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- *.[cdninstagram.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- **Twitter Login:**
-
-- *.[twitter.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- *.[twimg.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- **Video Login:**
-
-- *.[akamaized.net](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- *.[akamaihd.net](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- [ssl.google-analytics.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- *.[scorecardresearch.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- *.[vimeocdn.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- *.[vimeo.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-​
-- e. Click “OK” to Save the configuration
-
-## Step 5: Create WLAN and SSID for customer access
-
-![](../../../_images/information-required-for-fanswifi-manager-159.png)
-
-- Select “Wireless LANs” from the left menu
-- Click “+ Create” with below settings
-
-- **Name:** - FansWiFi Free WiFi -
-- **SSID:** - FansWiFi Free WiFi -
-- **Zone:** FansWiFi
-- **WLAN Group:** default
-- **WLAN Usage Type:** Hotspot (WISPr)
-- **Authentication Method:** Open
-- **Encryption Method:** None
-- **Hotspot (WISPr) Portal:** FansWiFi Portal
-- **Bypass CNA:** Disable
-- **Authentication Service:** FansWiFi Radius
-- **Accounting Service:** FansWiFi Acct
-- **Under Avanced Options:**
-
-- **Inactivity Timeout (Under Advanced Options):** 1000 seconds
-
-![](../../../_images/information-required-for-fanswifi-manager-160.png)
-
-![](../../../_images/information-required-for-fanswifi-manager-161.png)
-
-![](../../../_images/information-required-for-fanswifi-manager-162.png)
-
-![](../../../_images/information-required-for-fanswifi-manager-163.png)
-
-## Step 6: Set Northbound Portal Interface (NBI) Password
-
-- Click "System" --> "General Settings" --> "Northbound Interface"
-- If you have previously set a NBI password, you may skip this step. If not, please enter a new password now and click**Apply**.
-- This password will be used in the controller setting later on.
-
-![](../../../_images/information-required-for-fanswifi-manager-164.png)
-
-## Step 7: Configure SmartZone / SCG Domain or IP Address to FansWiFi Admin Panel
-
-- Access FansWiFi Admin Panel:[https://admin-p.fanswifi.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- Login Using your own username / password
-- Select “Setting” from the top menu
-- Select “Venues & Login Portals” from the left menu
-- Click “Edit” in your target Venue
-
-![](../../../_images/information-required-for-fanswifi-manager-165.png)
-
-- Select “WiFi -> Controller” from the left menu
-- **Ruckus SmartZone (formerly SCG) IP Address or Domain Name:** <your-controller-domain-or-ip>
-
-- **Port Number (Default: 9080):** <your-controller-northbound-port-number>
-- **Northbound Interface Password:** <your-northbound-password>
-
-![](../../../_images/information-required-for-fanswifi-manager-166.png)
-
-**Exceptional Case: SmartZone / vSCG behinds Router / Firewall**
-If the SmartZone / vSCG is behind Router / Firewall, it is not directly accessible by FansWiFi Server. In this case, you need to configure port forwarding on your Router / Firewall to forward the port to the SmartZone / vSCG.
+**Weibo Login:**
+- `* .weibo.com`
+- `* .weibo.cn`
+- `* .sinaapp.com`
+- `* .sina.com.cn`
+- `* .sinajs.cn`
+
+**Instagram Login:**
+- `* .instagram.com`
+- `* .akamaihd.net`
+- `* .cdninstagram.com`
+
+**Twitter Login:**
+- `* .twitter.com`
+- `* .twimg.com`
+
+**Video Login:**
+- `* .akamaized.net`
+- `* .akamaihd.net`
+- `ssl.google-analytics.com`
+- `* .scorecardresearch.com`
+- `* .vimeocdn.com`
+- `* .vimeo.com`
+
+5. Click **OK** to save.
+
+## Step 5: Create WLAN and SSID
+
+![Wireless LANs menu](../../../_images/information-required-for-fanswifi-manager-159.png)
+
+1. Select **Wireless LANs** from the left menu.
+2. Click **+ Create** and configure:
+   - **Name:** FansWiFi Free WiFi
+   - **SSID:** FansWiFi Free WiFi
+   - **Zone:** FansWiFi
+   - **WLAN Usage Type:** Hotspot (WISPr)
+   - **Authentication Method:** Open
+   - **Encryption Method:** None
+   - **Hotspot (WISPr) Portal:** FansWiFi Portal
+   - **Authentication Service:** FansWiFi Radius
+   - **Accounting Service:** FansWiFi Acct
+
+![WLAN configuration view 1](../../../_images/information-required-for-fanswifi-manager-160.png)
+![WLAN configuration view 2](../../../_images/information-required-for-fanswifi-manager-161.png)
+
+3. Under **Advanced Options**:
+   - **Inactivity Timeout:** 1000 seconds
+   - **Bypass CNA:** Disabled
+
+![WLAN configuration view 3](../../../_images/information-required-for-fanswifi-manager-162.png)
+![WLAN configuration view 4](../../../_images/information-required-for-fanswifi-manager-163.png)
+
+## Step 6: Set Northbound Interface (NBI) Password
+
+1. Navigate to **System** > **General Settings** > **Northbound Interface**.
+2. If not previously set, enter a new password and click **Apply**.
+3. This password will be needed for the FansWiFi Admin Panel settings.
+
+![Northbound Interface settings](../../../_images/information-required-for-fanswifi-manager-164.png)
+
+## Step 7: Configure SmartZone in FansWiFi Admin Panel
+
+1. Log in to the FansWiFi Admin Panel.
+2. Navigate to **Settings** > **Venues & Login Portals**.
+3. Select your venue and click **Edit**.
+
+![Admin panel venue list](../../../_images/information-required-for-fanswifi-manager-165.png)
+
+4. Go to **WiFi** > **Controller** and configure:
+   - **Ruckus SmartZone IP/Domain:** (Your controller address)
+   - **Port Number:** (Your NBI port, default `9080`)
+   - **Northbound Interface Password:** (The password from Step 6)
+5. Click **Save**.
+
+![Controller configuration details](../../../_images/information-required-for-fanswifi-manager-166.png)
+
+> [!NOTE]
+> If the SmartZone is behind a firewall, you must configure port forwarding for the NBI port.
 
 ## Step 8: Add AP to FansWiFi Admin Panel
 
-- Login to FansWiFi Admin Panel
-- Click **Settings -> Hotspots -> Add Hotspot**
-
-1. **Organization:** Select the organization of where your Access Point locates
-2. **Venue:** Select the venue of where your Access Point locates
-3. **Hotspot Name:** Name each Access Point to make it identifiable
-4. **AP Type:** Select “Ruckus SmartZone (formerly SCG)”
-5. **Mac Address:** Input unique MAC Address of each Access Point in your venue (Not controller)
-2. Click **Save**
-
-​
-​
-​
-​
+1. In the FansWiFi Admin Panel, go to **Settings** > **Hotspots** > **Add Hotspot**.
+2. Configure:
+   - **Venue:** Select your AP location.
+   - **Hotspot Name:** Give the AP an identifiable name.
+   - **AP Type:** Select **Ruckus SmartZone (formerly SCG)**.
+   - **MAC Address:** Enter the unique MAC address of the AP.
+3. Click **Save**.
