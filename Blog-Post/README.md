@@ -2,14 +2,13 @@
 
 Stay updated with the latest trends and insights in WiFi marketing.
 
-{% content-ref url="exciting-times-at-digitech-asean-thailand-event-2023.md" %}
-[Exciting times at DigiTech ASEAN Thailand event 2023!🎉](exciting-times-at-digitech-asean-thailand-event-2023.md)
-{% endcontent-ref %}
-
 {% content-ref url="revolutionizing-smart-tourism-fanswifi-wins-bronze-award-smart-mobility-at-hong-kong-ict-awards-2023.md" %}
 [Revolutionizing Smart Tourism: FansWiFi Wins Bronze Award - Smart Mobility at Hong Kong ICT Awards 2023!](revolutionizing-smart-tourism-fanswifi-wins-bronze-award-smart-mobility-at-hong-kong-ict-awards-2023.md)
 {% endcontent-ref %}
 
+{% content-ref url="exciting-times-at-digitech-asean-thailand-event-2023.md" %}
+[Exciting times at DigiTech ASEAN Thailand event 2023!🎉](exciting-times-at-digitech-asean-thailand-event-2023.md)
+{% endcontent-ref %}
 
 {% content-ref url="telecom-world-asia-2023-thailand.md" %}
 [Telecom World Asia 2023 - Thailand](telecom-world-asia-2023-thailand.md)
