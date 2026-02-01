@@ -1,169 +1,197 @@
-# Information required for FansWiFi Manager
+---
+description: Configure Aruba Instant-On (AP11) with FansWiFi captive portal and RADIUS.
+---
 
-- Mac Addresses of the APs (usually can be found at the back of the router)
+# Information required for FansWiFi Manager (Aruba Instant-On)
 
-# Tested model and firmware version
+## What you need
 
-- Model: Aruba Instant-On AP11
-- Firmware Version: 2.8.0
+- **AP MAC address** (usually on the back of the access point)
 
-## Official documentation:
+## Tested model and firmware
 
-[https://www.arubainstanton.com/techdocs/en/content/intro/desktop/set-portal-des.htm](https://www.arubainstanton.com/techdocs/en/content/intro/desktop/set-portal-des.htm)
+- **Model:** Aruba Instant-On AP11
+- **Firmware:** 2.8.0
 
-# Accessing the Aruba Instant-On AP
+## Official documentation
 
-Setup the basic Aruba Instant-On account according to Aruba Instant-On’s setup guide and deployment guide
+- Portal setup: https://www.arubainstanton.com/techdocs/en/content/intro/desktop/set-portal-des.htm
+- Setup guide: https://www.arubainstanton.com/techdocs/en/content/get-started/prov-oc.htm
+- Deployment guide (PDF): https://www.arubainstanton.com/files/Aruba_Instant_On_Deployment_Guide.pdf
 
-- Setup Guide:[https://www.arubainstanton.com/techdocs/en/content/get-started/prov-oc.htm](https://www.arubainstanton.com/techdocs/en/content/get-started/prov-oc.htm)
-- Deployment Guide:[https://www.arubainstanton.com/files/Aruba_Instant_On_Deployment_Guide.pdf](https://www.arubainstanton.com/files/Aruba_Instant_On_Deployment_Guide.pdf)
+---
 
-- 1. According to Aruba’s setup guide, to add the AP to the Aruba Instant-On Portal in the initial setup, it is required that the AP is on the same network as your PC / Mobile / Laptop with a local IP address in the same network.
-- 2. Then open a web browser:[https://portal.arubainstanton.com/](https://portal.arubainstanton.com/)or[https://portal.instant-on.hpe.com](https://portal.instant-on.hpe.com/)
-- 3. Enter email and password to login, if you do not have an account, you can follow Aruba’s setup guide[https://www.arubainstanton.com/techdocs/en/content/get-started/prov-oc.htm](https://www.arubainstanton.com/techdocs/en/content/get-started/prov-oc.htm)to register and setup the Aruba Instant-On Portal
+# Accessing Aruba Instant-On Cloud Portal
+
+1. Ensure the AP is on the **same network** as your PC/mobile/laptop for initial onboarding (per Aruba’s setup guide).
+2. Open:
+   - https://portal.arubainstanton.com/ **or**
+   - https://portal.instant-on.hpe.com
+3. Log in with your email/password. If you don’t have an account, register via:
+   - https://www.arubainstanton.com/techdocs/en/content/get-started/prov-oc.htm
 
 ![](../../../_images/information-required-for-fanswifi-manager-8.png)
 
+---
+
 # Setting FansWiFi on Aruba Instant-On Cloud Portal
 
-## Step 1:ClickNetworks/active networks
+## Step 1: Open Networks
+
+1. Click **Networks / Active networks**
 
 ![](../../../_images/information-required-for-fanswifi-manager-9.png)
 
-## Step 2:ClickCreate Networkat the top right corner to add a new network or choose a existing one
+---
+
+## Step 2: Create or select a network
+
+1. Click **Create Network** (top-right) to add a new network, or select an existing one.
 
 ![](../../../_images/information-required-for-fanswifi-manager-10.png)
 
-## Step 3:Choose the configurations like the following figure (you can choose your own network name) and clickSave
+---
 
-- a. Identification
+## Step 3: Configure network basics
 
-- **i. Network Usage:** Guest
-- **ii. Security:** None or Wi-Fi Enhanced Open
-- **iii. Network Option:** Guest Portal (Checked)
-- b. Click **Save**
+Configure the network (you can choose your own name), then click **Save**.
+
+### Identification
+
+- **Network Usage:** Guest
+- **Security:** None or Wi-Fi Enhanced Open
+- **Network Option:** Guest Portal (enabled)
 
 ![](../../../_images/information-required-for-fanswifi-manager-11.png)
 
-- c. IP Assignment
+### IP Assignment (suggested)
 
-- **i. IP Assignment:** Specific to This Network **(Suggested)**
-- **ii. Base IP Address:** 172.16.0.0 (Or change to other network if needed)
-- **iii. Subnet Mask:** 255.255.248.0 (2048 Clients) **(Suggested)**
+- **IP Assignment:** Specific to This Network
+- **Base IP Address:** 172.16.0.0 *(or change if needed)*
+- **Subnet Mask:** 255.255.248.0 *(~2048 clients)*
 
 ![](../../../_images/information-required-for-fanswifi-manager-12.png)
 
-## Step 4: Configure the Guest Portal
+---
 
-- **a. After configuring the SSIDs, move to the “Guest Portal” session**
+## Step 4: Open Guest Portal settings
+
+1. After SSID/network settings, go to the **Guest Portal** section.
 
 ![](../../../_images/information-required-for-fanswifi-manager-13.png)
 
-## Step 5:Finish the settings according to the following configuration and screenshot
+---
 
-- **a. Type:** External
-- **b. Portal URL:** [https://connect-p.fanswifi.com/auth](https://connect-p.fanswifi.com/auth)
-- **c. Redirect URL:** [https://connect-p.fanswifi.com/auth?res=success](https://connect-p.fanswifi.com/auth?res=success)
-- **d. Authentication:** Select “User authentication (default)”
-- **e. Authentication Option:**
+## Step 5: Configure Guest Portal (External + RADIUS)
 
-- **i. Require RADIUS Message-Authenticator:** Unchecked (Do not check)
-- **ii. RADIUS Accounting:** Checked
-- **f. Primary RADIUS Server**
+Set the following:
 
-- **i. Server IP address or domain name:** radius.fanswifi.com
-- **ii. Shared Secret:** social123
-- **g. Network Access Attributes**
+- **Type:** External
+- **Portal URL:** https://connect-p.fanswifi.com/auth
+- **Redirect URL:** https://connect-p.fanswifi.com/auth?res=success
+- **Authentication:** User authentication (default)
 
-- **NAS Identifier:** socialnas
-- **h. NAS IP Address:** Select “Use device IP (default)”
+### Authentication options
+
+- **Require RADIUS Message-Authenticator:** Disabled
+- **RADIUS Accounting:** Enabled
+
+### Primary RADIUS server
+
+- **Server IP / domain:** `radius.fanswifi.com`
+- **Shared Secret:** `social123`
+
+### Network access attributes
+
+- **NAS Identifier:** `socialnas`
+- **NAS IP Address:** Use device IP (default)
 
 ![](../../../_images/information-required-for-fanswifi-manager-14.png)
 
-## Step 6:For “Allowed domains” (Walled Garden) part, please follow below setup
+---
 
-- **a. Add FansWiFi domain (required)**
+## Step 6: Allowed domains (Walled Garden)
 
-- **i. fanswifi.com**
-- **ii. cacerts.digitalcertvalidation.com**
-- **iii. statusa.digitalcertvalidation.com**
-- **iv. ocsp.digicert.com**
-- **b. Select the Social Media you wish to use for Login if it is available on the list**
+### Required (FansWiFi + certificate checks)
 
-- i. Aruba may update this list accordingly
--
-- c. If your desire Social Media is not on Aruba’s default list, please add below domain accordingly
+Add these domains:
 
-- **Walled Garden List (Optional, you may skip this if there is no Weibo Login Enabled)**
+- `fanswifi.com`
+- `cacerts.digitalcertvalidation.com`
+- `statusa.digitalcertvalidation.com`
+- `ocsp.digicert.com`
 
-weibo.com
+### Social login domains
 
-weibo.cn
+1. If your desired social media login is already available in Aruba’s list, select it.
+2. If it is **not** available, add the domains below as needed.
 
-sinaapp.com
+#### Optional: Weibo
 
-sina.com.cn
+- `weibo.com`
+- `weibo.cn`
+- `sinaapp.com`
+- `sina.com.cn`
+- `sinajs.cn`
 
-sinajs.cn
-- **Walled Garden List (Optional, you may skip this if there is no Instagram Login Enabled)**
+#### Optional: Instagram
 
-instagram.com
+- `instagram.com`
+- `akamaihd.net`
+- `cdninstagram.com`
 
-akamaihd.net
+#### Optional: Twitter/X
 
-cdninstagram.com
-- **Twitter Login (Optional, you may skip this if there is no Twitter Login Enabled)**
+- `twitter.com`
+- `twimg.com`
 
-twitter.com
+#### Optional: LINE
 
-twimg.com
-- **LINE Login (Optional, you may skip this if there is no LINE Login Enabled)**
+- `line.me`
+- `line-scdn.net`
 
-[http://line.me](http://line.me)
+#### Optional: PayPal
 
-line-scdn.net
-- **PayPal Login (Optional, you may skip this if there is no PayPal Login Enabled)**
+- `paypal.com`
+- `paypalobjects.com`
+- `www.google-analytics.com`
 
-paypal.com
+#### Optional: Video login
 
-paypalobjects.com
+- `akamaized.net`
+- `akamaihd.net`
+- `ssl.google-analytics.com`
+- `scorecardresearch.com`
+- `vimeocdn.com`
+- `vimeo.com`
 
-[www.google-analytics.com](http://www.google-analytics.com)
-- **Video Login (Optional, you may skip this if there is no Video Login Enabled)**
+---
 
-akamaized.net
+## Step 7: Suggested access control (security)
 
-akamaihd.net
+1. Enable **Access Restrictions**
+2. Select **Network Destinations**
+3. Allow guests to access **Internet only**
 
-ssl.google-analytics.com
-
-scorecardresearch.com
-
-vimeocdn.com
-
-vimeo.com
-
-## Step 7: [Suggested] Access Control (Security Setting)
-
-- a. Suggested to enable the “**Access Restrictions**” and select “**Network Destinations**” to prevent any device in the network being accessed by the WiFi guest. This is an important feature for protecting your own network.
-
-- i. This can prevent WiFi Guest user to access any other devices in your network including your Router, POS Machine, Surveillance Camera, internal computer…etc.
-- b. Allow user to access **Internet** only
+This helps prevent guests from accessing devices on your internal network (router, POS, cameras, internal PCs, etc.).
 
 ![](../../../_images/information-required-for-fanswifi-manager-15.png)
 
-## Step 8: Add AP to FansWiFi Admin Panel
+---
 
-- Login to FansWiFi Admin Panel
-- Click **Settings -> Hotspots -> Add Hotspot**
+# Setup in FansWiFi Admin Panel
 
-- Configure with following settings:
+## Step 8: Add AP to FansWiFi
 
-- **Venue:** Select the venue of where your Access Point locates
-- **Hotspot Name:** Name each Access Point to make it identifiable
-- **AP Type:** Select “Aruba”
-- **Mac Address:** Input unique MAC Address of each Access Point in your venue (Not controller)
-- Click **Save**
+1. Log in to FansWiFi Admin Panel
+2. Go to **Settings → Hotspots → Add Hotspot**
+3. Configure:
+   - **Venue:** Where the AP is located
+   - **Hotspot Name:** Friendly name for the AP
+   - **AP Type:** Aruba
+   - **MAC Address:** AP MAC address *(not controller)*
+
+4. Click **Save**
 
 ![](../../../_images/information-required-for-fanswifi-manager-16.png)
 
