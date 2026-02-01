@@ -28,23 +28,23 @@
 
 ---
 
-# Setting FansWiFi on Aruba Instant-On Cloud Portal
+## Setting FansWiFi on Aruba Instant-On Cloud Portal
 
-## Step 1: Click **Networks / Active networks**
+### Step 1: Click **Networks / Active networks**
 
 ![](../../../_images/information-required-for-fanswifi-manager-9.png)
 
 ---
 
-## Step 2: Click *Create Network* at the top right corner to add a new network or choose a existing one
+### Step 2: Click *Create Network* at the top right corner to add a new network or choose a existing one
 
 ![](../../../_images/information-required-for-fanswifi-manager-10.png)
 
 ---
 
-## Step 3: Choose the configurations like the following figure (you can choose your own network name) and click *Save*
+### Step 3: Choose the configurations like the following figure (you can choose your own network name) and click *Save*
 
-### Identification
+#### Identification
 
 - **Network Usage:** Guest
 - **Security:** None or Wi-Fi Enhanced Open
@@ -53,7 +53,7 @@
 
 ![](../../../_images/information-required-for-fanswifi-manager-11.png)
 
-### IP Assignment (suggested)
+#### IP Assignment (suggested)
 
 - **IP Assignment:** Specific to This Network
 - **Base IP Address:** 172.16.0.0 *(or change to other network if needed)*
@@ -63,7 +63,7 @@
 
 ---
 
-## Step 4: Configure the Guest Portal
+### Step 4: Configure the Guest Portal
 
 a. After configuring the SSIDs, move to the “Guest Portal” session
 
@@ -71,24 +71,24 @@ a. After configuring the SSIDs, move to the “Guest Portal” session
 
 ---
 
-## Step 5: Finish the settings according to the following configuration and screenshot
+### Step 5: Finish the settings according to the following configuration and screenshot
 
 - **Type:** External
-- **Portal URL:** https://connect-p.fanswifi.com/auth
-- **Redirect URL:** https://connect-p.fanswifi.com/auth?res=success
+- **Portal URL:** [https://connect-p.fanswifi.com/auth](https://connect-p.fanswifi.com/auth)
+- **Redirect URL:** [https://connect-p.fanswifi.com/auth?res=success](https://connect-p.fanswifi.com/auth?res=success)
 - **Authentication:** Select "User authentication (default)"
 
-### Authentication options
+#### Authentication options
 
 - **Require RADIUS Message-Authenticator:** Unchecked / Disabled
 - **RADIUS Accounting:** Checked / Enabled
 
-### Primary RADIUS server
+#### Primary RADIUS server
 
-- **Server IP address or domain name:** `radius.fanswifi.com`
+- **Server IP address or domain name:** [radius.fanswifi.com](radius.fanswifi.com)
 - **Shared Secret:** `social123`
 
-### Network access attributes
+#### Network access attributes
 
 - **NAS Identifier:** `socialnas`
 - **NAS IP Address:** Use device IP (default)
@@ -97,68 +97,68 @@ a. After configuring the SSIDs, move to the “Guest Portal” session
 
 ---
 
-## Step 6: For “Allowed domains” (Walled Garden) part, please follow below setup
+### Step 6: For “Allowed domains” (Walled Garden) part, please follow below setup
 
-### Add FansWiFi domain (required)
+#### Add FansWiFi domain (required)
 
-- `fanswifi.com`
-- `cacerts.digitalcertvalidation.com`
-- `statusa.digitalcertvalidation.com`
-- `ocsp.digicert.com`
+- [fanswifi.com](fanswifi.com)
+- [cacerts.digitalcertvalidation.com](cacerts.digitalcertvalidation.com)
+- [statusa.digitalcertvalidation.com](statusa.digitalcertvalidation.com)
+- [ocsp.digicert.com](ocsp.digicert.com)
 
-### Select the Social Media you wish to use for Login if it is available on the list
+#### Select the Social Media you wish to use for Login if it is available on the list
 
 - Aruba may update this list accordingly
 
 ![](../../../_images/information-required-for-fanswifi-manager-18.png)
 
-### Social login domains
+#### Social login domains
 
 1. If your desired social media login is already available in Aruba’s list, select it.
 2. If it is **not** available, add the domains below as needed.
 
-#### Walled Garden List (Optional, you may skip this if there is no Weibo Login Enabled)
+##### Walled Garden List (Optional, you may skip this if there is no Weibo Login Enabled)
 
-- `weibo.com`
-- `weibo.cn`
-- `sinaapp.com`
-- `sina.com.cn`
-- `sinajs.cn`
+- [weibo.com](weibo.com)
+- [weibo.cn](weibo.cn)
+- [sinaapp.com](sinaapp.com)
+- [sina.com.cn](sina.com.cn)
+- [sinajs.cn](sinajs.cn)
 
-#### Instagram Login (Optional, you may skip this if there is no Instagram Login Enabled)
+##### Instagram Login (Optional, you may skip this if there is no Instagram Login Enabled)
 
-- `instagram.com`
-- `akamaihd.net`
-- `cdninstagram.com`
+- [instagram.com](instagram.com)
+- [akamaihd.net](akamaihd.net)
+- [cdninstagram.com](cdninstagram.com)
 
-#### Twitter/X Login (Optional, you may skip this if there is no Twitter/X Login Enabled)
+##### Twitter/X Login (Optional, you may skip this if there is no Twitter/X Login Enabled)
 
-- `twitter.com`
-- `twimg.com`
+- [twitter.com](twitter.com)
+- [twimg.com](twimg.com)
 
-#### LINE Login (Optional, you may skip this if there is no LINE Login Enabled)
+##### LINE Login (Optional, you may skip this if there is no LINE Login Enabled)
 
-- `line.me`
-- `line-scdn.net`
+- [line.me](line.me)
+- [line-scdn.net](line-scdn.net)
 
-#### PayPal Login (Optional, you may skip this if there is no PayPal Login Enabled)
+##### PayPal Login (Optional, you may skip this if there is no PayPal Login Enabled)
 
-- `paypal.com`
-- `paypalobjects.com`
-- `www.google-analytics.com`
+- [paypal.com](paypal.com)
+- [paypalobjects.com](paypalobjects.com)
+- [www.google-analytics.com](www.google-analytics.com)
 
-#### Video Login (Optional, you may skip this if there is no Video Login Enabled)
+##### Video Login (Optional, you may skip this if there is no Video Login Enabled)
 
-- `akamaized.net`
-- `akamaihd.net`
-- `ssl.google-analytics.com`
-- `scorecardresearch.com`
-- `vimeocdn.com`
-- `vimeo.com`
+- [akamaized.net](akamaized.net)
+- [akamaihd.net](akamaihd.net)
+- [ssl.google-analytics.com](ssl.google-analytics.com)
+- [scorecardresearch.com](scorecardresearch.com)
+- [vimeocdn.com](vimeocdn.com)
+- [vimeo.com](vimeo.com)
 
 ---
 
-## Step 7: Suggested access control (security setting)
+### Step 7: Suggested access control (security setting)
 
 1. Enable **Access Restrictions**
 2. Select **Network Destinations**
@@ -170,7 +170,7 @@ This helps prevent guests from accessing devices on your internal network (route
 
 ---
 
-## Step 8: Add AP to FansWiFi
+### Step 8: Add AP to FansWiFi
 
 1. Log in to FansWiFi Admin Panel
 2. Go to **Settings → Hotspots → Add Hotspot**
