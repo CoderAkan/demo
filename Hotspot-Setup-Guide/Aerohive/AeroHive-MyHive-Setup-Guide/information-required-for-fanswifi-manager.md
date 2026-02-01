@@ -1,8 +1,5 @@
 # Information required for FansWiFi Manager
 
-
-# Information required for FansWiFi Manager
-
 - Mac Addresses of the APs
 
 # Setting on AeroHive Cloud-Manager
@@ -66,7 +63,7 @@
 1. **FansWiFi Server**
 
 1. [fanswifi.com](http://fanswifi.com/)
-2. **For Facebook Login**(Optional, you may skip this if there is no Facebook Login Enabled)
+2. **For Facebook Login** (Optional, you may skip this if there is no Facebook Login Enabled)
 
 1. [facebook.com](http://facebook.com/)
 2. [facebook.net](http://facebook.net/)
@@ -87,23 +84,23 @@
 6. Thailand:[www.google.co.th](http://www.google.co.th/)
 7. Malaysia:[www.google.com.my](http://www.google.com.my/)
 8. Myanmar:[www.google.com.mm](http://www.google.com.mm/)
-3. **For Weibo Login**(Optional, you may skip this if there is no Weibo Login Enabled)
+3. **For Weibo Login** (Optional, you may skip this if there is no Weibo Login Enabled)
 
 1. [weibo.com](http://weibo.com/)
 2. [weibo.cn](http://weibo.cn/)
 3. [sinaapp.com](http://sinaapp.com/)
 4. [sina.com.cn](http://sina.com.cn/)
 5. [sinajs.cn](http://sinajs.cn/)
-4. **For Instagram Login**(Optional, you may skip this if there is no Instagram Login Enabled)
+4. **For Instagram Login** (Optional, you may skip this if there is no Instagram Login Enabled)
 
 1. [instagram.com](http://instagram.com/)
 2. [cdninstagram.com](http://cdninstagram.com/)
 3. [akamaihd.net](http://akamaihd.net/)
-5. **For Twitter Login**(Optional, you may skip this if there is no Twitter Login Enabled)
+5. **For Twitter Login** (Optional, you may skip this if there is no Twitter Login Enabled)
 
 1. [twitter.com](http://twitter.com/)
 2. [twimg.com](http://twimg.com/)
-6. **For Video Login**(Optional, you may skip this if there is no Video Login Enabled)
+6. **For Video Login** (Optional, you may skip this if there is no Video Login Enabled)
 
 1. [akamaized.net](http://akamaized.net/)
 2. [akamaihd.net](http://akamaihd.net/)

@@ -5,7 +5,7 @@
 
 ![](../../../_images/network-diagram-167.png)
 
-For some APs, you have to configure DNS settings on your**Router**to use FansWiFi service.
+For some APs, you have to configure DNS settings on your **Router** to use FansWiFi service.
 
 # Main Steps
 
@@ -34,13 +34,13 @@ Password: admin
 
 ## Step 2: Network Setup
 
-1. Click**Setup > Basic Setup**on the top menu, then**Network Setup**on the left menu
+1. Click **Setup > Basic Setup** on the top menu, then **Network Setup** on the left menu
 2. Configure with following settings:
 
 1. **Static DNS 1:** 223.197.92.30
 2. **Static DNS 2:** 34.150.88.223
 ​
-3. Click**Save**
+3. Click **Save**
 
 # Huawei HG8245H
 
@@ -54,7 +54,7 @@ Password: admintelecom
 
 ## Step 2: DHCP Server Configuration
 
-1. Click**LAN**on the top menu, then**DHCP Server Configuration**on the left menu
+1. Click **LAN** on the top menu, then **DHCP Server Configuration** on the left menu
 2. Configure with following settings:
 
 1. **Enable primary DHCP server:** Enable
@@ -62,4 +62,4 @@ Password: admintelecom
 3. **Primary DNS Server:** 223.197.92.30
 4. **Secondary DNS Server:** 34.150.88.223
 ​
-3. Click**Save**
+3. Click **Save**

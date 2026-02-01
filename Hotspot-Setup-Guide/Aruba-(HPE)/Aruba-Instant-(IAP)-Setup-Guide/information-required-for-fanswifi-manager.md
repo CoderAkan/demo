@@ -7,61 +7,61 @@
 
 # Tested Model and Firmware Version
 
-- Model:**IAP-105**
-- Firmware Version:**6.4.4.4-4.2.3.2_54910**
+- Model: **IAP-105**
+- Firmware Version: **6.4.4.4-4.2.3.2_54910**
 
 # Setting on Aruba IAP
 
 ## Step 1: Configure the Aruba Instant (IAP)
 
 - Access the Aruba Instant (IAP) by opening a Web Browser
-- Under**Networks**, click**New**to start the configuration in a popup window
+- Under **Networks**, click **New** to start the configuration in a popup window
 
 ![Screen Shot 2018-07-16 at 1.19.25 PM.png](../../../_images/information-required-for-fanswifi-manager-259.png)
 
-- Under**WLAN Settings**, configure with below settings
+- Under **WLAN Settings**, configure with below settings
 
-- i. Name:**FansWiFi Free WiFi (or whatever SSID you want)**
-- ii. Primary usage:**Guest**
-- Click**Next**to save configuration and proceed to the next step
+- i. Name: **FansWiFi Free WiFi (or whatever SSID you want)**
+- ii. Primary usage: **Guest**
+- Click **Next** to save configuration and proceed to the next step
 
 ![Screen Shot 2018-07-16 at 1.43.18 PM.png](../../../_images/information-required-for-fanswifi-manager-260.png)
 
-- Under**VLAN**, configure with below settings:
+- Under **VLAN**, configure with below settings:
 
-- i. Client IP assignment:**Network assigned**
-- ii. Client VLAN assignment:**Static**
-- iii. VLAN ID:**1**
-- Click**Next**to save configuration and proceed to the next step
+- i. Client IP assignment: **Network assigned**
+- ii. Client VLAN assignment: **Static**
+- iii. VLAN ID: **1**
+- Click **Next** to save configuration and proceed to the next step
 
 ![Screen Shot 2018-07-16 at 1.25.00 PM.png](../../../_images/information-required-for-fanswifi-manager-261.png)
 
-- Under**Security**, configure Splash page type as**External**
+- Under **Security**, configure Splash page type as **External**
 
 ![Screen Shot 2018-07-16 at 3.11.35 PM.png](../../../_images/information-required-for-fanswifi-manager-262.png)
 
-- Under**Captive portal profile**, click**New**to set up the captive portal
+- Under **Captive portal profile**, click **New** to set up the captive portal
 
 ![Screen Shot 2018-07-16 at 3.14.32 PM.png](../../../_images/information-required-for-fanswifi-manager-263.png)
 
 - A setup box will appear, then configure with the below settings
 
-- i. Name:**FansWiFi_cp**
-- ii. Type:**RADIUS Authentication**
-- iii. IP or hostname:**connect-p.fanswifi.com**
-- iv. URL:**/auth**
-- v. Port:**443**
-- vi. Use https:**Enabled**
-- vii. Captive Portal failure:**Deny Internet**
+- i. Name: **FansWiFi_cp**
+- ii. Type: **RADIUS Authentication**
+- iii. IP or hostname: **connect-p.fanswifi.com**
+- iv. URL: **/auth**
+- v. Port: **443**
+- vi. Use https: **Enabled**
+- vii. Captive Portal failure: **Deny Internet**
 - viii. Redirect URL:
 
-- For redirect method:**https://connect-p.fanswifi.com/auth/?res=success&id=aruba-iap**
-- For xml api method:**https://connect-p.fanswifi.com/auth/?res=success&id=aruba-xml-api**
-- Click**OK**to save configuration
+- For redirect method: **https://connect-p.fanswifi.com/auth/?res=success&id=aruba-iap**
+- For xml api method: **https://connect-p.fanswifi.com/auth/?res=success&id=aruba-xml-api**
+- Click **OK** to save configuration
 
 ![Screen Shot 2018-12-10 at 4.52.52 PM.png](../../../_images/information-required-for-fanswifi-manager-264.png)
 
-- Then, under**Auth server 1**, click**New**to set up radius server
+- Then, under **Auth server 1**, click **New** to set up radius server
 
 ![Screen Shot 2018-07-16 at 3.19.31 PM.png](../../../_images/information-required-for-fanswifi-manager-265.png)
 
@@ -69,41 +69,41 @@
 
 - First Server
 
-- i. Server type:**RADIUS**
-- ii. Name:**FansWiFi-rad1**
-- iii. IP address:**103.6.85.240**
-- iv. Auth port:**1812**
-- v. Acct port:**1813**
-- vi. Shared key:**social123**
-- vii. Retype key:**social123**
-- Click**OK**to save configuration
+- i. Server type: **RADIUS**
+- ii. Name: **FansWiFi-rad1**
+- iii. IP address: **103.6.85.240**
+- iv. Auth port: **1812**
+- v. Acct port: **1813**
+- vi. Shared key: **social123**
+- vii. Retype key: **social123**
+- Click **OK** to save configuration
 
 ![Screen Shot 2018-07-16 at 2.48.39 PM.png](../../../_images/information-required-for-fanswifi-manager-266.png)
 
 - After configuring the radius server, configure the remaining security configurations with below settings
 
-- i. Accounting:**Use authentication servers**
-- ii. Accounting mode:**Authentication**
-- iii. Accounting interval:**3 min.**
-- iv. Blacklisting:**Disabled**
-- Click**Next**to save configuration and proceed to the next step
+- i. Accounting: **Use authentication servers**
+- ii. Accounting mode: **Authentication**
+- iii. Accounting interval: **3 min.**
+- iv. Blacklisting: **Disabled**
+- Click **Next** to save configuration and proceed to the next step
 
 ![](../../../_images/information-required-for-fanswifi-manager-267.png)
 
-- Under**Access**, Select**Role-based**and click**New**under roles to create a new role
-- Enter**FansWiFi_Preauth**as the name of the pre-authentication role
+- Under **Access**, Select **Role-based** and click **New** under roles to create a new role
+- Enter **FansWiFi_Preauth** as the name of the pre-authentication role
 
 ![Screen Shot 2018-07-16 at 1.49.09 PM.png](../../../_images/information-required-for-fanswifi-manager-268.png)
 
-- Click**New**under**Access Rules**to create new access controls and a popup setup box will appear
+- Click **New** under **Access Rules** to create new access controls and a popup setup box will appear
 - Configure with below settings
 
-- i. Rule type:**Access control**
-- ii. Service:**Network - any**
-- iii. Action:**Allow**
-- iv. Destination:**to domain name**
-- v. Domain name:**(Insert domain name here)**
-- Click**OK**to save configuration for each domain name
+- i. Rule type: **Access control**
+- ii. Service: **Network - any**
+- iii. Action: **Allow**
+- iv. Destination: **to domain name**
+- v. Domain name: **(Insert domain name here)**
+- Click **OK** to save configuration for each domain name
 
 ![Screen Shot 2018-07-16 at 1.51.07 PM.png](../../../_images/information-required-for-fanswifi-manager-269.png)
 
@@ -111,7 +111,7 @@
 
 - 1. *.[fanswifi.com](http://fanswifi.com/)
 
-- i.**Walled Garden List (Optional, you may skip this if there is no Facebook Login Enabled)**
+- i. **Walled Garden List (Optional, you may skip this if there is no Facebook Login Enabled)**
 
 1. *.[facebook.com](http://facebook.com/)
 2. *.[facebook.net](http://facebook.net/)
@@ -124,43 +124,43 @@
 
 1. Example:
 
-1. EU:[www.google.eu](http://www.google.eu)
-2. UK:[www.google.co.uk](http://www.google.co.uk/)
-3. Hong Kong:[www.google.com.hk](http://www.google.com.hk/)
-4. Japan:[www.google.co.jp](http://www.google.co.jp/)
-5. Taiwan:[www.google.com.tw](http://www.google.com.tw/)
-6. Thailand:[www.google.co.th](http://www.google.co.th/)
-7. Malaysia:[www.google.com.my](http://www.google.com.my/)
-8. Myanmar:[www.google.com.mm](http://www.google.com.mm/)
-- ii.**Walled Garden List (Optional, you may skip this if there is no Weibo Login Enabled)**
+1. EU: [www.google.eu](http://www.google.eu)
+2. UK: [www.google.co.uk](http://www.google.co.uk/)
+3. Hong Kong: [www.google.com.hk](http://www.google.com.hk/)
+4. Japan: [www.google.co.jp](http://www.google.co.jp/)
+5. Taiwan: [www.google.com.tw](http://www.google.com.tw/)
+6. Thailand: [www.google.co.th](http://www.google.co.th/)
+7. Malaysia: [www.google.com.my](http://www.google.com.my/)
+8. Myanmar: [www.google.com.mm](http://www.google.com.mm/)
+- ii. **Walled Garden List (Optional, you may skip this if there is no Weibo Login Enabled)**
 
 1. *.[weibo.com](http://weibo.com/)
 2. *.[weibo.cn](http://weibo.cn/)
 3. *.[sinaapp.com](http://sinaapp.com/)
 4. *.[sina.com.cn](http://sina.com.cn/)
 5. *.[sinajs.cn](http://sinajs.cn/)
-- iii.**Walled Garden List (Optional, you may skip this if there is no Instagram Login Enabled)**
+- iii. **Walled Garden List (Optional, you may skip this if there is no Instagram Login Enabled)**
 
 1. *.[instagram.com](http://instagram.com/)
 2. *.[akamaihd.net](http://akamaihd.net/)
 3. *.[cdninstagram.com](http://cdninstagram.com/)
-- iv.**Twitter Login (Optional, you may skip this if there is no Twitter Login Enabled)**
+- iv. **Twitter Login (Optional, you may skip this if there is no Twitter Login Enabled)**
 
 1. *.[twitter.com](http://twitter.com/)
 2. *.[twimg.com](http://twimg.com/)
 
-- v.**LINE Login (Optional, you may skip this if there is no LINE Login Enabled)**
+- v. **LINE Login (Optional, you may skip this if there is no LINE Login Enabled)**
 
 1. *.[line.me](http://line.me/)
 2. *.[line-scdn.net](http://line-scdn.net/)
 ​
-- vi.**PayPal Login (Optional, you may skip this if there is no PayPal Login Enabled)**
+- vi. **PayPal Login (Optional, you may skip this if there is no PayPal Login Enabled)**
 
 1. *.[paypal.com](http://paypal.com/)
 2. *.[paypalobjects.com](http://paypalobjects.com/)
 3. [www.google-analytics.com](http://www.google-analytics.com/)
 
-- vii.**Video Login (Optional, you may skip this if there is no Video Login Enabled)**
+- vii. **Video Login (Optional, you may skip this if there is no Video Login Enabled)**
 
 1. *.[akamaized.net](http://akamaized.net/)
 2. *.[akamaihd.net](http://akamaihd.net/)
@@ -171,36 +171,36 @@
 
 ![Screen Shot 2018-07-16 at 1.51.50 PM.png](../../../_images/information-required-for-fanswifi-manager-270.png)
 
-- Finally, set**Assign pre-authentication role**as**FansWiFi_Preauth**and click**Finish**to save all configurations
+- Finally, set **Assign pre-authentication role** as **FansWiFi_Preauth** and click **Finish** to save all configurations
 
 ## Step 2: Add XML API Server (Optional, for XML API method ONLY)
 
-- a. Navigate to**More**>**Services**
+- a. Navigate to **More** > **Services**
 
 ![Screen Shot 2018-12-21 at 4.27.40 PM.png](../../../_images/information-required-for-fanswifi-manager-271.png)
 
-- b. In Services, navigate to**Network Integration**
-- c. Under**XML API Server**, click N**ew**and configure with below settings:
+- b. In Services, navigate to **Network Integration**
+- c. Under **XML API Server**, click **New** and configure with below settings:
 
-- Name:**(Configure with either of the following IP Address)**
+- Name: **(Configure with either of the following IP Address)**
 
-- i.**52.220.226.90**
-- ii.**52.220.206.125**
-- iii.**52.77.30.253**
-- iv.**52.220.219.128**
-- v.**52.220.215.219**
-- vi.**52.220.208.185**
-- Subnet:**(Same as Name)**
-- Mask:**255.255.255.0**
-- Passphrase:**aruba123**
-- Retype:**aruba123**
-- d. Click**OK**to add new XML API Server
+- i. **52.220.226.90**
+- ii. **52.220.206.125**
+- iii. **52.77.30.253**
+- iv. **52.220.219.128**
+- v. **52.220.215.219**
+- vi. **52.220.208.185**
+- Subnet: **(Same as Name)**
+- Mask: **255.255.255.0**
+- Passphrase: **aruba123**
+- Retype: **aruba123**
+- d. Click **OK** to add new XML API Server
 
 ![Screen Shot 2018-12-21 at 4.28.23 PM.png](../../../_images/information-required-for-fanswifi-manager-272.png)
 
 ![Screen Shot 2018-12-21 at 4.29.20 PM.png](../../../_images/information-required-for-fanswifi-manager-273.png)
 
-- e. Click**OK**to save configuration
+- e. Click **OK** to save configuration
 
 ![Screen Shot 2018-12-21 at 4.29.38 PM.png](../../../_images/information-required-for-fanswifi-manager-274.png)
 
@@ -249,14 +249,14 @@ Setting in FansWiFi Admin Panel
 ## Step 4: Add AP to FansWiFi Admin Panel
 
 - Login to FansWiFi Admin Panel
-- Click**Settings -> Hotspots -> Create**
+- Click **Settings -> Hotspots -> Create**
 - Configure with following settings:
 
 - **Venue:** Select the venue of where your Access Point locates
 - **Hotspot Name:** Name each Access Point to make it identifiable
 - **AP Type:** Select “Aruba Instant AP (IAP)”
 - **Mac Address:** Input unique MAC Address of each Access Point in your venue
-- Click**Create**
+- Click **Create**
 
 ![](../../../_images/information-required-for-fanswifi-manager-279.png)
 
@@ -310,6 +310,6 @@ Last Testing: 10-12-2018
 
 ![Screen Shot 2018-12-10 at 5.15.37 PM.png](../../../_images/information-required-for-fanswifi-manager-283.png)
 
-- Confirm by clicking on**Disconnect Now**
+- Confirm by clicking on **Disconnect Now**
 
 ![Screen Shot 2018-12-10 at 5.16.01 PM.png](../../../_images/information-required-for-fanswifi-manager-284.png)

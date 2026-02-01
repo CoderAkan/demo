@@ -7,7 +7,7 @@
 
 ## Tested HiveOS Version
 
-- Version:**8.1r1**
+- Version: **8.1r1**
 
 # Setting on AeroHive HiveManager NG
 
@@ -25,35 +25,34 @@
 ![](../../../_images/information-required-for-fanswifi-manager-18.png)
 
 - b. Name the SSID and SSID Broadcast Name
-- c. SSID Usage:**Open**
-- d. Check**Enable Captive Web Portal**
-- e. Select features for this captive web portal:**User Auth on Captive Web Portal**
-- f. Choose Authentication Type:**Redirect to External URL**
-- g. Add a new**Default Captive Web Portal**(if first time setup)
+- c. SSID Usage: **Open**
+- d. Check **Enable Captive Web Portal**
+- e. Select features for this captive web portal: **User Auth on Captive Web Portal**
+- f. Choose Authentication Type: **Redirect to External URL**
+- g. Add a new **Default Captive Web Portal**(if first time setup)
 
 ![](../../../_images/information-required-for-fanswifi-manager-19.png)
 
 ## Step 3: Configure Captive Web Portal
 
 - a. Name the Captive Web Portal
-- b. Select feature for this captive web portal: Click**ON**for**User Auth on Captive Web Portal**
-​
+- b. Select feature for this captive web portal: Click **ON** for **User Auth on Captive Web Portal**
 
 - c. Login Page
 
 - **Login URL:** [https://connect-p.fanswifi.com/auth](https://connect-p.fanswifi.com/auth)
 - **Password Encryption:** No Encryption
-- d.**Authentication Method:** PAP
-- e.**Success Page:** OFF
+- d. **Authentication Method:** PAP
+- e. **Success Page:** OFF
 
-- Check**Redirect clients after a successful login attempt**
+- Check **Redirect clients after a successful login attempt**
 
-- Select**To a specified URL:** [https://connect-p.fanswifi.com/auth?id=aerohive-ng&res=success](https://connect-p.fanswifi.com/auth?id=aerohive&res=success)
-- f.**Failure Page:** OFF
+- Select **To a specified URL:** [https://connect-p.fanswifi.com/auth?id=aerohive-ng&res=success](https://connect-p.fanswifi.com/auth?id=aerohive&res=success)
+- f. **Failure Page:** OFF
 
-- Check**Redirect client after a failed login attempt**
+- Check **Redirect client after a failed login attempt**
 
-- Select**To a specified URL:** [https://connect-p.fanswifi.com/auth](https://connect-p.fanswifi.com/auth)
+- Select **To a specified URL:** [https://connect-p.fanswifi.com/auth](https://connect-p.fanswifi.com/auth)
 
 ![](../../../_images/information-required-for-fanswifi-manager-20.png)
 
@@ -63,7 +62,7 @@ Add new Walled Garden Rules
 ![](../../../_images/information-required-for-fanswifi-manager-21.png)
 
 - Add the following list of Hostname based on your need
-- Set**All**Service on each hostname record
+- Set **All** Service on each hostname record
 - FansWiFi Server (required)
 
 - *.[fanswifi.com](http://fanswifi.com/)
@@ -109,23 +108,23 @@ Example Result after setting rules for Facebook Login
 
 ## Step 4: Configure Authentication Setting
 
-- a. Add a new**Radius Server Group**
+- a. Add a new **Radius Server Group**
 
 ![](../../../_images/information-required-for-fanswifi-manager-23.png)
 
 - b. Add New Radius Server Group
 
 - 1. Name the RADIUS Server Group
-- 2. Add a New**External RADIUS Server**
-​
+- 2. Add a New **External RADIUS Server**
+
 - 3. Name the External RADIUS Server
-- 4. Add a new**Hostname**
+- 4. Add a new **Hostname**
 
 - **Name:** FansWiFi Radius
 - **Host Name:** [radius.fanswifi.com](http://radius.fanswifi.com/)
-- 5.**Check Authentication Port:** 1812
-- 6.**Check Accounting Port:** 1813
-- 7.**Shared Secret:** social123
+- 5. **Check Authentication Port:** 1812
+- 6. **Check Accounting Port:** 1813
+- 7. **Shared Secret:** social123
 
 ![](../../../_images/information-required-for-fanswifi-manager-24.png)
 
@@ -143,12 +142,10 @@ Example Result after setting rules for Facebook Login
 
 - a. Select the AP you want to Deploy and then click upload
 
-< >
+- Select **Delta Configuration Update**
+- b. Check **Update Network Policy and Configuration**
 
-Select**Delta Configuration Update**
-- b. Check**Update Network Policy and Configuration**
-
-- Click**Perform Update**
+- Click **Perform Update**
 
 ![](../../../_images/information-required-for-fanswifi-manager-27.png)
 

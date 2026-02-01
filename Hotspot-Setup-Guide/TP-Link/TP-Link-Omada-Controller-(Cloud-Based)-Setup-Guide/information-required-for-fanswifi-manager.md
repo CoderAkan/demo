@@ -96,7 +96,7 @@ Note that different models may have different interface
 - **Landing Page:** The Promotional URL
 
 - URL:[https://connect-p.fanswifi.com/auth?res=success](https://connect-p.fanswifi.com/auth?res=success)
-- d. Click "Apply"**​**
+- d. Click "Apply"
 
 ![](../../../_images/information-required-for-fanswifi-manager-233.png)
 
@@ -192,8 +192,8 @@ Cloudflare 14
 - a. Click "Setting" on the left menu
 - b. Under "Authentication" section, Select "Mac-Based Authentication"
 
-- c.**Mac-Based Authentication:** Enable
-- d.**RADIUS Profile:** Click "Create New RADIUS Profile"
+- c. **Mac-Based Authentication:** Enable
+- d. **RADIUS Profile:** Click "Create New RADIUS Profile"
 
 ![](../../../_images/information-required-for-fanswifi-manager-236.png)
 
@@ -269,13 +269,13 @@ Cloudflare 14
 
 - Login to FansWiFi Admin Panel
 - 
-- Click**Settings -> Hotspots -> Create**
+- Click **Settings -> Hotspots -> Create**
 
 1. **Venue:** Select the venue of where your Access Point locates
 2. **Hotspot Name:** Name each Access Point to make it identifiable
 3. **AP Type:** Select “TP-Link EAP”
 4. **Mac Address:** Input unique MAC Address of each Access Point in your venue (Not controller)
-- Click**Save**
+- Click **Save**
 
 ![](../../../_images/information-required-for-fanswifi-manager-244.png)
 

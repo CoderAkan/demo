@@ -265,7 +265,7 @@ e. Select "Settings" and Configure with following settings:
 ## Step 8: Add AP to FansWiFi Admin Panel
 
 - Login to FansWiFi Admin Panel
-- Click**Settings -> Hotspots -> Add Hotspot**
+- Click **Settings -> Hotspots -> Add Hotspot**
 
 - Config with following settings
 
@@ -273,7 +273,7 @@ e. Select "Settings" and Configure with following settings:
 - **Hotspot Name:** Name each Access Point to make it identifiable
 - **AP Type:** Select “Ubiquiti UniFi”
 - **Mac Address:** Input unique MAC Address of each Access Point in your venue (Not controller)
-- Click**Save**
+- Click **Save**
 - 
 
 ## Step 9: Add API Profile in FansWiFi Admin Panel
@@ -288,7 +288,7 @@ e. Select "Settings" and Configure with following settings:
 - **Admin Username:** <your-admin-id> (Configured in Step 6, i.e. FansWiFiAPI)
 - **Admin Password:** <your-admin-password> (Configured in Step 6)
 - e. Click "Save"
-- ***** Please make sure our server can reach your UniFi Controller's 8443 port**
+- **Please make sure our server can reach your UniFi Controller's 8443 port**
 
 - Below are the IP Addresses of our servers calling UniFi via 8443 port
 

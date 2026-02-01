@@ -1,8 +1,5 @@
 # Information required for FansWiFi Manager
 
-
-# Information required for FansWiFi Manager
-
 - Mac Addresses of the APs (usually can be found at the back of the router)
 
 # Tested model and firmware version
@@ -41,18 +38,18 @@ Setup the basic Aruba Instant-On account according to Aruba Instant-On’s setup
 
 - a. Identification
 
-- **i. Network Usage**: Guest
-- **ii. Security**: None or Wi-Fi Enhanced Open
+- **i. Network Usage:** Guest
+- **ii. Security:** None or Wi-Fi Enhanced Open
 - **iii. Network Option:** Guest Portal (Checked)
-- b. Click**Save**
+- b. Click **Save**
 
 ![](../../../_images/information-required-for-fanswifi-manager-11.png)
 
 - c. IP Assignment
 
-- i.**IP Assignment:** Specific to This Network**(Suggested)**
-- ii.**Base IP Address**: 172.16.0.0 (Or change to other network if needed)
-- iii.**Subnet Mask:** 255.255.248.0 (2048 Clients)**(Suggested)**
+- **i. IP Assignment:** Specific to This Network **(Suggested)**
+- **ii. Base IP Address:** 172.16.0.0 (Or change to other network if needed)
+- **iii. Subnet Mask:** 255.255.248.0 (2048 Clients) **(Suggested)**
 
 ![](../../../_images/information-required-for-fanswifi-manager-12.png)
 
@@ -64,22 +61,22 @@ Setup the basic Aruba Instant-On account according to Aruba Instant-On’s setup
 
 ## Step 5:Finish the settings according to the following configuration and screenshot
 
-- a.**Type:** External
-- b.**Portal URL:** [https://connect-p.fanswifi.com/auth](https://connect-p.fanswifi.com/auth)
-- c.**Redirect URL:** [https://connect-p.fanswifi.com/auth?res=success](https://connect-p.fanswifi.com/auth?res=success)
-- d.**Authentication:** Select “User authentication (default)”
-- e.**Authentication Option:**
+- **a. Type:** External
+- **b. Portal URL:** [https://connect-p.fanswifi.com/auth](https://connect-p.fanswifi.com/auth)
+- **c. Redirect URL:** [https://connect-p.fanswifi.com/auth?res=success](https://connect-p.fanswifi.com/auth?res=success)
+- **d. Authentication:** Select “User authentication (default)”
+- **e. Authentication Option:**
 
-- i.**Require RADIUS Message-Authenticator:** Unchecked (Do not check)
-- ii.**RADIUS Accounting:** Checked
-- f.**Primary RADIUS Server**
+- **i. Require RADIUS Message-Authenticator:** Unchecked (Do not check)
+- **ii. RADIUS Accounting:** Checked
+- **f. Primary RADIUS Server**
 
-- i.**Server IP address or domain name:** radius.fanswifi.com
-- ii.**Shared Secret:** social123
-- g.**Network Access Attributes**
+- **i. Server IP address or domain name:** radius.fanswifi.com
+- **ii. Shared Secret:** social123
+- **g. Network Access Attributes**
 
 - **NAS Identifier:** socialnas
-- h.**NAS IP Address:** Select “Use device IP (default)”
+- **h. NAS IP Address:** Select “Use device IP (default)”
 
 ![](../../../_images/information-required-for-fanswifi-manager-14.png)
 
@@ -87,11 +84,11 @@ Setup the basic Aruba Instant-On account according to Aruba Instant-On’s setup
 
 - **a. Add FansWiFi domain (required)**
 
-- **i.** fanswifi.com
-- ii. cacerts.digitalcertvalidation.com
-- iii. statusa.digitalcertvalidation.com
-- iv. ocsp.digicert.com
-- b. Select the Social Media you wish to use for Login if it is available on the list
+- **i. fanswifi.com**
+- **ii. cacerts.digitalcertvalidation.com**
+- **iii. statusa.digitalcertvalidation.com**
+- **iv. ocsp.digicert.com**
+- **b. Select the Social Media you wish to use for Login if it is available on the list**
 
 - i. Aruba may update this list accordingly
 -
@@ -146,19 +143,19 @@ vimeocdn.com
 
 vimeo.com
 
-## Step 7:[Suggested]Access Control(Security Setting)
+## Step 7: [Suggested] Access Control (Security Setting)
 
 - a. Suggested to enable the “**Access Restrictions**” and select “**Network Destinations**” to prevent any device in the network being accessed by the WiFi guest. This is an important feature for protecting your own network.
 
 - i. This can prevent WiFi Guest user to access any other devices in your network including your Router, POS Machine, Surveillance Camera, internal computer…etc.
-- b. Allow user to access**Internet**only
+- b. Allow user to access **Internet** only
 
 ![](../../../_images/information-required-for-fanswifi-manager-15.png)
 
 ## Step 8: Add AP to FansWiFi Admin Panel
 
 - Login to FansWiFi Admin Panel
-- Click**Settings -> Hotspots -> Add Hotspot**
+- Click **Settings -> Hotspots -> Add Hotspot**
 
 - Configure with following settings:
 
@@ -166,7 +163,7 @@ vimeo.com
 - **Hotspot Name:** Name each Access Point to make it identifiable
 - **AP Type:** Select “Aruba”
 - **Mac Address:** Input unique MAC Address of each Access Point in your venue (Not controller)
-- Click**Save**
+- Click **Save**
 
 ![](../../../_images/information-required-for-fanswifi-manager-16.png)
 

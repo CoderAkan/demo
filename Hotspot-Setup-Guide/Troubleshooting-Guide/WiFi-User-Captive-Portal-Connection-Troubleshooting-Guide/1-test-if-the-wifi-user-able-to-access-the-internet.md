@@ -1,4 +1,4 @@
-# 1) Test if the WiFi User able to access the Internet
+# Test if the WiFi User able to access the Internet
 
 After configuring the WiFi Captive portal, but the AP does not redirect WiFi user to the captive portal.
 
@@ -13,7 +13,7 @@ Below tests are recommended to be performed on a laptop computer (Windows / MacO
 
 ### If the screen recording file is too large, we suggest uploading it to YouTube as an unlisted video. Unlisted videos are private and will not be visible to others unless they have the link. You can then share the link with us, and we’ll review it. Thank you for your cooperation.
 
-# 1) Test if the WiFi User able to access the Internet
+# Test if the WiFi User able to access the Internet
 
 Even before login via Captive Portal, the WiFi user should need to be able to contact the Internet and also our sites in order to reach the captive portal.
 
@@ -41,7 +41,7 @@ If the WiFi user cannot reach the above IPs, it shows that the network setting o
 - The Gateway might not be reachable from the client
 - The Gateway might not be able to route the traffic to the Internet
 
-# 2) Test if the WiFi User able to resolve DNS
+# Test if the WiFi User able to resolve DNS
 
 Double check if the WiFi user can resolve DNS of Internet domains.
 
@@ -78,7 +78,7 @@ Further troubleshooting
 - make sure the DHCP server of the network provide correct DNS server address to the WiFi client
 - Try to ping the DNS Server IP Address from the WiFi client
 
-# 3) Verify Walled Garden setting by accessing FansWiFi URL directly
+# Verify Walled Garden setting by accessing FansWiFi URL directly
 
 Walled Garden Setting on the captive portal
 
@@ -96,7 +96,7 @@ You should see the page like this
 
 ![](../../../_images/1-test-if-the-wifi-user-able-to-access-the-internet-309.png)
 
-# 4) Test captive portal redirection by accessing "http://" website to trigger the redirection, use browser (e.g. Chrome)'s developer tools to help checking the page loading results
+# Test captive portal redirection by accessing "http://" website to trigger the redirection, use browser (e.g. Chrome)'s developer tools to help checking the page loading results
 
 On Chrome, please
 

@@ -22,30 +22,30 @@
 
 - To enable FansWiFi, you will need to set the Splash Page of the SSID
 
-- i.**SSID Name:** <Any WiFi SSID name your want>
-- ii.**Enable:** On
-- iii.**Visible:** On
-- iv.**Splash page:** On
-- v.**Splash page type:** Hosted Remotely
+- i. **SSID Name:** <Any WiFi SSID name your want>
+- ii. **Enable:** On
+- iii. **Visible:** On
+- iv. **Splash page:** On
+- v. **Splash page type:** Hosted Remotely
 
 ![](../../../_images/information-required-for-fanswifi-manager-103.png)
 
 - Splash Page Configuration
 
-- i.**Splash page URL:** [https://connect-p.fanswifi.com/auth/](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- ii.**Splash page secret:** social123
-- iii.**Splash Page Authentication Type:** RADIUS
-- iv.**Server address 1:** [radius.fanswifi.com](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- v.**Server address 2:** [radius2.fanswifi.com](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- vi.**Server secret:** social123
-- vii.**NAS ID:** socialnas
-- viii.**Use MAC addr for password:** On
-- ix.**Enable Failsafe Mode:** On
-- x.**Block unauthenticated users:** On
-- xi.**Walled Garden List (required)**
+- i. **Splash page URL:** [https://connect-p.fanswifi.com/auth/](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
+- ii. **Splash page secret:** social123
+- iii. **Splash Page Authentication Type:** RADIUS
+- iv. **Server address 1:** [radius.fanswifi.com](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
+- v. **Server address 2:** [radius2.fanswifi.com](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
+- vi. **Server secret:** social123
+- vii. **NAS ID:** socialnas
+- viii. **Use MAC addr for password:** On
+- ix. **Enable Failsafe Mode:** On
+- x. **Block unauthenticated users:** On
+- xi. **Walled Garden List (required)**
 
 - 1.[fanswifi.com](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- xii.**Walled Garden List**(Optional, you may skip this if there is no Facebook Login Enabled)
+- xii. **Walled Garden List** (Optional, you may skip this if there is no Facebook Login Enabled)
 
 - 1.[facebook.com](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
 - 2.[facebook.net](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
@@ -66,23 +66,23 @@
 - vi. Thailand:[www.google.co.th](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
 - vi. Malaysia:[www.google.com.my](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
 - viii. Myanmar:[www.google.com.mm](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- xiii.**Walled Garden List**(Optional, you may skip this if there is no Weibo Login Enabled)
+- xiii. **Walled Garden List** (Optional, you may skip this if there is no Weibo Login Enabled)
 
 - 1.[weibo.com](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
 - 2.[weibo.cn](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
 - 3.[sinaapp.com](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
 - 4.[sina.com.cn](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
 - 5.[sinajs.cn](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- xiv.**Walled Garden List**(Optional, you may skip this if there is no Instagram Login Enabled))
+- xiv. **Walled Garden List** (Optional, you may skip this if there is no Instagram Login Enabled)
 
 - 1.[instagram.com](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
 - 2.[akamaihd.net](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
 - 3.[cdninstagram.com](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- xv.**Walled Garden List**(Optional, you may skip this if there is no Twitter Login Enabled)
+- xv. **Walled Garden List** (Optional, you may skip this if there is no Twitter Login Enabled)
 
 - 1.[twitter.com](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
 - 2.[twimg.com](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- xvi.**Walled Garden List**(Optional, you may skip this if there is no Video Login Enabled)
+- xvi. **Walled Garden List** (Optional, you may skip this if there is no Video Login Enabled)
 
 - 1.[akamaized.net](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
 - 2.[akamaihd.net](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
@@ -115,13 +115,13 @@
 ## Step 7: Add AP to FansWiFi Admin Panel
 
 - Login to FansWiFi Admin Panel
-- Click**Settings -> Hotspots -> Add Hotspot**
+- Click **Settings -> Hotspots -> Add Hotspot**
 
-1. 1. **Organization:** Select the organization of where your Access Point locates
+1. **Organization:** Select the organization of where your Access Point locates
 2. **Venue:** Select the venue of where your Access Point locates
 3. **Hotspot Name:** Name each Access Point to make it identifiable
 4. **AP Type:** Select “Open Mesh Firmware 6”
 5. **Mac Address:** Input unique MAC Address of each Access Point in your venue
-2. Click**Save**
+6. Click **Save**
 
 ![](../../../_images/information-required-for-fanswifi-manager-107.png)

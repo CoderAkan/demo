@@ -7,7 +7,7 @@
 
 ## Tested Firmware Version
 
-- Version:**3.2.1**
+- Version: **3.2.1**
 
 ## FansWiFi Server / Controller Communication
 
@@ -86,7 +86,7 @@ All
 ## Step 1:  Configure the SmartZone
 
 1. Access the SmartZone by opening a Web Browser
-2. Click**Configure -> Service & Profiles -> Authentication**to enter the Authentication configuration Page
+2. Click **Configure -> Service & Profiles -> Authentication** to enter the Authentication configuration Page
 
 ![](../../../_images/information-required-for-fanswifi-manager-136.png)
 
@@ -139,15 +139,15 @@ All
 
 ## Step 4: Configuration: Create AP Zone
 
-- a. Select**Configuration -> AP Zones**from the top menu
+- a. Select **Configuration -> AP Zones** from the top menu
 
 ![](../../../_images/information-required-for-fanswifi-manager-141.png)
 
 - b. Click “Create New” with below settings
 
-- i.**Zone Name:** FansWiFi
-- ii.**AP Admin Logon (Logon ID):** admin
-- iii.**AP Admin Logon (Password):** [AP Admin Password]
+- i. **Zone Name:** FansWiFi
+- ii. **AP Admin Logon (Logon ID):** admin
+- iii. **AP Admin Logon (Password):** [AP Admin Password]
 - c. Click “**OK**” to Save the configuration
 
 ### 4.1. Configuration: Select AP Zone
@@ -160,22 +160,22 @@ All
 
 ![](../../../_images/information-required-for-fanswifi-manager-143.png)
 
-- a. Select**Hotspot (WISPr)****from the left menu under AP Zones
+- a. Select **Hotspot (WISPr)** from the left menu under AP Zones
 - b. Click “Create New” with below settings
 
-- i.**Portal Name:** FansWiFi Portal
-- ii.**Smart Client Support:** None
-- iii.**Logon URL:** External
-- iv.**Logon URL (Redirect URL):** [https://connect-p.fanswifi.com/auth](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-scg-version-3-4-or-before-setup-guide#)
-- v.**Redirected MAC Format:** AA-BB-CC-DD-EE-FF
-- vi.**Start Page (redirect to the following URL):** [https://connect-p.fanswifi.com/auth/?res=success](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-scg-version-3-4-or-before-setup-guide#)
-- vii.**Session Timeout:** 1440
-- viii.**Grace Period:** 60
-- ix.**Walled Garden List (required)**
+- i. **Portal Name:** FansWiFi Portal
+- ii. **Smart Client Support:** None
+- iii. **Logon URL:** External
+- iv. **Logon URL (Redirect URL):** [https://connect-p.fanswifi.com/auth](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-scg-version-3-4-or-before-setup-guide#)
+- v. **Redirected MAC Format:** AA-BB-CC-DD-EE-FF
+- vi. **Start Page (redirect to the following URL):** [https://connect-p.fanswifi.com/auth/?res=success](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-scg-version-3-4-or-before-setup-guide#)
+- vii. **Session Timeout:** 1440
+- viii. **Grace Period:** 60
+- ix. **Walled Garden List (required)**
 
 - *.[fanswifi.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-scg-version-3-4-or-before-setup-guide#)
 - *.cloudfront.net
-- x.**Walled Garden List**(Optional, you may skip this if there is no Facebook Login Enabled)
+- x. **Walled Garden List** (Optional, you may skip this if there is no Facebook Login Enabled)
 
 - *.facebook[.](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-scg-version-3-4-or-before-setup-guide#)com
 - *.facebook[.](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-scg-version-3-4-or-before-setup-guide#)net
@@ -183,23 +183,23 @@ All
 - *.fbcdn[.](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-scg-version-3-4-or-before-setup-guide#)com
 - *.akamaihd[.](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-scg-version-3-4-or-before-setup-guide#)net
 - *.fbsbx.com
-- xi.**Walled Garden List**(Optional, you may skip this if there is no Weibo Login Enabled)
+- xi. **Walled Garden List** (Optional, you may skip this if there is no Weibo Login Enabled)
 
 - *.[weibo.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-scg-version-3-4-or-before-setup-guide#)
 - *.[weibo.cn](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-scg-version-3-4-or-before-setup-guide#)
 - *.[sinaapp.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-scg-version-3-4-or-before-setup-guide#)
 - *.[sina.com.cn](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-scg-version-3-4-or-before-setup-guide#)
 - *.[sinajs.cn](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-scg-version-3-4-or-before-setup-guide#)
-- xii.**Walled Garden List**(Optional, you may skip this if there is no Instagram Login Enabled))
+- xii. **Walled Garden List** (Optional, you may skip this if there is no Instagram Login Enabled)
 
 - *.[instagram.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-scg-version-3-4-or-before-setup-guide#)
 - *.[akamaihd.net](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-scg-version-3-4-or-before-setup-guide#)
 - *.[cdninstagram.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-scg-version-3-4-or-before-setup-guide#)
-- xiii.**Walled Garden List**(Optional, you may skip this if there is no Twitter Login Enabled)
+- xiii. **Walled Garden List** (Optional, you may skip this if there is no Twitter Login Enabled)
 
 - *.[twitter.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-scg-version-3-4-or-before-setup-guide#)
 - *.[twimg.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-scg-version-3-4-or-before-setup-guide#)
-- xiv.**Walled Garden List**(Optional, you may skip this if there is no Video Login Enabled)
+- xiv. **Walled Garden List** (Optional, you may skip this if there is no Video Login Enabled)
 
 - *.[akamaized.net](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-scg-version-3-4-or-before-setup-guide#)
 - *.[akamaihd.net](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-scg-version-3-4-or-before-setup-guide#)
@@ -237,14 +237,14 @@ All
 
 ## Step 6: Northbound Portal Interface (NBI) Password
 
-- Click**Configuration -> General System Settings -> Northbound Portal Interface**
-- If you have a NBI password, you may skip this step. If not, please enter a new password now and click**Apply**.
+- Click **Configuration -> General System Settings -> Northbound Portal Interface**
+- If you have a NBI password, you may skip this step. If not, please enter a new password now and click **Apply**.
 - This password will be used in the controller setting later on.
 
 **If you forgot your NBI password and want to retrieve it without setting a new password, you can follow below HTML method below.**
 
 - In Google Chrome, right click the password box, then select "**Inspect**" to launch the developer tools.
-- Find '**name="nbPasswd"****' by using the search bar inside the developer tools, locate '**type="password"**' before it in the same row
+- Find '**name="nbPasswd"**' by using the search bar inside the developer tools, locate '**type="password"**' before it in the same row
 - Replace '**type="password"**' with '**type="text"**'
 - Your NBI password should be visible in the password box now
 
@@ -273,7 +273,7 @@ If the SmartZone / vSCG is behind Router / Firewall, it is not directly accessib
 ## Step 8: Add AP to FansWiFi Admin Panel
 
 - Login to FansWiFi Admin Panel
-- Click**Settings -> Hotspots -> Add Hotspot**
+- Click **Settings -> Hotspots -> Add Hotspot**
 
 - **a. Organization:** Select the organization of where your Access Point locates
 - **b. Venue:** Select the venue of where your Access Point locates
@@ -281,7 +281,7 @@ If the SmartZone / vSCG is behind Router / Firewall, it is not directly accessib
 - **d. AP Type:** Select “Ruckus SmartZone (formerly SCG)”
 - **e. Mac Address:** Input unique MAC Address of each Access Point in your venue (Not controller)
 
-- Click**Save**
+- Click **Save**
 
 ![](../../../_images/information-required-for-fanswifi-manager-150.png)
 

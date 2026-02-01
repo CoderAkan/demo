@@ -2,13 +2,12 @@
 
 ## Cisco Meraki - Enabling DNS-Based Walled Garden
 
-| Articles |
-| :--- |
-| <a href="Cisco-Meraki---Enabling-DNS-Based-Walled-Garden/information-required-for-fanswifi-manager.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Information required for FansWiFi Manager</a> |
+{% content-ref url="Cisco-Meraki---Enabling-DNS-Based-Walled-Garden/information-required-for-fanswifi-manager.md" %}
+[Information required for FansWiFi Manager](Cisco-Meraki---Enabling-DNS-Based-Walled-Garden/information-required-for-fanswifi-manager.md)
+{% endcontent-ref %}
 
 ## Cisco Meraki AP Setup Guide
 
-| Articles |
-| :--- |
-| <a href="Cisco-Meraki-AP-Setup-Guide/information-required-for-fanswifi-manager.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Information required for FansWiFi Manager</a> |
-
+{% content-ref url="Cisco-Meraki-AP-Setup-Guide/information-required-for-fanswifi-manager.md" %}
+[Information required for FansWiFi Manager](Cisco-Meraki-AP-Setup-Guide/information-required-for-fanswifi-manager.md)
+{% endcontent-ref %}

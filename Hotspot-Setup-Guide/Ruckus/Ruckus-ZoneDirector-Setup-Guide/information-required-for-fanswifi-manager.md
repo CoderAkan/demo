@@ -7,8 +7,8 @@
 
 ## Tested Firmware Version
 
-- Version:**9.8**
-- NOT Supported Version:**9.7 or below**
+- Version: **9.8**
+- NOT Supported Version: **9.7 or below**
 - **Warning: Firmware 9.7 or below is confirmed NOT working with Social Login. Please do not use firmware 9.7 or below.**
 
 ## FansWiFi Server / Controller Communication
@@ -111,7 +111,7 @@ Example Flow Diagram for whole Authentication Process
 - a. Select “AAA Servers” from the left menu
 - b. Click “Create New” again with below settings
 
-- - **Name:** FansWiFi Radius
+- **Name:** FansWiFi Radius
 - **Type:** RADIUS
 - **Backup Radius:** Off
 - **IP Address:** 103.6.85.240
@@ -129,7 +129,7 @@ Example Flow Diagram for whole Authentication Process
 - a. Select “AAA Servers” again from the left menu
 - b. Click “Create New” again with below settings
 
-- - **Name:** FansWiFi Acct Radius
+- **Name:** FansWiFi Acct Radius
 - **Type:** RADIUS Accounting
 - **Backup Radius:** Off
 - **IP Address:** 103.6.85.240
@@ -148,10 +148,10 @@ a. Select “Hotspot Services” from the left menu
 
 b. Click “Create New” with below settings
 
-- i.**Name:** FansWiFi
-- ii.**Login Page:** [https://connect-p.fanswifi.com/auth](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-unleashed-setup-guide#)
-- iii.**Start Page (redirect to the following URL):** [https://connect-p.fanswifi.com/auth](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-unleashed-setup-guide#)
-- iv.**User Session:** (set it if your FansWiFi Admin Panel has session timeout & daily quota enabled)
+- **Name:** FansWiFi
+- **Login Page:** [https://connect-p.fanswifi.com/auth](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-unleashed-setup-guide#)
+- **Start Page (redirect to the following URL):** [https://connect-p.fanswifi.com/auth](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-unleashed-setup-guide#)
+- **User Session:** (set it if your FansWiFi Admin Panel has session timeout & daily quota enabled)
 
 - **Example:** Session Timeout / Daily Quota: 60 minute
 - **Setting:**
@@ -159,43 +159,43 @@ b. Click “Create New” with below settings
 - **Session Timeout:** 60 Minutes
 - **Grace Period:** 60 Minutes
 
-- v.**Authentication Server:** FansWiFi Radius
-- vi.**Accounting Server:** FansWiFi Acct Radius
-- vii.**Encryption Method:** None
-- viii.**Advanced Option**
+- **Authentication Server:** FansWiFi Radius
+- **Accounting Server:** FansWiFi Acct Radius
+- **Encryption Method:** None
+- **Advanced Option**
 
 - **Inactive Timeout:** 60 minutes
 ​
-- ix.**Walled Garden List (required)**
+- **Walled Garden List (required)**
 
-1. 1. *.[fanswifi.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
-- x.**Walled Garden List (Optional, you may skip this if there is no Facebook Login Enabled)**
+1. *.[fanswifi.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
+- **Walled Garden List (Optional, you may skip this if there is no Facebook Login Enabled)**
 
-1. 1. *.[facebook.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
+1. *.[facebook.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
 2. *.[facebook.net](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
 3. *.[fbcdn.net](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
 4. *.[fbcdn.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
 5. *.[akamaihd.net](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
 6. *.fbsbx.com
-- xi.**Walled Garden List (Optional, you may skip this if there is no Weibo Login Enabled)**
+- **Walled Garden List (Optional, you may skip this if there is no Weibo Login Enabled)**
 
-1. 1. *.[weibo.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
+1. *.[weibo.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
 2. *.[weibo.cn](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
 3. *.[sinaapp.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
 4. *.[sina.com.cn](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
 5. *.[sinajs.cn](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
-- xii.**Walled Garden List (Optional, you may skip this if there is no Instagram Login Enabled)**
+- **Walled Garden List (Optional, you may skip this if there is no Instagram Login Enabled)**
 
-1. 1. *.[instagram.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
+1. *.[instagram.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
 2. *.[akamaihd.net](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
 3. *.[cdninstagram.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
-- xiii.**Twitter Login (Optional, you may skip this if there is no Twitter Login Enabled)**
+- **Twitter Login (Optional, you may skip this if there is no Twitter Login Enabled)**
 
-1. 1. *.[twitter.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
+1. *.[twitter.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
 2. *.[twimg.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
-- xiv.**Video Login (Optional, you may skip this if there is no Video Login Enabled)**
+- **Video Login (Optional, you may skip this if there is no Video Login Enabled)**
 
-1. 1. *.[akamaized.net](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
+1. *.[akamaized.net](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
 2. *.[akamaihd.net](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
 3. [ssl.google-analytics.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
 4. *.[scorecardresearch.com](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-zonedirector-setup-guide#)
@@ -266,9 +266,9 @@ Setting in FansWiFi Admin Panel
 ## Step 7: Add AP to FansWiFi Admin Panel
 
 - Login to FansWiFi Admin Panel
-- Click**Settings -> Hotspots -> Add Hotspot**
+- Click **Settings -> Hotspots -> Add Hotspot**
 
-1. 1. **Venue:** Select the venue of where your Access Point locates
+1. **Venue:** Select the venue of where your Access Point locates
 2. **Hotspot Name:** Name each Access Point to make it identifiable
 3. **AP Type:** Select “Ruckus ZoneDirector”
 4. **Mac Address:** Input unique MAC Address of each Access Point in your venue (Not controller)
@@ -306,8 +306,8 @@ Last Testing: 11-9-2017
 
 **Controller**
 
-- Click on**Monitor**tab
+- Click on **Monitor** tab
 - Click "**Wireless Clients**" on the left menu
-- Under**Active Clients**, select the device you want to logout, click the**red cross**on the same row
+- Under **Active Clients**, select the device you want to logout, click the **red cross** on the same row
 
 ![](../../../_images/information-required-for-fanswifi-manager-134.png)

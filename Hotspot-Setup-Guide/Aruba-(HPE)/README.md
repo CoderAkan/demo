@@ -2,31 +2,30 @@
 
 ## Aruba (HPE) Instant-On AP Setup Guide
 
-| Articles |
-| :--- |
-| <a href="Aruba-(HPE)-Instant-On-AP-Setup-Guide/information-required-for-fanswifi-manager.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Information required for FansWiFi Manager</a> |
+{% content-ref url="Aruba-(HPE)-Instant-On-AP-Setup-Guide/information-required-for-fanswifi-manager.md" %}
+[Information required for FansWiFi Manager](Aruba-(HPE)-Instant-On-AP-Setup-Guide/information-required-for-fanswifi-manager.md)
+{% endcontent-ref %}
 
 ## Aruba Instant (IAP) Setup Guide
 
-| Articles |
-| :--- |
-| <a href="Aruba-Instant-(IAP)-Setup-Guide/information-required-for-fanswifi-manager.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Information required for FansWiFi Manager</a> |
+{% content-ref url="Aruba-Instant-(IAP)-Setup-Guide/information-required-for-fanswifi-manager.md" %}
+[Information required for FansWiFi Manager](Aruba-Instant-(IAP)-Setup-Guide/information-required-for-fanswifi-manager.md)
+{% endcontent-ref %}
 
 ## Aruba Mobility Controller Setup Guide (Version 6.x)
 
-| Articles |
-| :--- |
-| <a href="Aruba-Mobility-Controller-Setup-Guide-(Version-6.x)/information-required-for-fanswifi-manager.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Information required for FansWiFi Manager</a> |
+{% content-ref url="Aruba-Mobility-Controller-Setup-Guide-(Version-6.x)/information-required-for-fanswifi-manager.md" %}
+[Information required for FansWiFi Manager](Aruba-Mobility-Controller-Setup-Guide-(Version-6.x)/information-required-for-fanswifi-manager.md)
+{% endcontent-ref %}
 
 ## Aruba Mobility Controller Setup Guide (Version 8.x)
 
-| Articles |
-| :--- |
-| <a href="Aruba-Mobility-Controller-Setup-Guide-(Version-8.x)/setting-on-aruba-controller.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Setting on Aruba Controller</a> |
+{% content-ref url="Aruba-Mobility-Controller-Setup-Guide-(Version-8.x)/setting-on-aruba-controller.md" %}
+[Setting on Aruba Controller](Aruba-Mobility-Controller-Setup-Guide-(Version-8.x)/setting-on-aruba-controller.md)
+{% endcontent-ref %}
 
 ## Aruba Networking Central Setup Guide
 
-| Articles |
-| :--- |
-| <a href="Aruba-Networking-Central-Setup-Guide/information-required-for-fanswifi-manager.md" style="color: black; text-decoration: none; display: block; width: 100%; padding: 4px;">Information required for FansWiFi Manager</a> |
-
+{% content-ref url="Aruba-Networking-Central-Setup-Guide/information-required-for-fanswifi-manager.md" %}
+[Information required for FansWiFi Manager](Aruba-Networking-Central-Setup-Guide/information-required-for-fanswifi-manager.md)
+{% endcontent-ref %}

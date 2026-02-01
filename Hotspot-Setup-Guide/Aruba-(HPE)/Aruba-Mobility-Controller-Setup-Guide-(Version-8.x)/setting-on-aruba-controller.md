@@ -9,35 +9,35 @@
 
 - Standalone Controller
 
-- Model:**Aruba Mobility Controller****Aruba7005-US**
-- Software Version:**ArubaOS 8.10.0.9 LSR**
+- Model: **Aruba Mobility Controller** **Aruba7005-US**
+- Software Version: **ArubaOS 8.10.0.9 LSR**
 - Controller managed by Aruba Mobility Conductor / Mobility Master (MM / MD)
 
-- Software Version:**ArubaOS 8.10.0.12 LSR**
+- Software Version: **ArubaOS 8.10.0.12 LSR**
 
 # Setting on Aruba Controller
 
 ## Step 0: Make sure the controller can successfully connect to both the Internet and FansWiFi radius server
 
-- a. Goto**Diagnostics**>**Tools**>**Ping**
+- a. Go to **Diagnostics** > **Tools** > **Ping**
 
 - Please ping with the following IP address one-by-one:
 
-- IP address:**8.8.8.8**(Google's DNS Address)
-- IP address:**103.6.85.240**(radius.fanswifi.com)
+- IP address: **8.8.8.8** (Google's DNS Address)
+- IP address: **103.6.85.240** (radius.fanswifi.com)
 - Click "**Ping**"
 
 - If either one IP address is not success, please move to (b)
 - If both IP address are success, please move to step 1
 -
-- b. If (a) does not success (i.e. the controller cannot ping 8.8.8.8**or**our radius sever address), the controller is probably do not have correct IP or Default Gateway configuration
+- b. If (a) does not success (i.e. the controller cannot ping 8.8.8.8 **or** our radius server address), the controller is probably do not have correct IP or Default Gateway configuration
 
 - Make sure your controller have a "Default Gateway" setting if not available
 
 - A common configuration issue is that the controller do not have the Default Gateway setting by default. If the controller do not have the default gateway setting, it can't communicate with the Internet and also our FansWiFi Radius server
 - Goto Configuration > Interface > IP route
 
-- Click "**+**" under**Static****Default Gateway**
+- Click "**+**" under **Static** >**Default Gateway**
 
 - **IP address:** "IP Address of your network's gateway"
 - Click "**Submit**"
@@ -48,18 +48,17 @@
 ## Step 1: Configuration: WLAN and SSID
 
 - a. Access the Aruba Mobility Controller by opening a Web Browser
-- b. Click**Configuration > WLAN > "+"**to configure new WLAN
-- c. In**General**setting
+- b. Click **Configuration > WLAN > "+"** to configure new WLAN
+- c. In **General** setting
 
-- Name (SSID):**- FansWiFi Free WiFi -**
+- Name (SSID): **- FansWiFi Free WiFi -**
 
 - Or any SSID you preferred
-- Primary usage:**Guest**
+- Primary usage: **Guest**
 - Click "**Next**"
-- 
-- e. In**VLANs**setting
+- e. In **VLANs** setting
 
-- VLAN:**1 (or any vlan you use)**
+- VLAN: **1 (or any vlan you use)**
 
 - 🚨 Please make sure the controller have an L3 interface and IP address on the VLAN used for Captive Portal SSID 🚨
 - Otherwise, the controller will not able to redirect WiFi users to Captive Portal page
@@ -68,46 +67,46 @@
 - [FAQ 2). If VLAN is used in your setup, make sure the controller have an Interface and IP Address on this VLAN]([#h_6d97a36cda](https://www.facebook.com/hashtag/h_6d97a36cda))
 - click "**Next**"
 - 
-- f. In**Security**setting
+- f. In **Security** setting
 
 - 
-- Select**ClearPass or other external Captive Portal**
-- In**Auth servers,** Click "**+**" > "**+**" (Create new server)
+- Select **ClearPass or other external Captive Portal**
+- In **Auth servers,** Click "**+**" > "**+**" (Create new server)
 
 - Select "**RADIUS**"
 - Configure with following settings:
 
-- Name:**FansWiFi_rad1**
-- IP address:**103.6.85.240**
-- Auth port:**1812**
-- Accounting port:**1813**
-- Shared key:**social123**
-- Retype key:**social123**
+- Name: **FansWiFi_rad1**
+- IP address: **103.6.85.240**
+- Auth port: **1812**
+- Accounting port: **1813**
+- Shared key: **social123**
+- Retype key: **social123**
 - Click "**Submit**"
 - 
 - Then, configure with following settings:
 
-- Auth servers:**FansWiFi_Radius**
-- Host:**connect-p.fanswifi.com**
-- Page:**/auth**
-- Redirect URL:**https://connect-p.fanswifi.com/auth?res=success**
+- Auth servers: **FansWiFi_Radius**
+- Host: **connect-p.fanswifi.com**
+- Page: **/auth**
+- Redirect URL: **https://connect-p.fanswifi.com/auth?res=success**
 - Click "**Next**"
 -
-- g. In**Access**setting, click "**Finish**"
+- g. In **Access** setting, click "**Finish**"
 
 ## Step 2: Configuration: Walled Garden
 
-- a. Select**Configuration > Roles & Policies > Aliases**
-- b. Click**"+"**to add a walled garden
+- a. Select **Configuration > Roles & Policies > Aliases**
+- b. Click **"+"** to add a walled garden
 - c. Configure the settings with below settings
 
-- i. IP Version:**IPv4**
-- ii. Name:**FansWiFi_WalledGarden**
-- d. Click**"+"**to add a rule and configure with below settings
+- i. IP Version: **IPv4**
+- ii. Name: **FansWiFi_WalledGarden**
+- d. Click **"+"** to add a rule and configure with below settings
 
-- i. Rule Type:**Name**
-- ii. Domain Name:***Enter walled garden domain name***
-- e. Click**OK**to confirm details and add a new rule
+- i. Rule Type: **Name**
+- ii. Domain Name: **Enter walled garden domain name**
+- e. Click **OK** to confirm details and add a new rule
 - f. Configure the walled garden with below settings
 
 ![](../../../_images/setting-on-aruba-controller-313.png)
@@ -178,84 +177,84 @@ v.**Video Login (Optional, you may skip this if there is no Video Login Enabled)
 2. *.[vimeocdn.com](http://vimeocdn.com/)
 3. *.[vimeo.com](http://vimeo.com/)
 
-- g. Click**Submit**to save configuration
+- g. Click **Submit** to save configuration
 
 ![](../../../_images/setting-on-aruba-controller-314.png)
 
 ## ​Step 3: Configuration: Captive Portal
 
-- a. Click**Configuration > Authentication > L3 Authentication**
-- b. Select**Captive Portal Authentication**
-- c. Select**- FansWiFi Free WiFi -_cppm_prof**
+- a. Click **Configuration > Authentication > L3 Authentication**
+- b. Select **Captive Portal Authentication**
+- c. Select **- FansWiFi Free WiFi -_cppm_prof**
 
-- a profile will be created automatically by the controller for each SSID you created**<ssid-name-you-configured>_cppm_prof**in[Step 1]([#h_6cf0c639aa](https://www.facebook.com/hashtag/h_6cf0c639aa))
+- a profile will be created automatically by the controller for each SSID you created **<ssid-name-you-configured>_cppm_prof** in[Step 1]([#h_6cf0c639aa](https://www.facebook.com/hashtag/h_6cf0c639aa))
 - add configure with below settings
 
-- i. Default Role:**guest**
-- ii. Default Guest Role:**guest**
-- iii. Redirect Pause:**0**
-- iv. User Login:**Ticked**
-- v. Guest Login:**Unticked**
-- vi. Logout popup window:**Unticked**
-- vii. Use HTTP for authentication:**Ticked**
-- viii. Show FQDN:**Ticked**
-- ix. Authentication Protocol:**PAP**
-- x. Login page:**https://connect-p.fanswifi.com/auth**
-- xi. Welcome page:**https://connect-p.fanswifi.com/auth?res=success**
-- xii.Show Welcome page:**Ticked**
-- xiii. Add switch IP in redirection URL:**Ticked**
-- xiv. Adding user vlan in redirection URL:**Ticked**
-- xv. Adding AP's MAC address in redirection URL:**Ticked**
-- xvi. Allow only one active user session:**Unticked**
-- xvii. White List: Add**FansWiFi_WalledGarden**from the list (by clicking**"+"**)
+- i. Default Role: **guest**
+- ii. Default Guest Role: **guest**
+- iii. Redirect Pause: **0**
+- iv. User Login: **Ticked**
+- v. Guest Login: **Unticked**
+- vi. Logout popup window: **Unticked**
+- vii. Use HTTP for authentication: **Ticked**
+- viii. Show FQDN: **Ticked**
+- ix. Authentication Protocol: **PAP**
+- x. Login page: **https://connect-p.fanswifi.com/auth**
+- xi. Welcome page: **https://connect-p.fanswifi.com/auth?res=success**
+- xii.Show Welcome page: **Ticked**
+- xiii. Add switch IP in redirection URL: **Ticked**
+- xiv. Adding user vlan in redirection URL: **Ticked**
+- xv. Adding AP's MAC address in redirection URL: **Ticked**
+- xvi. Allow only one active user session: **Unticked**
+- xvii. White List: Add **FansWiFi_WalledGarden** from the list (by clicking**"+"**)
 
 - **FansWiFi_WalledGarden was defined inStep 2**
-- **- FansWiFi Free WiFi -_cppm_prof**should remain in allow list
-- xviii. Redirect URL:**https://connect-p.fanswifi.com/auth?res=success**
-- d. Click**Submit**to save configuration
+- **- FansWiFi Free WiFi -_cppm_prof** should remain in allow list
+- xviii. Redirect URL: **https://connect-p.fanswifi.com/auth?res=success**
+- d. Click **Submit** to save configuration
 
 ![](../../../_images/setting-on-aruba-controller-315.png)
 
 ## Step 4: Configuration: AAA profile
 
-- a. Click**Configuration > Authentication > AAA profiles**
-- b. Select**AAA**
-- c. Select**- FansWiFi Free WiFi -_aaa_prof**
+- a. Click **Configuration > Authentication > AAA profiles**
+- b. Select **AAA**
+- c. Select **- FansWiFi Free WiFi -_aaa_prof**
 
-- a profile will be created automatically by the controller for each SSID you created**<ssid-name-you-configured>_aaa_prof**in[Step 1]([#h_6cf0c639aa](https://www.facebook.com/hashtag/h_6cf0c639aa))
+- a profile will be created automatically by the controller for each SSID you created **<ssid-name-you-configured>_aaa_prof** in[Step 1]([#h_6cf0c639aa](https://www.facebook.com/hashtag/h_6cf0c639aa))
 - d. Leave all settings as they are, except:
 
-- i. RADIUS Roaming Accounting:**Ticked**
-- ii. RADIUS Interim Accounting:**Ticked**
-- e. Click**Submit**to save configuration
+- i. RADIUS Roaming Accounting: **Ticked**
+- ii. RADIUS Interim Accounting: **Ticked**
+- e. Click **Submit** to save configuration
 - 
 
 ## Step 5: Configuration: Radius Server
 
-- a. Click**Configuration > Authentication > Auth servers**
-- b. From**all server**, select**FansWiFi_rad1**
+- a. Click **Configuration > Authentication > Auth servers**
+- b. From **all server**, select **FansWiFi_rad1**
 - c. Leave all settings as they are, except:
 
-- i. NAS ID:**socialnas**
-- ii. Mode:**Ticked**
-- iii. MAC address delimiter:**Dash**
-- iv. Station ID Type:**AP MAC address**
-- v. Station ID Delimiter:**Dash**
-- vi. Include SSID:**Ticked**
-- e. Click**Submit**to save configuration
+- i. NAS ID: **socialnas**
+- ii. Mode: **Ticked**
+- iii. MAC address delimiter: **Dash**
+- iv. Station ID Type: **AP MAC address**
+- v. Station ID Delimiter: **Dash**
+- vi. Include SSID: **Ticked**
+- e. Click **Submit** to save configuration
 - 
 
 ## Step 6: Add AP to FansWiFi Admin Panel
 
 - Login to FansWiFi Admin Panel
 - 
-- Click**Settings -> Hotspots -> Create**
+- Click **Settings -> Hotspots -> Create**
 
 1. **Venue:** Select the venue of where your Access Point locates
 2. **Hotspot Name:** Name each Access Point to make it identifiable
 3. **AP Type:** Select “Aruba Mobility Controller”
 4. **Mac Address:** Input unique MAC Address of each Access Point in your venue (Not controller)
-- Click**Create**
+- Click **Create**
 
 ![](../../../_images/setting-on-aruba-controller-316.png)
 
@@ -295,11 +294,11 @@ Last Testing:
 
 **Available for Aruba Mobility Conductor / Mobility Master (MM / MD)**
 
-- Navigate to**Dashboard > Overview > Clients**
+- Navigate to **Dashboard > Overview > Clients**
 
-- or the**Clients**button on top of the Web UI
+- or the **Clients** button on top of the Web UI
 - Select the client you want to logout
-- Click**Delete wireless client**to logout the user
+- Click **Delete wireless client** to logout the user
 - ⭐ This button is likely not available in Aruba Mobility Controller in ArubaOS 8.x version
 
 ![](../../../_images/setting-on-aruba-controller-317.jpeg)
@@ -340,9 +339,9 @@ aaa user delete all
 
 ## 2. If VLAN is used in your WLAN / SSID with captive portal, please make sure the controller have an Interface and IP Address on this VLAN
 
-- ⭐ Please make sure the controller have an**IP address**on the VLAN
+- ⭐ Please make sure the controller have an **IP address** on the VLAN
 - Otherwise, the controller will not able to redirect WiFi users to Captive Portal page
-- Select**Configuration > Interface > VLANs**
+- Select **Configuration > Interface > VLANs**
 
 - Choose the VLAN your SSID is configured
 - Configure an IP Address

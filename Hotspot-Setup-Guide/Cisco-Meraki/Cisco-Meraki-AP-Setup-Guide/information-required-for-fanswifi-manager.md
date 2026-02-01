@@ -113,15 +113,15 @@ If you see below Error message after clicking "Save", please refer to to this gu
 
 ## Step 4: Set up Splash Page
 
-- Click**Wireless > Splash page**
-- Under**SSID**, choose your SSID
+- Click **Wireless > Splash page**
+- Under **SSID**, choose your SSID
 
 ![](../../../_images/information-required-for-fanswifi-manager-42.png)
 
-- Under**Custom splash URL**, input:
-​[https://connect.fanswifi.com/auth](https://connect.fanswifi.com/auth)
+- Under **Custom splash URL**, input:
+[https://connect.fanswifi.com/auth](https://connect.fanswifi.com/auth)
 
-- Under**Where should users go after the splash page?** , input**A different URL**:
+- Under **Where should users go after the splash page?**, input **A different URL**:
 ​[https://connect.fanswifi.com/auth?res=success&id=cisco-meraki](https://connect.fanswifi.com/auth?res=success&id=cisco-meraki)
 
 ![](../../../_images/information-required-for-fanswifi-manager-43.png)
@@ -129,20 +129,20 @@ If you see below Error message after clicking "Save", please refer to to this gu
 ## Step 5: Get the MAC address of the AP
 
 - You should see the MAC address at the bottom of AP
-- If you are not sure about the address, don’t worry. Click**Wireless > Access points**. You can see the MAC address of the AP. Choose the one you want to put into FansWiFi Admin Panel.
+- If you are not sure about the address, don’t worry. Click **Wireless > Access points**. You can see the MAC address of the AP. Choose the one you want to put into FansWiFi Admin Panel.
 
 ![](../../../_images/information-required-for-fanswifi-manager-44.png)
 
 ## Step 6: Add AP to FansWiFi Admin Panel
 
 - Login to FansWiFi Admin Panel
-- Click**Settings -> Hotspots -> Add Hotspot**
+- Click **Settings -> Hotspots -> Add Hotspot**
 
-1. 1. **Venue:** Select the venue of where your Access Point locates
+1. **Venue:** Select the venue of where your Access Point locates
 2. **Hotspot Name:** Name each Access Point to make it identifiable
 3. **AP Type:** Select “**Cisco Meraki**”
 4. **Mac Address:** Input unique MAC Address of each Access Point in your venue (Not controller)
-2. Click**Save**
+2. Click **Save**
 
 ![](../../../_images/information-required-for-fanswifi-manager-45.png)
 
@@ -170,7 +170,7 @@ Last Testing: 12-9-2017
 
 **Controller**
 
-- Click**Network-wide**on the left menu, select "**Clients**" under**Monitor**
+- Click **Network-wide** on the left menu, select "**Clients**" under **Monitor**
 
 ![](../../../_images/information-required-for-fanswifi-manager-46.png)
 

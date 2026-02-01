@@ -7,7 +7,7 @@
 
 # Tested Model and Firmware Version
 
-- AP Firmware Version:**8.10.0.6_86193**
+- AP Firmware Version: **8.10.0.6_86193**
 - Cloud-hosted on HPE GreenLake
 
 # Setting on Aruba Networking Central
@@ -22,36 +22,36 @@ Please refer to the following documentation:
 
 - a. Login to Aruba HPE GreenLake
 
-- Select**Home**on the top menu
-- Click**Launch**on Aruba Central application
-- b. Click**Global**on the top left menu
-- c. Select a**Group**that you are using for configuration (e.g. default)
+- Select **Home** on the top menu
+- Click **Launch** on Aruba Central application
+- b. Click **Global** on the top left menu
+- c. Select a **Group** that you are using for configuration (e.g. default)
 
 ![](../../../_images/information-required-for-fanswifi-manager-207.png)
 
-- d. Select**Devices**on the left menu
-- e. Select**Access Points**on the top menu, then click**Config**on the top right menu
-- f. Select**WLANs**on the top sub-menu, then Click**Add SSID**
+- d. Select **Devices** on the left menu
+- e. Select **Access Points** on the top menu, then click **Config** on the top right menu
+- f. Select **WLANs** on the top sub-menu, then Click **Add SSID**
 
 ![](../../../_images/information-required-for-fanswifi-manager-208.png)
 
 - g. For step 1 (General), Configure the following settings
 
 - **Name (SSID):** *<ssid-name-you-prefer>*
-- h. Click**Next**
+- h. Click **Next**
 
 ![](../../../_images/information-required-for-fanswifi-manager-209.png)
 
 ## Step 2: Captive Portal Configuration
 
-- a. For step 2 (VLANs), remain the settings unchanged and click**Next**
+- a. For step 2 (VLANs), remain the settings unchanged and click **Next**
 
 - b. For step 3 (Security), configure the following settings:
 
 - **Security Level:** Visitors
 - **Type:** External Captive Portal
 -
-- c. From the row**Captive Portal Profile,** press "+" to create a new profile
+- c. From the row **Captive Portal Profile,** press "+" to create a new profile
 
 - **Name:** *<portal-name-you-prefer>*(e.g. FansWiFi Portal)
 - **Authentication Type:** RADIUS Authentication
@@ -59,7 +59,7 @@ Please refer to the following documentation:
 - **URL:** /auth/
 - **Use HTTPS:** Enable
 - **Redirect URL:** [https://connect-p.fanswifi.com/auth?res=success](https://connect-p.fanswifi.com/auth?res=success)
-- Click**OK**
+- Click **OK**
 
 ![](../../../_images/information-required-for-fanswifi-manager-210.png)
 
@@ -71,17 +71,17 @@ Please refer to the following documentation:
 
 ## Step 3: Radius Configuration
 
-- a. From the row**Primary Server,** press "+" to create a new server
+- a. From the row **Primary Server,** press "+" to create a new server
 
 - **Server Type:** RADIUS
-- **Name:** *<server-name-you-prefer>*(e.g. FansWiFi_Radius)
+- **Name:** *<server-name-you-prefer>* (e.g. FansWiFi_Radius)
 - **IP Address/FQDN:** 103.6.85.240
 - **Shared Key:** social123
 - **Retype Key:** social123
 - **Auth Port:** 1812
 - **Accounting Port:** 1813
 - **Service Type Framed User:** MAC/Captive Portal
-- Click**OK**
+- Click **OK**
 
 ![](../../../_images/information-required-for-fanswifi-manager-212.png)
 
@@ -92,16 +92,16 @@ Please refer to the following documentation:
 
 ![](../../../_images/information-required-for-fanswifi-manager-213.png)
 
-- c. Select**Advance setting**
+- c. Select **Advance setting**
 
 - Leave all settings as they are, except:
 
-- Called Station ID Type:**MAC Address**
-- Called Station ID include SSID:**Enable**
-- Called Station ID Delimiter:**-**
+- Called Station ID Type: **MAC Address**
+- Called Station ID include SSID: **Enable**
+- Called Station ID Delimiter: **-**
 - 
 
-- d. Select**Accounting**and config the following settings:
+- d. Select **Accounting** and config the following settings:
 
 - **Accounting:** Use authentication servers
 - **Accounting Interval:** 4 min
@@ -110,21 +110,21 @@ Please refer to the following documentation:
 
 ## Step 4: Walled Garden
 
-- a. Goto**Advanced Settings**>**Walled Garden**
-- b. From**Allowlist**, Click**Add**to create a new allowlist
+- a. Goto **Advanced Settings** > **Walled Garden**
+- b. From **Allowlist**, Click **Add** to create a new allowlist
 
 ![](../../../_images/information-required-for-fanswifi-manager-215.png)
 
 - c. Configure the following settings:
 
 - **Domain:** *Enter one of domains from the following Walled Garden List*
-- Click**OK**
+- Click **OK**
 
 ![](../../../_images/information-required-for-fanswifi-manager-216.png)
 
-Repeat (b)(c) until**All domains**from Walled Garden List are included in Allowlist
+Repeat (b)(c) until **All domains** from Walled Garden List are included in Allowlist
 
-- d. Click**Next**
+- d. Click **Next**
 
 ### Walled Garden List (required)
 
@@ -197,29 +197,29 @@ v.**Video Login (Optional, you may skip this if there is no Video Login Enabled)
 - a. For step 4 (Access), Configure the following Settings
 
 - **Access Roles:** Role Based
-- b. Click**Add Role**to create Role
+- b. Click **Add Role** to create Role
 
 ![](../../../_images/information-required-for-fanswifi-manager-217.png)
 
 - c. Configure the following settings:
 
-- **Role:** *<role-name-you-prefer>*(e.g. PreAuth)
+- **Role:** *<role-name-you-prefer>* (e.g. PreAuth)
 
 ![](../../../_images/information-required-for-fanswifi-manager-218.png)
 
 - d. Select the Role that you created
-- e. From the rule**"Allow any to all destinations"**, click the**Edit Logo**
+- e. From the rule **"Allow any to all destinations"**, click the **Edit Logo**
 
 ![](../../../_images/information-required-for-fanswifi-manager-219.png)
 
 - f. Convert to the following settings:
 
 - **Action:** Deny
-- Click**OK**
+- Click **OK**
 
 ![](../../../_images/information-required-for-fanswifi-manager-220.png)
 
-- g. Then, Click**Add Rule**
+- g. Then, Click **Add Rule**
 
 ![](../../../_images/information-required-for-fanswifi-manager-221.png)
 
@@ -231,28 +231,28 @@ v.**Video Login (Optional, you may skip this if there is no Video Login Enabled)
 - **Action:** Allow
 - **Destination:** To a Domain Name
 - **Domain Name:** *Enter one of domains from the following Walled Garden List*
-- Click**OK**
+- Click **OK**
 
 ![](../../../_images/information-required-for-fanswifi-manager-222.png)
 
-Repeat (g)(h) until**All domains**from Walled Garden List are included in the Rule
+Repeat (g)(h) until **All domains** from Walled Garden List are included in the Rule
 
-Make sure the Rule**"Deny any to all destinations"**is placed**on the bottom**
+Make sure the Rule **"Deny any to all destinations"** is placed **on the bottom**
 
 - i. Configure the following settings:
 
 - **Assign Pre-Authentication Role:** Enable
-- Select*Name of server that you created*(e.g. PreAuth)
-- Click**Next**to continue
+- Select *Name of server that you created* (e.g. PreAuth)
+- Click **Next** to continue
 
 ![](../../../_images/information-required-for-fanswifi-manager-223.png)
 
-- j. For step 5 (Summary), click**Finish**on the right bottom
+- j. For step 5 (Summary), click **Finish** on the right bottom
 
 ## Step 6: Add Certificate for Captive Portal⚠️⚠️⚠️
 
-- a. Click**Device -> Access Points -> Config -> Security**
-- b. Goto**Certificate Usage**section
+- a. Click **Device -> Access Points -> Config -> Security**
+- b. Goto **Certificate Usage** section
 - c. Config the following settings
 
 - **Captive Portal:** aruba_default
@@ -262,14 +262,14 @@ Make sure the Rule**"Deny any to all destinations"**is placed**on the bottom**
 ## Step 7: Add AP to FansWiFi Admin Panel
 
 - Login to FansWiFi Admin Panel
-- Click**Settings -> Hotspots -> Create**
+- Click **Settings -> Hotspots -> Create**
 - Configure with following settings:
 
 - **Venue:** Select the venue of where your Access Point locates
 - **Hotspot Name:** Name each Access Point to make it identifiable
 - **AP Type:** Select “Aruba Instant AP (IAP)”
 - **Mac Address:** Input unique MAC Address of each Access Point in your venue
-- Click**Create**
+- Click **Create**
 
 ![](../../../_images/information-required-for-fanswifi-manager-225.png)
 

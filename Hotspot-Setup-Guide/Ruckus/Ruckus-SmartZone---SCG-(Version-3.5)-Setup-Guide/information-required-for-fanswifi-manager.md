@@ -82,7 +82,7 @@ All
 ## Step 1:  Configure the SmartZone
 
 1. Access the SmartZone by opening a Web Browser
-2. Click**Configure -> Service & Profiles -> Authentication**to enter the Authentication configuration Page
+2. Click **Configure -> Service & Profiles -> Authentication** to enter the Authentication configuration Page
 
 ![](../../../_images/information-required-for-fanswifi-manager-152.png)
 
@@ -129,15 +129,15 @@ All
 
 ## Step 4: Configuration: Create AP Zone
 
-- a. Select**Access Points**from the left menu
+- a. Select **Access Points** from the left menu
 
 ![](../../../_images/information-required-for-fanswifi-manager-157.png)
 
 - b. Click “+” icon to create AP zone with below settings
 
-- i.**Zone Name:** FansWiFi
-- ii.**AP Admin Logon (Logon ID):** admin
-- iii.**AP Admin Logon (Password):** [AP Admin Password]
+- i. **Zone Name:** FansWiFi
+- ii. **AP Admin Logon (Logon ID):** admin
+- iii. **AP Admin Logon (Password):** [AP Admin Password]
 - c. Click “**OK**” to Save the configuration
 
 ### 4.1. Configuration: Hotspot
@@ -149,16 +149,16 @@ All
 - c. Select AP Zone you created from the AP Zone List
 - d. Click “+ Create” with below settings
 
-- i.**Portal Name:** FansWiFi Portal
-- ii.**Smart Client Support:** None
-- iii.**Logon URL:** External
-- iv.**Logon URL (Redirect URL):** [https://connect-p.fanswifi.com/auth](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- v.**Redirected MAC Format:** AA-BB-CC-DD-EE-FF
-- vi.**Start Page (redirect to the following URL):** [https://connect-p.fanswifi.com/auth/?res=success](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
-- vii.**Session Timeout:** 1440
-- viii.**Grace Period:** 60
+- i. **Portal Name:** FansWiFi Portal
+- ii. **Smart Client Support:** None
+- iii. **Logon URL:** External
+- iv. **Logon URL (Redirect URL):** [https://connect-p.fanswifi.com/auth](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
+- v. **Redirected MAC Format:** AA-BB-CC-DD-EE-FF
+- vi. **Start Page (redirect to the following URL):** [https://connect-p.fanswifi.com/auth/?res=success](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
+- vii. **Session Timeout:** 1440
+- viii. **Grace Period:** 60
 
-- ix.**Walled Garden List**
+- ix. **Walled Garden List**
 
 1. You may download the walled garden list .csv files on[https://cdn.fanswifi.com/assets/ruckus/fanswifi_ruckus_smartzone_walled_garden.zip](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-smartzone-or-scg-version-3-5-setup-guide#)
 
@@ -280,14 +280,14 @@ If the SmartZone / vSCG is behind Router / Firewall, it is not directly accessib
 ## Step 8: Add AP to FansWiFi Admin Panel
 
 - Login to FansWiFi Admin Panel
-- Click**Settings -> Hotspots -> Add Hotspot**
+- Click **Settings -> Hotspots -> Add Hotspot**
 
-1. 1. **Organization:** Select the organization of where your Access Point locates
+1. **Organization:** Select the organization of where your Access Point locates
 2. **Venue:** Select the venue of where your Access Point locates
 3. **Hotspot Name:** Name each Access Point to make it identifiable
 4. **AP Type:** Select “Ruckus SmartZone (formerly SCG)”
 5. **Mac Address:** Input unique MAC Address of each Access Point in your venue (Not controller)
-2. Click**Save**
+2. Click **Save**
 
 ​
 ​

@@ -7,7 +7,7 @@
 
 ## Tested Firmware Version
 
-- Version:**200.3.9.13.228**
+- Version: **200.3.9.13.228**
 
 # Setting on Ruckus Unleashed
 
@@ -28,10 +28,10 @@
 - b. Select “Services” then “AAA Servers” on the left menu
 - c. Click “Create New” under “Authentication Servers” with below settings
 
-- i.**Name:** FansWiFi Radius
-- ii.**Type:** RADIUS
-- iii.**Auth Method:** PAP
-- iv.**Backup RADIUS:** Enabled
+- i. **Name:** FansWiFi Radius
+- ii. **Type:** RADIUS
+- iii. **Auth Method:** PAP
+- iv. **Backup RADIUS:** Enabled
 
 - First Server:
 
@@ -53,89 +53,93 @@
 
 ## Step 4: Configuration: Hotspot Services
 
-a. Select “Hotspot Services” from the left menu
+1. Select **Hotspot Services** from the left menu.
 
-![](../../../_images/information-required-for-fanswifi-manager-111.png)
+   ![](../../../_images/information-required-for-fanswifi-manager-111.png)
 
-b. Click “Create New” with below settings
+2. Click **Create New** and configure the following.
 
-- Under**General**tab:
-- i.**Name:** FansWiFi
-- ii.**WISPr Smart Client Support:** None
-- iii.**Login Page:** [https://connect-p.fanswifi.com/auth](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-unleashed-setup-guide#)
-- iv.**Start Page (redirect to the following URL):** 
-​[https://connect-p.fanswifi.com/auth](https://support.fanswifi.com/hotspot-setup-guide/ruckus/ruckus-unleashed-setup-guide#)
-- v.**User Session:** (set it if your FansWiFi Admin Panel has session timeout & daily quota enabled)
+   ### General tab
 
-- **Example:** Session Timeout / Daily Quota: 60 minute
-- **Setting:**
+   - **Name:** FansWiFi
+   - **WISPr Smart Client Support:** None
+   - **Login Page:** https://connect-p.fanswifi.com/auth
+   - **Start Page (redirect URL):** https://connect-p.fanswifi.com/auth
+   - **User Session:** Configure only if your FansWiFi Admin Panel has **Session timeout** and/or **Daily quota** enabled.
+     - **Example (Session Timeout / Daily Quota):** 60 minutes
+     - **Session Timeout:** 60 Minutes
+     - **Grace Period:** 60 Minutes
+   - **Intrusion Prevention:** Disabled
 
-- **Session Timeout:** 60 Minutes
-- **Grace Period:** 60 Minutes
+   ![](../../../_images/information-required-for-fanswifi-manager-112.png)
 
-- v.**Intrusion Prevention:** Disabled
+   ### Authentication tab
 
-![](../../../_images/information-required-for-fanswifi-manager-112.png)
+   - **Authentication Server:** FansWiFi Radius
+   - **Isolate wireless client traffic from other clients on the same AP:** Enabled
 
-- Under**Authentication**tab:
-- vi.**Authentication Server:** FansWiFi Radius
-- vii.**Isolate wireless client traffic from other clients on the same AP:** Enabled
+   ![](../../../_images/information-required-for-fanswifi-manager-113.png)
 
-![](../../../_images/information-required-for-fanswifi-manager-113.png)
+   ### Walled Garden tab
 
-- Under**Walled Garden**tab, enter the following entries:
-- viii.**Walled Garden List (required)**
+   **Walled Garden List (required)**
 
-- 1.[fanswifi.com](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- ix.**Walled Garden List**(Optional, you may skip this if there is no Facebook Login Enabled)
+   - `fanswifi.com`
 
-- 1.[facebook.com](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- 2.[facebook.net](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- 3.[fbcdn.net](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- 4.[fbcdn.com](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- 5.[Akamaihd.net](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- 6.[www.google.com](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- 7.[doubleclick.net](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- 8.[www.google.com.hk](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)(Local Google URL of your Country / Region)
+   **Walled Garden List (optional — only if Facebook Login is enabled)**
 
-- Example:
+   - `facebook.com`
+   - `facebook.net`
+   - `fbcdn.net`
+   - `fbcdn.com`
+   - `akamaihd.net`
+   - `www.google.com`
+   - `doubleclick.net`
+   - `www.google.com.hk` *(use the local Google domain for your country/region)*
 
-- i. EU:[www.google.eu](http://www.google.eu/)
-- ii. UK:[www.google.co.uk](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- iii. Hong Kong:[www.google.com.hk](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- iv. Japan:[www.google.co.jp](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- v. Taiwan:[www.google.com.tw](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- vi. Thailand:[www.google.co.th](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- vi. Malaysia:[www.google.com.my](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- viii. Myanmar:[www.google.com.mm](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- x.**Walled Garden List**(Optional, you may skip this if there is no Weibo Login Enabled)
+   **Examples (local Google domains)**
 
-- 1.[weibo.com](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- 2.[weibo.cn](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- 3.[sinaapp.com](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- 4.[sina.com.cn](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- 5.[sinajs.cn](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- xi.**Walled Garden List**(Optional, you may skip this if there is no Instagram Login Enabled))
+   - EU: `www.google.eu`
+   - UK: `www.google.co.uk`
+   - Hong Kong: `www.google.com.hk`
+   - Japan: `www.google.co.jp`
+   - Taiwan: `www.google.com.tw`
+   - Thailand: `www.google.co.th`
+   - Malaysia: `www.google.com.my`
+   - Myanmar: `www.google.com.mm`
 
-- 1.[instagram.com](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- 2.[akamaihd.net](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- 3.[cdninstagram.com](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- xii.**Walled Garden List**(Optional, you may skip this if there is no Twitter Login Enabled)
+   **Walled Garden List (optional — only if Weibo Login is enabled)**
 
-- 1.[twitter.com](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- 2.[twimg.com](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- xiii.**Walled Garden List**(Optional, you may skip this if there is no Video Login Enabled)
+   - `weibo.com`
+   - `weibo.cn`
+   - `sinaapp.com`
+   - `sina.com.cn`
+   - `sinajs.cn`
 
-- 1.[akamaized.net](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- 2.[akamaihd.net](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- 3.[ssl.google-analytics.com](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- 4.[scorecardresearch.com](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- 5.[vimeocdn.com](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
-- 6.[vimeo.com](https://support.fanswifi.com/hotspot-setup-guide/openmesh/openmesh-setup-guide-ng6xx-series#)
+   **Walled Garden List (optional — only if Instagram Login is enabled)**
 
-- Click “OK” to Save the configuration
+   - `instagram.com`
+   - `akamaihd.net`
+   - `cdninstagram.com`
 
-![](../../../_images/information-required-for-fanswifi-manager-114.png)
+   **Walled Garden List (optional — only if Twitter/X Login is enabled)**
+
+   - `twitter.com`
+   - `twimg.com`
+
+   **Walled Garden List (optional — only if Video Login is enabled)**
+
+   - `akamaized.net`
+   - `akamaihd.net`
+   - `ssl.google-analytics.com`
+   - `scorecardresearch.com`
+   - `vimeocdn.com`
+   - `vimeo.com`
+
+3. Click **OK** to save the configuration.
+
+   ![](../../../_images/information-required-for-fanswifi-manager-114.png)
+
 
 ## Step 5: Create WLAN and SSID for customer access
 
@@ -168,13 +172,13 @@ b. Click “Create New” with below settings
 ## Step 7: Add AP to FansWiFi Admin Panel
 
 - Login to FansWiFi Admin Panel
-- Click**Settings -> Hotspots -> Add Hotspot**
+- Click **Settings -> Hotspots -> Add Hotspot**
 
-1. 1. **Venue:** Select the venue of where your Access Point locates
+1. **Venue:** Select the venue of where your Access Point locates
 2. **Hotspot Name:** Name each Access Point to make it identifiable
 3. **AP Type:** Select “Ruckus Unleashed”
 4. **Mac Address:** Input unique MAC Address of each Access Point in your venue
-2. Click**Save**
+5. Click **Save**
 
 ![](../../../_images/information-required-for-fanswifi-manager-118.png)
 
@@ -206,7 +210,7 @@ Last Testing: 11-9-2017
 
 **Controller**
 
-- Click on**Client**header
+- Click on **Client** header
 - Select the device you want to logout
 - Click "**Delete**"
 

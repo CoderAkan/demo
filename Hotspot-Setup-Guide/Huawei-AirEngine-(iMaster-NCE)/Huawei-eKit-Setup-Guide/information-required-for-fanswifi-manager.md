@@ -20,17 +20,17 @@
 
 1. Access the Portal by opening a Web Browser[https://ekit.huawei.com/](https://ekit.huawei.com/)
 2. Change the location to your company location on the top right conner (e.g. HK / SG)
-3. Click**Service**on the top menu
-4. In**Cloud Management Platform**session, Select**SME Network Center**
-5. Click**Project Created,** Select your project or create a new project.
+3. Click **Service** on the top menu
+4. In **Cloud Management Platform** session, Select **SME Network Center**
+5. Click **Project Created,** Select your project or create a new project.
 
 ![](../../../_images/information-required-for-fanswifi-manager-323.png)
 
 ## Step 2: Create SSID
 
-1. Click**Configuration****on the top menu
-2. Select**Device Configuration**, then choose**Wi-Fi Management**on the**AP**section
-3. Click**Create**to create a SSID
+1. Click **Configuration** on the top menu
+2. Select **Device Configuration**, then choose **Wi-Fi Management** on the **AP** section
+3. Click **Create** to create a SSID
 
 ## Step 3: Portal Configuration
 
@@ -44,7 +44,7 @@
 ​
 2. Portal server configuration
 
-1. For**Portal server**session, click**Create****to create a new portal server
+1. For **Portal server** session, click **Create** to create a new portal server
 2. Configure with the following settings:
 
 1. **Name:** <portal-name-you-prefer> (e.g. FansWiFi-Portal)
@@ -55,48 +55,48 @@
 6. **Portal redirection URL:** [https://connect-p.fanswifi.com/auth](https://connect-p.fanswifi.com/auth)
 7. **Key:** social123
 
-1. Click**Configure**to enter the key
+1. Click **Configure** to enter the key
 2. **Key:** social123
 3. **Confirm key:** social123
-4. Click**OK**
-3. Click**OK**
-4. Select**Portal server**that you created
+4. Click **OK**
+3. Click **OK**
+4. Select **Portal server** that you created
 3. Radius Configuration
 
-1. For**RADIUS server**session, click**Create****to create a new portal server
+1. For **RADIUS server** session, click **Create** to create a new portal server
 2. Configure with the following settings:
 
 1. **Name:** <radius-name-you-prefer> (e.g. FansWiFi-Radius)
 2. **Address type:** IP address
 3. **Authentication server**
 
-1. Click**Create**
+1. Click **Create**
 2. **Authentication server address:** 103.6.85.240
 3. **Port:** 1812
 4. **Real-Time Accounting:** Enable
 5. **Accounting server**
 
-1. Click**Create**
+1. Click **Create**
 2. **Accounting Server Address:** 103.6.85.240
 3. **Port:** 1813
 6. **Key:** social123
 
-1. Click**Configure**to enter the key
+1. Click **Configure** to enter the key
 2. **Key:** social123
 3. **Confirm key:** social123
-4. Click**OK**
-3. Click**Confirm**
-4. Select**RADIUS server**that you created
+4. Click **OK**
+3. Click **Confirm**
+4. Select **RADIUS server** that you created
 4. **Default permit rule**Configuration
 
-1. For**Default permit rule**session, click**Create**
+1. For **Default permit rule** session, click **Create**
 2. Configure with the following settings:
 
 1. **Name:** <permit-rule-name-you-prefer> (e.g. Walled-Garden-List)
 2.
-3. Add**IPv4 rule**with the following configurations:
+3. Add **IPv4 rule** with the following configurations:
 
-1. Click**Create**
+1. Click **Create**
 2. **Address Type:** IP Address/Mask
 3. **IP Address/Mask:** Refer to the following IP address
 
@@ -104,9 +104,9 @@
 2. 172.16.0.0/12
 3. 10.0.0.0/8
 4. **Protocol:** Any
-4. Add**IPv4 rule**with the following configurations:
+4. Add **IPv4 rule** with the following configurations:
 
-1. Click**Create**
+1. Click **Create**
 2. **Address Type:** Domain name
 3. **Domain name:** Refer to the Walled Garden List (below)
 
@@ -183,20 +183,20 @@ v.**Video Login (Optional, you may skip this if there is no Video Login Enabled)
 1. *.[scorecardresearch.com](http://scorecardresearch.com/)
 2. *.[vimeocdn.com](http://vimeocdn.com/)
 3. *.[vimeo.com](http://vimeo.com/)
-6. Click**OK**to save
-5. Click**OK****to create SSID
+6. Click **OK** to save
+5. Click **OK** to create SSID
 
 ## Step 4: Add AP to FansWiFi Admin Panel
 
 - Login to FansWiFi Admin Panel
-- Click**Settings -> Hotspots -> Create**
+- Click **Settings -> Hotspots -> Create**
 - Configure with following settings:
 
 - **Venue:** Select the venue of where your Access Point locates
 - **Hotspot Name:** Name each Access Point to make it identifiable
 - **AP Type:** Select "Huawei eKit"
 - **Mac Address:** Input unique MAC Address of each Access Point in your venue
-- Click**Create**
+- Click **Create**
 
 ![](../../../_images/information-required-for-fanswifi-manager-324.png)
 

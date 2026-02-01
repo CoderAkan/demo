@@ -11,8 +11,8 @@
 
 ## Tested Firmware Version
 
-- Version:**6.38.7**on hAP AC (RB962UiGS-5HacT2HnT)
-- Version:**6.39.1**on RB951-2n
+- Version: **6.38.7** on hAP AC (RB962UiGS-5HacT2HnT)
+- Version: **6.39.1** on RB951-2n
 - NOT Supported Version: 5.xx Series or below
 
 - Warning: RouterOS 5.26 is confirmed NOT working. Please do not use firmware 5.xx Series or below.
@@ -50,12 +50,12 @@ If you do not have the software, you can download it from the link below:
 
 - Then set your SSID and settings as follow:
 
-- Under**Wireless**:
+- Under **Wireless**:
 ​**Network Name:** -FansWiFi -
-- Under**Internet**:
+- Under **Internet**:
 ​**Address Acquisition:** Automatic
 ​**Firewall Router:** Enabled
-- Under**Local Network**:
+- Under **Local Network**:
 ​**IP Address:** 192.168.88.1
 ​**Netmask:** 255.255.255.0 (/24)
 ​**DHCP Server:** Enabled
@@ -67,11 +67,11 @@ If you do not have the software, you can download it from the link below:
 
 ## Step 3: HotSpot Setting
 
-- Go to**IP > Hotspot**
+- Go to **IP > Hotspot**
 
 ![](../../../_images/prerequisites-75.png)
 
-- Click**Hotspot Setup**, select**bridge**and click the next button.
+- Click **Hotspot Setup**, select **bridge** and click the next button.
 
 ![](../../../_images/prerequisites-76.png)
 
@@ -109,10 +109,10 @@ If you do not have the software, you can download it from the link below:
 
 ## Step 4: Change Hotspot Settings
 
-- Under**IP > Hotspot**, click the**User Profiles**tab
-- Select**default**
-- Under**General**, clear**Shared Users**. (default setting is 1)
-​*If Shared Users setting is not removed, number of device a WiFi user can login to the system is restricted.*
+- Under **IP > Hotspot**, click the **User Profiles** tab
+- Select **default**
+- Under **General**, clear **Shared Users**. (default setting is 1)
+*If Shared Users setting is not removed, number of device a WiFi user can login to the system is restricted.*
 
 ![](../../../_images/prerequisites-85.png)
 
@@ -149,7 +149,7 @@ If you do not have the software, you can download it from the link below:
 - Asia Pacific, US, America, Europe, the Middle East and Africa:
 Address: 103.6.85.240
 - c. Radius Secret: social123
-- d.**Timeout: 1500 ms**
+- d. **Timeout: 1500 ms**
 
 ![](../../../_images/prerequisites-90.png)
 
@@ -163,7 +163,7 @@ Address: 103.6.85.240
 - Then drag the downloaded rsc file to:
 
 - “**flash**” for model hAP AC (RB962UiGS-5HacT2HnT), or
-- the**root of the File list**for model RB951-2n
+- the **root of the File list** for model RB951-2n
 in Winbox.
 
 ![](../../../_images/prerequisites-91.png)
@@ -188,8 +188,8 @@ in the terminal. You should see a success message afterwards like the following 
 
 ### 7.3 Add Walled Garden IP List
 
-- Go to**IP > Hotspot > Walled Garden IP List**
-- Add below records to the**Walled Garden IP List**:
+- Go to **IP > Hotspot > Walled Garden IP List**
+- Add below records to the **Walled Garden IP List**:
 
 **Rule**
 
@@ -273,10 +273,10 @@ Example:
 
 ## Step 8: Set AP Identity
 
-- Go to**System > Identity**and enter the MAC address (The first one) of your router into the Identity field. Please be reminded that the MAC address must be in a XX-XX-XX-XX-XX-XX format.
+- Go to **System > Identity** and enter the MAC address (The first one) of your router into the Identity field. Please be reminded that the MAC address must be in a XX-XX-XX-XX-XX-XX format.
 - Example: 11-22-33-44-55-66
 
-Please do**NOT**enter 11:22:33:44:55:66
+Please do **NOT** enter 11:22:33:44:55:66
 
 ![](../../../_images/prerequisites-98.png)
 
@@ -288,9 +288,9 @@ Please do**NOT**enter 11:22:33:44:55:66
 
 [https://cdn.fanswifi.com/assets/mikrotik/fanswifi_mikrotik_files.zip](https://support.fanswifi.com/hotspot-setup-guide/mikrotik/mikrotik-routeros-ap-/-gateway-setup-guide#)
 
-- You should get 3 file:**alogin.html**,**login.html**and**logout.html**.
+- You should get 3 file: **alogin.html**, **login.html** and **logout.html**.
 
-- Go to**Files**in the main menu and drag the 3 downloaded files into the**hotspot**folder in the File list.
+- Go to **Files** in the main menu and drag the 3 downloaded files into the **hotspot** folder in the File list.
 
 ![](../../../_images/prerequisites-99.png)
 
@@ -299,13 +299,13 @@ Please do**NOT**enter 11:22:33:44:55:66
 ## Final Step: Add AP to FansWiFi Admin Panel
 
 - Login to FansWiFi Admin Panel
-- Click**Settings -> Hotspots -> Add Hotspot**
+- Click **Settings -> Hotspots -> Add Hotspot**
 
-1. 1. **Venue:** Select the venue of where your Access Point locates
-2. **Hotspot Nam**e: Name each Access Point to make it identifiable
+1. **Venue:** Select the venue of where your Access Point locates
+2. **Hotspot Name:** Name each Access Point to make it identifiable
 3. **AP Type:** Select “Mikrotik”
 4. **Mac Address:** Input unique MAC Address of each Access Point in your venue (Not controller)
-2. Click**Save**
+2. Click **Save**
 
 ![](../../../_images/prerequisites-101.png)
 
@@ -339,6 +339,6 @@ Last Testing: 11-9-2017
 **WiFi User's Device**
 
 - On the wifi user device, open web browser
-- Go**http://<ap-local-ip-address>/logout**
+- Go **http://<ap-local-ip-address>/logout**
 (192.168.88.1 is default local IP setting(i.e.[http://192.168.88.1/logout](http://192.168.88.1/logout)), if you are using different setting, please input your AP's local IP here)
 ​

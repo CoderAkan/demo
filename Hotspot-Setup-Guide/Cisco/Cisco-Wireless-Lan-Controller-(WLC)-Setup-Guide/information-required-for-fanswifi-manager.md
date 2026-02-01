@@ -78,9 +78,9 @@ Communication between WLAN Controller and FansWiFi Server Cluster on Cloud
 
 ## Step 2: Configuration: Authentication Servers
 
-1. Click**Security**Tab on the top menu
-2. Click**AAA > Radius > Authentication**from the left menu
-3. Click**New...** with below Setting
+1. Click **Security** Tab on the top menu
+2. Click **AAA > Radius > Authentication** from the left menu
+3. Click **New...** with below Setting
 
 1. **IP Address:** 103.6.85.240
 2. **Shared Secret:** social123
@@ -88,7 +88,7 @@ Communication between WLAN Controller and FansWiFi Server Cluster on Cloud
 4. **Port:** 1812
 5. **Network User:** (tick) Enable
 6. **Management:** (untick) Disable
-4. Click**Apply**to save the configuration
+4. Click **Apply** to save the configuration
 
 ![](../../../_images/information-required-for-fanswifi-manager-55.png)
 
@@ -281,39 +281,40 @@ Controller must be rebooted for the WebAuth SecureWeb configuration change to ta
 
 ## Step 7: Create WLAN and SSID for customer access
 
-1. Select “**WLANs**” from the top menu
-2. Click “**Create New**” and give it a name.
-3. Click on the newly created Wlan and it will open the configuration menu below.
+1. Select **WLANs** from the top menu.
+2. Click **Create New** and give it a name.
+3. Click the newly created WLAN to open its configuration.
 
-1. **Profile Name:** FansWiFi
-2. **SSID:** FansWiFi
-3. **Status:** Enabled
-4. **NAS-ID:** socialnas
-4. Click**Security**tab.
+   1. **Profile Name:** FansWiFi  
+   2. **SSID:** FansWiFi  
+   3. **Status:** Enabled  
+   4. **NAS-ID:** socialnas  
 
-1. Click**Layer 2**
+4. Open the **Security** tab.
 
-1. **Layer 2 Security:** None
-2. Click**Layer 3**
+   1. Select **Layer 2**.
+      - **Layer 2 Security:** None
 
-1. **Layer 3 Security:** Web Policy
-2. Select "**Authentication**"
-3. **Preauthentication ACL > IPv4:** FansWiFi
-4. **(Optional)**If using FlexConnect Mode,
-​**Preauthentication ACL > IPv4:** None
-​**Preauthentication ACL > WebAuth FlexAcl:** FansWiFi
-3. Click**AAA server**tab
+   2. Select **Layer 3**.
+      - **Layer 3 Security:** Web Policy
+      - Select **Authentication**
+      - **Preauthentication ACL > IPv4:** FansWiFi
+      - **(Optional) FlexConnect Mode:**
+        - **Preauthentication ACL > IPv4:** None
+        - **Preauthentication ACL > WebAuth FlexAcl:** FansWiFi
 
-1. Enable and select the available Authentication and Accounting servers.
-2. Set the**Interim Interval**at 600
-3. Finally move both the**LOCAL**and the**LDAP protocol**to not used
-5. Click "**Advanced**"
+5. Open the **AAA Servers** tab.
 
-1. enable the "**Override AAA**" option
-2. Set the**Timeout**to 1800
-3. (Optional) FlexConnec Mode
+   1. Enable and select the available **Authentication** and **Accounting** servers.
+   2. Set **Interim Interval** to **600**.
+   3. Move both **LOCAL** and **LDAP protocol** to **Not used**.
 
-1. **FlexConnect Local Switching:** (check) Enabled
+6. Open the **Advanced** tab.
+
+   1. Enable **Override AAA**.
+   2. Set **Timeout** to **1800**.
+   3. **(Optional) FlexConnect Mode:**
+      - **FlexConnect Local Switching:** Enabled
 
 ## Step 8: Save Configuration
 
@@ -367,12 +368,12 @@ Setting in FansWiFi Admin Panel
 ## Step 10: Add AP to FansWiFi Admin Panel
 
 1. Log in to FansWiFi Admin Panel
-2. Click**Settings” -> Hotspots -> Add Hotspot**
+2. Click **Settings” -> Hotspots -> Add Hotspot**
 
 1. **venue:** Select the venue of where your Access Point locates
 2. **Hotspot Name:** Name each Access Point to make it identifiable
 3. **AP Type:** Select “Cisco WLC”
-4. **Mac Address:** Input unique Base Radio MAC of each Access Point in your venue (Not controller) (Base Radio MAC may not be the same as the Mac Address of the AP printed on the label. Please check the Base Radio MAC via**Monitor -> Access Points**on the WLC WebUI)
+4. **Mac Address:** Input unique Base Radio MAC of each Access Point in your venue (Not controller) (Base Radio MAC may not be the same as the Mac Address of the AP printed on the label. Please check the Base Radio MAC via **Monitor -> Access Points** on the WLC WebUI)
 3. Click Save
 
 ![](../../../_images/information-required-for-fanswifi-manager-70.png)
@@ -385,7 +386,7 @@ Requirement: Cisco WLC Firmware Version 8.2 or above
 
 **Execute below commands to query our Radius server using our test account (username: test, password: testinggogogo)**
 
-(Cisco Controller) >**test****aaa****radius****username**test**password**testinggogogo
+(Cisco Controller) > **test****aaa****radius****username** test **password** testinggogogo
 
 (Cisco Controller) > test aaa show radius
 
@@ -399,7 +400,7 @@ Requirement: Cisco WLC Firmware Version 8.2 or above
 
 You can also enable the debug message for more details by using below command
 
-(Cisco Controller) >**debug aaa all enable**
+(Cisco Controller) > **debug aaa all enable**
 
 Reference:
 

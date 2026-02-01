@@ -15,7 +15,6 @@
 - Controller Firmware Version: 1.0.1 Build 240506 Rel.59699n
 
 - AC Controller Hardware is required to be always on
--
 
 - Access Point
 
@@ -54,7 +53,7 @@
 
 ![[3c] Confirm message copy.png](../../../_images/information-required-for-fanswifi-manager-249.png)
 
-## Step 4: Configuration: Radius
+## Step 3: Configuration: Radius
 
 - a. Select "认证管理" > "认证服务器" on the left menu
 - b. Select "Radius服务器" on the top menu
@@ -81,7 +80,7 @@
 
 ![[4fghi] Auth Radius Setup copy.png](../../../_images/information-required-for-fanswifi-manager-251.png)
 
-## Step 5: Configuration: Portal
+## Step 4: Configuration: Portal
 
 - a. Select "认证管理" > "Portal认证" on the left menu
 - b. Select "远程Portal" on the top menu
@@ -101,7 +100,7 @@
 
 ![[5de] Create Portal copy.png](../../../_images/information-required-for-fanswifi-manager-253.png)
 
-## Step 6: Configuration: Access Control
+## Step 5: Configuration: Access Control
 
 - a. Select "认证管理" > "Portal认证" on the left menu
 - b. Click "免认证策略" on the top menu
@@ -119,7 +118,7 @@
 
 ![[6de] Create Access Control copy.png](../../../_images/information-required-for-fanswifi-manager-255.png)
 
-- The following policies should be added**one-by-one**
+- The following policies should be added **one-by-one**
 
 Policy Name
 
@@ -189,7 +188,7 @@ Cloudflare 14
 
 198.41.128.0/17
 
-## Step 7: Get the MAC address of the AP
+## Step 6: Get the MAC address of the AP
 
 - You should see the MAC address at the bottom of the AP
 - If you are not sure about the address, don’t worry.
@@ -199,18 +198,18 @@ Cloudflare 14
 
 ![[7] Find MAC address of AP copy.png](../../../_images/information-required-for-fanswifi-manager-256.png)
 
-## Step 8: Add AP to FansWiFi Admin Panel
+## Step 7: Add AP to FansWiFi Admin Panel
 
 - Login to FansWiFi Admin Panel
 
 ![(8a) Create.png](../../../_images/information-required-for-fanswifi-manager-257.png)
 
-- Click**Settings -> Hotspots -> Create**
+- Click **Settings -> Hotspots -> Create**
 
 1. **Venue:** Select the venue of where your Access Point locates
 2. **Hotspot Name:** Name each Access Point to make it identifiable
 3. **AP Type:** Select “TP-Link EAP”
 4. **Mac Address:** Input unique MAC Address of each Access Point in your venue (Not controller)
-- Click**Save**
+- Click **Save**
 
 ![[8] Add Hotspot copy.png](../../../_images/information-required-for-fanswifi-manager-258.png)

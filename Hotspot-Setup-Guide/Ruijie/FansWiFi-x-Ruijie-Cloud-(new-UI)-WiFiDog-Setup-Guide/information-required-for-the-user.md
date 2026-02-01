@@ -21,9 +21,9 @@
 
 - c. Configuring SSID and Add Device:
 
-- i. Select AP, Managed by Ruijie Cloud Web
-- ii. Type in SSID and select 'No encryption (Open)' mode
-- iii. Put serial number (SN) of the AP and click Finish
+    - i. Select AP, Managed by Ruijie Cloud Web
+    - ii. Type in SSID and select 'No encryption (Open)' mode
+    - iii. Put serial number (SN) of the AP and click Finish
 
 ![](../../../_images/information-required-for-the-user-286.png)
 
@@ -77,76 +77,82 @@
 
 ## Step 4: Configure Walled Garden Lists and CLI Command
 
-- a. Click "Auth & Accounts" on the left menu
-- b. Under "Authentication" section, select "Allowlist"
+1. Click **Auth & Accounts** on the left menu.
+2. Under **Authentication**, select **Allowlist**.
 
-![](../../../_images/information-required-for-the-user-295.png)
+   ![](../../../_images/information-required-for-the-user-295.png)
 
-- c. Under ‘Pre-Authentication Access Server List’, click Add and choose Domain
+3. Under **Pre-Authentication Access Server List**, click **Add** and choose **Domain**.
 
-![](../../../_images/information-required-for-the-user-296.png)
+   ![](../../../_images/information-required-for-the-user-296.png)
 
 ### Walled Garden List (required)
 
-- 1. *.[fanswifi.com](http://fanswifi.com/)
+Add the following domain patterns:
 
-- i.**Walled Garden List (Optional, you may skip this if there is no Facebook Login Enabled)**
+- `*.fanswifi.com`
 
-1. *.[facebook.com](http://facebook.com/)
-2. *.[facebook.net](http://facebook.net/)
-3. *.[fbcdn.net](http://fbcdn.net/)
-4. *.[fbcdn.com](http://fbcdn.com/)
-5. *.[akamaihd.net](http://akamaihd.net/)
-6. [www.google.com](http://www.google.com/)
-7. *.[doubleclick.net](http://doubleclick.net/)
-8. [www.google.com.hk](http://www.google.com.hk/)(Local Google URL of your Country / Region)
+### Walled Garden List (optional — only if Facebook Login is enabled)
 
-1. Example:
+- `*.facebook.com`
+- `*.facebook.net`
+- `*.fbcdn.net`
+- `*.fbcdn.com`
+- `*.akamaihd.net`
+- `www.google.com`
+- `*.doubleclick.net`
+- `www.google.com.hk` *(use the local Google domain for your country/region)*
 
-1. EU:[www.google.eu](http://www.google.eu/)
-2. UK:[www.google.co.uk](http://www.google.co.uk/)
-3. Hong Kong:[www.google.com.hk](http://www.google.com.hk/)
-4. Japan:[www.google.co.jp](http://www.google.co.jp/)
-5. Taiwan:[www.google.com.tw](http://www.google.com.tw/)
-6. Thailand:[www.google.co.th](http://www.google.co.th/)
-7. Malaysia:[www.google.com.my](http://www.google.com.my/)
-8. Myanmar:[www.google.com.mm](http://www.google.com.mm/)
-- ii.**Walled Garden List (Optional, you may skip this if there is no Weibo Login Enabled)**
+**Examples (local Google domains)**
 
-1. *.[weibo.com](http://weibo.com/)
-2. *.[weibo.cn](http://weibo.cn/)
-3. *.[sinaapp.com](http://sinaapp.com/)
-4. *.[sina.com.cn](http://sina.com.cn/)
-5. *.[sinajs.cn](http://sinajs.cn/)
-- iii.**Walled Garden List (Optional, you may skip this if there is no Instagram Login Enabled)**
+- EU: `www.google.eu`
+- UK: `www.google.co.uk`
+- Hong Kong: `www.google.com.hk`
+- Japan: `www.google.co.jp`
+- Taiwan: `www.google.com.tw`
+- Thailand: `www.google.co.th`
+- Malaysia: `www.google.com.my`
+- Myanmar: `www.google.com.mm`
 
-1. *.[instagram.com](http://instagram.com/)
-2. *.[akamaihd.net](http://akamaihd.net/)
-3. *.[cdninstagram.com](http://cdninstagram.com/)
-- iv.**Twitter Login (Optional, you may skip this if there is no Twitter Login Enabled)**
+### Walled Garden List (optional — only if Weibo Login is enabled)
 
-1. *.[twitter.com](http://twitter.com/)
-2. *.[twimg.com](http://twimg.com/)
+- `*.weibo.com`
+- `*.weibo.cn`
+- `*.sinaapp.com`
+- `*.sina.com.cn`
+- `*.sinajs.cn`
 
-- v.**LINE Login (Optional, you may skip this if there is no LINE Login Enabled)**
+### Walled Garden List (optional — only if Instagram Login is enabled)
 
-1. *.[line.me](http://line.me/)
-2. *.[line-scdn.net](http://line-scdn.net/)
-​
-- vi.**PayPal Login (Optional, you may skip this if there is no PayPal Login Enabled)**
+- `*.instagram.com`
+- `*.akamaihd.net`
+- `*.cdninstagram.com`
 
-1. *.[paypal.com](http://paypal.com/)
-2. *.[paypalobjects.com](http://paypalobjects.com/)
-3. [www.google-analytics.com](http://www.google-analytics.com/)
+### Walled Garden List (optional — only if Twitter/X Login is enabled)
 
-- vii.**Video Login (Optional, you may skip this if there is no Video Login Enabled)**
+- `*.twitter.com`
+- `*.twimg.com`
 
-1. *.[akamaized.net](http://akamaized.net/)
-2. *.[akamaihd.net](http://akamaihd.net/)
-3. [ssl.google-analytics.com](http://ssl.google-analytics.com/)
-4. *.[scorecardresearch.com](http://scorecardresearch.com/)
-5. *.[vimeocdn.com](http://vimeocdn.com/)
-6. *.[vimeo.com](http://vimeo.com/)
+### Walled Garden List (optional — only if LINE Login is enabled)
+
+- `*.line.me`
+- `*.line-scdn.net`
+
+### Walled Garden List (optional — only if PayPal Login is enabled)
+
+- `*.paypal.com`
+- `*.paypalobjects.com`
+- `www.google-analytics.com`
+
+### Walled Garden List (optional — only if Video Login is enabled)
+
+- `*.akamaized.net`
+- `*.akamaihd.net`
+- `ssl.google-analytics.com`
+- `*.scorecardresearch.com`
+- `*.vimeocdn.com`
+- `*.vimeo.com`
+
 
 ## Step 5: Enable DNS Snooping via CLI Command
 
@@ -168,14 +174,14 @@
 ## Step 6: Add AP to FansWiFi Admin Panel
 
 - Login to FansWiFi Admin Panel
-- Click**Settings -> Hotspots -> Create**
+- Click **Settings -> Hotspots -> Create**
 - Configure with following settings:
 
 - **Venue:** Select the venue of where your Access Point locates
 - **Hotspot Name:** Name each Access Point to make it identifiable
 - **AP Type:** Select “Ruijie WiFiDog”
 - **Mac Address:** Input unique MAC Address of each Access Point in your venue
-- Click**Create**
+- Click **Create**
 
 ![](../../../_images/information-required-for-the-user-299.png)
 

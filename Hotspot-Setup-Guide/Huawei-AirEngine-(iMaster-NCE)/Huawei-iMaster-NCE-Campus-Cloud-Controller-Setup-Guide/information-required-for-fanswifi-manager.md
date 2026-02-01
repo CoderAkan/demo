@@ -10,17 +10,17 @@
 ## Step 1: Configure with Huawei iMaster
 
 1. Access the Portal by opening a Web Browser[https://naas-intl.huaweicloud.com/](https://naas-intl.huaweicloud.com/)
-2. Click the**menu logo**on the top left conner
-3. Select**Network Configuration > Site Configuration**on the left menu
+2. Click the **menu logo** on the top left conner
+3. Select **Network Configuration > Site Configuration** on the left menu
 
 ![](../../../_images/information-required-for-fanswifi-manager-303.png)
 
 ## Step 2: Create SSID
 
-1. Click**Traditional view**on the top menu
-2. Select**Quick Configuration**on the left sub-menu
-3. Select**Cloud AP > Region & SSID**
-4. Click**+**to create a SSID
+1. Click **Traditional view** on the top menu
+2. Select **Quick Configuration** on the left sub-menu
+3. Select **Cloud AP > Region & SSID**
+4. Click **+** to create a SSID
 
 ![](../../../_images/information-required-for-fanswifi-manager-304.png)
 
@@ -32,15 +32,15 @@
 2. **Data forwarding mode:** Direct
 3. **Global DHCP address pool:** Disable
 4. **VLAN:** 1
-2. For**Security Authentication**session, configure with the following settings:
+2. For **Security Authentication** session, configure with the following settings:
 
 1. **WLAN security policy:** Open Network
 
-1. Then select**Open+Portal authentication**​
+1. Then select **Open+Portal authentication**​
 2. **Authentication type:** Relay authentication by cloud platform
 3. **Interconnection mode:** RADIUS relay
 4. **Page push protocol:** HTTPS
-3. For**Third-party portal page authentication parameters**session, configure with the following settings:
+3. For **Third-party portal page authentication parameters** session, configure with the following settings:
 
 1. **Username:** username
 2. **Password parameter name:** password
@@ -52,57 +52,57 @@
 8. **Portal authentication-free:** Enable
 4. Configure Radius rely server
 
-1. For**RADIUS relay server**session, click**... > Create****to create a new portal server
+1. For **RADIUS relay server** session, click **... > Create** to create a new portal server
 2. Configure with the following settings:
 
 1. **Name:** <radius-name-you-prefer> (e.g. FansWiFi-Radius)
 2. **Authentication service:** Portal
 3. **Authentication server**
 
-1. Click**Add**
+1. Click **Add**
 2. **Authentication server address:** 103.6.85.240
 3. **Port:** 1812
 4. **Key:** social123
 
-1. Click**Set**to enter the keY
+1. Click **Set** to enter the keY
 2. **Key:** social123
 3. **Confirm key:** social123
-4. Click**OK**
-5. Click**Tick button**to save
+4. Click **OK**
+5. Click **Tick button** to save
 4. **Authentication protocol:** PAP
 5. **NAS-Identifier:** Device MAC
 6. **Real-Time Accounting:** Enable
 7. **Accounting server**
 
-1. Click**Add**
+1. Click **Add**
 2. **Authentication server address:** 103.6.85.240
 3. **Port:** 1812
 4. **Key:** social123
 
-1. Click**Set**to enter the keY
+1. Click **Set** to enter the keY
 2. **Key:** social123
 3. **Confirm key:** social123
-4. Click**OK**
-5. Click**Tick button**to save
+4. Click **OK**
+5. Click **Tick button** to save
 8. **Load balancing mode:** By priority
 9. **Set MAC address format:** Enable
 10. **MAC address case:** Uppercase
 11. **MAC address delimiter:** Hyphen (-)
 12. **MAC address format:** XX-XX-XX-XX-XX-XX
 13. **Automatic detection of server status:** Disable
-14. Click**OK**
-15. Select**RADIUS server**that you created
+14. Click **OK**
+15. Select **RADIUS server** that you created
 5. Access Control Configuration
 
-1. For**Default permit rule**session, click**... > Create**
+1. For **Default permit rule** session, click **... > Create**
 
 ​
 2. Configure with the following settings:
 
 1. **Name:** <permit-rule-name-you-prefer> (e.g. Walled-Garden-List)
-3. Add**Rule list**with the following configurations:
+3. Add **Rule list** with the following configurations:
 
-1. Click**Create**
+1. Click **Create**
 2. **Address Type:** IP Address/Mask
 3. **IP Address/Mask:** Refer to the following IP address
 
@@ -110,9 +110,9 @@
 2. 172.16.0.0/12
 3. 10.0.0.0/8
 4. **Protocol:** Any
-4. Add**IPv4 rule**with the following configurations:
+4. Add **IPv4 rule** with the following configurations:
 
-1. Click**Create**
+1. Click **Create**
 2. **Address Type:** Domain name
 3. **Domain name:** Refer to the Walled Garden List (below)
 
@@ -128,7 +128,7 @@
 3. 10.0.0.0/8
 4. *.[fanswifi.com](http://fanswifi.com/)
 
-i.**Walled Garden List (Optional, you may skip this if there is no Facebook Login Enabled)**
+i. **Walled Garden List (Optional, you may skip this if there is no Facebook Login Enabled)**
 
 1. *.[facebook.com](http://facebook.com/)
 2. *.[facebook.net](http://facebook.net/)
@@ -150,7 +150,7 @@ i.**Walled Garden List (Optional, you may skip this if there is no Facebook Logi
 7. Malaysia:[www.google.com.my](http://www.google.com.my/)
 8. Myanmar:[www.google.com.mm](http://www.google.com.mm/)
 
-ii.**Walled Garden List (Optional, you may skip this if there is no Weibo Login Enabled)**
+ii. **Walled Garden List (Optional, you may skip this if there is no Weibo Login Enabled)**
 
 1. *.[weibo.com](http://weibo.com/)
 2. *.[weibo.cn](http://weibo.cn/)
@@ -158,29 +158,29 @@ ii.**Walled Garden List (Optional, you may skip this if there is no Weibo Login 
 4. *.[sina.com.cn](http://sina.com.cn/)
 5. *.[sinajs.cn](http://sinajs.cn/)
 
-iii.**Walled Garden List (Optional, you may skip this if there is no Instagram Login Enabled)**
+iii. **Walled Garden List (Optional, you may skip this if there is no Instagram Login Enabled)**
 
 1. *.[instagram.com](http://instagram.com/)
 2. *.[akamaihd.net](http://akamaihd.net/)
 3. *.[cdninstagram.com](http://cdninstagram.com/)
 
-vi.**Twitter Login (Optional, you may skip this if there is no Twitter Login Enabled)**
+vi. **Twitter Login (Optional, you may skip this if there is no Twitter Login Enabled)**
 
 1. *.[twitter.com](http://twitter.com/)
 2. *.[twimg.com](http://twimg.com/)
 
-vi.**LINE Login (Optional, you may skip this if there is no LINE Login Enabled)**
+v. **LINE Login (Optional, you may skip this if there is no LINE Login Enabled)**
 
 1. *.[line.me](http://line.me/)
 2. *.[line-scdn.net](http://line-scdn.net/)
 
-vi.**PayPal Login (Optional, you may skip this if there is no PayPal Login Enabled)**
+vi. **PayPal Login (Optional, you may skip this if there is no PayPal Login Enabled)**
 
 1. *.[paypal.com](http://paypal.com/)
 2. *.[paypalobjects.com](http://paypalobjects.com/)
 3. [www.google-analytics.com](http://www.google-analytics.com/)
 
-v.**Video Login (Optional, you may skip this if there is no Video Login Enabled)**
+vii. **Video Login (Optional, you may skip this if there is no Video Login Enabled)**
 
 1. *.[akamaized.net](http://akamaized.net/)
 2. *.[akamaihd.net](http://akamaihd.net/)
@@ -189,20 +189,20 @@ v.**Video Login (Optional, you may skip this if there is no Video Login Enabled)
 1. *.[scorecardresearch.com](http://scorecardresearch.com/)
 2. *.[vimeocdn.com](http://vimeocdn.com/)
 3. *.[vimeo.com](http://vimeo.com/)
-6. Click**OK**to save
-6. Click**OK****to create SSID
+6. Click **OK** to save
+6. Click **OK** to create SSID
 
 ## Step 4: Add AP to FansWiFi Admin Panel
 
 - Login to FansWiFi Admin Panel
-- Click**Settings -> Hotspots -> Create**
+- Click **Settings -> Hotspots -> Create**
 - Configure with following settings:
 
 - **Venue:** Select the venue of where your Access Point locates
 - **Hotspot Name:** Name each Access Point to make it identifiable
 - **AP Type:** Select "Huawei eKit"
 - **Mac Address:** Input unique MAC Address of each Access Point in your venue
-- Click**Create**
+- Click **Create**
 
 ![](../../../_images/information-required-for-fanswifi-manager-305.png)
 
