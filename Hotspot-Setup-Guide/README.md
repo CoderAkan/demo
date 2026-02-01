@@ -1,19 +1,5 @@
 # Hotspot Setup Guide
 
-## Aerohive
-
-### AeroHive HiveManager NG Setup Guide
-
-{% content-ref url="Aerohive/AeroHive-HiveManager-NG-Setup-Guide/information-required-for-fanswifi-manager.md" %}
-[Information required for FansWiFi Manager](Aerohive/AeroHive-HiveManager-NG-Setup-Guide/information-required-for-fanswifi-manager.md)
-{% endcontent-ref %}
-
-### AeroHive MyHive Setup Guide
-
-{% content-ref url="Aerohive/AeroHive-MyHive-Setup-Guide/information-required-for-fanswifi-manager.md" %}
-[Information required for FansWiFi Manager](Aerohive/AeroHive-MyHive-Setup-Guide/information-required-for-fanswifi-manager.md)
-{% endcontent-ref %}
-
 ## Aruba (HPE)
 
 ### Aruba (HPE) Instant-On AP Setup Guide
@@ -44,6 +30,20 @@
 
 {% content-ref url="Aruba-(HPE)/Aruba-Networking-Central-Setup-Guide/information-required-for-fanswifi-manager.md" %}
 [Information required for FansWiFi Manager](Aruba-(HPE)/Aruba-Networking-Central-Setup-Guide/information-required-for-fanswifi-manager.md)
+{% endcontent-ref %}
+
+## Aerohive
+
+### AeroHive HiveManager NG Setup Guide
+
+{% content-ref url="Aerohive/AeroHive-HiveManager-NG-Setup-Guide/information-required-for-fanswifi-manager.md" %}
+[Information required for FansWiFi Manager](Aerohive/AeroHive-HiveManager-NG-Setup-Guide/information-required-for-fanswifi-manager.md)
+{% endcontent-ref %}
+
+### AeroHive MyHive Setup Guide
+
+{% content-ref url="Aerohive/AeroHive-MyHive-Setup-Guide/information-required-for-fanswifi-manager.md" %}
+[Information required for FansWiFi Manager](Aerohive/AeroHive-MyHive-Setup-Guide/information-required-for-fanswifi-manager.md)
 {% endcontent-ref %}
 
 ## Cisco
@@ -88,14 +88,6 @@
 
 {% content-ref url="Mikrotik/Mikrotik-RouterOS-AP---Gateway-Setup-Guide/prerequisites.md" %}
 [Prerequisites](Mikrotik/Mikrotik-RouterOS-AP---Gateway-Setup-Guide/prerequisites.md)
-{% endcontent-ref %}
-
-## Miscellaneous
-
-### FansWiFi DNS Configuration on Router
-
-{% content-ref url="Miscellaneous/FansWiFi-DNS-Configuration-on-Router/network-diagram.md" %}
-[Network Diagram](Miscellaneous/FansWiFi-DNS-Configuration-on-Router/network-diagram.md)
 {% endcontent-ref %}
 
 ## Open Mesh
@@ -170,18 +162,28 @@
 [Information required for FansWiFi Manager](TP-Link/TP-Link-Omada-Controller-(Self-Hosted)-Setup-Guide/information-required-for-fanswifi-manager.md)
 {% endcontent-ref %}
 
-## Troubleshooting Guide
-
-### WiFi User Captive Portal Connection Troubleshooting Guide
-
-{% content-ref url="Troubleshooting-Guide/WiFi-User-Captive-Portal-Connection-Troubleshooting-Guide/1-test-if-the-wifi-user-able-to-access-the-internet.md" %}
-[1) Test if the WiFi User able to access the Internet](Troubleshooting-Guide/WiFi-User-Captive-Portal-Connection-Troubleshooting-Guide/1-test-if-the-wifi-user-able-to-access-the-internet.md)
-{% endcontent-ref %}
-
 ## Ubiquiti Unifi
 
 ### Ubiquiti (UBNT) UniFi Controller Setup Guide (New UI)
 
 {% content-ref url="Ubiquiti-Unifi/Ubiquiti-(UBNT)-UniFi-Controller-Setup-Guide-(New-UI)/information-required-for-fanswifi-manager.md" %}
 [Information required for FansWiFi Manager](Ubiquiti-Unifi/Ubiquiti-(UBNT)-UniFi-Controller-Setup-Guide-(New-UI)/information-required-for-fanswifi-manager.md)
+{% endcontent-ref %}
+
+
+## Miscellaneous
+
+### FansWiFi DNS Configuration on Router
+
+{% content-ref url="Miscellaneous/FansWiFi-DNS-Configuration-on-Router/network-diagram.md" %}
+[Network Diagram](Miscellaneous/FansWiFi-DNS-Configuration-on-Router/network-diagram.md)
+{% endcontent-ref %}
+
+
+## Troubleshooting Guide
+
+### WiFi User Captive Portal Connection Troubleshooting Guide
+
+{% content-ref url="Troubleshooting-Guide/WiFi-User-Captive-Portal-Connection-Troubleshooting-Guide/1-test-if-the-wifi-user-able-to-access-the-internet.md" %}
+[1) Test if the WiFi User able to access the Internet](Troubleshooting-Guide/WiFi-User-Captive-Portal-Connection-Troubleshooting-Guide/1-test-if-the-wifi-user-able-to-access-the-internet.md)
 {% endcontent-ref %}
