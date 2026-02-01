@@ -1,5 +1,5 @@
 # Aruba Networking Central Setup Guide
 
-{% content-ref url="information-required-for-fanswifi-manager.md" %}
-[Aruba Networking Central Setup Guide](information-required-for-fanswifi-manager.md)
+{% content-ref url="aruba_networking_central_setup_guide.md" %}
+[Aruba Networking Central Setup Guide](aruba_networking_central_setup_guide.md)
 {% endcontent-ref %}
