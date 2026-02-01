@@ -98,7 +98,7 @@
     * [Aruba Networking Central Setup Guide](Hotspot-Setup-Guide/Aruba-(HPE)/Aruba-Networking-Central-Setup-Guide/README.md)
       * [Aruba Networking Central Setup Guide](Hotspot-Setup-Guide/Aruba-(HPE)/Aruba-Networking-Central-Setup-Guide/aruba_networking_central_setup_page.md)
     * [Aruba (HPE) Instant-On AP Setup Guide](Hotspot-Setup-Guide/Aruba-(HPE)/Aruba-(HPE)-Instant-On-AP-Setup-Guide/README.md)
-      * [Information required for FansWiFi Manager](Hotspot-Setup-Guide/Aruba-(HPE)/Aruba-(HPE)-Instant-On-AP-Setup-Guide/information-required-for-fanswifi-manager.md)
+      * [Aruba (HPE) Instant-On AP Setup Guide](Hotspot-Setup-Guide/Aruba-(HPE)/Aruba-(HPE)-Instant-On-AP-Setup-Guide/aruba_hpe_page.md)
     * [Aruba Mobility Controller Setup Guide (Version 8.x)](Hotspot-Setup-Guide/Aruba-(HPE)/Aruba-Mobility-Controller-Setup-Guide-(Version-8.x)/README.md)
       * [Setting on Aruba Controller](Hotspot-Setup-Guide/Aruba-(HPE)/Aruba-Mobility-Controller-Setup-Guide-(Version-8.x)/setting-on-aruba-controller.md)
     * [Aruba Mobility Controller Setup Guide (Version 6.x)](Hotspot-Setup-Guide/Aruba-(HPE)/Aruba-Mobility-Controller-Setup-Guide-(Version-6.x)/README.md)

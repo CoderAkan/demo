@@ -10,8 +10,8 @@
 
 ### Aruba (HPE) Instant-On AP Setup Guide
 
-{% content-ref url="Aruba-(HPE)/Aruba-(HPE)-Instant-On-AP-Setup-Guide/information-required-for-fanswifi-manager.md" %}
-[Information required for FansWiFi Manager](Aruba-(HPE)/Aruba-(HPE)-Instant-On-AP-Setup-Guide/information-required-for-fanswifi-manager.md)
+{% content-ref url="Aruba-(HPE)/Aruba-(HPE)-Instant-On-AP-Setup-Guide/aruba_hpe_page.md" %}
+[Aruba (HPE) Instant-On AP Setup Guide](Aruba-(HPE)/Aruba-(HPE)-Instant-On-AP-Setup-Guide/aruba_hpe_page.md)
 {% endcontent-ref %}
 
 ### Aruba Mobility Controller Setup Guide (Version 8.x)

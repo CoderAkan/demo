@@ -1,5 +1,5 @@
 # Aruba (HPE) Instant-On AP Setup Guide
 
-{% content-ref url="information-required-for-fanswifi-manager.md" %}
-[Information required for FansWiFi Manager](information-required-for-fanswifi-manager.md)
+{% content-ref url="aruba_hpe_page.md" %}
+[Aruba (HPE) Instant-On AP Setup Guide](aruba_hpe_page.md)
 {% endcontent-ref %}

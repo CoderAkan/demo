@@ -1,12 +1,6 @@
----
-description: Configure Aruba Instant-On (AP11) with FansWiFi captive portal and RADIUS.
----
+## Information required for FansWiFi Manager (Aruba Instant-On)
 
-# Information required for FansWiFi Manager (Aruba Instant-On)
-
-## What you need
-
-- **AP MAC address** (usually on the back of the access point)
+- Mac Addresses of the APs (usually can be found at the back of the router)
 
 ## Tested model and firmware
 
