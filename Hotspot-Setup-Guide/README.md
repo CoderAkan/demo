@@ -2,22 +2,16 @@
 
 ## Aruba (HPE)
 
+### Aruba Networking Central Setup Guide
+
+{% content-ref url="Aruba-(HPE)/Aruba-Networking-Central-Setup-Guide/information-required-for-fanswifi-manager.md" %}
+[Information required for FansWiFi Manager](Aruba-(HPE)/Aruba-Networking-Central-Setup-Guide/information-required-for-fanswifi-manager.md)
+{% endcontent-ref %}
+
 ### Aruba (HPE) Instant-On AP Setup Guide
 
 {% content-ref url="Aruba-(HPE)/Aruba-(HPE)-Instant-On-AP-Setup-Guide/information-required-for-fanswifi-manager.md" %}
 [Information required for FansWiFi Manager](Aruba-(HPE)/Aruba-(HPE)-Instant-On-AP-Setup-Guide/information-required-for-fanswifi-manager.md)
-{% endcontent-ref %}
-
-### Aruba Instant (IAP) Setup Guide
-
-{% content-ref url="Aruba-(HPE)/Aruba-Instant-(IAP)-Setup-Guide/information-required-for-fanswifi-manager.md" %}
-[Information required for FansWiFi Manager](Aruba-(HPE)/Aruba-Instant-(IAP)-Setup-Guide/information-required-for-fanswifi-manager.md)
-{% endcontent-ref %}
-
-### Aruba Mobility Controller Setup Guide (Version 6.x)
-
-{% content-ref url="Aruba-(HPE)/Aruba-Mobility-Controller-Setup-Guide-(Version-6.x)/information-required-for-fanswifi-manager.md" %}
-[Information required for FansWiFi Manager](Aruba-(HPE)/Aruba-Mobility-Controller-Setup-Guide-(Version-6.x)/information-required-for-fanswifi-manager.md)
 {% endcontent-ref %}
 
 ### Aruba Mobility Controller Setup Guide (Version 8.x)
@@ -26,11 +20,18 @@
 [Setting on Aruba Controller](Aruba-(HPE)/Aruba-Mobility-Controller-Setup-Guide-(Version-8.x)/setting-on-aruba-controller.md)
 {% endcontent-ref %}
 
-### Aruba Networking Central Setup Guide
+### Aruba Mobility Controller Setup Guide (Version 6.x)
 
-{% content-ref url="Aruba-(HPE)/Aruba-Networking-Central-Setup-Guide/information-required-for-fanswifi-manager.md" %}
-[Information required for FansWiFi Manager](Aruba-(HPE)/Aruba-Networking-Central-Setup-Guide/information-required-for-fanswifi-manager.md)
+{% content-ref url="Aruba-(HPE)/Aruba-Mobility-Controller-Setup-Guide-(Version-6.x)/information-required-for-fanswifi-manager.md" %}
+[Information required for FansWiFi Manager](Aruba-(HPE)/Aruba-Mobility-Controller-Setup-Guide-(Version-6.x)/information-required-for-fanswifi-manager.md)
 {% endcontent-ref %}
+
+### Aruba Instant (IAP) Setup Guide
+
+{% content-ref url="Aruba-(HPE)/Aruba-Instant-(IAP)-Setup-Guide/information-required-for-fanswifi-manager.md" %}
+[Information required for FansWiFi Manager](Aruba-(HPE)/Aruba-Instant-(IAP)-Setup-Guide/information-required-for-fanswifi-manager.md)
+{% endcontent-ref %}
+
 
 ## Aerohive
 

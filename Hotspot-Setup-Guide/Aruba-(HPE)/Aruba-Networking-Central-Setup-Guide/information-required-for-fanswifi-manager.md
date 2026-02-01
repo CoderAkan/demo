@@ -1,11 +1,11 @@
-# Information required for FansWiFi Manager
+<!-- # Aruba Networking Central Setup Guide -->
 
 
-# Information required for FansWiFi Manager
+## Information required for FansWiFi Manager
 
 - Mac Addresses of the APs
 
-# Tested Model and Firmware Version
+## Tested Model and Firmware Version
 
 - AP Firmware Version: **8.10.0.6_86193**
 - Cloud-hosted on HPE GreenLake
