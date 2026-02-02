@@ -1,28 +1,31 @@
-# Ruckus One Cloud Setup Guide
-
-This guide provides instructions for configuring Ruckus One Cloud to work with the FansWiFi Manager platform.
-
-## Information Required for FansWiFi Manager
+### Information Required for FansWiFi Manager
 
 - **MAC Addresses** of the APs
 
-## Step 1: Access Ruckus One Cloud
+### Setting on Ruckus One Cloud
 
-1. Access the Ruckus One management interface via a Web Browser.
+#### Step 1: Access Ruckus One Cloud
+
+1. Access the Portal by opening a Web Browser
 2. Click **Wi-Fi** on the left menu, then select **Wi-Fi Networks List**.
 
 ![Ruckus One WiFi Networks List](../../../_images/information-required-for-fanswifi-manager-319.png)
 
-## Step 2: Create SSID
+#### Step 2: Create SSID
 
 1. Select **Networks List** on the top menu.
 2. Click **Add Wi-Fi Network** on the top right.
+
+![](../../../_images/ruckus_one_0.png)
+
 3. In the **Network Details** section, configure the following:
    - **Network Name:** (Your preferred SSID, e.g., "FansWiFi Free WiFi")
    - **Network Type:** Captive Portal
-4. Click **Next**.
+   - Click **Next**.
 
-## Step 3: Captive Portal Configuration
+   ![](../../../_images/ruckus_one_1.png)
+
+#### Step 3: Captive Portal Configuration
 
 1. In the **Portal Type** section:
    - **Portal Type:** 3rd Party Captive Portal (WISPr)

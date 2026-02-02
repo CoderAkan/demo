@@ -221,6 +221,6 @@ If the SmartZone / vSCG is behind Router / Firewall, it is not directly accessib
    - **AP Type:** Select **Ruckus SmartZone (formerly SCG)**.
    - **MAC Address:** Enter the unique MAC address of the AP.
 {% endhint %}
-- Click **Save**
+- Click **Save:**
 
 ![](../../../_images/ruckus_3.5_2.png)
