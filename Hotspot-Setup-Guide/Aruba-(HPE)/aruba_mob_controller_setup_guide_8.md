@@ -54,6 +54,7 @@
     
     ![](../../../_images/aruba_mob_control_8_section_e.png)
 - e. In **Security** setting
+    
     ![](../../../_images/aruba_mob_control_section_f.png)
     - Select **ClearPass or other external Captive Portal**
     - In **Auth servers,** Click "**+**" > "**+**" (Create new server)
@@ -109,7 +110,6 @@
 8. [www.google.com.hk](http://www.google.com.hk/)(Local Google URL of your Country / Region)
     
     a. Example:
-        
         i. EU:[www.google.eu](http://www.google.eu/)
         ii. UK:[www.google.co.uk](http://www.google.co.uk/)
         iii. Hong Kong:[www.google.com.hk](http://www.google.com.hk/)
@@ -168,7 +168,7 @@
 - a. Click **Configuration > Authentication > L3 Authentication**
 - b. Select **Captive Portal Authentication**
 - c. Select **- FansWiFi Free WiFi -_cppm_prof**
-    - a profile will be created automatically by the controller for each SSID you created **<ssid-name-you-configured>_cppm_prof** in [Step 1]([#h_6cf0c639aa](https://www.facebook.com/hashtag/h_6cf0c639aa))
+    - a profile will be created automatically by the controller for each SSID you created **<ssid-name-you-configured>_cppm_prof** in **[Step 1](#step-1-configuration-wlan-and-ssid)**
 - add configure with below settings
     - i. Default Role: **guest**
     - ii. Default Guest Role: **guest**
@@ -199,7 +199,7 @@
 - a. Click **Configuration > Authentication > AAA profiles**
 - b. Select **AAA**
 - c. Select **- FansWiFi Free WiFi -_aaa_prof**
-    - a profile will be created automatically by the controller for each SSID you created **<ssid-name-you-configured>_aaa_prof** in [Step 1](#step-1-configuration-ssid)
+    - a profile will be created automatically by the controller for each SSID you created **<ssid-name-you-configured>_aaa_prof** in **[Step 1](#step-1-configuration-wlan-and-ssid)**
 - d. Leave all settings as they are, except:
     - i. RADIUS Roaming Accounting: **Ticked**
     - ii. RADIUS Interim Accounting: **Ticked**
