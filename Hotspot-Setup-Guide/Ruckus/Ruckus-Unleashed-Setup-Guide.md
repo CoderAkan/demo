@@ -26,10 +26,10 @@
    - **Auth Method:** PAP
    - **Backup RADIUS:** Enabled
 
-      **First Server:**
-      - **IP Address:** 103.6.85.240
-      - **Port:** 1812
-      - **Shared Secret:** social123
+      - **First Server:**
+         - **IP Address:** 103.6.85.240
+         - **Port:** 1812
+         - **Shared Secret:** social123
 
 - Second Server:
    - **IP Address:** 52.221.175.51
@@ -51,8 +51,8 @@
 **General Tab:**
 - **Name:** FansWiFi
 - **WISPr Smart Client Support:** None
-- **Login Page:** `https://connect-p.fanswifi.com/auth`
-- **Start Page (redirect to the following URL):** `https://connect-p.fanswifi.com/auth`
+- **Login Page:** [https://connect-p.fanswifi.com/auth](https://connect-p.fanswifi.com/auth)
+- **Start Page (redirect to the following URL):** [https://connect-p.fanswifi.com/auth](https://connect-p.fanswifi.com/auth)
 - **User Session:** (Configure only if your FansWiFi Admin Panel has session timeouts enabled)
    - Example: Session Timeout / Daily Quota: 60 minute
    - Setting: 
