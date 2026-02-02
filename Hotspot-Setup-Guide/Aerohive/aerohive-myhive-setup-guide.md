@@ -1,18 +1,12 @@
----
-description: Configure AeroHive Cloud-Manager for FansWiFi captive portal and RADIUS.
----
-
-# Information required for FansWiFi Manager (AeroHive Cloud-Manager)
-
-## What you need
+## Information required for FansWiFi Manager (AeroHive Cloud-Manager)
 
 - **MAC addresses** of the access points (APs)
 
 ---
 
-# Configuration in AeroHive Cloud-Manager
+## Setting on AeroHive Cloud-Manager
 
-## Step 1: Configure Interfaces and User Access
+### Step 1: Configure the Interfaces and User Access
 
 Configure:
 - **Captive Web Portal**
@@ -22,7 +16,7 @@ Configure:
 
 ---
 
-## Step 2: RADIUS settings
+### Step 2: Configuration: Radius Setting
 
 Set:
 
@@ -37,123 +31,138 @@ Set:
 
 ---
 
-## Step 3: Captive Web Portal
+### Step 3: Configuration: Captive Web Portal
 
 ![](../../../_images/information-required-for-fanswifi-manager-32.png)
 
 ![](../../../_images/information-required-for-fanswifi-manager-33.png)
 
-### Login page settings
+#### Login page settings
 
 - **Authentication Method:** PAP
-- **Login URL:** https://connect-p.fanswifi.com/auth
+- **Login URL:** [https://connect-p.fanswifi.com/auth](https://connect-p.fanswifi.com/auth)
 - **Password Encryption:** No Encryption (Plaintext)
+- **Accounting Port:** `1813`
 
 ![](../../../_images/information-required-for-fanswifi-manager-34.png)
 
-### Success page settings
+#### Success page settings
 
-- **Show the success page after a successful login:** Disabled
+- **Show the success page after a successful login:** Disabled / Unchecked
 - **After a successful login:** Redirect to an external page
-- **Redirect URL:** https://connect-p.fanswifi.com/auth?res=success
+- **Redirect URL:** [https://connect-p.fanswifi.com/auth?res=success](https://connect-p.fanswifi.com/auth?res=success)
 
 ![](../../../_images/information-required-for-fanswifi-manager-35.png)
 
-### Failure page settings
+#### Failure page settings
 
-- **Show the failure page after a failed login:** Disabled
+- **Show the failure page after a failed login:** Disabled / Unchecked
 - **After a failed login:** Redirect to an external page
-- **Redirect URL:** https://connect-p.fanswifi.com/auth?res=failure
+- **Redirect URL:** [https://connect-p.fanswifi.com/auth?res=failure](https://connect-p.fanswifi.com/auth?res=failure)
 
 ![](../../../_images/information-required-for-fanswifi-manager-36.png)
 
-> Note: Your original failure URL had a mismatched target (`.../auth?id=aerohive&res=failure`). Use the URL above unless you *specifically* need an `id=` parameter for a different model.
-
 ---
 
-## Step 4: Optional advanced configuration (Walled Garden)
+### Step 4: Optional advanced configuration (Walled Garden)
 
 ![](../../../_images/information-required-for-fanswifi-manager-37.png)
 
 ---
 
-## Step 5: Walled Garden list
+### Step 5: Walled Garden list
 
-### Required (FansWiFi)
+#### Walled Garden List (required)
 
-- `fanswifi.com`
+1. *.[fanswifi.com](http://fanswifi.com/)
 
-### Optional (only if Facebook Login is enabled)
+i. **Walled Garden List (Optional, you may skip this if there is no Facebook Login Enabled)**
 
-- `facebook.com`
-- `facebook.net`
-- `fbcdn.net`
-- `fbcdn.com`
-- `akamaihd.net`
-- `www.google.com`
-- `doubleclick.net`
-- `www.google.us` *(use the local Google domain for your country/region)*
+1. *.[facebook.com](http://facebook.com/)
+2. *.[facebook.net](http://facebook.net/)
+3. *.[fbcdn.net](http://fbcdn.net/)
+4. *.[fbcdn.com](http://fbcdn.com/)
+5. *.[akamaihd.net](http://akamaihd.net/)
+6. [www.google.com](http://www.google.com/)
+7. *.[doubleclick.net](http://doubleclick.net/)
+8. [www.google.com.hk](http://www.google.com.hk/)(Local Google URL of your Country / Region)
 
-**Examples (local Google domains)**
+    - a. Example:
 
-- EU: `www.google.eu`
-- UK: `www.google.co.uk`
-- Hong Kong: `www.google.com.hk`
-- Japan: `www.google.co.jp`
-- Taiwan: `www.google.com.tw`
-- Thailand: `www.google.co.th`
-- Malaysia: `www.google.com.my`
-- Myanmar: `www.google.com.mm`
+        - i. EU:[www.google.eu](http://www.google.eu)
+        - ii. UK:[www.google.co.uk](http://www.google.co.uk/)
+        - iii. Hong Kong:[www.google.com.hk](http://www.google.com.hk/)
+        - iv. Japan:[www.google.co.jp](http://www.google.co.jp/)
+        - v. Taiwan:[www.google.com.tw](http://www.google.com.tw/)
+        - vi. Thailand:[www.google.co.th](http://www.google.co.th/)
+        - vii. Malaysia:[www.google.com.my](http://www.google.com.my/)
+        - viii. Myanmar:[www.google.com.mm](http://www.google.com.mm/)
 
-### Optional (only if Weibo Login is enabled)
+ii. **Walled Garden List (Optional, you may skip this if there is no Weibo Login Enabled)**
 
-- `weibo.com`
-- `weibo.cn`
-- `sinaapp.com`
-- `sina.com.cn`
-- `sinajs.cn`
+1. *.[weibo.com](http://weibo.com/)
+2. *.[weibo.cn](http://weibo.cn/)
+3. *.[sinaapp.com](http://sinaapp.com/)
+4. *.[sina.com.cn](http://sina.com.cn/)
+5. *.[sinajs.cn](http://sinajs.cn/)
 
-### Optional (only if Instagram Login is enabled)
+iii. **Walled Garden List (Optional, you may skip this if there is no Instagram Login Enabled)**
 
-- `instagram.com`
-- `cdninstagram.com`
-- `akamaihd.net`
+1. *.[instagram.com](http://instagram.com/)
+2. *.[akamaihd.net](http://akamaihd.net/)
+3. *.[cdninstagram.com](http://cdninstagram.com/)
 
-### Optional (only if Twitter/X Login is enabled)
+iv. **Twitter Login (Optional, you may skip this if there is no Twitter Login Enabled)**
 
-- `twitter.com`
-- `twimg.com`
+1. *.[twitter.com](http://twitter.com/)
+2. *.[twimg.com](http://twimg.com/)
 
-### Optional (only if Video Login is enabled)
+v. **LINE Login (Optional, you may skip this if there is no LINE Login Enabled)**
 
-- `akamaized.net`
-- `akamaihd.net`
-- `ssl.google-analytics.com`
-- `scorecardresearch.com`
-- `vimeocdn.com`
-- `vimeo.com`
+1. *.[line.me](http://line.me/)
+2. *.[line-scdn.net](http://line-scdn.net/)
+
+vi. **PayPal Login (Optional, you may skip this if there is no PayPal Login Enabled)**
+
+1. *.[paypal.com](http://paypal.com/)
+2. *.[paypalobjects.com](http://paypalobjects.com/)
+3. [www.google-analytics.com](http://www.google-analytics.com/)
+
+vii. **Video Login (Optional, you may skip this if there is no Video Login Enabled)**
+
+1. *.[akamaized.net](http://akamaized.net/)
+2. *.[akamaihd.net](http://akamaihd.net/)
+3. [ssl.google-analytics.com](http://ssl.google-analytics.com/)
+    - a. *.[scorecardresearch.com](http://scorecardresearch.com/)
+    - b. *.[vimeocdn.com](http://vimeocdn.com/)
+    - c. *.[vimeo.com](http://vimeo.com/)
+
 
 ---
 
-## Step 6: Enable DNS ALG service
+### Step 6: Enable DNS ALG service
 
 Enable **DNS ALG Service** in:
 
 **Additional Settings → Service Settings → ALG Services**
 
 1. Click **Edit** for **Additional Service**
+
+![](../../../_images/aerohive_myhive_0.png)
 2. Expand **Service Settings**
 3. Click **Edit** for **ALG Services**
+
+![](../../../_images/aerohive_myhive_1.png)
 4. Check **Enable** for **DNS ALG Service**
+
+![](../../../_images/aerohive_myhive_2.png)
 
 ---
 
-# Setup in FansWiFi Admin Panel
-
-## Step 7: Add Hotspot
+### Step 7: Setup in FansWiFi Admin Panel
 
 1. Log in:
-   - https://admin-p.fanswifi.com
+   - [https://admin-p.fanswifi.com](https://admin-p.fanswifi.com)
 
 2. Go to:
    - **Settings → Hotspots → Add Hotspot**
