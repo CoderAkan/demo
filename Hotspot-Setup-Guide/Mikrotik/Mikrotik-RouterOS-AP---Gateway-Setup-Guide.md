@@ -1,31 +1,28 @@
-# Prerequisites
-
-
-# Prerequisites
+## Prerequisites
 
 - Experience and knowledge of Mikrotik WiFi AP Setting
 
-# Information required for FansWiFi Manager
+## Information required for FansWiFi Manager
 
 - Mac Addresses of the APs / Gateway
 
-## Tested Firmware Version
+### Tested Firmware Version
 
 - Version: **6.38.7** on hAP AC (RB962UiGS-5HacT2HnT)
 - Version: **6.39.1** on RB951-2n
 - NOT Supported Version: 5.xx Series or below
 
-- Warning: RouterOS 5.26 is confirmed NOT working. Please do not use firmware 5.xx Series or below.
-- Download the latest firmware on[https://mikrotik.com/download](https://support.fanswifi.com/hotspot-setup-guide/mikrotik/mikrotik-routeros-ap-/-gateway-setup-guide#)
+    - Warning: RouterOS 5.26 is confirmed NOT working. Please do not use firmware 5.xx Series or below.
+    - Download the latest firmware on[https://mikrotik.com/download](https://support.fanswifi.com/hotspot-setup-guide/mikrotik/mikrotik-routeros-ap-/-gateway-setup-guide#)
 
-## Tested Device Model
+### Tested Device Model
 
 - Mikrotik hAP AC (Product Code: RB962UiGS-5HacT2HnT)
 - Mikrotik RB951-2n (Product Code: RB951-2n)
 
-# Setting on Mikrotik AP / Gateway
+### Setting on Mikrotik AP / Gateway
 
-## Step 1: Connect your router with Winbox
+#### Step 1: Connect your router with Winbox
 
 If you do not have the software, you can download it from the link below:
 
@@ -34,11 +31,11 @@ If you do not have the software, you can download it from the link below:
 - Run Winbox with your router connected with a RJ45 network cable.
 - Click “...” button to select the MAC address(not IP address) and “Connect”. You may have to wait a while for system to obtain the address.
 
-- (The Mac address should be on the back of your router)
+    - (The Mac address should be on the back of your router)
 
-![](../../../_images/prerequisites-71.png)
+    ![](../../../_images/prerequisites-71.png)
 
-## Step 2: Quick Set Network
+#### Step 2: Quick Set Network
 
 - After successfully login to Winbox, setup the basic WiFi Setting using Quick Set
 
@@ -51,21 +48,21 @@ If you do not have the software, you can download it from the link below:
 - Then set your SSID and settings as follow:
 
 - Under **Wireless**:
-​**Network Name:** -FansWiFi -
+    - **Network Name:** -FansWiFi -
 - Under **Internet**:
-​**Address Acquisition:** Automatic
-​**Firewall Router:** Enabled
+    - **Address Acquisition:** Automatic
+    - **Firewall Router:** Enabled
 - Under **Local Network**:
-​**IP Address:** 192.168.88.1
-​**Netmask:** 255.255.255.0 (/24)
+    - **IP Address:** `192.168.88.1`
+​**Netmask:** `255.255.255.0 (/24)`
 ​**DHCP Server:** Enabled
-​**DHCP Server Range:** 192.168.88.2-192.168.88.254
+​**DHCP Server Range:** `192.168.88.2-192.168.88.254`
 ​**NAT:** Enabled
 ​**UPnP:** Enabled
 
 ![](../../../_images/prerequisites-74.png)
 
-## Step 3: HotSpot Setting
+#### Step 3: HotSpot Setting
 
 - Go to **IP > Hotspot**
 
@@ -107,7 +104,7 @@ If you do not have the software, you can download it from the link below:
 
 ![](../../../_images/prerequisites-84.png)
 
-## Step 4: Change Hotspot Settings
+#### Step 4: Change Hotspot Settings
 
 - Under **IP > Hotspot**, click the **User Profiles** tab
 - Select **default**
@@ -116,7 +113,7 @@ If you do not have the software, you can download it from the link below:
 
 ![](../../../_images/prerequisites-85.png)
 
-## Step 5: Change Authentication Method
+#### Step 5: Change Authentication Method
 
 - Select the Server Profile tab and double-click hsprof1 to open up the detail.
 
@@ -130,7 +127,7 @@ If you do not have the software, you can download it from the link below:
 
 ![](../../../_images/prerequisites-88.png)
 
-## Step 6: Add Radius Server
+#### Step 6: Add Radius Server
 
 - Go to Radius in the main menu, then click the “+” button to add a new radius server.
 
@@ -142,29 +139,29 @@ If you do not have the software, you can download it from the link below:
 
 - Enter “**social123**” as the Secret. Click Ok to finalize the settings.
 
-- **Radius Settings**
-- a. Service: Hotspot
-- b. Address:
+    - **Radius Settings**
+    - a. Service: Hotspot
+    - b. Address:
 
-- Asia Pacific, US, America, Europe, the Middle East and Africa:
-Address: 103.6.85.240
-- c. Radius Secret: social123
-- d. **Timeout: 1500 ms**
+        - Asia Pacific, US, America, Europe, the Middle East and Africa:
+        Address: 103.6.85.240
+    - c. Radius Secret: social123
+    - d. **Timeout: 1500 ms**
 
 ![](../../../_images/prerequisites-90.png)
 
-## Step 7: Set up Walled Garden List
+#### Step 7: Set up Walled Garden List
 
-### 7.1 Upload Walled Garden List File
+##### 7.1 Upload Walled Garden List File
 
 - Go to Files on the main menu. Download the script file from the following link
 
 [https://cdn.fanswifi.com/assets/mikrotik/fanswifi_hotspot_walled_garden.rsc](https://cdn.fanswifi.com/assets/mikrotik/fanswifi_hotspot_walled_garden.rsc).
 - Then drag the downloaded rsc file to:
 
-- “**flash**” for model hAP AC (RB962UiGS-5HacT2HnT), or
-- the **root of the File list** for model RB951-2n
-in Winbox.
+    - “**flash**” for model hAP AC (RB962UiGS-5HacT2HnT), or
+    - the **root of the File list** for model RB951-2n
+    in Winbox.
 
 ![](../../../_images/prerequisites-91.png)
 
@@ -172,13 +169,13 @@ in Winbox.
 
 ![](../../../_images/prerequisites-92.png)
 
-### 7.2 Import the uploaded files
+##### 7.2 Import the uploaded files
 
 - Go to New Terminal in the main menu. Then enter:
 
-- “import flash/fanswifi_hotspot_walled_garden.rsc” for model hAP AC (RB962UiGS-5HacT2HnT), or
-- “import fanswifi_hotspot_walled_garden.rsc” for model RB951-2n
-in the terminal. You should see a success message afterwards like the following screen.
+    - “import flash/fanswifi_hotspot_walled_garden.rsc” for model hAP AC (RB962UiGS-5HacT2HnT), or
+    - “import fanswifi_hotspot_walled_garden.rsc” for model RB951-2n
+    in the terminal. You should see a success message afterwards like the following screen.
 
 ![](../../../_images/prerequisites-93.png)
 
@@ -186,82 +183,19 @@ in the terminal. You should see a success message afterwards like the following 
 
 ![](../../../_images/prerequisites-94.png)
 
-### 7.3 Add Walled Garden IP List
+##### 7.3 Add Walled Garden IP List
 
 - Go to **IP > Hotspot > Walled Garden IP List**
 - Add below records to the **Walled Garden IP List**:
 
-**Rule**
+| Rule | Server | Src. Address | Dst. Address | Protocol | Dest. Port |
+|---:|---|---|---|---|---:|
+| 1 | \<empty> | \<empty> | \<empty> | **tcp** | **443** |
+| 2 | \<empty> | **52.220.226.90** | \<empty> | \<empty> | \<empty> |
+| 3 | \<empty> | \<empty> | **52.220.226.90** | \<empty> | \<empty> |
+| 4 | \<empty> | **52.220.206.125** | \<empty> | \<empty> | \<empty> |
+| 5 | \<empty> | \<empty> | **52.220.206.125** | \<empty> | \<empty> |
 
-**Server**
-
-**Src. Address**
-
-**Dst. Address**
-
-**Protocol**
-
-**Dest. Port**
-
-1
-
-<empty>
-
-<empty>
-
-<empty>
-
-**tcp**
-
-**443**
-
-2
-
-<empty>
-
-**52.220.226.90**
-
-<empty>
-
-<empty>
-
-<empty>
-
-3
-
-<empty>
-
-<empty>
-
-**52.220.226.90**
-
-<empty>
-
-<empty>
-
-4
-
-<empty>
-
-**52.220.206.125**
-
-<empty>
-
-<empty>
-
-<empty>
-
-5
-
-<empty>
-
-<empty>
-
-**52.220.206.125**
-
-<empty>
-
-<empty>
 
 ![](../../../_images/prerequisites-95.png)
 
@@ -271,7 +205,7 @@ Example:
 
 ![](../../../_images/prerequisites-97.png)
 
-## Step 8: Set AP Identity
+#### Step 8: Set AP Identity
 
 - Go to **System > Identity** and enter the MAC address (The first one) of your router into the Identity field. Please be reminded that the MAC address must be in a XX-XX-XX-XX-XX-XX format.
 - Example: 11-22-33-44-55-66
@@ -282,7 +216,7 @@ Please do **NOT** enter 11:22:33:44:55:66
 
 ​
 
-## Step 9: Upload Hotspot Files
+#### Step 9: Upload Hotspot Files
 
 - Download and Unzip the file from the following links:
 
@@ -301,11 +235,14 @@ Please do **NOT** enter 11:22:33:44:55:66
 - Login to FansWiFi Admin Panel
 - Click **Settings -> Hotspots -> Add Hotspot**
 
+{% hint style="info" %}
 1. **Venue:** Select the venue of where your Access Point locates
 2. **Hotspot Name:** Name each Access Point to make it identifiable
-3. **AP Type:** Select “Mikrotik”
+3. **AP Type:** Select “**Mikrotik**”
 4. **Mac Address:** Input unique MAC Address of each Access Point in your venue (Not controller)
-2. Click **Save**
+{% endhint %}
+
+- Click **Save**
 
 ![](../../../_images/prerequisites-101.png)
 
@@ -317,22 +254,9 @@ Please do **NOT** enter 11:22:33:44:55:66
 - But after user authorized in any login method, captive portal will not be shown again before the expiry of session time.
 - If you may want to bring the user back to the captive portal page for testing different login methods, you will need to unauthorize the WiFi user.
 
-WiFi User Logout trigger by:
-
-WiFi User's Device
-
-(usually, access a logout url on browser)
-
-AP Web Admin Interface / Winbox
-
-Available
-
-Last Testing: 11-9-2017
-​
-
-Not Available
-
-Last Testing: 11-9-2017
+| WiFi User Logout trigger by: | WiFi User's Device<br>(usually, access a logout url on browser) | AP Web Admin Interface / Winbox |
+|---|---|---|  
+|  | Available <br><br>Last Testing: 11-9-2017 | Not available <br><br>Last Testing: 11-9-2017|
 
 **WiFi User Logout trigger by:**
 

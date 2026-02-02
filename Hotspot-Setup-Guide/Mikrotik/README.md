@@ -1,8 +1,6 @@
 # Mikrotik
 
-## Mikrotik RouterOS AP / Gateway Setup Guide
-
-{% content-ref url="prerequisites.md" %}
-[Prerequisites](prerequisites.md)
+{% content-ref url="Mikrotik-RouterOS-AP---Gateway-Setup-Guide.md" %}
+[Mikrotik RouterOS AP / Gateway Setup Guide](Mikrotik-RouterOS-AP---Gateway-Setup-Guide.md)
 {% endcontent-ref %}
 

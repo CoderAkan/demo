@@ -61,12 +61,10 @@
 {% endcontent-ref %}
 
 
-## Mikrotik
+## Mikroti
 
-### Mikrotik RouterOS AP / Gateway Setup Guide
-
-{% content-ref url="Mikrotik/Mikrotik-RouterOS-AP---Gateway-Setup-Guide/prerequisites.md" %}
-[Prerequisites](Mikrotik/Mikrotik-RouterOS-AP---Gateway-Setup-Guide/prerequisites.md)
+{% content-ref url="Mikrotik/Mikrotik-RouterOS-AP---Gateway-Setup-Guide.md" %}
+[Mikrotik RouterOS AP / Gateway Setup Guide](Mikrotik/Mikrotik-RouterOS-AP---Gateway-Setup-Guide.md)
 {% endcontent-ref %}
 
 ## Open Mesh
