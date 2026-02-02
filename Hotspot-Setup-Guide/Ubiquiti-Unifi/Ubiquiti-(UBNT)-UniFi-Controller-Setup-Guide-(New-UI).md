@@ -5,7 +5,7 @@
 
     - Please make sure the IP Address is accessible by our IP Addresses below
 
-        '''text
+        ```text
         52.220.208.185
 
         52.220.215.219
@@ -17,7 +17,7 @@
         52.220.226.90
 
         52.220.206.125
-        '''
+        ```
 
         - For security reasons, it's recommended to restrict the access of the public IP of the controller and put our IP Addresses in the allow list of your firewall.
 
@@ -160,12 +160,12 @@ e. Select "Settings" and Configure with following settings:
     - Repeat this step until all the IP address are added into the system
 
         - **Pre-Authorization Access (Required):**
-            '''text
+            ```text
             52.220.206.125/32
             52.220.226.90/32
-            '''
+            ```
         - **Pre-Authorization Access (FansWiFi CDN) (Required):**
-            '''text
+            ```text
             103.21.244.0/22
             103.22.200.0/22
             103.31.4.0/22
@@ -180,9 +180,9 @@ e. Select "Settings" and Configure with following settings:
             190.93.240.0/20
             197.234.240.0/22
             198.41.128.0/17
-            '''
+            ```
 - **Pre-Authorization Access (Only for Facebook):**
-    '''text
+    ```text
     31.13.24.0/21
     31.13.64.0/18
     45.64.40.0/22
@@ -198,7 +198,7 @@ e. Select "Settings" and Configure with following settings:
     179.60.192.0/22
     185.60.216.0/22
     204.15.20.0/22
-    '''
+    ```
 - Click "Save" after completing the settings
 
 ![](../../../_images/information-required-for-fanswifi-manager-6.png)
@@ -315,14 +315,14 @@ e. Select "Settings" and Configure with following settings:
 - **Please make sure our server can reach your UniFi Controller's 8443 port**
 
     - Below are the IP Addresses of our servers calling UniFi via 8443 port
-        '''text
+        ```text
         52.220.208.185u
         52.220.215.219
         52.220.219.128
         52.77.30.253
         52.220.226.90
         52.220.206.125
-        '''
+        ```
 
 ![](../../../_images/information-required-for-fanswifi-manager-7.png)
 
