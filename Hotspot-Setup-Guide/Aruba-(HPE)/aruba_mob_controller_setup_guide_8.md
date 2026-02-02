@@ -18,7 +18,7 @@
     - Please ping with the following IP address one-by-one:
         - IP address: **8.8.8.8** (Google's DNS Address)
         - IP address: **103.6.85.240** (radius.fanswifi.com)
-    ![](../../../_images/aruba_ping_version_8.png)
+    - ![](../../../_images/aruba_ping_version_8.png)
     - Click "**Ping**"
         - If either one IP address is not success, please move to (b)
         - If both IP address are success, please move to step 1
@@ -26,12 +26,12 @@
 - b. If (a) does not success (i.e. the controller cannot ping 8.8.8.8 **or** our radius server address), the controller is probably do not have correct IP or Default Gateway configuration
     - Make sure your controller have a "Default Gateway" setting if not available
         - A common configuration issue is that the controller do not have the Default Gateway setting by default. If the controller do not have the default gateway setting, it can't communicate with the Internet and also our FansWiFi Radius server
-    - Goto Configuration > Interface > IP route
-        - Click "**+**" under **Static** >**Default Gateway**
-            - **IP address:** "IP Address of your network's gateway"
-            - Click "**Submit**"
-            - Try step (a) again to see whether it can connect to both Internet and FansWiFi radius server or not
-        ![](../../../_images/aruba_ping_version_8_res_2.png)
+        - Goto Configuration > Interface > IP route
+            - Click "**+**" under **Static** >**Default Gateway**
+                - **IP address:** "IP Address of your network's gateway"
+                - Click "**Submit**"
+                - Try step (a) again to see whether it can connect to both Internet and FansWiFi radius server or not
+            ![](../../../_images/aruba_ping_ version_8_res_2.png)
 
 ### Step 1: Configuration: WLAN and SSID
 
@@ -42,6 +42,7 @@
         - Or any SSID you preferred
     - Primary usage: **Guest**
     - Click "**Next**"
+    
     ![](../../../_images/aruba_mob_control_8_section_d.png)
 - d. In **VLANs** setting
     - VLAN: **1 (or any vlan you use)**
@@ -50,9 +51,10 @@
         - Please refer to FAQ for more details
             - [FAQ 2). If VLAN is used in your setup, make sure the controller have an Interface and IP Address on this VLAN]([#h_6d97a36cda](https://www.facebook.com/hashtag/h_6d97a36cda))
     - Click "**Next**"
+    
     ![](../../../_images/aruba_mob_control_8_section_e.png)
 - e. In **Security** setting
-    ![](../../../_images/aruba_mob_control_8_section_f.png)
+    ![](../../../_images/aruba_mob_control_section_f.png)
     - Select **ClearPass or other external Captive Portal**
     - In **Auth servers,** Click "**+**" > "**+**" (Create new server)
         - Select "**RADIUS**"
@@ -64,6 +66,7 @@
             - Shared key: **social123**
             - Retype key: **social123**
         - Click "**Submit**"
+        
         ![](../../../_images/aruba_mob_control_8_section_f_2.png)
     - Then, configure with following settings:
         - Auth servers: **FansWiFi_Radius**
@@ -71,6 +74,7 @@
         - Page: **/auth**
         - Redirect URL: **https://connect-p.fanswifi.com/auth?res=success**
     - Click "**Next**"
+    
     ![](../../../_images/aruba_mob_control_8_section_f_3.png)
 - f. In **Access** setting, click "**Finish**"
 
@@ -89,11 +93,11 @@
 
 ![](../../../_images/setting-on-aruba-controller-313.png)
 
-### Walled Garden List (required)
+#### Walled Garden List (required)
 
 1. *.[fanswifi.com](http://fanswifi.com/)
 
-### i.Walled Garden List (Optional, you may skip this if there is no Facebook Login Enabled)
+#### i.Walled Garden List (Optional, you may skip this if there is no Facebook Login Enabled)
 
 1. *.[facebook.com](http://facebook.com/)
 2. *.[facebook.net](http://facebook.net/)
@@ -103,7 +107,9 @@
 6. [www.google.com](http://www.google.com/)
 7. *.[doubleclick.net](http://doubleclick.net/)
 8. [www.google.com.hk](http://www.google.com.hk/)(Local Google URL of your Country / Region)
+    
     a. Example:
+        
         i. EU:[www.google.eu](http://www.google.eu/)
         ii. UK:[www.google.co.uk](http://www.google.co.uk/)
         iii. Hong Kong:[www.google.com.hk](http://www.google.com.hk/)
@@ -113,44 +119,45 @@
         vii. Malaysia:[www.google.com.my](http://www.google.com.my/)
         viii. Myanmar:[www.google.com.mm](http://www.google.com.mm/)
 
-### ii.Walled Garden List (Optional, you may skip this if there is no Weibo Login Enabled)
+#### ii.Walled Garden List (Optional, you may skip this if there is no Weibo Login Enabled)
 
-    1. *.[weibo.com](http://weibo.com/)
-    2. *.[weibo.cn](http://weibo.cn/)
-    3. *.[sinaapp.com](http://sinaapp.com/)
-    4. *.[sina.com.cn](http://sina.com.cn/)
-    5. *.[sinajs.cn](http://sinajs.cn/)
+1. *.[weibo.com](http://weibo.com/)
+2. *.[weibo.cn](http://weibo.cn/)
+3. *.[sinaapp.com](http://sinaapp.com/)
+4. *.[sina.com.cn](http://sina.com.cn/)
+5. *.[sinajs.cn](http://sinajs.cn/)
 
-### iii.Walled Garden List (Optional, you may skip this if there is no Instagram Login Enabled)
+#### iii.Walled Garden List (Optional, you may skip this if there is no Instagram Login Enabled)
 
-    1. *.[instagram.com](http://instagram.com/)
-    2. *.[akamaihd.net](http://akamaihd.net/)
-    3. *.[cdninstagram.com](http://cdninstagram.com/)
+1. *.[instagram.com](http://instagram.com/)
+2. *.[akamaihd.net](http://akamaihd.net/)
+3. *.[cdninstagram.com](http://cdninstagram.com/)
 
-### iv.Twitter Login (Optional, you may skip this if there is no Twitter Login Enabled)
+#### iv.Twitter Login (Optional, you may skip this if there is no Twitter Login Enabled)
 
-    1. *.[twitter.com](http://twitter.com/)
-    2. *.[twimg.com](http://twimg.com/)
+1. *.[twitter.com](http://twitter.com/)
+2. *.[twimg.com](http://twimg.com/)
 
-### v.LINE Login (Optional, you may skip this if there is no LINE Login Enabled)
+#### v.LINE Login (Optional, you may skip this if there is no LINE Login Enabled)
 
-    1. *.[line.me](http://line.me/)
-    2. *.[line-scdn.net](http://line-scdn.net/)
+1. *.[line.me](http://line.me/)
+2. *.[line-scdn.net](http://line-scdn.net/)
 
-### vi.PayPal Login (Optional, you may skip this if there is no PayPal Login Enabled)
+#### vi.PayPal Login (Optional, you may skip this if there is no PayPal Login Enabled)
 
-    1. *.[paypal.com](http://paypal.com/)
-    2. *.[paypalobjects.com](http://paypalobjects.com/)
-    3. [www.google-analytics.com](http://www.google-analytics.com/)
+1. *.[paypal.com](http://paypal.com/)
+2. *.[paypalobjects.com](http://paypalobjects.com/)
+3. [www.google-analytics.com](http://www.google-analytics.com/)
 
-### vii.Video Login (Optional, you may skip this if there is no Video Login Enabled)
+#### vii.Video Login (Optional, you may skip this if there is no Video Login Enabled)
 
-    1. *.[akamaized.net](http://akamaized.net/)
-    2. *.[akamaihd.net](http://akamaihd.net/)
-    3. [ssl.google-analytics.com](http://ssl.google-analytics.com/)
-        a. *.[scorecardresearch.com](http://scorecardresearch.com/)
-        b. *.[vimeocdn.com](http://vimeocdn.com/)
-        c. *.[vimeo.com](http://vimeo.com/)
+1. *.[akamaized.net](http://akamaized.net/)
+2. *.[akamaihd.net](http://akamaihd.net/)
+3. [ssl.google-analytics.com](http://ssl.google-analytics.com/)
+    
+    a. *.[scorecardresearch.com](http://scorecardresearch.com/)
+    b. *.[vimeocdn.com](http://vimeocdn.com/)
+    c. *.[vimeo.com](http://vimeo.com/)
 
 - g. Click **Submit** to save configuration
 
@@ -161,7 +168,7 @@
 - a. Click **Configuration > Authentication > L3 Authentication**
 - b. Select **Captive Portal Authentication**
 - c. Select **- FansWiFi Free WiFi -_cppm_prof**
-    - a profile will be created automatically by the controller for each SSID you created **<ssid-name-you-configured>_cppm_prof** in[Step 1]([#h_6cf0c639aa](https://www.facebook.com/hashtag/h_6cf0c639aa))
+    - a profile will be created automatically by the controller for each SSID you created **<ssid-name-you-configured>_cppm_prof** in [Step 1]([#h_6cf0c639aa](https://www.facebook.com/hashtag/h_6cf0c639aa))
 - add configure with below settings
     - i. Default Role: **guest**
     - ii. Default Guest Role: **guest**
@@ -179,10 +186,10 @@
     - xiv. Adding user vlan in redirection URL: **Ticked**
     - xv. Adding AP's MAC address in redirection URL: **Ticked**
     - xvi. Allow only one active user session: **Unticked**
-    - xvii. White List: Add **FansWiFi_WalledGarden** from the list (by clicking**"+"**)
-        - **FansWiFi_WalledGarden was defined inStep 2**
+    - xvii. White List: Add **FansWiFi_WalledGarden** from the list (by clicking **"+"**)
+        - **FansWiFi_WalledGarden was defined in [Step 2](#step-2-configuration-walled-garden)**
         - **- FansWiFi Free WiFi -_cppm_prof** should remain in allow list
-    - xviii. Redirect URL: **https://connect-p.fanswifi.com/auth?res=success**
+    - xviii. Redirect URL: [https://connect-p.fanswifi.com/auth?res=success](https://connect-p.fanswifi.com/auth?res=success)
 - d. Click **Submit** to save configuration
 
 ![](../../../_images/setting-on-aruba-controller-315.png)
@@ -192,11 +199,12 @@
 - a. Click **Configuration > Authentication > AAA profiles**
 - b. Select **AAA**
 - c. Select **- FansWiFi Free WiFi -_aaa_prof**
-    - a profile will be created automatically by the controller for each SSID you created **<ssid-name-you-configured>_aaa_prof** in[Step 1]([#h_6cf0c639aa](https://www.facebook.com/hashtag/h_6cf0c639aa))
+    - a profile will be created automatically by the controller for each SSID you created **<ssid-name-you-configured>_aaa_prof** in [Step 1](#step-1-configuration-ssid)
 - d. Leave all settings as they are, except:
     - i. RADIUS Roaming Accounting: **Ticked**
     - ii. RADIUS Interim Accounting: **Ticked**
 - e. Click **Submit** to save configuration
+
 ![](../../../_images/aruba_mob_control_8_step_4.png)
 
 ### Step 5: Configuration: Radius Server
@@ -211,11 +219,13 @@
     - v. Station ID Delimiter: **Dash**
     - vi. Include SSID: **Ticked**
 - e. Click **Submit** to save configuration
+
 ![](../../../_images/aruba_mob_control_8_step_5.png)
 
 ### Step 6: Add AP to FansWiFi Admin Panel
 
 - Login to FansWiFi Admin Panel
+
 ![](../../../_images/aruba_mob_control_8_step_6_1.png)
 - Click **Settings -> Hotspots -> Create**
 
