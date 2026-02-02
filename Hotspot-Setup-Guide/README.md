@@ -25,16 +25,12 @@
 
 ## Aerohive
 
-### AeroHive HiveManager NG Setup Guide
-
-{% content-ref url="Aerohive/AeroHive-HiveManager-NG-Setup-Guide/information-required-for-fanswifi-manager.md" %}
-[Information required for FansWiFi Manager](Aerohive/AeroHive-HiveManager-NG-Setup-Guide/information-required-for-fanswifi-manager.md)
+{% content-ref url="Aerohive/AeroHive-HiveManager-NG-Setup-Guide/aerohive-hivemanager-ng-setup-guide.md" %}
+[AeroHive HiveManager NG Setup Guide](Aerohive/AeroHive-HiveManager-NG-Setup-Guide/aerohive-hivemanager-ng-setup-guide.md)
 {% endcontent-ref %}
 
-### AeroHive MyHive Setup Guide
-
-{% content-ref url="Aerohive/AeroHive-MyHive-Setup-Guide/information-required-for-fanswifi-manager.md" %}
-[Information required for FansWiFi Manager](Aerohive/AeroHive-MyHive-Setup-Guide/information-required-for-fanswifi-manager.md)
+{% content-ref url="Aerohive/AeroHive-MyHive-Setup-Guide/aerohive-myhive-setup-guide.md" %}
+[AeroHive MyHive Setup Guide](Aerohive/AeroHive-MyHive-Setup-Guide/aerohive-myhive-setup-guide.md)
 {% endcontent-ref %}
 
 ## Cisco

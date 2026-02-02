@@ -1,5 +1,5 @@
 # AeroHive MyHive Setup Guide
 
-{% content-ref url="information-required-for-fanswifi-manager.md" %}
-[Information required for FansWiFi Manager](information-required-for-fanswifi-manager.md)
+{% content-ref url="aerohive-myhive-setup-guide.md" %}
+[AeroHive MyHive Setup Guide](aerohive-myhive-setup-guide.md)
 {% endcontent-ref %}

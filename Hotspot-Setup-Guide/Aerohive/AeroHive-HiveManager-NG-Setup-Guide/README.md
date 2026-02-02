@@ -1,5 +1,5 @@
 # AeroHive HiveManager NG Setup Guide
 
-{% content-ref url="information-required-for-fanswifi-manager.md" %}
-[Information required for FansWiFi Manager](information-required-for-fanswifi-manager.md)
+{% content-ref url="aerohive-hivemanager-ng-setup-guide.md" %}
+[AeroHive HiveManager NG Setup Guide](aerohive-hivemanager-ng-setup-guide.md)
 {% endcontent-ref %}
