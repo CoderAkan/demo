@@ -42,7 +42,7 @@
 
 - d. Configure with following setting:
 
-   - **SSID:** *<ssid-name-you-prefer>*
+   - **SSID:** *\<ssid-name-you-prefer\>*
    - **Encryption Option:** Do not Encrypt
    - **Encryption Method:** OPEN (Open)
 - e. Click "OK"
@@ -62,7 +62,7 @@
 
 - d. Configure the following settings:
 
-   - **Policy Name:** *<policy-name-you-prefer>*
+   - **Policy Name:** *\<policy-name-you-prefer\>*
    - **Policy Mode:** External
    - **SSID:** *Select the SSID you created inStep 2(e.g. <ssid-name-you-prefer>)*
    - **Portal Server URL:** [https://connect-p.fanswifi.com/wifidog](https://connect-p.fanswifi.com/wifidog)

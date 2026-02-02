@@ -132,8 +132,7 @@
       * [Information required for FansWiFi Manager](Hotspot-Setup-Guide/TP-Link/TP-Link-Omada-Controller-(Self-Hosted)-Setup-Guide/information-required-for-fanswifi-manager.md)
     * [Connect TP-Link EAP to Omada Controller (Self-Hosted)](Hotspot-Setup-Guide/TP-Link/connect-tp-link-eap-to-omada-controller-self-hosted.md) -->
   * [Ubiquiti Unifi](Hotspot-Setup-Guide/Ubiquiti-Unifi/README.md)
-    * [Ubiquiti (UBNT) UniFi Controller Setup Guide (New UI)](Hotspot-Setup-Guide/Ubiquiti-Unifi/Ubiquiti-(UBNT)-UniFi-Controller-Setup-Guide-(New-UI)/README.md)
-      * [Information required for FansWiFi Manager](Hotspot-Setup-Guide/Ubiquiti-Unifi/Ubiquiti-(UBNT)-UniFi-Controller-Setup-Guide-(New-UI)/information-required-for-fanswifi-manager.md)
+    * [Ubiquiti (UBNT) UniFi Controller Setup Guide (New UI)](Hotspot-Setup-Guide/Ubiquiti-Unifi/Ubiquiti-(UBNT)-UniFi-Controller-Setup-Guide-(New-UI).md)
   * [Miscellaneous](Hotspot-Setup-Guide/Miscellaneous/README.md)
     * [FansWiFi DNS Configuration on Router](Hotspot-Setup-Guide/Miscellaneous/FansWiFi-DNS-Configuration-on-Router/README.md)
       * [Network Diagram](Hotspot-Setup-Guide/Miscellaneous/FansWiFi-DNS-Configuration-on-Router/network-diagram.md)
