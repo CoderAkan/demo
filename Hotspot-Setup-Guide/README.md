@@ -51,17 +51,15 @@
 
 ## Huawei AirEngine (iMaster NCE)
 
-### Huawei eKit Setup Guide
-
-{% content-ref url="Huawei-AirEngine-(iMaster-NCE)/Huawei-eKit-Setup-Guide/information-required-for-fanswifi-manager.md" %}
-[Information required for FansWiFi Manager](Huawei-AirEngine-(iMaster-NCE)/Huawei-eKit-Setup-Guide/information-required-for-fanswifi-manager.md)
+{% content-ref url="Huawei-AirEngine-(iMaster-NCE)/Huawei-iMaster-NCE-Campus-Cloud-Controller-Setup-Guide.md" %}
+[Huawei iMaster NCE-Campus Cloud Controller Setup Guide](Huawei-AirEngine-(iMaster-NCE)/Huawei-iMaster-NCE-Campus-Cloud-Controller-Setup-Guide.md)
 {% endcontent-ref %}
 
-### Huawei iMaster NCE-Campus Cloud Controller Setup Guide
 
-{% content-ref url="Huawei-AirEngine-(iMaster-NCE)/Huawei-iMaster-NCE-Campus-Cloud-Controller-Setup-Guide/information-required-for-fanswifi-manager.md" %}
-[Information required for FansWiFi Manager](Huawei-AirEngine-(iMaster-NCE)/Huawei-iMaster-NCE-Campus-Cloud-Controller-Setup-Guide/information-required-for-fanswifi-manager.md)
+{% content-ref url="Huawei-AirEngine-(iMaster-NCE)/Huawei-eKit-Setup-Guide.md" %}
+[Huawei eKit Setup Guide](Huawei-AirEngine-(iMaster-NCE)/Huawei-eKit-Setup-Guide.md)
 {% endcontent-ref %}
+
 
 ## Mikrotik
 

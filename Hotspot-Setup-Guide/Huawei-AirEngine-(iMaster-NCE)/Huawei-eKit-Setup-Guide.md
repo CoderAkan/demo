@@ -1,7 +1,4 @@
-# Information required for FansWiFi Manager
-
-
-# Information required for FansWiFi Manager
+## Information required for FansWiFi Manager
 
 - Mac Addresses of the APs
 
