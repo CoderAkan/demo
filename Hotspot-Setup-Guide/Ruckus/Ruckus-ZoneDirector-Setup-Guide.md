@@ -101,7 +101,7 @@ NAS-IP-Address = 10.0.0.1
    - **Login Page:** [https://connect-p.fanswifi.com/auth](https://connect-p.fanswifi.com/auth)
    - **Start Page:** [https://connect-p.fanswifi.com/auth](https://connect-p.fanswifi.com/auth)
    - **User Session:** (set it if your FansWiFi Admin Panel has session timeout & daily quota enabled)
-      - **Example**: Session Timeout / Daily Quota: 60 minute
+      - **Example**: Session Timeout / Daily Quota: 60 minutes
       - **Setting**:
          - **Session Timeout:** 60 minutes
          - **Grace Period:** 60 minutes 
@@ -109,59 +109,61 @@ NAS-IP-Address = 10.0.0.1
    - **Authentication Server:** FansWiFi Radius
    - **Accounting Server:** FansWiFi Acct Radius
    - **Encryption Method:** None
+   - **Advanced Option:**
+      - **Inactive Timeout:** 60 minutes
 
 ### Walled Garden List
 
 #### Walled Garden List (required)
 {% hint style="info" %}
-`* .fanswifi.com`
+- `* .fanswifi.com`
 {% endhint %}
 
 #### FWalled Garden List (Optional, you may skip this if there is no Facebook Login Enabled):**
 
 {% hint style="info" %}
-`* .facebook.com`
-`* .facebook.net`
-`* .fbcdn.net`
-`* .fbcdn.com`
-`* .akamaihd.net`
-`* .fbsbx.com`
+- `* .facebook.com`
+- `* .facebook.net`
+- `* .fbcdn.net`
+- `* .fbcdn.com`
+- `* .akamaihd.net`
+- `* .fbsbx.com`
 {% endhint %}
 
 #### Walled Garden List (Optional, you may skip this if there is no Weibo Login Enabled)
 
 {% hint style="info" %}
-`* .weibo.com`
-`* .weibo.cn`
-`* .sinaapp.com`
-`* .sina.com.cn`
-`* .sinajs.cn`
+- `* .weibo.com`
+- `* .weibo.cn`
+- `* .sinaapp.com`
+- `* .sina.com.cn`
+- `* .sinajs.cn`
 {% endhint %}
 
 #### Walled Garden List (Optional, you may skip this if there is no Instagram Login Enabled)
 
 {% hint style="info" %}
-`* .instagram.com`
-`* .akamaihd.net`
-`* .cdninstagram.com`
+- `* .instagram.com`
+- `* .akamaihd.net`
+- `* .cdninstagram.com`
 {% endhint %}
 
 #### Walled Garden List (Optional, you may skip this if there is no Twitter Login Enabled)
 
 {% hint style="info" %}
-`* .twitter.com`
-`* .twimg.com`
+- `* .twitter.com`
+- `* .twimg.com`
 {% endhint %}
 
 #### Walled Garden List (Optional, you may skip this if there is no Video Login Enabled)
 
 {% hint style="info" %}
-`* .akamaized.net`
-`* .akamaihd.net`
-`ssl.google-analytics.com`
-`* .scorecardresearch.com`
-`* .vimeocdn.com`
-`* .vimeo.com`
+- `* .akamaized.net`
+- `* .akamaihd.net`
+- `ssl.google-analytics.com`
+- `* .scorecardresearch.com`
+- `* .vimeocdn.com`
+- `* .vimeo.com`
 {% endhint %}
 
 - Click **OK** to save.
@@ -199,7 +201,7 @@ FansWiFi Admin Panel (Setting > Venue Setting)
 
 1. Provide the following to FansWiFi:
    - **Public IP Address** or **Domain Name** of the ZoneDirector.
-   - **RADIUS CoA Port:** 3799
+   - **RADIUS CoA Port:** `3799`
 
 ![RADIUS CoA settings view](../../../_images/information-required-for-fanswifi-manager-130.png)
 
@@ -207,24 +209,25 @@ FansWiFi Admin Panel (Setting > Venue Setting)
 Exceptional Case: ZoneDirector behinds Router / Firewall
 
 If the ZoneDirector is behind Router / Firewall, it is not directly accessible via FansWiFi Radius Server via Internet. In this case, you need to configure port forwarding on your Router / Firewall to forward the port to the ZoneDirector.
+{% endhint %}
 
 ![Port forwarding diagram](../../../_images/information-required-for-fanswifi-manager-131.png)
-{% endhint %}
+
 
 **Example Configuration:**
 Assume the Router's Public IP is `1.1.1.1`.
 
 1. **Port Forwarding:** Forward a chosen port (e.g., `50000`) to the ZoneDirector CoA Port (default `3799`).
    {% hint style="info" %}
-   - **Inbound Port:** 50000
-   - **Destination IP:** 192.168.1.100 (ZoneDirector IP)
-   - **Destination Port:** 3799
+   - **Inbound Port:** `50000`
+   - **Destination IP:** `192.168.1.100` (ZoneDirector IP)
+   - **Destination Port:** `3799`
    {% endhint %}
 
 2. **Send below information to FansWiFi:**
    {% hint style="info" %}
-   - **Public IP:** 1.1.1.1 or Domain Name.
-   - **RADIUS CoA Port:** 50000.
+   - **Public IP:** `1.1.1.1` or Domain Name.
+   - **RADIUS CoA Port:** `50000`.
    {% endhint %}
 
 #### Admin Panel Final Settings
