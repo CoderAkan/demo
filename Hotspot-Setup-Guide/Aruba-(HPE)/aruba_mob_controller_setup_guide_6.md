@@ -15,7 +15,7 @@
 
     - IP address: **103.6.85.240** (radius.fanswifi.com)
 
-    ![](../../../_images/arub_mob_control_version_6_step_0_1.png)
+    ![](../../../_images/arub_mob_control_version_6_step_0.png)
     - Click "Ping"
 
         - If not success, please move to (b)
@@ -80,7 +80,7 @@
         - v. Acct port: **1813**
         - vi. Shared key: **social123**
         - vii. Retype key: **social123**
-    - Click **Ok** when adding each server and then click **Next**
+- Click **Ok** when adding each server and then click **Next**
 
 ![](../../../_images/information-required-for-fanswifi-manager-174.png)
 
@@ -132,7 +132,7 @@ i. **Walled Garden List (Optional, you may skip this if there is no Facebook Log
 7. *.[doubleclick.net](http://doubleclick.net/)
 8. [www.google.com.hk](http://www.google.com.hk/)(Local Google URL of your Country / Region)
 
-    - 1. Example:
+    - a. Example:
 
         - i. EU:[www.google.eu](http://www.google.eu)
         - ii. UK:[www.google.co.uk](http://www.google.co.uk/)
@@ -213,7 +213,7 @@ vii. **Video Login (Optional, you may skip this if there is no Video Login Enabl
     - xvi. Redirect URL:
         - [https://connect-p.fanswifi.com/auth?res=success&id=aruba-xml-api](https://connect-p.fanswifi.com/auth?res=success&id=aruba-xml-api)
 - c. Click **Apply** to save configuration
-- Reference: ArubaOS 8.12.0 TechDocs [https://arubanetworking.hpe.com/techdocs/ArubaOS_8.12.0_Web_Help/Content/arubaos-solutions/captive-portal/capt-port-auth-prof.htm](https://arubanetworking.hpe.com/techdocs/ArubaOS_8.12.0_Web_Help/Content/arubaos-solutions/captive-portal/capt-port-auth-prof.htm)
+- Reference: ArubaOS 8.12.0 TechDocs [https://arubanetworking.hpe.com/techdocs/ArubaOS_8.12.0_Web_Help/Content/arubaos-solutions/captive-portal/capt-port-auth-prof.html](https://arubanetworking.hpe.com/techdocs/ArubaOS_8.12.0_Web_Help/Content/arubaos-solutions/captive-portal/capt-port-auth-prof.html)
 
 ![](../../../_images/information-required-for-fanswifi-manager-180.png)
 
@@ -286,7 +286,7 @@ vii. **Video Login (Optional, you may skip this if there is no Video Login Enabl
 
     - First Radius Server
 
-        - i. NAS ID: **Aruba_*mac address of aruba controller***
+        - i. NAS ID: **Aruba_"mac address of aruba controller"**
         - ii. Mode: **Ticked**
         - iii. MAC address delimiter: **dash**
 - c. Click **Apply** to save configuration
@@ -310,9 +310,11 @@ Finally, click **Save Configuration** at the top and reboot the controller to en
 
 ![](../../../_images/information-required-for-fanswifi-manager-191.png)
 
-    **Exceptional Case: Controller behinds Router / Firewall**
+{% hint style="danger" %}
+### Exceptional Case: Controller behind Router / Firewall
 
-    If the Controller is behind Router / Firewall, it is not directly accessible via FansWiFi Radius Server via Internet. In this case, you need to configure port forwarding on your Router / Firewall to forward the port to the Controller.
+If the Controller is behind Router / Firewall, it is not directly accessible via FansWiFi Radius Server via the Internet. In this case, configure port forwarding on your Router / Firewall to forward the port to the Controller.
+{% endhint %}
 
 ![](../../../_images/information-required-for-fanswifi-manager-192.png)
 
@@ -349,7 +351,7 @@ Setting in FansWiFi Admin Panel
     - **AP Type:** Select “Aruba Mobility Controller”
     - **Mac Address:** Input unique MAC Address of each Access Point in your venue
     {% endhint %}
-2. Click Save
+2. Click **Save**
 
 ![](../../../_images/information-required-for-fanswifi-manager-194.png)
 
