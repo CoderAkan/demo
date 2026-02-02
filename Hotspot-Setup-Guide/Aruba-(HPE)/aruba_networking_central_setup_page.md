@@ -14,9 +14,11 @@
 
 ### Step 0: Add a New Access Point
 
+{% hint style="info" %}
 Please refer to the following documentation:
 
-[https://www.arubanetworks.com/techdocs/central/latest/content/nms/access-points/get-started/iap_get_started.htm](https://www.arubanetworks.com/techdocs/central/latest/content/nms/access-points/get-started/iap_get_started.htm)
+[https://www.arubanetworks.com/techdocs/central/latest/content/nms/access-points/get-started/iap_get_started.html](https://www.arubanetworks.com/techdocs/central/latest/content/nms/access-points/get-started/iap_get_started.html)
+{% endhint %}
 
 ### Step 1: Create SSID
 
@@ -37,7 +39,7 @@ Please refer to the following documentation:
 
 - g. For step 1 (General), Configure the following settings
 
-- **Name (SSID):** *<ssid-name-you-prefer>*
+    - **Name (SSID):** *<ssid-name-you-prefer>*
 - h. Click **Next**
 
 ![](../../../_images/information-required-for-fanswifi-manager-209.png)
@@ -97,9 +99,9 @@ Please refer to the following documentation:
 
     - Leave all settings as they are, except:
 
-    - Called Station ID Type: **MAC Address**
-    - Called Station ID include SSID: **Enable**
-    - Called Station ID Delimiter: **-**
+        - Called Station ID Type: **MAC Address**
+        - Called Station ID include SSID: **Enable**
+        - Called Station ID Delimiter: **-**
 
 ![](../../../_images/aruba_network_step_3_1.png)
 
@@ -124,7 +126,9 @@ Please refer to the following documentation:
 
 ![](../../../_images/information-required-for-fanswifi-manager-216.png)
 
-    Repeat (b)(c) until **All domains** from Walled Garden List are included in Allowlist
+{% hint style="info" %}
+Repeat (b)(c) until **All domains** from Walled Garden List are included in Allowlist
+{% endhint %}
 
 - d. Click **Next**
 
@@ -236,10 +240,13 @@ vii. **Video Login (Optional, you may skip this if there is no Video Login Enabl
     - Click **OK**
 
 ![](../../../_images/information-required-for-fanswifi-manager-222.png)
+{% hint style="info" %}
+Repeat (g)(h) until **All domains** from Walled Garden List are included in the Rule
+{% endhint %}
 
-    Repeat (g)(h) until **All domains** from Walled Garden List are included in the Rule
-
-    Make sure the Rule **"Deny any to all destinations"** is placed **on the bottom**
+{% hint style="danger" %}
+Make sure the Rule **"Deny any to all destinations"** is placed **on the bottom**
+{% endhint %}
 
 - i. Configure the following settings:
 
