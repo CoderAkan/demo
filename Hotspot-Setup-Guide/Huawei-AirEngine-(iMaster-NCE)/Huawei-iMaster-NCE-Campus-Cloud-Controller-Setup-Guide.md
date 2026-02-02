@@ -56,49 +56,49 @@
 
     1. For **RADIUS relay server** session, click **... > Create** to create a new portal server
 
-    ![](../../../_images/huawei_imaster_2.png)
+    ![](../../../_images/huawei_15.png)
 
     ![](../../../_images/huawei_imaster_3.png)
 
     2. Configure with the following settings:
 
-    1. **Name:** <radius-name-you-prefer> (e.g. FansWiFi-Radius)
-    2. **Authentication service:** Portal
-    3. **Authentication server**
+        1. **Name:** <radius-name-you-prefer> (e.g. FansWiFi-Radius)
+        2. **Authentication service:** Portal
+        3. **Authentication server**
 
-        1. Click **Add**
-        2. **Authentication server address:** 103.6.85.240
-        3. **Port:** 1812
-        4. **Key:** social123
+            1. Click **Add**
+            2. **Authentication server address:** 103.6.85.240
+            3. **Port:** 1812
+            4. **Key:** social123
 
-            1. Click **Set** to enter the keY
-            2. **Key:** social123
-            3. **Confirm key:** social123
-            4. Click **OK**
-        5. Click **Tick button** to save
-    4. **Authentication protocol:** PAP
-    5. **NAS-Identifier:** Device MAC
-    6. **Real-Time Accounting:** Enable
-    7. **Accounting server**
+                1. Click **Set** to enter the keY
+                2. **Key:** social123
+                3. **Confirm key:** social123
+                4. Click **OK**
+            5. Click **Tick button** to save
+        4. **Authentication protocol:** PAP
+        5. **NAS-Identifier:** Device MAC
+        6. **Real-Time Accounting:** Enable
+        7. **Accounting server**
 
-        1. Click **Add**
-        2. **Authentication server address:** 103.6.85.240
-        3. **Port:** 1812
-        4. **Key:** social123
+            1. Click **Add**
+            2. **Authentication server address:** 103.6.85.240
+            3. **Port:** 1812
+            4. **Key:** social123
 
-            1. Click **Set** to enter the keY
-            2. **Key:** social123
-            3. **Confirm key:** social123
-            4. Click **OK**
-        5. Click **Tick button** to save
-    8. **Load balancing mode:** By priority
-    9. **Set MAC address format:** Enable
-    10. **MAC address case:** Uppercase
-    11. **MAC address delimiter:** Hyphen (-)
-    12. **MAC address format:** XX-XX-XX-XX-XX-XX
-    13. **Automatic detection of server status:** Disable
-    14. Click **OK**
-    15. Select **RADIUS server** that you created
+                1. Click **Set** to enter the keY
+                2. **Key:** social123
+                3. **Confirm key:** social123
+                4. Click **OK**
+            5. Click **Tick button** to save
+        8. **Load balancing mode:** By priority
+        9. **Set MAC address format:** Enable
+        10. **MAC address case:** Uppercase
+        11. **MAC address delimiter:** Hyphen (-)
+        12. **MAC address format:** XX-XX-XX-XX-XX-XX
+        13. **Automatic detection of server status:** Disable
+        14. Click **OK**
+        15. Select **RADIUS server** that you created
 
     ![](../../../_images/huawei_imaster_4.png)
 
@@ -211,9 +211,9 @@
 
     ![](../../../_images/huawei_imaster_8.png)
 
-    7. Click **OK** to create SSID
+6. Click **OK** to create SSID
 
-    ![](../../../_images/huawei_imaster_9.png)
+![](../../../_images/huawei_imaster_9.png)
 
 ### Step 4: Add AP to FansWiFi Admin Panel
 
