@@ -109,15 +109,15 @@
 7. *.[doubleclick.net](http://doubleclick.net/)
 8. [www.google.com.hk](http://www.google.com.hk/)(Local Google URL of your Country / Region)
     
-    a. Example:
-        i. EU:[www.google.eu](http://www.google.eu/)
-        ii. UK:[www.google.co.uk](http://www.google.co.uk/)
-        iii. Hong Kong:[www.google.com.hk](http://www.google.com.hk/)
-        iv. Japan:[www.google.co.jp](http://www.google.co.jp/)
-        v. Taiwan:[www.google.com.tw](http://www.google.com.tw/)
-        vi. Thailand:[www.google.co.th](http://www.google.co.th/)
-        vii. Malaysia:[www.google.com.my](http://www.google.com.my/)
-        viii. Myanmar:[www.google.com.mm](http://www.google.com.mm/)
+    - a. Example:
+        - i. EU:[www.google.eu](http://www.google.eu/)
+        - ii. UK:[www.google.co.uk](http://www.google.co.uk/)
+        - iii. Hong Kong:[www.google.com.hk](http://www.google.com.hk/)
+        - iv. Japan:[www.google.co.jp](http://www.google.co.jp/)
+        - v. Taiwan:[www.google.com.tw](http://www.google.com.tw/)
+        - vi. Thailand:[www.google.co.th](http://www.google.co.th/)
+        - vii. Malaysia:[www.google.com.my](http://www.google.com.my/)
+        - viii. Myanmar:[www.google.com.mm](http://www.google.com.mm/)
 
 #### ii.Walled Garden List (Optional, you may skip this if there is no Weibo Login Enabled)
 
@@ -155,9 +155,9 @@
 2. *.[akamaihd.net](http://akamaihd.net/)
 3. [ssl.google-analytics.com](http://ssl.google-analytics.com/)
     
-    a. *.[scorecardresearch.com](http://scorecardresearch.com/)
-    b. *.[vimeocdn.com](http://vimeocdn.com/)
-    c. *.[vimeo.com](http://vimeo.com/)
+    - a. *.[scorecardresearch.com](http://scorecardresearch.com/)
+    - b. *.[vimeocdn.com](http://vimeocdn.com/)
+    - c. *.[vimeo.com](http://vimeo.com/)
 
 - g. Click **Submit** to save configuration
 
