@@ -2,12 +2,12 @@
 
 ### Information Required for FansWiFi Manager
 
-- **MAC Addresses** of the APs
+- MAC Addresses of the APs
 
 ### Tested Model and Firmware Version
 
-- **Model:** IAP-105
-- **Firmware Version:** 6.4.4.4-4.2.3.2_54910
+- Model: **IAP-105**
+- Firmware Version: **6.4.4.4-4.2.3.2_54910**
 
 ### Settings on Aruba IAP
 
@@ -95,10 +95,9 @@
 
 ![Access rule configuration](../../../_images/information-required-for-fanswifi-manager-269.png)
 
-##### Walled Garden List (Required)
-- * .fanswifi.com
+##### Walled Garden List (required)
 
-##### Walled Garden List (Optional, you may skip this if there is no Facebook Login Enabled)
+1. *.[fanswifi.com](http://fanswifi.com/)
 
 i. **Walled Garden List (Optional, you may skip this if there is no Facebook Login Enabled)**
 
@@ -122,38 +121,44 @@ i. **Walled Garden List (Optional, you may skip this if there is no Facebook Log
         - vii. Malaysia:[www.google.com.my](http://www.google.com.my/)
         - viii. Myanmar:[www.google.com.mm](http://www.google.com.mm/)
 
-##### Walled Garden List (Optional, you may skip this if there is no Weibo Login Enabled)
-- *.weibo.com
-- *.weibo.cn
-- *.sinaapp.com
-- *.sina.com.cn
-- *.sinajs.cn
+ii. **Walled Garden List (Optional, you may skip this if there is no Weibo Login Enabled)**
 
-##### Walled Garden List (Optional, you may skip this if there is no Instagram Login Enabled)
-- *.instagram.com
-- *.akamaihd.net
-- *.cdninstagram.com
+1. *.[weibo.com](http://weibo.com/)
+2. *.[weibo.cn](http://weibo.cn/)
+3. *.[sinaapp.com](http://sinaapp.com/)
+4. *.[sina.com.cn](http://sina.com.cn/)
+5. *.[sinajs.cn](http://sinajs.cn/)
 
-##### Walled Garden List (Optional, you may skip this if there is no Twitter Login Enabled)
-- *.twitter.com
-- *.twimg.com
+iii. **Walled Garden List (Optional, you may skip this if there is no Instagram Login Enabled)**
 
-##### Walled Garden List (Optional, you may skip this if there is no LINE Login Enabled)
-- *.line.me
-- *.line-scdn.net
+1. *.[instagram.com](http://instagram.com/)
+2. *.[akamaihd.net](http://akamaihd.net/)
+3. *.[cdninstagram.com](http://cdninstagram.com/)
 
-##### Walled Garden List (Optional, you may skip this if there is no PayPal Login Enabled)
-- *.paypal.com
-- *.paypalobjects.com
-- www.google-analytics.com
+iv. **Twitter Login (Optional, you may skip this if there is no Twitter Login Enabled)**
 
-##### Walled Garden List (Optional, you may skip this if there is no Video Login Enabled)
-- *.akamaized.net
-- *.akamaihd.net
-- ssl.google-analytics.com
-- *.scorecardresearch.com
-- *.vimeocdn.com
-- *.vimeo.com
+1. *.[twitter.com](http://twitter.com/)
+2. *.[twimg.com](http://twimg.com/)
+
+v. **LINE Login (Optional, you may skip this if there is no LINE Login Enabled)**
+
+1. *.[line.me](http://line.me/)
+2. *.[line-scdn.net](http://line-scdn.net/)
+
+vi. **PayPal Login (Optional, you may skip this if there is no PayPal Login Enabled)**
+
+1. *.[paypal.com](http://paypal.com/)
+2. *.[paypalobjects.com](http://paypalobjects.com/)
+3. [www.google-analytics.com](http://www.google-analytics.com/)
+
+vii. **Video Login (Optional, you may skip this if there is no Video Login Enabled)**
+
+1. *.[akamaized.net](http://akamaized.net/)
+2. *.[akamaihd.net](http://akamaihd.net/)
+3. [ssl.google-analytics.com](http://ssl.google-analytics.com/)
+    - a. *.[scorecardresearch.com](http://scorecardresearch.com/)
+    - b. *.[vimeocdn.com](http://vimeocdn.com/)
+    - c. *.[vimeo.com](http://vimeo.com/)
 
 ![Walled garden configuration summary](../../../_images/information-required-for-fanswifi-manager-270.png)
 
@@ -189,7 +194,7 @@ i. **Walled Garden List (Optional, you may skip this if there is no Facebook Log
 
 #### Step 3: Configure Aruba IAP Address in FansWiFi Admin Panel
 
-***Please send this information to your FansWiFi account manager
+*Please send this information to your FansWiFi account manager*<br>
 **(required for Advanced Login Method (e.g. WeChat or WhatsApp), you may skip this step if there is no Advanced Login Method Enabled)**
 
 
@@ -252,7 +257,7 @@ During testing, you may need to clear an authorized session to test different lo
 
 | WiFi User Logout trigger by: | WiFi User's Device<br>(usually, access a logout url on browser) | Controller Web Admin Interface |
 |---|---|---|
-| Logout URL for redirect method: https://securelogin.arubanetworks.com/auth/logout.html<br>Or API | No Information<br><br>Last Testing: 10-12-2018 | Not available<br><br>Last Testing: 10-12-2018 |
+| Logout URL for redirect method: [https://securelogin.arubanetworks.com/auth/logout.html](https://securelogin.arubanetworks.com/auth/logout.html)<br>Or API | No Information<br><br>Last Testing: 10-12-2018 | Not available<br><br>Last Testing: 10-12-2018 |
 
 **Option A: WiFi User device**
 1. Open a browser on the device.
