@@ -59,6 +59,7 @@
       - **Session Timeout:** 60 Minutes
       - **Grace Period:** 60 Minutes
 - **Intrusion Prevention:** Disabled
+
 ![Hotspot general settings](../../../_images/information-required-for-fanswifi-manager-112.png)
 
 **Authentication Tab:**
