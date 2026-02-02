@@ -5,7 +5,7 @@
 
     - Please make sure the IP Address is accessible by our IP Addresses below
 
-        - '''
+        '''text
         52.220.208.185
 
         52.220.215.219
@@ -160,12 +160,12 @@ e. Select "Settings" and Configure with following settings:
     - Repeat this step until all the IP address are added into the system
 
         - **Pre-Authorization Access (Required):**
-            '''
+            '''text
             52.220.206.125/32
             52.220.226.90/32
             '''
         - **Pre-Authorization Access (FansWiFi CDN) (Required):**
-            '''
+            '''text
             103.21.244.0/22
             103.22.200.0/22
             103.31.4.0/22
@@ -182,7 +182,7 @@ e. Select "Settings" and Configure with following settings:
             198.41.128.0/17
             '''
 - **Pre-Authorization Access (Only for Facebook):**
-    '''
+    '''text
     31.13.24.0/21
     31.13.64.0/18
     45.64.40.0/22
@@ -271,6 +271,8 @@ e. Select "Settings" and Configure with following settings:
     - Click "User Interface" on the left sub-menu
     - Click "Apply Changes"
 
+    ![](../../../_images/ubi_100.png)
+
 ### Step 7: Get the MAC address of the AP
 
 - Click "UniFi Devices" on the main menu
@@ -313,8 +315,8 @@ e. Select "Settings" and Configure with following settings:
 - **Please make sure our server can reach your UniFi Controller's 8443 port**
 
     - Below are the IP Addresses of our servers calling UniFi via 8443 port
-        '''
-        52.220.208.185
+        '''text
+        52.220.208.185u
         52.220.215.219
         52.220.219.128
         52.77.30.253
