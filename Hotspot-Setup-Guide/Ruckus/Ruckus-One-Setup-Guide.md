@@ -1,17 +1,17 @@
-### Information Required for FansWiFi Manager
+## Information Required for FansWiFi Manager
 
 - **MAC Addresses** of the APs
 
-### Setting on Ruckus One Cloud
+## Setting on Ruckus One Cloud
 
-#### Step 1: Access Ruckus One Cloud
+### Step 1: Access Ruckus One Cloud
 
 1. Access the Portal by opening a Web Browser
 2. Click **Wi-Fi** on the left menu, then select **Wi-Fi Networks List**.
 
 ![Ruckus One WiFi Networks List](../../../_images/information-required-for-fanswifi-manager-319.png)
 
-#### Step 2: Create SSID
+### Step 2: Create SSID
 
 1. Select **Networks List** on the top menu.
 2. Click **Add Wi-Fi Network** on the top right.
@@ -25,11 +25,12 @@
 
    ![](../../../_images/ruckus_one_1.png)
 
-#### Step 3: Captive Portal Configuration
+### Step 3: Captive Portal Configuration
 
 1. In the **Portal Type** section:
    - **Portal Type:** 3rd Party Captive Portal (WISPr)
    - Click **Next**.
+   
    ![](../../../_images/ruckus_one_3.png)
 2. In the **Settings** section, configure:
    - **Portal Provider:** Custom Provider
@@ -46,7 +47,7 @@
 
 ![Captive portal configuration](../../../_images/information-required-for-fanswifi-manager-320.png)
 
-##### Walled Garden List (required)
+#### Walled Garden List (required)
 
 1. *.[fanswifi.com](http://fanswifi.com/)
 
@@ -112,7 +113,7 @@ vii. **Video Login (Optional, you may skip this if there is no Video Login Enabl
     - c. *.[vimeo.com](http://vimeo.com/)
 
 
-#### Step 4: RADIUS Configuration
+### Step 4: RADIUS Configuration
 
 1. Under **Authentication Service**, select **Authenticate Connections**.
 2. For **Authentication Server**, click **Add Server**:
@@ -143,7 +144,7 @@ vii. **Video Login (Optional, you may skip this if there is no Video Login Enabl
 
 ![](../../../_images/ruckus_one_6.png)
 
-#### Step 5: Add AP to FansWiFi Admin Panel
+### Step 5: Add AP to FansWiFi Admin Panel
 
 1. Log in to the FansWiFi Admin Panel.
 2. Navigate to **Settings** > **Hotspots** > **Create**.
