@@ -1,4 +1,4 @@
-## Information required for FansWiFi Manager (AeroHive Cloud-Manager)
+## Information required for FansWiFi Manager 
 
 - **MAC addresses** of the access points (APs)
 
@@ -20,7 +20,7 @@ Configure:
 
 Set:
 
-- **RADIUS Server:** `radius.fanswifi.com`
+- **RADIUS Server:** [radius.fanswifi.com](radius.fanswifi.com)
 - **Shared Secret:** `social123`
 - **Authentication Port:** `1812`
 - **Accounting Port:** `1813`
@@ -149,10 +149,12 @@ Enable **DNS ALG Service** in:
 1. Click **Edit** for **Additional Service**
 
 ![](../../../_images/aerohive_myhive_0.png)
+
 2. Expand **Service Settings**
 3. Click **Edit** for **ALG Services**
 
 ![](../../../_images/aerohive_myhive_1.png)
+
 4. Check **Enable** for **DNS ALG Service**
 
 ![](../../../_images/aerohive_myhive_2.png)
