@@ -69,10 +69,8 @@
 
 ## Open Mesh
 
-### OpenMesh Setup Guide (ng6xx Series)
-
-{% content-ref url="Open-Mesh/OpenMesh-Setup-Guide-(ng6xx-Series)/information-required-for-fanswifi-manager.md" %}
-[Information required for FansWiFi Manager](Open-Mesh/OpenMesh-Setup-Guide-(ng6xx-Series)/information-required-for-fanswifi-manager.md)
+{% content-ref url="Open-Mesh/OpenMesh-Setup-Guide-(ng6xx-Series).md" %}
+[OpenMesh Setup Guide (ng6xx Series)](Open-Mesh/OpenMesh-Setup-Guide-(ng6xx-Series).md)
 {% endcontent-ref %}
 
 ## Ruckus
