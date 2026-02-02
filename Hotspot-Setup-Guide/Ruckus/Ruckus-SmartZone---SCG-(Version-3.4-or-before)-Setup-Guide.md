@@ -208,9 +208,9 @@ If you forgot your NBI password and want to retrieve it without setting a new pa
 ![](../../../_images/information-required-for-fanswifi-manager-148.png)
 
 - Select “WiFi -> Controller” from the left menu
-- **Ruckus SmartZone (formerly SCG) IP Address or Domain Name:** \<your-controller-domain-or-ip>\
-- **Port Number (Default: 9080):** \<your-controller-northbound-port-number>\
-- **Northbound Interface Password:** \<your-northbound-password>\
+- **Ruckus SmartZone (formerly SCG) IP Address or Domain Name:** \<your-controller-domain-or-ip>
+- **Port Number (Default: 9080):** \<your-controller-northbound-port-number>
+- **Northbound Interface Password:** \<your-northbound-password>
 
 ![](../../../_images/information-required-for-fanswifi-manager-149.png)
 
