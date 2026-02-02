@@ -344,13 +344,15 @@ Setting in FansWiFi Admin Panel
 
 - Login to FansWiFi Admin Panel
 - Click **Settings -> Hotspots -> Add Hotspot**
-1. 
-    {% hint style="info" %}
-    - **Venue:** Select the venue of where your Access Point locates
-    - **Hotspot Name:** Name each Access Point to make it identifiable
-    - **AP Type:** Select “Aruba Mobility Controller”
-    - **Mac Address:** Input unique MAC Address of each Access Point in your venue
-    {% endhint %}
+1. Configure the hotspot in FansWiFi Admin Panel:
+
+   {% hint style="info" %}
+   - **Venue:** Select the venue where your Access Point is located
+   - **Hotspot Name:** Name each Access Point to make it identifiable
+   - **AP Type:** Select “Aruba Mobility Controller”
+   - **Mac Address:** Input unique MAC Address of each Access Point in your venue
+   {% endhint %}
+
 2. Click **Save**
 
 ![](../../../_images/information-required-for-fanswifi-manager-194.png)
