@@ -1,30 +1,28 @@
----
-description: Configure AeroHive HiveManager NG for FansWiFi captive portal and RADIUS.
----
+## Information required for FansWiFi Manager (AeroHive HiveManager NG)
 
-# Information required for FansWiFi Manager (AeroHive HiveManager NG)
-
-## What you need
-
-- **MAC addresses** of the access points (APs)
+- MAC addresses of the access points (APs)
 
 ## Tested HiveOS version
 
-- **8.1r1**
+- Version: **8.1r1**
 
 ---
 
-# Configuration in AeroHive HiveManager NG
+## Configuration in AeroHive HiveManager NG
 
-## Step 1: Configure the Network Policy
+### Step 1: Configure the Network Policy
 
 1. Click **Add Network Policy** to create a new policy profile, **or**
 2. Click **Add Guest SSID** to add a new SSID to an existing network policy.
+
+![](../../../_images/aerohive-ng-conf-0.png)
+
 3. Name the policy.
+![](../../../_images/aerohive-ng-conf-1.png)
 
 ---
 
-## Step 2: Configure Wireless Settings (SSID)
+### Step 2: Configure Wireless Settings (SSID)
 
 1. Add a new SSID: **All other SSIDs (standard)**
 
@@ -42,29 +40,31 @@ description: Configure AeroHive HiveManager NG for FansWiFi captive portal and R
 
 ---
 
-## Step 3: Configure Captive Web Portal
+### Step 3: Configure Captive Web Portal
 
 1. Name the captive portal.
 2. Turn **ON**: **User Auth on Captive Web Portal**
 
+![](../../../_images/aerohive-ng-conf-2.png)
+
 3. Configure **Login Page**
-   - **Login URL:** https://connect-p.fanswifi.com/auth
+   - **Login URL:** [https://connect-p.fanswifi.com/auth](https://connect-p.fanswifi.com/auth)
    - **Password Encryption:** No Encryption
    - **Authentication Method:** PAP
    - **Success Page:** OFF
      - Enable: **Redirect clients after a successful login attempt**
      - Select: **To a specified URL**
-       - https://connect-p.fanswifi.com/auth?id=aerohive-ng&res=success
+       - [https://connect-p.fanswifi.com/auth?id=aerohive-ng&res=success](https://connect-p.fanswifi.com/auth?id=aerohive-ng&res=success)
    - **Failure Page:** OFF
      - Enable: **Redirect client after a failed login attempt**
      - Select: **To a specified URL**
-       - https://connect-p.fanswifi.com/auth
+       - [https://connect-p.fanswifi.com/auth](https://connect-p.fanswifi.com/auth)
 
    ![](../../../_images/information-required-for-fanswifi-manager-20.png)
 
 ---
 
-## Step 3.1: Walled Garden (Hostname Rules)
+### Step 3.1: Walled Garden (Hostname Rules)
 
 1. Go to **Walled Garden** and add new rules.
 
@@ -73,65 +73,82 @@ description: Configure AeroHive HiveManager NG for FansWiFi captive portal and R
 2. For each hostname record:
    - Set **Service = All**
 
-### Required (FansWiFi)
+##### Required (FansWiFi)
 
-- `*.fanswifi.com`
-- `radius.fanswifi.com`
+- [fanswifi.com](http://fanswifi.com/)
+- [radius.fanswifi.com](http://radius.fanswifi.com/)
 
-### Optional (only if Facebook Login is enabled)
+##### Walled Garden List (Optional, you may skip this if there is no Facebook Login Enabled)
 
-- `*.facebook.com`
-- `*.facebook.net`
-- `*.fbcdn.net`
-- `*.fbcdn.com`
-- `*.akamaihd.net`
-- `fbsbx.com`
-- `*.fbsbx.com`
+- [facebook.com](http://facebook.com/)
+- [facebook.net](http://facebook.net/)
+- [fbcdn.net](http://fbcdn.net/)
+- [fbcdn.com](http://fbcdn.com/)
+- [akamaihd.net](http://akamaihd.net/)
+- [fbsbx.com](http://fbsbx.com/)
+- [*.fbsbx.com](http://fbsbx.com/)
 
-### Optional (only if Weibo Login is enabled)
+##### Walled Garden List (Optional, you may skip this if there is no Weibo Login Enabled)
 
-- `*.weibo.com`
-- `*.weibo.cn`
-- `*.sinaapp.com`
-- `*.sina.com.cn`
-- `*.sinajs.cn`
+- [weibo.com](http://weibo.com/)
+- [weibo.cn](http://weibo.cn/)
+- [sinaapp.com](http://sinaapp.com/)
+- [sina.com.cn](http://sina.com.cn/)
+- [sinajs.cn](http://sinajs.cn/)
 
-### Optional (only if Instagram Login is enabled)
+##### Instagram Login (Optional, you may skip this if there is no Instagram Login Enabled)
 
-- `*.instagram.com`
-- `*.cdninstagram.com`
-- `*.akamaihd.net`
+- [instagram.com](http://instagram.com)
+- [akamaihd.net](http://akamaihd.net)
+- [cdninstagram.com](http://cdninstagram.com)
 
-### Optional (only if Twitter/X Login is enabled)
+##### Twitter/X Login (Optional, you may skip this if there is no Twitter/X Login Enabled)
 
-- `*.twitter.com`
-- `*.twimg.com`
+- [twitter.com](http://twitter.com)
+- [twimg.com](http://twimg.com)
 
-### Optional (only if Video Login is enabled)
+##### LINE Login (Optional, you may skip this if there is no LINE Login Enabled)
 
-- `*.akamaized.net`
-- `*.akamaihd.net`
-- `ssl.google-analytics.com`
-- `*.scorecardresearch.com`
-- `*.vimeocdn.com`
-- `*.vimeo.com`
+- [line.me](http://line.me)
+- [line-scdn.net](http://line-scdn.net)
 
+##### PayPal Login (Optional, you may skip this if there is no PayPal Login Enabled)
+
+- [paypal.com](http://paypal.com)
+- [paypalobjects.com](http://paypalobjects.com)
+- [www.google-analytics.com](http://www.google-analytics.com)
+
+##### Video Login (Optional, you may skip this if there is no Video Login Enabled)
+
+- [akamaized.net](http://akamaized.net)
+- [akamaihd.net](http://akamaihd.net)
+- [ssl.google-analytics.com](http://ssl.google-analytics.com)
+- [scorecardresearch.com](http://scorecardresearch.com)
+- [vimeocdn.com](http://vimeocdn.com)
+- [vimeo.com](http://vimeo.com)
+
+---
 **Example result (Facebook rules enabled):**
 
 ![](../../../_images/information-required-for-fanswifi-manager-22.png)
 
 ---
 
-## Step 4: Configure Authentication (RADIUS)
+### Step 4: Configure Authentication (RADIUS)
 
 1. Add a new **RADIUS Server Group**
 
    ![](../../../_images/information-required-for-fanswifi-manager-23.png)
 
 2. In the RADIUS Server Group, add a new **External RADIUS Server**
+
+   ![](../../../_images/aerohive-ng-conf-3.png)
+
 3. Configure the external RADIUS server:
    - **Name:** FansWiFi Radius
    - **Host Name:** `radius.fanswifi.com`
+
+      ![](../../../_images/aerohive-ng-conf-4.png)
    - **Authentication Port:** `1812`
    - **Accounting Port:** `1813`
    - **Shared Secret:** `social123`
@@ -142,7 +159,7 @@ description: Configure AeroHive HiveManager NG for FansWiFi captive portal and R
 
 ---
 
-## Step 5: Save the SSID Settings
+### Step 5: Save the SSID Settings
 
 1. Click **Save** to save the SSID settings.
 
@@ -150,7 +167,7 @@ description: Configure AeroHive HiveManager NG for FansWiFi captive portal and R
 
 ---
 
-## Step 6: Deploy Policy
+### Step 6: Deploy Policy
 
 1. Select the AP(s) you want to deploy to, then click **Upload**
 2. Select **Delta Configuration Update**
@@ -163,12 +180,10 @@ description: Configure AeroHive HiveManager NG for FansWiFi captive portal and R
 
 ---
 
-# Setup in FansWiFi Admin Panel
-
-## Step 7: Add Hotspot
+### Step 7: Setup in FansWiFi Admin Panel
 
 1. Log in:
-   - https://admin-p.fanswifi.com/login
+   - [https://admin-p.fanswifi.com/login](https://admin-p.fanswifi.com/login)
 
 2. Go to:
    - **Settings → Hotspots → Add Hotspot**
@@ -196,9 +211,6 @@ After a user logs in once, the captive portal may not show again until the sessi
 - In the FansWiFi Admin Panel, set a **short session duration** for testing (e.g., **1–2 minutes**).
 - Then reconnect and test different login methods.
 
-### Notes
-
-- Device-based “logout URLs” and controller-based deauthorization may not be available depending on controller / HiveManager behavior in your environment.
-- Tested environment:
-  - **HiveOS:** 8.1r1
-  - **Last testing date:** 2017-11-09
+| WiFi User Logout trigger by: | WiFi User's Device<br>(usually, access a logout url on browser) | Controller Web Admin Interface |
+|---|---|---|  
+|  | Not available <br><br>Last Testing: 11-9-2017 <br><br> HiveOS: 8.1r1 | Not available in HiveManager <br><br>Last Testing: 11-9-2017 <br><br> HiveOS: 8.1r1 |
