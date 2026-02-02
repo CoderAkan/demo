@@ -283,18 +283,46 @@ Requirement: Cisco WLC Firmware Version 8.2 or above
 - If the connection is success, you should see message like below:
 
 {%hint style="info"%}
-Radius Test Request  Wlan-id........................................ 7  ApGroup Name................................... default-group  Server Index................................... 2Radius Test ResponseRadius Server            Retry Status-------------            ----- ------103.6.85.240            1     SuccessAuthentication Response:  Result Code: Success  Attributes                      Values      ----------                      ------      User-Name                       user1       Class                           CACS:rs-acs5-6-0-22/230677882/20313  Session-Timeout                 0x0000001e (30)  Termination-Action              0x00000000 (0)  Tunnel-Type                     0x0000000d (13)  Tunnel-Medium-Type              0x00000006 (6)  Tunnel-Group-Id                 0x00000051 (81)
+Radius Test Request  
+   Wlan-id........................................ 7  
+   ApGroup Name................................... default-group  
+   Server Index................................... 2Radius 
+Test Response
+Radius Server            Retry Status
+-------------            ----- ------
+103.6.85.240            1     Success
+Authentication Response:  
+   Result Code: Success  
+   Attributes                      Values      
+   ----------                      ------      
+   User-Name                       user1       
+   Class                           CACS:rs-acs5-6-0-22/230677882/20313  Session-Timeout                 0x0000001e (30)  
+   Termination-Action              0x00000000 (0)  
+   Tunnel-Type                     0x0000000d (13)  
+   Tunnel-Medium-Type              0x00000006 (6)  
+   Tunnel-Group-Id                 0x00000051 (81)
 {% endhint %}
 
 - If the connection do not success, you should see message like below:
 {%hint style="info"%}
-Radius Test Request  Wlan-id........................................ 7  ApGroup Name................................... default-group  Server Index................................... 3Radius Test ResponseRadius Server            Retry Status-------------            ----- ------172.20.227.72            6     No response received from serverAuthentication Response:  Result Code: No response received from server  No AVPs in Response
+Radius Test Request  
+Wlan-id........................................ 7  
+ApGroup Name................................... default-group  
+Server Index................................... 3
+Radius Test Response
+Radius Server            Retry Status
+-------------            ----- ------
+172.20.227.72            6     No response received from server
+Authentication Response:  
+   Result Code: No response received from server  
+   No AVPs in Response
 {% endhint %}
 
 You can also enable the debug message for more details by using below command
 (Cisco Controller) > **debug aaa all enable**
 
 Reference:
+
 Cisco Wireless Controller Configuration Guide, Release 8.2
 Chapter: Debugging on Cisco Wireless Controllers
 [http://www.cisco.com/c/en/us/td/docs/wireless/controller/8-2/config-guide/b_cg82/b_cg82_chapter_0110011.html](https://support.fanswifi.com/hotspot-setup-guide/cisco/cisco-wireless-lan-controller-wlc-setup-guide#)
