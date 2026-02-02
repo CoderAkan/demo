@@ -75,34 +75,24 @@
 
 ## Ruckus
 
-### Ruckus One Setup Guide
-
-{% content-ref url="Ruckus/Ruckus-One-Setup-Guide/information-required-for-fanswifi-manager.md" %}
-[Information required for FansWiFi Manager](Ruckus/Ruckus-One-Setup-Guide/information-required-for-fanswifi-manager.md)
+{% content-ref url="Ruckus/Ruckus-Unleashed-Setup-Guide.md" %}
+[Ruckus Unleashed Setup Guide](Ruckus/Ruckus-Unleashed-Setup-Guide.md)
 {% endcontent-ref %}
 
-### Ruckus SmartZone / SCG (Version 3.4 or before) Setup Guide
-
-{% content-ref url="Ruckus/Ruckus-SmartZone---SCG-(Version-3.4-or-before)-Setup-Guide/information-required-for-fanswifi-manager.md" %}
-[Information required for FansWiFi Manager](Ruckus/Ruckus-SmartZone---SCG-(Version-3.4-or-before)-Setup-Guide/information-required-for-fanswifi-manager.md)
+{% content-ref url="Ruckus/Ruckus-ZoneDirector-Setup-Guide.md" %}
+[Ruckus ZoneDirector Setup Guide](Ruckus/Ruckus-ZoneDirector-Setup-Guide.md)
 {% endcontent-ref %}
 
-### Ruckus SmartZone / SCG (Version 3.5) Setup Guide
-
-{% content-ref url="Ruckus/Ruckus-SmartZone---SCG-(Version-3.5)-Setup-Guide/information-required-for-fanswifi-manager.md" %}
-[Information required for FansWiFi Manager](Ruckus/Ruckus-SmartZone---SCG-(Version-3.5)-Setup-Guide/information-required-for-fanswifi-manager.md)
+{% content-ref url="Ruckus/Ruckus-SmartZone---SCG-(Version-3.4-or-before)-Setup-Guide.md" %}
+[Ruckus SmartZone / SCG (Version 3.4 or before) Setup Guide](Ruckus/Ruckus-SmartZone---SCG-(Version-3.4-or-before)-Setup-Guide.md)
 {% endcontent-ref %}
 
-### Ruckus Unleashed Setup Guide
-
-{% content-ref url="Ruckus/Ruckus-Unleashed-Setup-Guide/information-required-for-fanswifi-manager.md" %}
-[Information required for FansWiFi Manager](Ruckus/Ruckus-Unleashed-Setup-Guide/information-required-for-fanswifi-manager.md)
+{% content-ref url="Ruckus/Ruckus-SmartZone---SCG-(Version-3.5)-Setup-Guide.md" %}
+[Ruckus SmartZone / SCG (Version 3.5) Setup Guide](Ruckus/Ruckus-SmartZone---SCG-(Version-3.5)-Setup-Guide.md)
 {% endcontent-ref %}
 
-### Ruckus ZoneDirector Setup Guide
-
-{% content-ref url="Ruckus/Ruckus-ZoneDirector-Setup-Guide/information-required-for-fanswifi-manager.md" %}
-[Information required for FansWiFi Manager](Ruckus/Ruckus-ZoneDirector-Setup-Guide/information-required-for-fanswifi-manager.md)
+{% content-ref url="Ruckus/Ruckus-One-Setup-Guide.md" %}
+[Ruckus One Setup Guide](Ruckus/Ruckus-One-Setup-Guide.md)
 {% endcontent-ref %}
 
 ## Ruijie
