@@ -25,12 +25,12 @@
 
 ## Aerohive
 
-{% content-ref url="Aerohive/AeroHive-HiveManager-NG-Setup-Guide/aerohive-hivemanager-ng-setup-guide.md" %}
-[AeroHive HiveManager NG Setup Guide](Aerohive/AeroHive-HiveManager-NG-Setup-Guide/aerohive-hivemanager-ng-setup-guide.md)
+{% content-ref url="Aerohive/aerohive-hivemanager-ng-setup-guide.md" %}
+[AeroHive HiveManager NG Setup Guide](Aerohive/aerohive-hivemanager-ng-setup-guide.md)
 {% endcontent-ref %}
 
-{% content-ref url="Aerohive/AeroHive-MyHive-Setup-Guide/aerohive-myhive-setup-guide.md" %}
-[AeroHive MyHive Setup Guide](Aerohive/AeroHive-MyHive-Setup-Guide/aerohive-myhive-setup-guide.md)
+{% content-ref url="Aerohive/aerohive-myhive-setup-guide.md" %}
+[AeroHive MyHive Setup Guide](Aerohive/aerohive-myhive-setup-guide.md)
 {% endcontent-ref %}
 
 ## Cisco
