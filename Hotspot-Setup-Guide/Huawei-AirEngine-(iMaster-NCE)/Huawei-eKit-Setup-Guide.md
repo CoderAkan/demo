@@ -55,13 +55,13 @@
         2. **Authentication protocol:** HTTPS
         3. **Method:** POST, GET
         4. **Password coding mode:** uam: Passwords are encoded in ASCII format.
-        5. **Portal IP:** 52.220.206.125
+        5. **Portal IP:** `52.220.206.125`
         6. **Portal redirection URL:** [https://connect-p.fanswifi.com/auth](https://connect-p.fanswifi.com/auth)
-        7. **Key:** social123
+        7. **Key:** `social123`
 
             1. Click **Configure** to enter the key
-            2. **Key:** social123
-            3. **Confirm key:** social123
+            2. **Key:** `social123`
+            3. **Confirm key:** `social123`
             4. Click **OK**
     3. Click **OK**
     4. Select **Portal server** that you created
@@ -205,6 +205,8 @@
 
     6. Click **OK** to save
 7. Click **OK** to create SSID
+
+![](../../../_images/huawei_ekit_8.png)
 
 ### Step 4: Add AP to FansWiFi Admin Panel
 
