@@ -37,8 +37,8 @@
 
 ### Cisco Wireless Lan Controller (WLC) Setup Guide
 
-{% content-ref url="Cisco/Cisco-Wireless-Lan-Controller-(WLC)-Setup-Guide/information-required-for-fanswifi-manager.md" %}
-[Information required for FansWiFi Manager](Cisco/Cisco-Wireless-Lan-Controller-(WLC)-Setup-Guide/information-required-for-fanswifi-manager.md)
+{% content-ref url="Cisco/Cisco-Wireless-Lan-Controller-(WLC)-Setup-Guide.md" %}
+[Cisco Wireless Lan Controller (WLC) Setup Guide](Cisco/Cisco-Wireless-Lan-Controller-(WLC)-Setup-Guide.md)
 {% endcontent-ref %}
 
 ## Cisco Meraki

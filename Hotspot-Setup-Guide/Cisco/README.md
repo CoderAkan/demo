@@ -1,7 +1,5 @@
 # Cisco
 
-## Cisco Wireless Lan Controller (WLC) Setup Guide
-
-{% content-ref url="Cisco-Wireless-Lan-Controller-(WLC)-Setup-Guide/information-required-for-fanswifi-manager.md" %}
-[Information required for FansWiFi Manager](Cisco-Wireless-Lan-Controller-(WLC)-Setup-Guide/information-required-for-fanswifi-manager.md)
+{% content-ref url="Cisco-Wireless-Lan-Controller-(WLC)-Setup-Guide.md" %}
+[Cisco Wireless Lan Controller (WLC) Setup Guide](Cisco-Wireless-Lan-Controller-(WLC)-Setup-Guide.md)
 {% endcontent-ref %}
