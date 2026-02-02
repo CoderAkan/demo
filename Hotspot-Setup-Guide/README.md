@@ -2,24 +2,24 @@
 
 ## Aruba (HPE)
 
-{% content-ref url="Aruba-(HPE)/Aruba-Networking-Central-Setup-Guide/aruba_networking_central_setup_page.md" %}
-[Aruba Networking Central Setup Guide](Aruba-(HPE)/Aruba-Networking-Central-Setup-Guide/aruba_networking_central_setup_page.md)
+{% content-ref url="Aruba-(HPE)/aruba_networking_central_setup_page.md" %}
+[Aruba Networking Central Setup Guide](aruba_networking_central_setup_page.md)
 {% endcontent-ref %}
 
-{% content-ref url="Aruba-(HPE)/Aruba-(HPE)-Instant-On-AP-Setup-Guide/aruba_hpe_page.md" %}
-[Aruba (HPE) Instant-On AP Setup Guide](Aruba-(HPE)/Aruba-(HPE)-Instant-On-AP-Setup-Guide/aruba_hpe_page.md)
+{% content-ref url="Aruba-(HPE)/aruba_hpe_page.md" %}
+[Aruba (HPE) Instant-On AP Setup Guide](aruba_hpe_page.md)
 {% endcontent-ref %}
 
-{% content-ref url="Aruba-(HPE)/Aruba-Mobility-Controller-Setup-Guide-(Version-8.x)/setting-on-aruba-controller.md" %}
-[Setting on Aruba Controller](Aruba-(HPE)/Aruba-Mobility-Controller-Setup-Guide-(Version-8.x)/setting-on-aruba-controller.md)
+{% content-ref url="Aruba-(HPE)/aruba_mob_controller_setup_guide_8.md" %}
+[Aruba Mobility Controller Setup Guide (Version 8.x)](aruba_mob_controller_setup_guide_8.md)
 {% endcontent-ref %}
 
-{% content-ref url="Aruba-(HPE)/Aruba-Mobility-Controller-Setup-Guide-(Version-6.x)/information-required-for-fanswifi-manager.md" %}
-[Information required for FansWiFi Manager](Aruba-(HPE)/Aruba-Mobility-Controller-Setup-Guide-(Version-6.x)/information-required-for-fanswifi-manager.md)
+{% content-ref url="Aruba-(HPE)/aruba_mob_controller_setup_guide_6.md" %}
+[Aruba Mobility Controller Setup Guide (Version 6.x)](aruba_mob_controller_setup_guide_6.md)
 {% endcontent-ref %}
 
-{% content-ref url="Aruba-(HPE)/Aruba-Instant-(IAP)-Setup-Guide/information-required-for-fanswifi-manager.md" %}
-[Information required for FansWiFi Manager](Aruba-(HPE)/Aruba-Instant-(IAP)-Setup-Guide/information-required-for-fanswifi-manager.md)
+{% content-ref url="Aruba-(HPE)/aruba_iap_setup_guide.md" %}
+[Aruba Instant (IAP) Setup Guide](aruba_iap_setup_guide.md)
 {% endcontent-ref %}
 
 
