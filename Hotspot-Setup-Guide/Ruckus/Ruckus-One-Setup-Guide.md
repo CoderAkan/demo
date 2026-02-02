@@ -29,13 +29,14 @@
 
 1. In the **Portal Type** section:
    - **Portal Type:** 3rd Party Captive Portal (WISPr)
-2. Click **Next**.
-3. In the **Settings** section, configure:
+   - Click **Next**.
+   ![](../../../_images/ruckus_one_3.png)
+2. In the **Settings** section, configure:
    - **Portal Provider:** Custom Provider
    - **Provider Name:** FansWiFi
-   - **Captive Portal:** `https://connect-p.fanswifi.com/auth`
+   - **Captive Portal:** [https://connect-p.fanswifi.com/auth](https://connect-p.fanswifi.com/auth)
    - **Redirect users to:** Enabled
-   - **Redirect URL:** `https://connect-p.fanswifi.com/auth?res=success`
+   - **Redirect URL:** [https://connect-p.fanswifi.com/auth?res=success](https://connect-p.fanswifi.com/auth?res=success)
    - **Secure your network:** None
    - **Enable MAC auth bypass:** Enabled
    - **Enable encryption for users’ MAC and IP addresses:** Enabled
@@ -45,60 +46,73 @@
 
 ![Captive portal configuration](../../../_images/information-required-for-fanswifi-manager-320.png)
 
-### Walled Garden List
+##### Walled Garden List (required)
 
-> [!IMPORTANT]
-> Add the following domains to your walled garden for proper portal functionality.
+1. *.[fanswifi.com](http://fanswifi.com/)
 
-#### Required
-- `* .fanswifi.com`
+i. **Walled Garden List (Optional, you may skip this if there is no Facebook Login Enabled)**
 
-#### Optional (By Login Method)
+1. *.[facebook.com](http://facebook.com/)
+2. *.[facebook.net](http://facebook.net/)
+3. *.[fbcdn.net](http://fbcdn.net/)
+4. *.[fbcdn.com](http://fbcdn.com/)
+5. *.[akamaihd.net](http://akamaihd.net/)
+6. [www.google.com](http://www.google.com/)
+7. *.[doubleclick.net](http://doubleclick.net/)
+8. [www.google.com.hk](http://www.google.com.hk/)(Local Google URL of your Country / Region)
 
-**Facebook Login:**
-- `* .facebook.com`
-- `* .facebook.net`
-- `* .fbcdn.net`
-- `* .fbcdn.com`
-- `* .akamaihd.net`
-- `www.google.com`
-- `* .doubleclick.net`
-- `www.google.com.hk` (or local Google URL)
+    - a. Example:
 
-**Weibo Login:**
-- `* .weibo.com`
-- `* .weibo.cn`
-- `* .sinaapp.com`
-- `* .sina.com.cn`
-- `* .sinajs.cn`
+        - i. EU:[www.google.eu](http://www.google.eu)
+        - ii. UK:[www.google.co.uk](http://www.google.co.uk/)
+        - iii. Hong Kong:[www.google.com.hk](http://www.google.com.hk/)
+        - iv. Japan:[www.google.co.jp](http://www.google.co.jp/)
+        - v. Taiwan:[www.google.com.tw](http://www.google.com.tw/)
+        - vi. Thailand:[www.google.co.th](http://www.google.co.th/)
+        - vii. Malaysia:[www.google.com.my](http://www.google.com.my/)
+        - viii. Myanmar:[www.google.com.mm](http://www.google.com.mm/)
 
-**Instagram Login:**
-- `* .instagram.com`
-- `* .akamaihd.net`
-- `* .cdninstagram.com`
+ii. **Walled Garden List (Optional, you may skip this if there is no Weibo Login Enabled)**
 
-**Twitter Login:**
-- `* .twitter.com`
-- `* .twimg.com`
+1. *.[weibo.com](http://weibo.com/)
+2. *.[weibo.cn](http://weibo.cn/)
+3. *.[sinaapp.com](http://sinaapp.com/)
+4. *.[sina.com.cn](http://sina.com.cn/)
+5. *.[sinajs.cn](http://sinajs.cn/)
 
-**LINE Login:**
-- `* .line.me`
-- `* .line-scdn.net`
+iii. **Walled Garden List (Optional, you may skip this if there is no Instagram Login Enabled)**
 
-**PayPal Login:**
-- `* .paypal.com`
-- `* .paypalobjects.com`
-- `www.google-analytics.com`
+1. *.[instagram.com](http://instagram.com/)
+2. *.[akamaihd.net](http://akamaihd.net/)
+3. *.[cdninstagram.com](http://cdninstagram.com/)
 
-**Video Login:**
-- `* .akamaized.net`
-- `* .akamaihd.net`
-- `ssl.google-analytics.com`
-- `* .scorecardresearch.com`
-- `* .vimeocdn.com`
-- `* .vimeo.com`
+iv. **Twitter Login (Optional, you may skip this if there is no Twitter Login Enabled)**
 
-## Step 4: RADIUS Configuration
+1. *.[twitter.com](http://twitter.com/)
+2. *.[twimg.com](http://twimg.com/)
+
+v. **LINE Login (Optional, you may skip this if there is no LINE Login Enabled)**
+
+1. *.[line.me](http://line.me/)
+2. *.[line-scdn.net](http://line-scdn.net/)
+
+vi. **PayPal Login (Optional, you may skip this if there is no PayPal Login Enabled)**
+
+1. *.[paypal.com](http://paypal.com/)
+2. *.[paypalobjects.com](http://paypalobjects.com/)
+3. [www.google-analytics.com](http://www.google-analytics.com/)
+
+vii. **Video Login (Optional, you may skip this if there is no Video Login Enabled)**
+
+1. *.[akamaized.net](http://akamaized.net/)
+2. *.[akamaihd.net](http://akamaihd.net/)
+3. [ssl.google-analytics.com](http://ssl.google-analytics.com/)
+    - a. *.[scorecardresearch.com](http://scorecardresearch.com/)
+    - b. *.[vimeocdn.com](http://vimeocdn.com/)
+    - c. *.[vimeo.com](http://vimeo.com/)
+
+
+#### Step 4: RADIUS Configuration
 
 1. Under **Authentication Service**, select **Authenticate Connections**.
 2. For **Authentication Server**, click **Add Server**:
@@ -107,6 +121,9 @@
    - **Port:** 1812
    - **Shared Key:** social123
 3. Click **Add**.
+
+![](../../../_images/ruckus_one_2.png)
+
 4. Enable **Accounting Service**.
 5. For **Accounting Server**, click **Add Server**:
    - **Server Name:** FansWiFi Accounting
@@ -115,10 +132,18 @@
    - **Shared Key:** social123
 6. Click **Add**.
 7. Click **Next**.
+
+![](../../../_images/ruckus_one_4.png)
+
 8. Select your **Venue** (e.g., "My-Venue") and click **Next**.
+
+![](../../../_images/ruckus_one_5.png)
+
 9. In the **Summary** section, click **Add** to create the network.
 
-## Step 5: Add AP to FansWiFi Admin Panel
+![](../../../_images/ruckus_one_6.png)
+
+#### Step 5: Add AP to FansWiFi Admin Panel
 
 1. Log in to the FansWiFi Admin Panel.
 2. Navigate to **Settings** > **Hotspots** > **Create**.
@@ -130,4 +155,5 @@
 4. Click **Create**.
 
 ![Hotspot creation view 1](../../../_images/information-required-for-fanswifi-manager-321.png)
+
 ![Hotspot creation view 2](../../../_images/information-required-for-fanswifi-manager-322.png)
