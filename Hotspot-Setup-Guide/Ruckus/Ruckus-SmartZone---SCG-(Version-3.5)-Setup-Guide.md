@@ -90,6 +90,7 @@ Port forwarding may be required on your firewall/router for inbound traffic to t
    - **Start Page:** [https://connect-p.fanswifi.com/auth/?res=success](https://connect-p.fanswifi.com/auth/?res=success)
    - **Session Timeout:** 1440
    - **Grace Period:** 60
+
    ![](../../../_images/ruckus_smart_zone_3.5_0.png)
 
 ##### Walled Garden Settings
@@ -207,7 +208,7 @@ https://cdn.fanswifi.com/assets/ruckus/fanswifi_ruckus_smartzone_walled_garden.z
 ![Controller configuration details](../../../_images/information-required-for-fanswifi-manager-166.png)
 
 {% hint style="danger" %}
-**Exceptional Case: SmartZone / vSCG behinds Router / Firewall**
+**Exceptional Case: SmartZone / vSCG behinds Router / Firewall** <br>
 If the SmartZone / vSCG is behind Router / Firewall, it is not directly accessible by FansWiFi Server. In this case, you need to configure port forwarding on your Router / Firewall to forward the port to the SmartZone / vSCG.
 {% endhint %}
 
@@ -220,4 +221,6 @@ If the SmartZone / vSCG is behind Router / Firewall, it is not directly accessib
    - **AP Type:** Select **Ruckus SmartZone (formerly SCG)**.
    - **MAC Address:** Enter the unique MAC address of the AP.
 {% endhint %}
-- Click **Save**.
+- Click **Save**
+
+![](../../../_images/ruckus_3.5_2.png)
