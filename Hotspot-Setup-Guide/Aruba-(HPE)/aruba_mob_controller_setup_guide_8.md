@@ -31,14 +31,14 @@
                 - **IP address:** "IP Address of your network's gateway"
                 - Click "**Submit**"
                 - Try step (a) again to see whether it can connect to both Internet and FansWiFi radius server or not
-            ![](../../../_images/aruba_ping_ version_8_res_2.png)
+            ![](../../../_images/aruba_ping_version_8_res_2.png)
 
 ### Step 1: Configuration: WLAN and SSID
 
 - a. Access the Aruba Mobility Controller by opening a Web Browser
 - b. Click **Configuration > WLAN > "+"** to configure new WLAN
 - c. In **General** setting
-    - Name (SSID): **- FansWiFi Free WiFi -**
+    - Name (SSID): **FansWiFi Free WiFi**
         - Or any SSID you preferred
     - Primary usage: **Guest**
     - Click "**Next**"
@@ -73,7 +73,7 @@
         - Auth servers: **FansWiFi_Radius**
         - Host: **connect-p.fanswifi.com**
         - Page: **/auth**
-        - Redirect URL: **https://connect-p.fanswifi.com/auth?res=success**
+        - Redirect URL: **[https://connect-p.fanswifi.com/auth?res=success](https://connect-p.fanswifi.com/auth?res=success)**
     - Click "**Next**"
     
     ![](../../../_images/aruba_mob_control_8_section_f_3.png)
@@ -179,8 +179,8 @@
     - vii. Use HTTP for authentication: **Ticked**
     - viii. Show FQDN: **Ticked**
     - ix. Authentication Protocol: **PAP**
-    - x. Login page: **https://connect-p.fanswifi.com/auth**
-    - xi. Welcome page: **https://connect-p.fanswifi.com/auth?res=success**
+    - x. Login page: **[https://connect-p.fanswifi.com/auth](https://connect-p.fanswifi.com/auth)**
+    - xi. Welcome page: **[https://connect-p.fanswifi.com/auth?res=success](https://connect-p.fanswifi.com/auth?res=success)**
     - xii. Show Welcome page: **Ticked**
     - xiii. Add switch IP in redirection URL: **Ticked**
     - xiv. Adding user vlan in redirection URL: **Ticked**
