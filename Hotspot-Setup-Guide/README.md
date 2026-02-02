@@ -97,10 +97,8 @@
 
 ## Ruijie
 
-### FansWiFi x Ruijie Cloud (new UI) WiFiDog Setup Guide
-
-{% content-ref url="Ruijie/FansWiFi-x-Ruijie-Cloud-(new-UI)-WiFiDog-Setup-Guide/information-required-for-the-user.md" %}
-[Information required for the user](Ruijie/FansWiFi-x-Ruijie-Cloud-(new-UI)-WiFiDog-Setup-Guide/information-required-for-the-user.md)
+{% content-ref url="Ruijie/FansWiFi-x-Ruijie-Cloud-(new-UI)-WiFiDog-Setup-Guide.md" %}
+[FansWiFi x Ruijie Cloud (new UI) WiFiDog Setup Guide](Ruijie/FansWiFi-x-Ruijie-Cloud-(new-UI)-WiFiDog-Setup-Guide.md)
 {% endcontent-ref %}
 
 ## TP-Link

@@ -1,20 +1,17 @@
-# Information required for the user
-
-
-# Information required for the user
+## Information required for the user
 
 - Mac Address of the APs
 
-# Tested Model and firmware Version
+## Tested Model and firmware Version
 
 - Model: RG-AP720-L
 - Firmware Version: AP_RGOS 11.1(9)B1P21, Release(06211815)
 
-# Setting on Ruijie Cloud
+## Setting on Ruijie Cloud
 
-## Step 1: Create a new project
+### Step 1: Create a new project
 
-- a. Access the Ruijie cloud network via this link:[https://cloud.ruijienetworks.com/](https://cloud.ruijienetworks.com/)
+- a. Access the Ruijie cloud network via this link: [https://cloud.ruijienetworks.com/](https://cloud.ruijienetworks.com/)
 - b. Click "Add" and Select "Add Project"
 
 ![](../../../_images/information-required-for-the-user-285.png)
@@ -31,7 +28,7 @@
 
 ![](../../../_images/information-required-for-the-user-288.png)
 
-## Step 2: Create SSID
+### Step 2: Create SSID
 
 - **You can skip this part if you already create SSID**
 - a. Click "Device Config" on the left menu
@@ -45,14 +42,14 @@
 
 - d. Configure with following setting:
 
-- **SSID:** *<ssid-name-you-prefer>*
-- **Encryption Option:** Do not Encrypt
-- **Encryption Method:** OPEN (Open)
+   - **SSID:** *<ssid-name-you-prefer>*
+   - **Encryption Option:** Do not Encrypt
+   - **Encryption Method:** OPEN (Open)
 - e. Click "OK"
 
 ![](../../../_images/information-required-for-the-user-291.png)
 
-## Step 3: Create Captive Portal
+### Step 3: Create Captive Portal
 
 - a. Click "Auth & Accounts" on the left menu
 - b. Under "Authentication" section, select "Captive Portal"
@@ -65,17 +62,17 @@
 
 - d. Configure the following settings:
 
-- **Policy Name:** *<policy-name-you-prefer>*
-- **Policy Mode:** External
-- **SSID:** *Select the SSID you created inStep 2(e.g. <ssid-name-you-prefer>)*
-- **Portal Server URL:** [https://connect-p.fanswifi.com/wifidog](https://connect-p.fanswifi.com/wifidog)
-- **Portal IP:** 52.220.206.125
-- **Seamless Online:** Enable
+   - **Policy Name:** *<policy-name-you-prefer>*
+   - **Policy Mode:** External
+   - **SSID:** *Select the SSID you created inStep 2(e.g. <ssid-name-you-prefer>)*
+   - **Portal Server URL:** [https://connect-p.fanswifi.com/wifidog](https://connect-p.fanswifi.com/wifidog)
+   - **Portal IP:** 52.220.206.125
+   - **Seamless Online:** Enable
 - e. Click "OK"
 
 ![](../../../_images/information-required-for-the-user-294.png)
 
-## Step 4: Configure Walled Garden Lists and CLI Command
+### Step 4: Configure Walled Garden Lists and CLI Command
 
 1. Click **Auth & Accounts** on the left menu.
 2. Under **Authentication**, select **Allowlist**.
@@ -86,13 +83,13 @@
 
    ![](../../../_images/information-required-for-the-user-296.png)
 
-### Walled Garden List (required)
+#### Walled Garden List (required)
 
 Add the following domain patterns:
 
 - `*.fanswifi.com`
 
-### Walled Garden List (optional — only if Facebook Login is enabled)
+#### Walled Garden List (optional — only if Facebook Login is enabled)
 
 - `*.facebook.com`
 - `*.facebook.net`
@@ -114,7 +111,7 @@ Add the following domain patterns:
 - Malaysia: `www.google.com.my`
 - Myanmar: `www.google.com.mm`
 
-### Walled Garden List (optional — only if Weibo Login is enabled)
+#### Walled Garden List (optional — only if Weibo Login is enabled)
 
 - `*.weibo.com`
 - `*.weibo.cn`
@@ -122,29 +119,29 @@ Add the following domain patterns:
 - `*.sina.com.cn`
 - `*.sinajs.cn`
 
-### Walled Garden List (optional — only if Instagram Login is enabled)
+#### Walled Garden List (optional — only if Instagram Login is enabled)
 
 - `*.instagram.com`
 - `*.akamaihd.net`
 - `*.cdninstagram.com`
 
-### Walled Garden List (optional — only if Twitter/X Login is enabled)
+#### Walled Garden List (optional — only if Twitter/X Login is enabled)
 
 - `*.twitter.com`
 - `*.twimg.com`
 
-### Walled Garden List (optional — only if LINE Login is enabled)
+#### Walled Garden List (optional — only if LINE Login is enabled)
 
 - `*.line.me`
 - `*.line-scdn.net`
 
-### Walled Garden List (optional — only if PayPal Login is enabled)
+#### Walled Garden List (optional — only if PayPal Login is enabled)
 
 - `*.paypal.com`
 - `*.paypalobjects.com`
 - `www.google-analytics.com`
 
-### Walled Garden List (optional — only if Video Login is enabled)
+#### Walled Garden List (optional — only if Video Login is enabled)
 
 - `*.akamaized.net`
 - `*.akamaihd.net`
@@ -154,7 +151,7 @@ Add the following domain patterns:
 - `*.vimeo.com`
 
 
-## Step 5: Enable DNS Snooping via CLI Command
+### Step 5: Enable DNS Snooping via CLI Command
 
 - a. Click "Device Config" on the left menu
 - b. Under "General" section, select "CLI Config Task"
@@ -163,24 +160,24 @@ Add the following domain patterns:
 
 - c. Click 'Add a CLI Command Set'
 
-- **Name:** FansWiFi DNS Setting
-- **Command:**
+   - **Name:** FansWiFi DNS Setting
+   - **Command:**
 
-- config t
-- ip dns snooping enable
+      - config t
+      - ip dns snooping enable
 
 ![](../../../_images/information-required-for-the-user-298.png)
 
-## Step 6: Add AP to FansWiFi Admin Panel
+### Step 6: Add AP to FansWiFi Admin Panel
 
 - Login to FansWiFi Admin Panel
 - Click **Settings -> Hotspots -> Create**
 - Configure with following settings:
 
-- **Venue:** Select the venue of where your Access Point locates
-- **Hotspot Name:** Name each Access Point to make it identifiable
-- **AP Type:** Select “Ruijie WiFiDog”
-- **Mac Address:** Input unique MAC Address of each Access Point in your venue
+   - **Venue:** Select the venue of where your Access Point locates
+   - **Hotspot Name:** Name each Access Point to make it identifiable
+   - **AP Type:** Select “Ruijie WiFiDog”
+   - **Mac Address:** Input unique MAC Address of each Access Point in your venue
 - Click **Create**
 
 ![](../../../_images/information-required-for-the-user-299.png)
