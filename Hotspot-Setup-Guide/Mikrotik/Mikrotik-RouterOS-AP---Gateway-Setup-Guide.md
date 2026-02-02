@@ -263,6 +263,6 @@ Please do **NOT** enter 11:22:33:44:55:66
 **WiFi User's Device**
 
 - On the wifi user device, open web browser
-- Go **http://<ap-local-ip-address>/logout**<br>
+- Go **http://\<ap-local-ip-address\>/logout**<br>
 (192.168.88.1 is default local IP setting(i.e.[http://192.168.88.1/logout](http://192.168.88.1/logout)), if you are using different setting, please input your AP's local IP here)
 ​
