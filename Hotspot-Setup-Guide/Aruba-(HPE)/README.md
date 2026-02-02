@@ -17,6 +17,6 @@
 [Aruba Mobility Controller Setup Guide (Version 6.x)](aruba_mob_controller_setup_guide_6.md)
 {% endcontent-ref %}
 
-{% content-ref url="aruba_iap_setup_guide.md" %}
-[Aruba Instant (IAP) Setup Guide](aruba_iap_setup_guide.md)
+{% content-ref url="aruba_instant_iap_setup_guide.md" %}
+[Aruba Instant (IAP) Setup Guide](aruba_instant_iap_setup_guide.md)
 {% endcontent-ref %}

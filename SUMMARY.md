@@ -99,7 +99,7 @@
     * [Aruba (HPE) Instant-On AP Setup Guide](Hotspot-Setup-Guide/Aruba-(HPE)/aruba_hpe_page.md)
     * [Aruba Mobility Controller Setup Guide (Version 8.x)](Hotspot-Setup-Guide/Aruba-(HPE)/aruba_mob_controller_setup_guide_8.md)
     * [Aruba Mobility Controller Setup Guide (Version 6.x)](Hotspot-Setup-Guide/Aruba-(HPE)/aruba_mob_controller_setup_guide_6.md)
-    * [Aruba Instant (IAP) Setup Guide](Hotspot-Setup-Guide/Aruba-(HPE)/aruba_iap_setup_guide.md)
+    * [Aruba Instant (IAP) Setup Guide](Hotspot-Setup-Guide/Aruba-(HPE)/aruba_instant_iap_setup_guide.md)
   * [Aerohive](Hotspot-Setup-Guide/Aerohive/README.md)
     * [AeroHive HiveManager NG Setup Guide](Hotspot-Setup-Guide/Aerohive/AeroHive-HiveManager-NG-Setup-Guide/README.md)
       * [Information required for FansWiFi Manager](Hotspot-Setup-Guide/Aerohive/AeroHive-HiveManager-NG-Setup-Guide/information-required-for-fanswifi-manager.md)
