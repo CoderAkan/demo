@@ -19,10 +19,10 @@
 
 1. Ensure the AP is on the **same network** as your PC/mobile/laptop for initial onboarding (per Aruba’s setup guide).
 2. Open:
-   - https://portal.arubainstanton.com/ **or**
-   - https://portal.instant-on.hpe.com
+   - [https://portal.arubainstanton.com/](https://portal.arubainstanton.com/) **or**
+   - [https://portal.instant-on.hpe.com](https://portal.instant-on.hpe.com)
 3. Log in with your email/password. If you don’t have an account, register via:
-   - https://www.arubainstanton.com/techdocs/en/content/get-started/prov-oc.html
+   - [https://www.arubainstanton.com/techdocs/en/content/get-started/prov-oc.html](https://www.arubainstanton.com/techdocs/en/content/get-started/prov-oc.html)
 
 ![](../../../_images/information-required-for-fanswifi-manager-8.png)
 
@@ -55,7 +55,7 @@
 
 #### IP Assignment (suggested)
 
-- **IP Assignment:** Specific to This Network
+- **IP Assignment:** Specific to This Network **(Suggested)**
 - **Base IP Address:** 172.16.0.0 *(or change to other network if needed)*
 - **Subnet Mask:** 255.255.248.0 *(2048 clients)* **(Suggested)**
 
@@ -119,42 +119,42 @@ a. After configuring the SSIDs, move to the “Guest Portal” session
 
 ##### Walled Garden List (Optional, you may skip this if there is no Weibo Login Enabled)
 
-- [weibo.com](weibo.com)
-- [weibo.cn](weibo.cn)
-- [sinaapp.com](sinaapp.com)
-- [sina.com.cn](sina.com.cn)
-- [sinajs.cn](sinajs.cn)
+- [weibo.com](http://weibo.com/)
+- [weibo.cn](http://weibo.cn/)
+- [sinaapp.com](http://sinaapp.com/)
+- [sina.com.cn](http://sina.com.cn/)
+- [sinajs.cn](http://sinajs.cn/)
 
 ##### Instagram Login (Optional, you may skip this if there is no Instagram Login Enabled)
 
-- [instagram.com](instagram.com)
-- [akamaihd.net](akamaihd.net)
-- [cdninstagram.com](cdninstagram.com)
+- [instagram.com](http://instagram.com)
+- [akamaihd.net](http://akamaihd.net)
+- [cdninstagram.com](http://cdninstagram.com)
 
 ##### Twitter/X Login (Optional, you may skip this if there is no Twitter/X Login Enabled)
 
-- [twitter.com](twitter.com)
-- [twimg.com](twimg.com)
+- [twitter.com](http://twitter.com)
+- [twimg.com](http://twimg.com)
 
 ##### LINE Login (Optional, you may skip this if there is no LINE Login Enabled)
 
-- [line.me](line.me)
-- [line-scdn.net](line-scdn.net)
+- [line.me](http://line.me)
+- [line-scdn.net](http://line-scdn.net)
 
 ##### PayPal Login (Optional, you may skip this if there is no PayPal Login Enabled)
 
-- [paypal.com](paypal.com)
-- [paypalobjects.com](paypalobjects.com)
-- [www.google-analytics.com](www.google-analytics.com)
+- [paypal.com](http://paypal.com)
+- [paypalobjects.com](http://paypalobjects.com)
+- [www.google-analytics.com](http://www.google-analytics.com)
 
 ##### Video Login (Optional, you may skip this if there is no Video Login Enabled)
 
-- [akamaized.net](akamaized.net)
-- [akamaihd.net](akamaihd.net)
-- [ssl.google-analytics.com](ssl.google-analytics.com)
-- [scorecardresearch.com](scorecardresearch.com)
-- [vimeocdn.com](vimeocdn.com)
-- [vimeo.com](vimeo.com)
+- [akamaized.net](http://akamaized.net)
+- [akamaihd.net](http://akamaihd.net)
+- [ssl.google-analytics.com](http://ssl.google-analytics.com)
+- [scorecardresearch.com](http://scorecardresearch.com)
+- [vimeocdn.com](http://vimeocdn.com)
+- [vimeo.com](http://vimeo.com)
 
 ---
 
@@ -170,7 +170,7 @@ This helps prevent guests from accessing devices on your internal network (route
 
 ---
 
-### Step 8: Add AP to FansWiFi
+### Step 8: Add AP to FansWiFi Admin Panel
 
 1. Log in to FansWiFi Admin Panel
 2. Go to **Settings → Hotspots → Add Hotspot**
