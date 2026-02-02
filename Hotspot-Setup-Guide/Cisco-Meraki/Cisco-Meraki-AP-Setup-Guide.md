@@ -147,7 +147,7 @@ If you see below Error message after clicking "Save", please refer to to this gu
 4. **Mac Address:** Input unique MAC Address of each Access Point in your venue (Not controller)
 {% endhint %}
 
-2. Click **Save**
+- Click **Save**
 
 ![](../../../_images/information-required-for-fanswifi-manager-45.png)
 
