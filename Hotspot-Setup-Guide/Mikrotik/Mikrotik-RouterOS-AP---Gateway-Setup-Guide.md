@@ -54,11 +54,11 @@ If you do not have the software, you can download it from the link below:
     - **Firewall Router:** Enabled
 - Under **Local Network**:
     - **IP Address:** `192.168.88.1`
-​**Netmask:** `255.255.255.0 (/24)`
-​**DHCP Server:** Enabled
-​**DHCP Server Range:** `192.168.88.2-192.168.88.254`
-​**NAT:** Enabled
-​**UPnP:** Enabled
+- ​**Netmask:** `255.255.255.0 (/24)`
+​- **DHCP Server:** Enabled
+​- **DHCP Server Range:** `192.168.88.2-192.168.88.254`
+​- **NAT:** Enabled
+​- **UPnP:** Enabled
 
 ![](../../../_images/prerequisites-74.png)
 
@@ -263,6 +263,6 @@ Please do **NOT** enter 11:22:33:44:55:66
 **WiFi User's Device**
 
 - On the wifi user device, open web browser
-- Go **http://<ap-local-ip-address>/logout**
+- Go **http://<ap-local-ip-address>/logout**<br>
 (192.168.88.1 is default local IP setting(i.e.[http://192.168.88.1/logout](http://192.168.88.1/logout)), if you are using different setting, please input your AP's local IP here)
 ​
