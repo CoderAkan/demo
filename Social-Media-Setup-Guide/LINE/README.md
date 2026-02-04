@@ -1,5 +1,5 @@
 # LINE
 
-{% content-ref url="Line_setting/README.md" %}
-[LINE Login Channel Registration Guide](Line_setting/README.md)
+{% content-ref url="setting-on-line-login-channel.md" %}
+[LINE Login Channel Registration Guide](setting-on-line-login-channel.md)
 {% endcontent-ref %}
