@@ -1,5 +1,3 @@
-# FansWiFi DNS Configuration on Router
-
 ## Network Diagram
 
 ![](../../../_images/network-diagram-167.png)

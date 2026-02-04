@@ -1,5 +1,5 @@
 # Miscellaneous
 
-{% content-ref url="FansWiFi-DNS-Configuration-on-Router.md" %}
-[FansWiFi DNS Configuration on Router](FansWiFi-DNS-Configuration-on-Router.md)
+{% content-ref url="network-diagram.md" %}
+[FansWiFi DNS Configuration on Router](network-diagram.md)
 {% endcontent-ref %}
