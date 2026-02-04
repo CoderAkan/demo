@@ -1,10 +1,5 @@
 # 第一步：帳戶註冊與確認
 
-感謝您選擇我們的服務！為了確保系統順利對接，請在開始前按順序準備好以下材料：
-
-
-# 第一步：帳戶註冊與確認
-
 1. **登記 FansWiFi 帳戶**： 請前往管理面板網址：[https://admin-p.fanswifi.com/register](https://www.google.com/search?q=https://admin-p.fanswifi.com/register)完成初步登記。
 2. **通知支援團隊**： 登記完成後，請將您的**用戶名稱 (Username)**及**電子郵件地址 (Email)**發送至您的**WhatsApp**支援群組，或直接聯繫您的 FansX | FansWiFi 專屬聯絡人，以便我們為您開通權限。
 
