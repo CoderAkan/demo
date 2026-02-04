@@ -11,7 +11,7 @@ Role-Based Access Control in the FansWiFi platform ensures that users have acces
 
 ![](../../_images/22-general-additional-administrators-376.png)
 
-To ensure the protection of collected data, the FansWiFi social WiFi marketing platform offers administrators the flexibility to control the visibility of users' data. Administrators have the option to choose whether to showcase **[Personal Identifiable Information (PII)](../../Security/personal-identifiable-information-pii.m)** or hide it from view. This allows businesses to comply with privacy regulations and maintain the confidentiality of user data.
+To ensure the protection of collected data, the FansWiFi social WiFi marketing platform offers administrators the flexibility to control the visibility of users' data. Administrators have the option to choose whether to showcase **[Personal Identifiable Information (PII)](https://fanswifi-onmicrosoftakan.gitbook.io/df3/~/revisions/buPaWNqGQ6m7zTwpZYJq/security/personal-identifiable-information-pii)** or hide it from view. This allows businesses to comply with privacy regulations and maintain the confidentiality of user data.
 
 In addition to data visibility and editing controls, the platform allows administrators to manage user permissions and roles for other associates within the company. The administrator has the authority to adjust the employees' permissions, granting access as ‘Editor’ or as ‘Viewer’ and the ability to see PII and Mac addresses.
 
