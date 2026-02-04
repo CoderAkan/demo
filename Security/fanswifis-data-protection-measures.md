@@ -1,7 +1,7 @@
+---
+description: (ISO 27001 certification estimated completion date: Mid 2024)
+---
 # FansWiFi's Data Protection Measures
-
-(ISO 27001 certification estimated completion date: Mid 2024)
-
 
 At FansWiFi, we understand the importance of meeting our customers' expectations regarding data protection. We prioritize their needs by providing the highest standards of security.
 
@@ -21,4 +21,6 @@ Our approach to protecting sensitive company information follows a systematic me
 
 We are currently in the process of obtaining ISO 27001 certification, and we are on track to complete it by **mid-2024**. This certification is a testament to our dedication to customer trust and data security.
 
+{% hint style="info" %}
 [Contact us](Mailto:info@fanswifi.com)
+{% endhint %}
