@@ -63,6 +63,8 @@ Provide the necessary details for the content template:
 - Image: Upload an image that represents the campaign. Accepted formats include JPEG, PNG, PDF, GIF, and more. (Please refer to recommended size)
 - Option/Style: Depending on the type of question chosen, you can add options or a type of rating.
 
+![](../../_images/guide_setup_4.3_0.png)
+
 As shown in the image above, utilize the following features:
 
 1. **Language**:
