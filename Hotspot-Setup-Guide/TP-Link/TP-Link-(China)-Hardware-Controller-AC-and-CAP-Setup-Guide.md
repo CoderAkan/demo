@@ -19,6 +19,7 @@
     - AP Model: TL-AP300C-PoE
     - Hardware version: 5.0
     - Firmware Version: 1.1.8
+    
     ![](../../../_images/tp_china_1.png)
 
 ## Network Topology

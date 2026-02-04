@@ -1,7 +1,5 @@
 # Miscellaneous
 
-## FansWiFi DNS Configuration on Router
-
-{% content-ref url="FansWiFi-DNS-Configuration-on-Router/network-diagram.md" %}
-[Network Diagram](FansWiFi-DNS-Configuration-on-Router/network-diagram.md)
+{% content-ref url="FansWiFi-DNS-Configuration-on-Router.md" %}
+[FansWiFi DNS Configuration on Router](FansWiFi-DNS-Configuration-on-Router.md)
 {% endcontent-ref %}
