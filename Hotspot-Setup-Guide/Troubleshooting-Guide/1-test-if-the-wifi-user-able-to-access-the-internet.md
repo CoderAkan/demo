@@ -26,9 +26,9 @@ Please perform ping test to verify the access
     - ping 103.6.85.240
 
         - this is FansWiFi Radius Server
-    - Expected Result
+- Expected Result
 
-        - WiFi client should able to ping these addresses
+    - WiFi client should able to ping these addresses
 
 ![](../../../_images/1-test-if-the-wifi-user-able-to-access-the-internet-307.png)
 
@@ -105,8 +105,8 @@ On Chrome, please
     1. [http://captive.apple.com](http://captive.apple.com)
     2. [http://neverssl.com](http://neverssl.com)
 
-        - 1. Please make sure http:// instead of https:// is used
-    - 3. If redirection works, the WiFi AP should redirect the user to FansWiFi captive portal page
+        1. Please make sure http:// instead of https:// is used
+    3. If redirection works, the WiFi AP should redirect the user to FansWiFi captive portal page
 
 ![](../../../_images/1-test-if-the-wifi-user-able-to-access-the-internet-310.png)
 
