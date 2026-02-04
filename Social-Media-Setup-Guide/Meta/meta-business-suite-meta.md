@@ -1,11 +1,6 @@
 # 如果您尚未建立 Meta Business Suite Meta 企業管理平台
 
-歡迎使用 FansX！本手冊將引導您完成 WhatsApp 與 FansX / Fanswifi 平台的串接。透過 Meta 的正式授權，且符合 Meta 的隱私與安全規範。
-
-
-# 如果您尚未建立 Meta Business Suite Meta 企業管理平台
-
-## 步驟一：請至 Meta Business Suite：https://business.facebook.com/
+## 步驟一：請至 Meta Business Suite：[https://business.facebook.com/](https://business.facebook.com/)
 
 ## 步驟二：點擊左側選單的帳號部分，點擊賬號名稱，點擊「建立商家資產管理組合」
 
