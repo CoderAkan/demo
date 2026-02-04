@@ -63,10 +63,14 @@ If the company wishes to exclude the Logo Image from display, they have the opti
 
 ![](../../_images/62-settings-venue-login-portal-look-feel-421.png)
 
+{% hint style="info" %}
 *Remarks: The Redirect URL feature in the 'Login Portal Header Style' options is currently in its alpha stage and is exclusively available to selected customers. By utilizing this feature, users gain the ability to direct visitors to a specific website upon clicking on the cover photo. If you are interested in accessing this feature, we kindly ask to reach out to our customer service for more information and assistance.*
+{% endhint %}
 
 **Overview**
 
 ![](../../_images/62-settings-venue-login-portal-look-feel-422.png)
 
+{% hint style="info" %}
 [Check out the demo video](../Demo-Videos/step-10-portal-settings-terms-of-use-advanced-limits-controllers.md)
+{% endhint %}

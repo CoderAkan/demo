@@ -13,4 +13,6 @@ By modifying the template, ensures that the Terms and Conditions accurately refl
 
 Customizing the Terms and Conditions to suit the unique needs of the company serves to safeguard business interests and ensures that users are fully informed and consenting to the terms of using your network or services through the Captive Portal.
 
+{% hint style="info" %}
 [Check out the demo video](../Demo-Videos/step-10-portal-settings-terms-of-use-advanced-limits-controllers.md)
+{% endhint %}

@@ -38,13 +38,19 @@ To configure the account for WiFi user check-ins, the administration needs to ad
 
 ![](../../_images/67-settings-venue-login-portal-login-methods-436.png)
 
-**For demo videos of 'Facebook Login', kindly visithere.**
+{% hint style="info" %}
+**For demo videos of 'Facebook Login', kindly visit [here](https://fanswifi-onmicrosoftakan.gitbook.io/df3/~/revisions/buPaWNqGQ6m7zTwpZYJq/guide/demo-videos/step-11-portal-settings-login-method-facebook)**
+{% endhint %}
 
 ## Google
 
 Enable WiFi users to log in using Google account.
 
-**For demo videos of 'Google Login', kindly visithere.**
+![](../../_images/guide_setup_6.7_0.png)
+
+{% hint style="info" %}
+**For demo videos of 'Google Login', kindly visit [here](https://fanswifi-onmicrosoftakan.gitbook.io/df3/~/revisions/buPaWNqGQ6m7zTwpZYJq/guide/demo-videos/step-12-portal-settings-login-method-instagram).**
+{% endhint %}
 
 ## Instagram
 
@@ -61,7 +67,9 @@ Setting up an Instagram social media login on the Captive Portal shares similari
 
 ![](../../_images/67-settings-venue-login-portal-login-methods-437.png)
 
-**For demo videos of 'Instagram Login', kindly visithere.**
+{% hint style="info" %}
+**For demo videos of 'Instagram Login', kindly visit [here](https://fanswifi-onmicrosoftakan.gitbook.io/df3/~/revisions/buPaWNqGQ6m7zTwpZYJq/guide/demo-videos/step-12-portal-settings-login-method-instagram).**
+{% endhint %}
 
 ## LINE
 
@@ -69,7 +77,9 @@ To set up the LINE social network login on the Captive Portal, it is needed to i
 
 ![](../../_images/67-settings-venue-login-portal-login-methods-438.png)
 
-**For demo videos of 'Line Login', kindly visithere.**
+{% hint style="info" %}
+**For demo videos of 'Line Login', kindly visit [here](https://fanswifi-onmicrosoftakan.gitbook.io/df3/~/revisions/buPaWNqGQ6m7zTwpZYJq/guide/demo-videos/step-13-portal-settings-login-method-line).**
+{% endhint %}
 
 ## X (formerly known as Twitter)
 
@@ -130,7 +140,9 @@ The Registration Form also provides the capability to personalize the login butt
 
 ![](../../_images/67-settings-venue-login-portal-login-methods-449.png)
 
-**For demo videos of 'Registration Form Login', kindly visithere.**
+{% hint style="info" %}
+**For demo videos of 'Registration Form Login', kindly visit [here](https://fanswifi-onmicrosoftakan.gitbook.io/df3/~/revisions/buPaWNqGQ6m7zTwpZYJq/guide/demo-videos/step-14-portal-settings-login-method-registration-form).**
+{% endhint %}
 
 ## Video
 
@@ -144,7 +156,9 @@ To successfully configure videos from Vimeo to the FansWiFi platform, it is requ
 
 With the video login feature of Vimeo, the admin can customize the login button on the Captive Portal. This functionality empowers to personalize the appearance and design of the login button specifically for video login using Vimeo. By leveraging this feature, the admin can ensure that the login button aligns seamlessly with the branding requirements and reflects unique preferences, creating a cohesive and visually appealing video login experience for users on the Captive Portal.
 
-**For demo videos of 'Video Login', kindly visithere.**
+{% hint style="info" %}
+**For demo videos of 'Video Login', kindly visit [here](https://fanswifi-onmicrosoftakan.gitbook.io/df3/~/revisions/buPaWNqGQ6m7zTwpZYJq/guide/demo-videos/step-15-portal-settings-login-method-video).**
+{% endhint %}
 
 ## Password
 
@@ -152,7 +166,9 @@ Implementing the Password feature provides an added layer of security. Administr
 
 ![](../../_images/67-settings-venue-login-portal-login-methods-452.png)
 
-**For demo videos of 'Password Login', kindly visithere.**
+{% hint style="info" %}
+**For demo videos of 'Password Login', kindly visit [here](https://fanswifi-onmicrosoftakan.gitbook.io/df3/~/revisions/buPaWNqGQ6m7zTwpZYJq/guide/demo-videos/step-16-portal-settings-login-method-password).**
+{% endhint %}
 
 ## One-Click Login
 
@@ -160,8 +176,10 @@ By enabling One-Click Login, users will be able to quickly and easily connect to
 
 ![](../../_images/67-settings-venue-login-portal-login-methods-453.png)
 
-​
+{% hint style="info" %}
+**For demo videos of 'One-Click Login', kindly visit [here](https://fanswifi-onmicrosoftakan.gitbook.io/df3/~/revisions/buPaWNqGQ6m7zTwpZYJq/guide/demo-videos/step-17-portal-settings-login-method-one-click-login).**
+{% endhint %}
 
-**For demo videos of 'One-Click Login', kindly visithere.**
-
+{% hint style="info" %}
 *Remark: Facebook enables WiFi users to like the company's Fan Page and check in at its location. Instagram, Twitter, and WeChat allow WiFi users to follow the company's profile.*
+{% endhint %}

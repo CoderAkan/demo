@@ -3,7 +3,9 @@
 
 ## We're thrilled to introduce FansWiFi's brand new UI, designed to bring you a fresh and innovative experience.
 
+{% hint style="danger" %}
 ***Please note: If you are a new customer, the new UI will be set as the default option. For old users, please get in touch with us to unlock the new UI.**
+{% endhint %}
 
 **Now,** log in to your admin portal account.
 
@@ -27,11 +29,14 @@ Ready to update your company info? Create or edit the details as needed.
 
 Once everything looks good, it's time to switch to our new UI.
 
-Click on Login Portal Theme and change the theme**from Original to New (2024)**– our latest UI version.
+Click on Login Portal Theme and change the theme **from Original to New (2024)**– our latest UI version.
 
 ![](../../_images/ui-upgrade-transitioning-from-old-to-new-design-461.png)
 
 Finally, hit save. Once you see the "Saved" notification, you've successfully switched to the new UI.
 
 ![](../../_images/ui-upgrade-transitioning-from-old-to-new-design-462.png)
+
+{% hint style="info" %}
 [Demo Video](https://vimeo.com/951430011/2f23ba0c1a?share=copy)
+{% endhint %}

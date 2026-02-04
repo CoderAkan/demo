@@ -39,4 +39,6 @@ Furthermore, the Welcome Message can be customized specifically for returning vi
 
 Enabling seamless login and customizing the Welcome Message for returned visitors enhances user satisfaction, streamlines the login process, and demonstrates a commitment to delivering a user-friendly and personalized WiFi experience.
 
+{% hint style="info" %}
 [Check out the demo video](../Demo-Videos/step-10-portal-settings-terms-of-use-advanced-limits-controllers.md)
+{% endhint %}

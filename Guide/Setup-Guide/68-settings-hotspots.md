@@ -19,4 +19,6 @@ Companies can add their Access Point details to the FansWifi page. Add AP to the
 
 ![](../../_images/68-settings-hotspots-479.png)
 
+{% hint style="info" %}
 [Check out the demo video](../Demo-Videos/step-18-portal-settings-hotspots.md)
+{% endhint %}

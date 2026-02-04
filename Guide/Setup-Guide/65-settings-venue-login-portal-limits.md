@@ -25,4 +25,6 @@ Through Session Duration Limits and Daily Login Qouta, the differentiation betwe
 
 *Remarks: Inputting 0 means no limit*
 
+{% hint style="info" %}
 [Check out the demo video](../Demo-Videos/step-10-portal-settings-terms-of-use-advanced-limits-controllers.md)
+{% endhint %}
