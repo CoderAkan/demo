@@ -24,9 +24,9 @@
 Note that different models may have different interface
 
 {% hint style="info" %}
-Connect TP-Link EAP to Omada Controller
+**Connect TP-Link EAP to Omada Controller**
 
-Please refer to[here](https://intercom.help/fanswifi/en/articles/10329800-connect-tp-link-eap-to-omada-controller-self-hosted)
+Please refer to [here](https://intercom.help/fanswifi/en/articles/10329800-connect-tp-link-eap-to-omada-controller-self-hosted)
 {% endhint %}
 
 ## Setting on TP-Link EAP Controller
@@ -60,7 +60,7 @@ Please refer to[here](https://intercom.help/fanswifi/en/articles/10329800-connec
 
 - g. Configure with following settings:
 
-    - **SSID Name:** <ssid-name-you-prefer>
+    - **SSID Name:** \<ssid-name-you-prefer\>
     - **Device Type:** EAP
     - **Guest Network:** Enable
     - **Security:** None
@@ -146,16 +146,16 @@ Please refer to[here](https://intercom.help/fanswifi/en/articles/10329800-connec
 
     - **Portal Name:** FansWiFi Radius
     - **Authentication Server 1**
-        - **Authentication Server IP/URL:** 103.6.85.240
-        - **Authentication Port:** 1812
-        - **Authentication Password:** social123
+        - **Authentication Server IP/URL:** `103.6.85.240`
+        - **Authentication Port:** `1812`
+        - **Authentication Password:** `social123`
     - **RADIUS Accounting:** Enable
     - **Interim Update:** Enable
     - **Interim Update Interval:** 300 Seconds
     - **Accounting Server 1**
-        - **Authentication Server IP/URL:** 103.6.85.240
-        - **Authentication Port:** 1813
-        - **Authentication Password:** social123
+        - **Authentication Server IP/URL:** `103.6.85.240`
+        - **Authentication Port:** `1813`
+        - **Authentication Password:** `social123`
     - Click "Save"
 
 ![](../../../_images/tp_link_omada_self_6.png)
@@ -173,7 +173,7 @@ Please refer to[here](https://intercom.help/fanswifi/en/articles/10329800-connec
 
 ![](../../../_images/tp_link_omada_self_8.png)
 
-### Step 7: Get the MAC address of the AP (Will be used [onStep 10](#step-10))
+### Step 7: Get the MAC address of the AP (Will be used [on Step 10](#step-10))
 
 - You should see the MAC address at the bottom of AP
 - If you are not sure about the address, don’t worry.
@@ -199,8 +199,8 @@ Please refer to[here](https://intercom.help/fanswifi/en/articles/10329800-connec
 - c. Configure with the following settings:
 
     - **Administrator Type:** Local User
-    - **Username:** <admin-id-you-prefer> (e.g. FansWiFiAPI)
-    - **Password:** <password-you-set>
+    - **Username:** \<admin-id-you-prefer\> (e.g. FansWiFiAPI)
+    - **Password:** \<password-you-set\>
     - **Role:** Admin
     - **Site Privileges:** *Select the site that you want to manage*
 - d. Click "Create"
@@ -239,10 +239,10 @@ Please refer to[here](https://intercom.help/fanswifi/en/articles/10329800-connec
 - c. Click "Controllers"
 - d. Configure with the following settings:
 
-    - **TP-Link EAP Controller IP Address or URL:** https://<your-controller-ip-address-or-url>
+    - **TP-Link EAP Controller IP Address or URL:** https://\<your-controller-ip-address-or-url\>
     - **Port Number (Default: 8043):** 8043
-    - **Admin Username:** <your-admin-id> (Hotspot Operator Username configured in [Step 8](#step-8), i.e. FansWiFiAPI)
-    - **Admin Password:** <your-admin-password> (Hotspot Operator Password configured in [Step 8](#step-8))
+    - **Admin Username:** \<your-admin-id\> (Hotspot Operator Username configured in [Step 8](#step-8), i.e. FansWiFiAPI)
+    - **Admin Password:** \<your-admin-password\> (Hotspot Operator Password configured in [Step 8](#step-8))
 - e. Click "Save"
 
 ![](../../../_images/information-required-for-fanswifi-manager-206.png)
