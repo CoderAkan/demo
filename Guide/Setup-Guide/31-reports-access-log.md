@@ -5,8 +5,8 @@
 
 The Access Log feature plays a crucial role in tracking social media engagement. Users can rely on it to gain a comprehensive understanding of the level of engagement by reviewing and analyzing the data within the Access Log. To view the WiFi user login records of the venues, follow these steps:
 
-1. Go to the**‘Reports’ section**in the menu bar.
-2. From the dropdown menu,**select ‘Access Log’.**
+1. Go to the **‘Reports’ section** in the menu bar.
+2. From the dropdown menu, **select ‘Access Log’.**
 3. You will be directed to the access log page, where WiFi user login records are displayed.
 
 The records are organized chronologically, with the most recent data at the top.

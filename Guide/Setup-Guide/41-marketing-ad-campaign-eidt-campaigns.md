@@ -52,5 +52,7 @@ By utilizing methods such as ‘Open Demo’ to preview the campaigns, you can e
 
 ![](../../_images/41-marketing-ad-campaign-eidt-campaigns-407.png)
 
+{% hint style="info" %}
 [Check out the demo video](../Demo-Videos/step-4-campaign-ads.md)
+{% endhint %}
 

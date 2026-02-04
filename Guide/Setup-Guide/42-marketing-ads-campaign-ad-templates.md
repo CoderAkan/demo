@@ -26,6 +26,7 @@ As shown in the image above, utilize the following features:
 1. **Language**:
 
 The content can be set in various languages, including English, Traditional Chinese, and Simplified Chinese. This enables catering to a diverse audience and facilitating effective communication.
+
 2. **Description Toolbar**:
 
 The description toolbar offers a range of formatting options that enhance the appearance and emphasis of your content. These options include:
@@ -44,5 +45,7 @@ The description toolbar offers a range of formatting options that enhance the ap
 
 2.7) Emojis
 
+{% hint style="info" %}
 [Check out the demo video](../Demo-Videos/step-4-campaign-ads.md)
+{% endhint %}
 

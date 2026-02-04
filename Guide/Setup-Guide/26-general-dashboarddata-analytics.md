@@ -29,7 +29,9 @@ Taking screenshots can be useful, particularly of total/new/returned users, aver
 
 By capturing the entire dashboard in a screenshot, the admin can ensure that all the relevant details and visualizations are captured in a single image, providing a comprehensive representation of the dashboard's content.
 
-**For further information on Reports & CSV, kindly visithere.**
+{% hint style="danger" %}
+**For further information on Reports & CSV, kindly visit [here](https://fanswifi-onmicrosoftakan.gitbook.io/df3/~/revisions/buPaWNqGQ6m7zTwpZYJq/guide/setup-guide/31-reports-access-log).**
+{% endhint %}
 
 ## Campaign Performances
 
@@ -49,6 +51,10 @@ Within the Campaign Details section, the admin has the ability to monitor and tr
 
 By efficiently managing and monitoring these campaign details, the admin can ensure that marketing efforts are precisely targeted, impactful, and in alignment with overarching goals.
 
+{% hint style="info" %}
 [Check out the demo video](../Demo-Videos/step-3-dashboard-csv-export.md)
+{% endhint %}
 
-**For further information on Ads Campaign Creation, kindly visithere.**
+{% hint style="danger" %}
+**For further information on Ads Campaign Creation, kindly visit [here](https://fanswifi-onmicrosoftakan.gitbook.io/df3/~/revisions/buPaWNqGQ6m7zTwpZYJq/guide/setup-guide/41-marketing-ad-campaign-eidt-campaigns).**
+{% endhint %}

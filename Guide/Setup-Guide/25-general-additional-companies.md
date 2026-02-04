@@ -15,4 +15,6 @@ To create additional companies, please select ‘Companies’ and click on ‘Cr
 
 ![](../../_images/25-general-additional-companies-476.png)
 
+{% hint style="info" %}
 [Check out the demo video](../Demo-Videos/step-2-permissions-access-new-users-account.md)
+{% endhint %}
