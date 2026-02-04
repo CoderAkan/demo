@@ -14,7 +14,7 @@
 
 - e. Config the following settings:
 
-    - **Controller IP/Inform URL:** \<your-controller-ip-address-or-url\>: `8043`
+    - **Controller IP/Inform URL:** `<your-controller-ip-address-or-url>:8043`
     - **Username:** `admin`
     - **Password:** `admin`
 
