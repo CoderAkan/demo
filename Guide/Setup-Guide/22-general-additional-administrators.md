@@ -37,5 +37,7 @@ In addition to verifying their account, the email will also include a request fo
 
 ![](../../_images/22-general-additional-administrators-381.png)
 
+{% hint style="info" %}
 [Check out the demo video](../Demo-Videos/step-2-permissions-access-new-users-account.md)
+{% endhint %}
 

@@ -17,4 +17,7 @@ To create additional organizations, please select ‘Organisation’ and click o
 
 ![](../../_images/23-general-additional-organizations-385.png)
 
+
+{% hint style="info" %}
 [Check out the demo video](../Demo-Videos/step-2-permissions-access-new-users-account.md)
+{% endhint %}
