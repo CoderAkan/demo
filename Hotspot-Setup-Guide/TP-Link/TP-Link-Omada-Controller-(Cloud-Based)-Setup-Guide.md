@@ -134,14 +134,14 @@ If you have already created an SSID, you can skip this step.
 5. Configure the new profile:
    - **Profile Name:** FansWiFi Radius
    - **Authentication Server 1:**
-     - **Authentication IP/URL:** 103.6.85.240
-     - **Authentication Port:** 1812
-     - **Authentication Password:** social123
+     - **Authentication IP/URL:** `103.6.85.240`
+     - **Authentication Port:** `1812`
+     - **Authentication Password:** `social123`
    - **Accounting Server 1:**
      - **Enable RADIUS Accounting**
-     - **Authentication IP/URL:** 103.6.85.240
-     - **Authentication Port:** 1813
-     - **Authentication Password:** social123
+     - **Authentication IP/URL:** `103.6.85.240`
+     - **Authentication Port:** `1813`
+     - **Authentication Password:** `social123`
      - **Interim Update:** Enabled
      - **Interim Update Interval:** 300 Seconds
 6. Click **Save**.
