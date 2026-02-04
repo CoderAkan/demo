@@ -33,4 +33,6 @@ At FansWiFi, we prioritize the security and convenience of our merchants. Our ce
 
 If you have any further questions or need assistance, please don't hesitate to reach out to our support team. We are here to help!
 
+{% hint style="info" %}
 [Contact us](mailto:%20marketing@fanswifi.com)
+{% endhint %}

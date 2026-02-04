@@ -29,4 +29,6 @@ Implementing Role-Based Access Control on our platform provides numerous benefit
 
 If you require further assistance or have specific questions regarding Role-Based Access Control, please reach out to our support team through our Help Center. We are here to assist you in ensuring the security of your account and data.
 
+{% hint style="info" %}
 [Contact us](Mailto:info@fanswifi.com)
+{% endhint %}

@@ -31,7 +31,13 @@ We have implemented advanced intrusion detection and prevention systems to monit
 
 Our systems undergo regular security audits, vulnerability assessments, and penetration testing to identify and address potential vulnerabilities. We continuously update our security infrastructure to stay ahead of emerging threats and protect your data from cyberattacks.
 
+
+{%hint style="warning"%}
 ❗While we make every effort to protect your data, it's important to **remember that no security measure is completely foolproof**.
 
 We recommend that you also take personal precautions, such as **using strong and unique passwords**, **enabling two-factor authentication**, and **keeping your devices and software up to date**.
+{%endhint%} <br>
+
+{%hint style="info"%}
 [Contact us](Mailto:info@fanswifi.com)
+{%endhint%}

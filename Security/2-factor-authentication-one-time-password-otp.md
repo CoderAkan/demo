@@ -25,8 +25,12 @@ By implementing OTP and requiring two-factor authentication for all users, we pr
 - Privacy Protection: OTP ensures that only authorized personnel can log in to the platform, safeguarding your personal and sensitive information.
 - Reduced Risk of Account Compromise: Even if your password is compromised, an attacker would still need the OTP to gain access, significantly reducing the risk of unauthorized access.
 
+{hint style="warning"}
 ❗Remember to **keep your OTP confidential** and **avoid sharing it with anyone**. If you suspect any suspicious activity or encounter issues with OTP, please contact our support team immediately.
+{%endhint%}
 
 By following these guidelines and enabling OTP for your account, you can enjoy a higher level of security and peace of mind while using our platform.
 
+{%hint style="info"%}
 [Need Help?](Mailto:info@fanswifi.com)
+{%endhint%}

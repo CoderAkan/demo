@@ -1,8 +1,7 @@
+---
+description: "To register or create a user account, please follow these steps:"
+---
 # 1. Account setup
-
----
-description: To register or create a user account, please follow these steps:
----
 
 ## Step 1: Enter valid credentials in the provided fields
 
