@@ -104,25 +104,15 @@
 ## TP-Link
 
 {% content-ref url="TP-Link/connect-tp-link-eap-to-omada-controller-self-hosted.md" %}
-[Connect TP-Link EAP to Omada Controller (Self-Hosted)](TP-Link/connect-tp-link-eap-to-omada-controller-self-hosted.md)
+[Connect TP-Link EAP to Omada Controller (Self-Hosted)](connect-tp-link-eap-to-omada-controller-self-hosted.md)
 {% endcontent-ref %}
 
-### TP-Link (China) Hardware Controller AC and CAP Setup Guide
-
-{% content-ref url="TP-Link/TP-Link-(China)-Hardware-Controller-AC-and-CAP-Setup-Guide/information-required-for-fanswifi-manager.md" %}
-[Information required for FansWiFi Manager](TP-Link/TP-Link-(China)-Hardware-Controller-AC-and-CAP-Setup-Guide/information-required-for-fanswifi-manager.md)
+{% content-ref url="TP-Link/TP-Link-Omada-Controller-(Cloud-Based)-Setup-Guide.md" %}
+[TP-Link Omada Controller (Cloud-Based) Setup Guide](TP-Link/TP-Link-Omada-Controller-(Cloud-Based)-Setup-Guide.md)
 {% endcontent-ref %}
 
-### TP-Link Omada Controller (Cloud-Based) Setup Guide
-
-{% content-ref url="TP-Link/TP-Link-Omada-Controller-(Cloud-Based)-Setup-Guide/information-required-for-fanswifi-manager.md" %}
-[Information required for FansWiFi Manager](TP-Link/TP-Link-Omada-Controller-(Cloud-Based)-Setup-Guide/information-required-for-fanswifi-manager.md)
-{% endcontent-ref %}
-
-### TP-Link Omada Controller (Self-Hosted) Setup Guide
-
-{% content-ref url="TP-Link/TP-Link-Omada-Controller-(Self-Hosted)-Setup-Guide/information-required-for-fanswifi-manager.md" %}
-[Information required for FansWiFi Manager](TP-Link/TP-Link-Omada-Controller-(Self-Hosted)-Setup-Guide/information-required-for-fanswifi-manager.md)
+{% content-ref url="TP-Link/TP-Link-(China)-Hardware-Controller-AC-and-CAP-Setup-Guide.md" %}
+[TP-Link (China) Hardware Controller AC and CAP Setup Guide](TP-Link/TP-Link-(China)-Hardware-Controller-AC-and-CAP-Setup-Guide.md)
 {% endcontent-ref %}
 
 ## Ubiquiti Unifi
