@@ -87,5 +87,7 @@ After setting up the Audience and Content settings, the page layout will be disp
 
 ![](../../_images/44-marketing-video-ads-414.png)
 
+{% hint style="info" %}
 [Check out the demo video](../Demo-Videos/step-4-campaign-ads.md)
+{% endhint %}
 

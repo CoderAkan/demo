@@ -4,8 +4,11 @@
 To customize and adjust the settings and appearance of the Captive Portal, follow these steps:
 
 1. Click on the ‘Settings’ option located on the menu bar
+
+![](../../_images/guide_setup_6.1_0.png)
+
 2. From there, navigate to the ‘Venues & Login Portals’ section
-3. Access the settings related to Captive Portal's configuration and appearance
+3. Access the settings related to Captive Portal's configuration and appearance <br>
 ​
 By following these steps, you will be able to update and personalize the Captive Portal according to preferences and requirements via ‘Edit’ and can check out the outcome by ‘Preview’.
 
@@ -19,4 +22,6 @@ The information provided during the profile creation process will be automatical
 
 ![](../../_images/61-settings-venue-login-portal-basic-information-416.png)
 
+{% hint style="info" %}
 [Check out the demo video](../Demo-Videos/step-10-portal-settings-terms-of-use-advanced-limits-controllers.md)
+{% endhint %}
