@@ -31,6 +31,7 @@
                 - **IP address:** "IP Address of your network's gateway"
                 - Click "**Submit**"
                 - Try step (a) again to see whether it can connect to both Internet and FansWiFi radius server or not
+                
             ![](../../../_images/aruba_ping_version_8_res_2.png)
 
 ### Step 1: Configuration: WLAN and SSID
