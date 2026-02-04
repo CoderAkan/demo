@@ -41,4 +41,6 @@ By following these guidelines and implementing robust security measures, we stri
 
 If you have any further questions or concerns regarding PII protection or our security practices, please don't hesitate to reach out to our support team. We are here to assist you and address any security-related inquiries you may have.
 
+{%hint style="info"%}
 [Contact us](Mailto:info@fanswifi.com)
+{%endhint%}

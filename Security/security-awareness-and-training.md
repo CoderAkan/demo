@@ -25,4 +25,6 @@ At Fanswifi, we place a high emphasis on security. We understand the potential r
 
 By prioritizing security awareness and providing ongoing training, we strive to create a safe and secure environment for our users. We believe that a well-informed and prepared team is essential in safeguarding your personal information and delivering a reliable service.
 
+{%hint style="info"%}
 [Contact us](Mailto:info@fanswifi.com)
+{%endhint%}

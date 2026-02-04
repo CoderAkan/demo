@@ -27,4 +27,6 @@ To fortify the security of your account, we employ modern hash functions to hash
 
 At FansWiFi, we are committed to providing you with a secure and protected environment for your data. Our comprehensive security measures, including secure login protocols, firewall protection, advanced encryption techniques, data encryption at rest, and credential protection, ensure that your information remains confidential and shielded from unauthorized access. If you have any further questions or concerns, our dedicated support team is always ready to assist you.
 
+{%hint style="info"%}
 [Contact us](Mailto:info@fanswifi.com)
+{%endhint%}

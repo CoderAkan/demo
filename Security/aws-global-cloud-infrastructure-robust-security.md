@@ -33,4 +33,6 @@ Through our integration with AWS, we can leverage a comprehensive range of secur
 
 At FansWiFi, we prioritize your security and strive to provide you with a reliable and secure service. By partnering with AWS, we can deliver a seamless experience while maintaining the highest level of protection for your data. If you have any questions or concerns regarding security, please don't hesitate to reach out to our support team.
 
+{%hint style="info"%}
 [Contact us](Mailto:info@fanswifi.com)
+{%endhint%}
