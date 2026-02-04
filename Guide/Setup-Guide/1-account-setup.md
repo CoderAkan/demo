@@ -1,9 +1,10 @@
 # 1. Account setup
 
-To register or create a user account, please follow these steps:
+---
+description: To register or create a user account, please follow these steps:
+---
 
-
-## Step 1:Enter valid credentials in the provided fields
+## Step 1: Enter valid credentials in the provided fields
 
 - First Name
 - Last Name
@@ -24,7 +25,7 @@ Note: To register and proceed further, the user must agree to the Terms and Cond
 
 Before completing the registration process, it is important to review and agree to the Terms and Conditions. These terms outline the rules, guidelines, and responsibilities associated with using the service. To proceed, it is compulsory to accept the Terms and Conditions by checking the appropriate box provided on the registration page.
 
-## Step 2:Input company information to create an organization
+## Step 2: Input company information to create an organization
 
 Please provide the following details to create your organization:
 
@@ -39,7 +40,7 @@ Enter the requested information accurately and ensure that it reflects the compa
 
 ![](../../_images/1-account-setup-373.png)
 
-## Step 3:Input company information to create a venue
+## Step 3: Input company information to create a venue
 
 To create your first venue, provide the following details:
 
@@ -53,4 +54,6 @@ Enter the requested information accurately to ensure the correct setup of the ve
 
 ![](../../_images/1-account-setup-374.png)
 
+{% hint style="info" %}
 [Check out the demo video](../Demo-Videos/step-1-account-setup.md)
+{% endhint %}
