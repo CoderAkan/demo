@@ -131,7 +131,7 @@
   * [Ubiquiti Unifi](Hotspot-Setup-Guide/Ubiquiti-Unifi/README.md)
     * [Ubiquiti (UBNT) UniFi Controller Setup Guide (New UI)](Hotspot-Setup-Guide/Ubiquiti-Unifi/Ubiquiti-(UBNT)-UniFi-Controller-Setup-Guide-(New-UI).md)
   * [Miscellaneous](Hotspot-Setup-Guide/Miscellaneous/README.md)
-    * [FansWiFi DNS Configuration on Router](Hotspot-Setup-Guide/Miscellaneous/FansWiFi-DNS-Configuration-on-Router.md)
+    * [FansWiFi DNS Configuration on Router](Hotspot-Setup-Guide/Miscellaneous/network-diagram.md)
   * [Troubleshooting Guide](Hotspot-Setup-Guide/Troubleshooting-Guide/README.md) -->
     * [WiFi User Captive Portal Connection Troubleshooting Guide](Hotspot-Setup-Guide/Troubleshooting-Guide/WiFi-User-Captive-Portal-Connection-Troubleshooting-Guide/README.md)
       * [1) Test if the WiFi User able to access the Internet](Hotspot-Setup-Guide/Troubleshooting-Guide/WiFi-User-Captive-Portal-Connection-Troubleshooting-Guide/1-test-if-the-wifi-user-able-to-access-the-internet.md)

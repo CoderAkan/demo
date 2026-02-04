@@ -124,8 +124,8 @@
 
 ## Miscellaneous
 
-{% content-ref url="Miscellaneous/FansWiFi-DNS-Configuration-on-Router.md" %}
-[FansWiFi DNS Configuration on Router](Miscellaneous/FansWiFi-DNS-Configuration-on-Router.md)
+{% content-ref url="Miscellaneous/network-diagram.md" %}
+[FansWiFi DNS Configuration on Router](Miscellaneous/network-diagram.md)
 {% endcontent-ref %}
 
 ## Troubleshooting Guide
