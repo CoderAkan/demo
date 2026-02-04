@@ -14,7 +14,7 @@
 
 ![](../../../_images/line_0.png)
 
-3. **Provider name:** <provider-name-you-prefer> (e.g. FansWiFi Provider)
+3. **Provider name:** `<provider-name-you-prefer>` (e.g. FansWiFi Provider)
 4. Click **Create**
 
 ![](../../../_images/line_1.png)
@@ -30,8 +30,8 @@
 
     1. **Region to provide the service:** Japan / Thailand / Taiwan / Indonesia
     2. **Company or owner's country or region:** (e.g. Thailand)
-    3. **Channel name:** <channel-name-you-prefer> (e.g. FansWiFi Login)
-    4. **Channel description:** <channel-description-you-prefer> (e.g. Social Login)
+    3. **Channel name:** `<channel-name-you-prefer>` (e.g. FansWiFi Login)
+    4. **Channel description:** `<channel-description-you-prefer>` (e.g. Social Login)
     5. **App types:** Web app
     6. **Require two-factor authentication:** Disable
     7. Click **Create** to add a new channel
@@ -74,6 +74,7 @@
 
     2. Select the option that include your LINE official account ID and name
     3. Click **Update**
+
     ![](../../../_images/line_9.png)
 6. For **Email address permission**
 
@@ -130,8 +131,6 @@
 2. You can obtain **Channel ID** and **Channel Secret** in basic information of the channel
 
     ![](../../../_images/line_17.png)
-
-    ![](../../../_images/line_18.png)
 
     ![](../../../_images/line_19.png)
 
