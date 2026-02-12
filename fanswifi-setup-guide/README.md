@@ -1,2 +1,0 @@
-# FansWiFi Setup Guide
-
