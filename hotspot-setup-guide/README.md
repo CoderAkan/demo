@@ -58,10 +58,16 @@
 [huawei-ekit-setup-guide.md](huawei-airengine-imaster-nce/huawei-ekit-setup-guide.md)
 {% endcontent-ref %}
 
-## Mikroti
+## Mikrotik
 
 {% content-ref url="mikrotik/mikrotik-routeros-ap-gateway-setup-guide.md" %}
 [mikrotik-routeros-ap-gateway-setup-guide.md](mikrotik/mikrotik-routeros-ap-gateway-setup-guide.md)
+{% endcontent-ref %}
+
+## Netgear
+
+{% content-ref url="netgear/netgear_insight_setup_guide.md" %}
+[netgear_insight_setup_guide.md](netgear/netgear_insight_setup_guide.md)
 {% endcontent-ref %}
 
 ## Open Mesh

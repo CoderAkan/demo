@@ -111,6 +111,8 @@
     * [Huawei eKit Setup Guide](hotspot-setup-guide/huawei-airengine-imaster-nce/huawei-ekit-setup-guide.md)
   * [Mikrotik](hotspot-setup-guide/mikrotik/README.md)
     * [Mikrotik RouterOS AP / Gateway Setup Guide](hotspot-setup-guide/mikrotik/mikrotik-routeros-ap-gateway-setup-guide.md)
+  * [Netgear](hotspot-setup-guide/netgear/README.md)
+    * [Netgear Insight Setup Guide](hotspot-setup-guide/netgear/netgear_insight_setup_guide.md)
   * [Open Mesh](hotspot-setup-guide/open-mesh/README.md)
     * [OpenMesh Setup Guide (ng6xx Series)](hotspot-setup-guide/open-mesh/openmesh-setup-guide-ng6xx-series.md)
   * [Ruckus](hotspot-setup-guide/ruckus/README.md)
