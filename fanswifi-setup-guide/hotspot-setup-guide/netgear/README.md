@@ -2,6 +2,6 @@
 
 ## Netgear Insight Setup Guide
 
-{% content-ref url="netgear_insight_setup_guide.md" %}
-[netgear_insight_setup_guide.md](netgear_insight_setup_guide.md)
+{% content-ref url="netgear-insight-setup-guide.md" %}
+[netgear-insight-setup-guide.md](netgear-insight-setup-guide.md)
 {% endcontent-ref %}

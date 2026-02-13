@@ -66,8 +66,8 @@
 
 ## Netgear
 
-{% content-ref url="netgear/netgear_insight_setup_guide.md" %}
-[netgear_insight_setup_guide.md](netgear/netgear_insight_setup_guide.md)
+{% content-ref url="netgear/netgear-insight-setup-guide.md" %}
+[netgear-insight-setup-guide.md](netgear/netgear-insight-setup-guide.md)
 {% endcontent-ref %}
 
 ## Open Mesh

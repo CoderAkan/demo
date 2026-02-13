@@ -115,7 +115,7 @@
     * [Mikrotik](fanswifi-setup-guide/hotspot-setup-guide/mikrotik/README.md)
       * [Mikrotik RouterOS AP / Gateway Setup Guide](fanswifi-setup-guide/hotspot-setup-guide/mikrotik/mikrotik-routeros-ap-gateway-setup-guide.md)
     * [Netgear](fanswifi-setup-guide/hotspot-setup-guide/netgear/README.md)
-      * [Netgear Insight Setup Guide](fanswifi-setup-guide/hotspot-setup-guide/netgear/netgear_insight_setup_guide.md)
+      * [Netgear Insight Setup Guide](fanswifi-setup-guide/hotspot-setup-guide/netgear/netgear-insight-setup-guide.md)
     * [Open Mesh](fanswifi-setup-guide/hotspot-setup-guide/open-mesh/README.md)
       * [OpenMesh Setup Guide (ng6xx Series)](fanswifi-setup-guide/hotspot-setup-guide/open-mesh/openmesh-setup-guide-ng6xx-series.md)
     * [Ruckus](fanswifi-setup-guide/hotspot-setup-guide/ruckus/README.md)
