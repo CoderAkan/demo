@@ -1,9 +1,9 @@
 # Table of contents
 
-* [FansX Setup Guide](README.md)
-  * [FansX & FansWiFi 用戶入門準備清單](fansx-setup-guide/untitled/README.md)
-    * [FansX WhatsApp 會員積分系統設定指南](fansx-setup-guide/untitled/fansx-whatsapp-hui-yuan-ji-fen-xi-tong-she-ding-zhi-nan.md)
-    * [FansX：WhatsApp 帳號連接與設定指南](fansx-setup-guide/untitled/meta-business-suite-meta.md)
+* [FansX Setup Guide](fansx-setup-guide/README.md)
+  * [FansX & FansWiFi 用戶入門準備清單](fansx-setup-guide/README.md)
+    * [FansX WhatsApp 會員積分系統設定指南](fansx-setup-guide/fansx-whatsapp-hui-yuan-ji-fen-xi-tong-she-ding-zhi-nan.md)
+    * [FansX：WhatsApp 帳號連接與設定指南](fansx-setup-guide/meta-business-suite-meta.md)
 * [FansWiFi Setup Guide](fanswifi-setup-guide/README.md)
   * [Introduction](fanswifi-setup-guide/readme.md)
   * [Guide](fanswifi-setup-guide/guide/README.md)
